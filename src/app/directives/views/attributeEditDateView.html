@@ -1,0 +1,156 @@
+
+<div class="select-dates" ng-if="vm.attributeDetails.IsNewUIDate!== true">
+    <div class="row">
+        <div class="col-sm-12 col-md-6 col-lg-6">
+            <div class="input-group input-group-sm">
+                <input type="text" class="form-control"
+                       datepicker-popup="dd-MMM-yyyy"
+                       ng-model="vm.dateOne"
+                       is-open="vm.isDateOneOpen"/>
+                <span class="input-group-btn">
+                    <button type="button" class="btn btn-default" ng-click="vm.toggleDateOne($event)">
+                        <i class="fa fa-calendar"></i>
+                    </button>
+                </span>
+            </div>
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-6">
+            <div class="input-group input-group-sm">
+                <input type="text" class="form-control"
+                       datepicker-popup="dd-MMM-yyyy"
+                       ng-model="vm.dateTwo"
+                       is-open="vm.isDateTwoOpen"/>
+                <span class="input-group-btn">
+                    <button type="button" class="btn btn-default" ng-click="vm.toggleDateTwo($event)">
+                        <i class="fa fa-calendar"></i>
+                    </button>
+                </span>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-12 col-md-7 col-lg-7">
+            <div class="btn-group" dropdown>
+                <button type="button" class="btn btn-default btn-sm dropdown-toggle" dropdown-toggle>
+                    Select Dates <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu" role="menu">
+                    <li><button type="button" class="btn btn-link btn-sm" ng-click="vm.selectLastSevenDays()">Last 7 Days</button></li>
+                    <li><button type="button" class="btn btn-link btn-sm" ng-click="vm.selectLastThirtyDays()">Last 30 Days</button></li>
+                    <li class="divider"></li>
+                    <li><button type="button" class="btn btn-link btn-sm" ng-click="vm.selectThisMonth()">This Month</button></li>
+                    <li><button type="button" class="btn btn-link btn-sm" ng-click="vm.selectThisQuarter()">This Quarter</button></li>
+                    <li><button type="button" class="btn btn-link btn-sm" ng-click="vm.selectThisYear()">This Year</button></li>
+                    <li class="divider"></li>
+                    <li><button type="button" class="btn btn-link btn-sm" ng-click="vm.selectLastMonth()">Last Month</button></li>
+                    <li><button type="button" class="btn btn-link btn-sm" ng-click="vm.selectLastQuarter()">Last Quarter</button></li>
+                    <li><button type="button" class="btn btn-link btn-sm" ng-click="vm.selectLastYear()">Last Year</button></li>
+                </ul>
+            </div>
+            <button type="button" class="btn btn-default btn-sm"
+                    ng-click="vm.clearDates()">
+                <i class="fa fa-times-circle"></i> Clear
+            </button>
+        </div>
+        <div class="col-sm-12 col-md-5 col-lg-5 text-right">
+            <button type="button" class="btn btn-primary btn-sm"
+                    ng-click="vm.addAttributeFilter()"
+                    ng-disabled="!vm.isValidDateRange">
+                <i class="fa fa-plus"></i> Add
+            </button>
+        </div>
+    </div>
+</div>
+
+<!-- Date field new UI starts here-->
+<div ng-if="vm.attributeDetails.IsNewUIDate === true">
+   <!-- This div is for disabled Search box --> 
+    <div class="input-group search-bar">
+        <span class="input-group-addon search-disable" ng-class="{'search-disable':true}"><i class="fa fa-search fa-search-col"></i></span>
+        <input type="text" class="form-control form-text search-panel-input ng-pristine ng-untouched ng-valid search-disable" aria-label="Search Attribute Values" placeholder="Search All Available Values..." ng-class="{'search-disable':true}" disabled="disabled">
+        <span class="input-group-btn">
+            <span class="input-group-addon btn-no-border search-disable" ng-class="{'search-disable':true}" type="button" >
+                <i class="fa fa-times-circle fa-close search-disable" ng-class="{'search-disable':true}"></i>
+            </span>
+        </span>
+    </div>
+    <!-- Div for Tabs format (start)-->
+    <div >
+       <!--<div style="margin-left:139px;">-->
+        <!--<input type="radio" id="allSources" name="sywradio" ng-model="vm.radioAllSYWValue" value="AllSources" /><label for="allSources">All Sources</label> -->
+        <!--&lt;!&ndash;<input type="radio" id="sywSources" name="sywradio" ng-model="vm.radioAllSYWValue" value="SYWSources" /><label for="sywSources">SYW</label> &ndash;&gt;-->
+    <!--</div>-->
+    <!-- Tabs start here -->
+    <div class="date-radio-padding" style="margin-top:1px;">
+        <label class="label label-primary" style="cursor:pointer;" ng-click="vm.choosefullDate()" ng-class="{'tabs_active' :vm.fullDateActive}" ng-model="vm.fulldate">mm/dd/yyyy</label>
+        <label class="label label-primary" style="cursor:pointer;" ng-click="vm.chooseMonthYear()" ng-model="vm.fulldate" ng-class="{'tabs_active' :vm.mmyyyyActive}" >mm/yyyy</label>
+        <label class="label label-primary" style="cursor:pointer;" ng-click="vm.chooseMonth()" ng-model="vm.fulldate"  ng-class="{'tabs_active' :vm.mmActive}">mm</label>
+        <label class="label label-primary" style="cursor:pointer;" ng-click="vm.chooseDay()" ng-model="vm.fulldate"  ng-class="{'tabs_active' :vm.ddActive}">dd</label>
+        <label class="label label-primary" style="cursor:pointer;" ng-click="vm.chooseYear()" ng-model="vm.fulldate"  ng-class="{'tabs_active' :vm.yyyyActive}">yyyy</label>
+        <label class="label label-primary" style="cursor:pointer;" ng-click="vm.chooseMonthDay()" ng-model="vm.fulldate"  ng-class="{'tabs_active' :vm.mmddActive}">mm/dd</label>
+        <label class="label label-primary" style="cursor:pointer;" ng-click="vm.chooseDayYear()" ng-model="vm.fulldate"  ng-class="{'tabs_active' :vm.ddyyyyActive}">dd/yyyy</label>
+    </div>
+    <!-- Tabs end here -->
+    <hr style="border:1px solid #DDD8D8; margin:5px;">
+    <div >
+        <form action="">
+           <div  style="margin-bottom:2px;">
+               <strong style="font-size:12px">From</strong>
+                <span ng-hide="vm.hideMonth" class="select-span">
+                    <select class="month" ng-disabled="!vm.isMonthSelected;" ng-model="vm.selectedMonthFrom" ng-options="item for item in vm.getMonth" ng-change="vm.selectedMonthTo = vm.selectedMonthFrom; vm.isInputValid = false">
+                    <option value="">Month</option>
+                    </select>
+                </span>
+                <span ng-hide="vm.hideDay" class="select-span">
+                    <select class="day" ng-disabled="!vm.isDaySelected" ng-model="vm.selectedDayFrom" ng-options="item for item in vm.days" ng-change="vm.selectedDayTo = vm.selectedDayFrom; vm.isInputValid = false">
+                        <option value="">Day</option>
+                    </select>
+                </span>
+                <span ng-hide="vm.hideYear" class="select-span">
+                    <select class="year" ng-disabled="!vm.isYearSelected" ng-model="vm.selectedYearFrom" ng-options="item for item in vm.years" ng-change="vm.selectedYearTo = vm.selectedYearFrom; vm.isInputValid = false">
+                        <option value="">Year</option>
+                    </select>
+                </span>
+            </div>
+            <div style="margin-top:10px;">
+               <strong style="font-size:12px">To</strong>
+                <span style="margin-left:17px;" ng-hide="vm.hideMonth" class="select-span">
+                    <select class="month" ng-disabled="!vm.isMonthSelected" ng-model="vm.selectedMonthTo" ng-options="item for item in vm.getMonth" ng-click="vm.isInputValid = false">
+                      <option value="">Month</option>
+                    </select>
+                </span>
+                <span ng-hide="vm.hideDay" class="select-span">
+                   <select  class="day" ng-disabled="!vm.isDaySelected" ng-model="vm.selectedDayTo" ng-options="item for item in vm.days" ng-click="vm.isInputValid = false">
+                        <option value="">Day</option>
+                    </select>
+                </span>
+                <span ng-hide="vm.hideYear" class="select-span">
+                    <select class="year" ng-disabled="!vm.isYearSelected" ng-model="vm.selectedYearTo" ng-options="item for item in vm.years" ng-click="vm.isInputValid = false">
+                        <option value="">Year</option>
+                    </select>
+                </span>
+            </div>
+            
+        </form>
+    </div>
+    </div>
+    <!-- Div for Tabs format (end)-->
+    <hr style="border:1px solid #DDD8D8;  margin:5px">
+    <div >
+      <div ng-if="vm.attributeDetails.IsSlider" class="date-radio-padding">
+        <input type="radio" id="all" name="radio" ng-model="vm.radioValue" value="All" ng-click="vm.disableDateRange();" /><label for="all">Members who have {{ vm.date }}{{ vm.dateSuffix}} {{vm.attributeDetails.attrName}} in {{ vm.currentYear }}</label>
+        <input type="range" ng-model="vm.date" ng-click="vm.radioValue = 'All'; vm.disableDateRange(); vm.getDateSuffix(vm.date);" min="0" max="100" step="1" style="margin-bottom:15px"  tooltip="{{vm.date}}{{ vm.dateSuffix}} {{vm.attributeDetails.attrName}} in 2015"/>
+      </div>
+    <div ng-class="{'margin-top25':!vm.attributeDetails.IsSlider}" class="margin-left5">
+    <!--    <button class="btn btn-primary" ng-click="vm.changeDateFormat()">Change Format</button>-->
+        <button class="btn btn-primary" ng-click="vm.clearDate()">Clear date</button>
+        <button class="btn btn-primary" ng-disabled="vm.checkUserInput()" ng-click="vm.checkForError()">Add</button>
+    </div>
+    <alert ng-if="vm.isInputValid" type="danger">{{ vm.alertText }}<i style="cursor:pointer; margin-left:10px;" class="fa fa-times-circle" ng-click="vm.isInputValid = !vm.isInputValid;"></i>
+    </alert>
+    <div class="clearfix"></div>  
+    </div>
+    
+
+</div>
+<!-- Date field new UI ends here-->

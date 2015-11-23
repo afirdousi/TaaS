@@ -1,0 +1,406 @@
+<style>
+
+    #tbSavedSearch{
+        border-collapse:inherit; /*Overridding Bootstrap's default to solve the last line border bottom problem*/
+    }
+
+    #tbSavedSearch h4{
+        color:#bda898;
+        font-weight: bold;
+        margin-bottom: 5px;
+    }
+
+    #tbSavedSearch em {
+        background:#ffff00 ;
+        font-weight: bold;
+        color:#000 !important;
+    }
+
+    .savedSearchExpanded{
+
+        background: -moz-linear-gradient(top,  rgba(238,238,238,1) 0%, rgba(204,204,204,1) 100%);
+        background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(238,238,238,1)), color-stop(100%,rgba(204,204,204,1)));
+        background: -webkit-linear-gradient(top,  rgba(238,238,238,1) 0%,rgba(204,204,204,1) 100%);
+        background: -o-linear-gradient(top,  rgba(238,238,238,1) 0%,rgba(204,204,204,1) 100%);
+        background: -ms-linear-gradient(top,  rgba(238,238,238,1) 0%,rgba(204,204,204,1) 100%);
+        background: linear-gradient(to bottom,  rgba(238,238,238,1) 0%,rgba(204,204,204,1) 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eeeeee', endColorstr='#cccccc',GradientType=0 );
+        text-align:left;
+    }
+
+    #savedSearchOpenSearch{
+
+        height: 30px;
+        border: 1px solid #d3d3d3;
+        width: 100%;
+        padding: 4px;
+        margin: 5px 0px;
+    }
+
+    .orange, .orange:hover{
+        background-color: #f78c40;
+        color:#fff;
+    }
+
+    .highlight{
+        background-color:#eff3f8
+    }
+
+    .white{
+        color:#fff;
+    }
+
+    .lightGray{
+        color:#999;
+    }
+    .toBeDeleted{
+        border:2px solid #ff0000;
+    }
+
+    .toBeCloned{
+        border:2px solid #2F4F4F;
+    }
+
+    .modal-header,.modal-body,.modal-footer {
+        background-color: #f2f2f2;
+        border:1px solid #EF9660;
+    }
+    .modal-header,.modal-body{
+        border-bottom: none;
+    }
+    .modal-body{
+        border-top: none;
+    }
+
+    .search-action a{
+        cursor: pointer;
+    }
+
+    .search-schedule ul{
+        list-style: none;
+        padding: 0px;
+        margin-bottom: 15px;
+    }
+    .search-schedule ul li input{
+        margin: 10px;
+    }
+
+    #save-search-schedule{
+        margin-left: 10px;
+    }
+
+    .paged-members-list .table-responsive #container {
+        height:100%
+    }
+
+    /*To make Saved Search table go full width*/
+    .filters-panel-hidden #scrollable-content{
+
+        padding-left : 0px !important;
+        padding-right : 0px !important;
+
+    }
+
+</style>
+<div id="content" class="group-panels paged-members-list saved-search-view">  <!--Using class made by Dave "paged-members-list" , need to change the Name : Ask Dave too-->
+    <div class="widget-body">
+
+        <ul class="nav nav-tabs tabs-pull-right bordered">
+
+            <li style="float: left; margin: 11px 0 0 10px; font-weight: bold;"> Saved Search  </li>
+
+            <li ng-class="{'active': vmSavedSearch.showOnlyMySearch }" ng-click="" style="cursor:pointer;" >
+                <a data-toggle="tab" aria-expanded="true" ng-click="vmSavedSearch.showOnlyMySearch=true; vmSavedSearch.getAllSavedSearches()" ><span class="hidden-mobile hidden-tablet">My Saved Searches</span></a>
+            </li>
+            <li ng-class="{'active': !vmSavedSearch.showOnlyMySearch }" style="cursor:pointer;" >
+                <a data-toggle="tab" aria-expanded="true" ng-click="vmSavedSearch.showOnlyMySearch=false; vmSavedSearch.getAllSavedSearches()"><span class="hidden-mobile hidden-tablet">All Saved Searches</span></a>
+            </li>
+
+        </ul>
+        <section style=" padding-top:40px;">  <!--This padding should be removed once we bring in the above commented options-bar back-->
+            <article style="text-align: center">
+
+                <div ng-if="vmSavedSearch.isLoading">
+                    <div class="router-animation-loader">
+                        <i class="fa fa-spinner fa-pulse fa-3x"></i>
+                        <span> Loading ... </span>
+                    </div>
+                </div>
+
+
+
+                <div class="table-responsive" ng-show="!vmSavedSearch.isLoading" >
+                    <input id="savedSearchOpenSearch"  type="text" placeholder="Type anything to search saved searches..." ng-model="vmSavedSearch.searchTerm"  />
+                    <div id="container">
+                        <table id="tbSavedSearch" class="table table-bordered">
+                            <thead>
+                            <tr fsm-sticky-header scroll-body="'#tbSavedSearch'" scroll-stop="90" top-of-page="10px;" shc-sticky-header-resizer >
+                                <th>Search ID</th>
+                                <!-- <th>Type</th>-->
+                                <th>Saved Search Name</th>
+                                <th>Date Created</th>
+                                <th>Members</th>
+                                <th>Date Updated</th>
+                                <th>Member Updated</th>
+                                <th>Creator</th>
+                                <th>Business Initiative</th>
+                                <th width="15%">Actions</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr ng-show="!savedSearchList.length">
+                                <td colspan="10" style="text-align: center; height: 380px">
+                                    There are no saved searches to display.
+                                </td>
+                            </tr>
+                            <tr  ng-repeat-start="q in savedSearchList = ( vmSavedSearch.savedUserSearches  | orderBy:'-sequenceID'  | filter:vmSavedSearch.searchTerm)"
+                                 ng-class="{'orange':q.expanded || q.applied || q.peek || q.schedule,'toBeDeleted':q.toBeDeleted,'toBeCloned':q.toBeCloned}"
+                                 class="animate-repeat text-left" shc-highlighter="vmSavedSearch.searchTerm">
+                                <td> {{ (q.isNSegment)? q.nSegmentID : ("100" +  q.sequenceID).slice(-7) }} </td>
+                                <!--  <td style="width: 1%"><i ng-class="(q.expanded)?'white':'lightGray'" class="fa fa-globe"></i></td>-->
+                                <td style="width: 30%">{{q.title}} </td>
+                                <td> {{q.createdOn | date:'MM-dd-yyyy' }} </td>
+                                <td> {{q.memberCountOnCreation }}</td>
+
+                                <td  ng-class="(q.expanded || q.applied || q.peek)?'orange':'highlight'" > {{q.lastUpdatedOn | date:'MM-dd-yyyy' }} </td>
+                                <td ng-class="(q.expanded || q.applied || q.peek)?'orange':'highlight'" >
+                                    {{ q.lastMemberCount }}
+                                </td>
+                                <!--<td>4/12/2015</td>-->
+                                <td title="{{'Enterprise ID: '  + q.ownerId}}">{{q.ownerFullName || q.ownerId}} </td>
+                                <td> {{ (q.businessOwner.name)?q.businessOwner.name:'-- Not selected --' }} </td>
+                                <td class="search-action" style="width: 12%">
+                                    <a title="Peek" ng-click="q.peek = !q.peek;q.peeksearching=true; vmSavedSearch.peekSearch(q)"><i ng-class="(q.peek)?'white':''" class="fa fa-user"></i></a>&nbsp;
+                                    <a ng-if="vmSavedSearch.isOwnerOfSearch(q.ownerId)" href="#" title="Refresh Latest Member Count" ng-click="vmSavedSearch.refreshCount(q)"><i class="fa fa-refresh"></i></a>&nbsp;
+                                    <!-- <a href="#" title="Edit"><i class="fa fa-pencil-square-o"></i></a> &nbsp;-->
+                                    <a title="Details" ng-click="q.expanded=!q.expanded;q.schedule=false;q.searchDetail=!q.searchDetail; "><i ng-class="(q.expanded && !q.schedule)?'white':''" class="fa fa-eye"></i></a>&nbsp;
+                                    <a href="#" title="Apply & Edit" ng-click="vmSavedSearch.applySavedSearch(q.searchId)"><i class="fa fa-check-circle-o"></i></a> &nbsp;
+                                    <a href="#" ng-click="q.toBeCloned=true;vmSavedSearch.cloneSearch(q.searchId)" title="Copy"><i class="fa fa-files-o"></i></a> &nbsp;
+                                    <!--<a href="#" onclick="alert('Email Results : This option will help you send Saved Search Results to any user on LDAP. Coming soon...')" title="Email"><i class="fa fa-envelope-o"></i></a>&nbsp;-->
+                                    <!-- {{ ::vmSavedSearch.isOwnerOfSearch(q.ownerId) }}-->
+                                    <a title="Schedule Search" ng-click="q.expanded=!q.expanded; q.searchDetail=false; q.schedule=!q.schedule;"><i ng-class="(q.schedule)?'white':''" class="fa fa-clock-o"></i></a>&nbsp;
+                                    <a ng-if="vmSavedSearch.hasPermissionToDelete(q.ownerId)" confirmed-click="q.toBeDeleted = true; vmSavedSearch.deleteSearch(q.searchId);"  ng-confirm-click="Are you sure you want to delete :  {{q.title}}  "  title="Delete" ><i class="fa fa-trash-o"></i></a>
+
+                                </td>
+
+                            </tr>
+                            <tr ng-if="q.toBeDeleted" style="text-align: center; color: #ff0000; font-weight: bold;">
+                                <td colspan="8"> {{ vmSavedSearch.msg}} </td>
+                            </tr>
+                            <tr ng-if="q.toBeCloned" style="text-align: center; color: #2F4F4F; font-weight: bold;">
+                                <td colspan="8"> {{ vmSavedSearch.msg}} </td>
+                            </tr>
+                            <tr  ng-repeat-end="" class="savedSearchExpanded">
+                                <td ng-show="q.expanded" colspan="10">
+                                    <table width="100%">
+                                        <tr>
+                                            <td width="30%" style="border-right:1px solid #e7e7e7; padding:25px;"  valign="top">
+                                                <h4>Business Initiative</h4>
+                                                {{ q.notes}}
+                                                <br/><br/>
+                                                <h4>API Search ID</h4>
+                                                {{ q.searchId}}
+
+                                            </td>
+                                            <td width="70%" style="padding:25px"  valign="top">
+
+                                                <div ng-show="!q.schedule">
+
+                                                    <h4>Current Query</h4>
+                                                    {{ ::q.queryParams.fq[0] }}
+                                                    <br/> <br/>
+                                                    <h4>Schedules </h4>
+                                                            <span ng-if="!q.schedules.length">
+                                                            This saved search is not in any of the schedules
+                                                            </span>
+                                                    <table id="tbSchedule" class="table table-bordered" ng-if="q.schedules.length>0">
+                                                        <!-- <thead ng-if="q.schedules.length>0"> -->
+                                                        <thead>
+                                                        <tr>
+                                                            <th>#</th>
+                                                            <th>Name</th>
+                                                            <th>Start Date</th>
+                                                            <th>End Date</th>
+                                                            <th>Start Time</th>
+                                                            <th>Run</th>
+                                                            <th>Every</th>
+                                                            <th>Date Created</th>
+                                                            <th>Action</th>
+                                                        </tr>
+                                                        </thead>
+                                                        <tbody>
+
+                                                        <tr ng-repeat="s in q.schedules = (q.schedules | orderBy: '-sequenceID')" class="animate-repeat text-left">
+                                                            <td> {{ $index+1 }} </td>
+                                                            <td style="...">{{s.title}}</td>
+                                                            <td> {{s.startDate | date: 'MM-dd-yyyy'}} </td>
+                                                            <td> {{s.endDate | date: 'MM-dd-yyyy'}} </td>
+                                                            <td> {{s.startTime | date: 'hh:mm'}} </td>
+                                                            <td> {{s.frequency}} </td>
+                                                            <td> {{s.every}} </td>
+                                                            <td> {{s.createdOn | date: 'MM-dd-yyyy'}} </td>
+                                                            <td> {{s.frequencyText}} </td>
+                                                        </tr>
+                                                        </tbody>
+                                                    </table>
+
+                                                    <br/><br/>
+                                                    <h4>History</h4>
+                                                            <span ng-if="q.history.length===0">
+                                                            No history to show for this Saved Search
+                                                            </span>
+                                                    <table class="table table-hover table-bordered" ng-if="q.history.length>0" >
+
+                                                        <thead>
+                                                        <tr>
+                                                            <th>S.No</th>
+                                                            <th>Query</th>
+                                                            <th> Members <!--History Date - Member Count--></th>
+                                                            <th> Date <!--History Date--></th>
+                                                            <th>Actions</th>
+                                                        </tr>
+                                                        </thead>
+                                                        <tbody>
+
+                                                        <tr ng-repeat="h in q.history" >
+                                                            <td> {{ $index+1 }} </td>
+                                                            <td> {{ ::h.historyQueryParam.fq[0] }} </td>
+                                                            <!--<td> {{::vmSavedSearch.getHumanReadableQuery(h.historyQuery) }}  </td>-->
+                                                            <td> {{h.historyMemberCount}} </td>
+                                                            <td> {{h.historyDate | date:'MM-dd-yyyy @ hh:mm:ss a' }} </td>
+                                                            <td>
+                                                                <!-- <a href="#" title="Clone"><i class="fa fa-files-o"></i></a> &nbsp;-->
+                                                                <a href="#" title="Email"><i class="fa fa-envelope-o"></i></a>&nbsp;
+
+                                                                <!-- TODO:History Deletion-->
+                                                                <!-- <a ng-if="vmSavedSearch.hasPermissionToDelete(q.ownerId)" ng-click="vmSavedSearch.deleteSearch(q.searchId)" title="Delete"><i class="fa fa-trash-o"></i></a>-->
+                                                            </td>
+                                                        </tr>
+
+                                                        </tbody>
+
+                                                    </table>
+
+                                                </div>
+
+                                                <div ng-show="q.schedule" class="search-schedule">
+
+                                                    <h4>Schedule Search</h4>
+
+                                                    <ul>
+                                                        <li><input type="checkbox" ng-model="q.isDaily" ng-change="vmSavedSearch.reflectScheduleChange(q.searchId)" />Daily</li>
+                                                        <li><input type="checkbox" ng-model="q.isWeekly" ng-change="vmSavedSearch.reflectScheduleChange(q.searchId)" />Weekly</li>
+                                                        <li><input type="checkbox" ng-model="q.isMonthly" ng-change="vmSavedSearch.reflectScheduleChange(q.searchId)" />Monthly</li>
+                                                        <li><input type="checkbox" ng-model="q.isOnDemand" ng-change="vmSavedSearch.reflectScheduleChange(q.searchId)" />On Demand</li>
+                                                    </ul>
+
+                                                    <a id="save-search-schedule" ng-disabled="!q.hasChanged" ng-click="vmSavedSearch.saveSearchSchedule(q.searchId)" class="btn btn-xs btn-primary" >Save</a>
+                                                            <span class="alert-success" ng-show="vmSavedSearch.showScheduleAlert" style="padding: 5px; width: 172px; margin-left: 20px;">
+                                                                Saved Schedule Successfully
+                                                            </span>
+
+                                                </div>
+
+                                            </td>
+                                        </tr>
+
+                                    </table>
+                                </td>
+                                <td ng-show="q.peek" colspan="10">
+                                    <div ng-if="q.peeksearching">
+                                        <div class="router-animation-loader">
+                                            <i class="fa fa-spinner fa-pulse fa-3x"></i>
+                                            <span> Loading ... </span>
+                                        </div>
+                                    </div>
+                                    <div ng-if="!q.peeksearching">
+                                        <table width="100%">
+                                            <tr ng-repeat="cell in q.membersList" class="animate-repeat text-left">
+                                                <td>
+                                                    <a ng-if="cell.zero.ActiveMember" ng-href="{{::cell.zero.imvLink}}" target="_blank">
+                                                        {{::cell.zero.LoyaltyCardNumber | hideMemberId}}
+                                                    </a>
+                                                        <span ng-if="!cell.zero.ActiveMember">
+                                                            {{::cell.zero.LoyaltyCardNumber | hideMemberId}}
+                                                        </span>
+                                                </td>
+                                                <td> <a ng-if="cell.one.ActiveMember" ng-href="{{::cell.one.imvLink}}" target="_blank">
+                                                    {{::cell.one.LoyaltyCardNumber | hideMemberId}}
+                                                </a>
+                                                        <span ng-if="!cell.one.ActiveMember">
+                                                            {{::cell.one.LoyaltyCardNumber | hideMemberId}}
+                                                        </span>
+                                                </td>
+                                                <td> <a ng-if="cell.two.ActiveMember" ng-href="{{::cell.two.imvLink}}" target="_blank">
+                                                    {{::cell.two.LoyaltyCardNumber | hideMemberId}}
+                                                </a>
+                                                        <span ng-if="!cell.two.ActiveMember">
+                                                            {{::cell.two.LoyaltyCardNumber | hideMemberId}}
+                                                        </span>
+                                                </td>
+                                                <td> <a ng-if="cell.three.ActiveMember" ng-href="{{::cell.three.imvLink}}" target="_blank">
+                                                    {{::cell.three.LoyaltyCardNumber | hideMemberId}}
+                                                </a>
+                                                        <span ng-if="!cell.three.ActiveMember">
+                                                            {{::cell.three.LoyaltyCardNumber | hideMemberId}}
+                                                        </span>
+                                                </td>
+                                                <td> <a ng-if="cell.four.ActiveMember" ng-href="{{::cell.four.imvLink}}" target="_blank">
+                                                    {{::cell.four.LoyaltyCardNumber | hideMemberId}}
+                                                </a>
+                                                        <span ng-if="!cell.four.ActiveMember">
+                                                            {{::cell.four.LoyaltyCardNumber | hideMemberId}}
+                                                        </span>
+                                                </td>
+                                                <td>
+                                                    <a ng-if="cell.five.ActiveMember" ng-href="{{::cell.five.imvLink}}" target="_blank">
+                                                        {{::cell.five.LoyaltyCardNumber | hideMemberId}}
+                                                    </a>
+                                                        <span ng-if="!cell.five.ActiveMember">
+                                                            {{::cell.five.LoyaltyCardNumber | hideMemberId}}
+                                                        </span>
+                                                </td>
+                                                <td>
+                                                    <a ng-if="cell.six.ActiveMember" ng-href="{{::cell.six.imvLink}}" target="_blank">
+                                                        {{::cell.six.LoyaltyCardNumber | hideMemberId}}
+                                                    </a>
+                                                        <span ng-if="!cell.six.ActiveMember">
+                                                            {{::cell.six.LoyaltyCardNumber | hideMemberId}}
+                                                        </span>
+                                                </td>
+                                                <td>
+                                                    <a ng-if="cell.seven.ActiveMember" ng-href="{{::cell.seven.imvLink}}" target="_blank">
+                                                        {{::cell.seven.LoyaltyCardNumber | hideMemberId}}
+                                                    </a>
+                                                        <span ng-if="!cell.seven.ActiveMember">
+                                                            {{::cell.seven.LoyaltyCardNumber | hideMemberId}}
+                                                        </span>
+                                                </td>
+
+                                            </tr>
+                                        </table>
+                                    </div>
+                                </td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+            </article>
+
+        </section>
+
+
+
+        <hr/>
+
+
+
+    </div>
+
+
+
+
+</div>
+

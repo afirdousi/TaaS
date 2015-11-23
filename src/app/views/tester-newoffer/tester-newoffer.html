@@ -1,0 +1,40 @@
+<div id="content" class="group-panels">
+    <div class="widget-body">
+        <header role="heading">
+            <div class="searchViewHeader">
+                <h6 style="display:inline;">{{ vmNewOffer.pageHeader }}</h6></div>
+            <div id="tabsView" class="pull-right visible-sm-inline-block visible-lg-inline-block visible-md-inline-block ">
+
+                <!--Page Heading Start-->
+
+                <ul style="display:inline-flex;" class="nav nav-tabs pull-right in visible-lg " >
+                    <li ng-class="{'active' : vmNewOffer.isOption1}" ng-click="vmNewOffer.selectOption1();" style="cursor:pointer;">
+                        <a data-toggle="tab"><span class="visible-lg">Option 1</span></a>
+                    </li>
+                    <li ng-class="{'active' : vmNewOffer.isOption2}" ng-click="vmNewOffer.selectOption2();" style="cursor:pointer;">
+                        <a data-toggle="tab"><span class="visible-lg">Option 2</span></a>
+                    </li>
+                </ul>
+
+                <!--Page Heading End-->
+                <div class="clearfix"></div>
+            </div>
+        </header>
+        <div class="clearfix"></div>
+        <br/>
+
+        <div class="tab-content" ng-show="vmNewOffer.isOption1">
+
+            <div class="page-wrapper">
+                Option#1
+            </div>
+        </div>
+
+        <div class="tab-content" ng-show="vmNewOffer.isOption2">
+
+            <div class="page-wrapper">
+                Option#2
+            </div>
+        </div>
+    </div>
+</div>

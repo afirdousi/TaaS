@@ -1,0 +1,339 @@
+<style>
+
+
+
+    /* Header is made up of separate component cells: */
+    /* | Logo | Members | Metrics | Buttons | Pebble | */
+
+
+
+    /* Entire Header Container */
+    #main-app-header {
+        display: table;
+        position: fixed;
+        z-index: 999;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 50px;
+        background: #5E2D79;
+        border-bottom: 1px solid white;
+        box-shadow: 0 0 5px black;
+        min-width: 800px;
+        backface-visibility: hidden;
+    }
+
+
+
+    /* Cell 1: Logo Container */
+    #main-app-header > a:nth-of-type(1) {
+        display: table-cell;
+        vertical-align: middle;
+        min-width: 180px;
+        color: white;
+        font-size: 1.15em;
+        font-weight: bold;
+        line-height: 100%;
+    }
+    /* Logo */
+    #main-app-header > a:nth-of-type(1) > img {
+        float: left;
+        padding-left: 4px;
+        padding-right: 4px;
+        width:42px;
+        height: 42px;
+    }
+    /* Version */
+    #main-app-header > a:nth-of-type(1) > span {
+        float: right;
+        font-size: 8px;
+        color: rgb(34, 113, 170);
+        padding-right: 8px;
+        line-height: 8px;
+    }
+
+
+
+    /* Cell 2: Members (leave width undefined, so it stretches) */
+    #main-app-header > div:nth-of-type(1) {
+        display: table-cell;
+        width: 100%;
+        vertical-align: middle;
+        margin: 0;
+        padding: 3px 0 0 20px;
+        font-size: 11px;
+        color:white;
+    }
+    #main-app-header .progress {
+        display: inline-block;
+        width: calc(100% - 40px);
+        height: 22px;
+        margin: 0;
+        background: linear-gradient(rgba(34, 113, 170, 0.35), rgba(64, 170, 246, 0.35));
+    }
+    #main-app-header .progress-bar {
+        border-bottom: 1px solid white;
+        border-right: 1px solid #333333;
+        background: linear-gradient(rgba(34, 113, 170, 0.9), rgba(64, 170, 246, 0.9));
+    }
+    #main-app-header .progress-text {
+        font-size: 12px;
+        line-height: 22px;
+        color: white;
+        text-shadow: 0 1px 1px rgb(34, 113, 170);
+    }
+    #main-app-header .list-member {
+        position: absolute;
+        display: inline-block;
+        /*width: 80px;*/
+        /*margin-top: 2px;*/
+        margin-left: 5px;
+        margin-right: 10px;;
+        height: 25px;
+        line-height: 17px;
+        text-align: center;
+        color: white;
+        font-size: 11px;
+        border:none;
+        border-radius: 10px;
+        background: linear-gradient(rgba(34, 113, 170, 0.9), rgba(64, 170, 246, 0.9));
+        /*outline: 1px solid white;*/
+    }
+
+
+
+    /* Cell 3: Metrics */
+    #main-app-header > div:nth-of-type(2) {
+        display: table-cell;
+        vertical-align: middle;
+        min-width: 220px;
+    }
+    #main-app-header > div:nth-of-type(2) > table {
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+    #main-app-header > div:nth-of-type(2) > table th {
+        margin: 0;
+        padding: 0;
+        line-height: 16px;
+    }
+    #main-app-header > div:nth-of-type(2) > table th img {
+        margin: 0;
+        padding: 0;
+        padding-bottom: 1px;
+        vertical-align: bottom;
+    }
+    #main-app-header > div:nth-of-type(2) > table th:nth-child(odd) {
+        width: 9px;
+    }
+    #main-app-header > div:nth-of-type(2) > table th span {
+        font-size: 0;
+        display: block;
+        background-color: white;
+        opacity: 0.5;
+        width: 1px;
+        height: 44px;
+        margin: 3px 4px;
+        vertical-align: middle;
+    }
+    #main-app-header > div:nth-of-type(2) > table td {
+        padding-top: 1px;
+        padding-bottom: 0;
+        font-size: 11px;
+        color: white;
+    }
+    #main-app-header > div:nth-of-type(2) > table td i {
+        display: inline-block;
+        width: 10px;
+        text-align: center;
+    }
+
+
+
+    /* Cell 4: Buttons */
+    #main-app-header > nav {
+        display: table-cell;
+        vertical-align: middle;
+        width: auto;
+        white-space: nowrap;
+        font-size: 0;
+        text-align: right;
+    }
+    nav:nth-of-type(1) > button:nth-of-type(1) {
+        /* Home, needed to be a little bigger. */
+        font-size: 22px;
+        line-height: 22px;
+    }
+    nav:nth-of-type(1) > button:nth-of-type(2) {
+        /* Home, needed to be a little smaller. */
+        font-size: 16px;
+        line-height: 16px;
+    }
+    nav:nth-of-type(2) {
+        width: 50px;
+        text-align: center;
+        display: none;
+    }
+    #main-app-header > nav > button {
+        background: #fff;
+        width: 32px;
+        height: 32px;
+        margin: 2px;
+        padding: 0;
+        font-size: 18px;
+        font-weight: bold;
+        color: #2a2a2a;
+        vertical-align: middle;
+        border-width: 1px;
+    }
+    #main-app-header > nav > span {
+        display: inline-block;
+        background-color: white;
+        opacity: 0.5;
+        width: 1px;
+        height: 44px;
+        margin: 3px 4px;
+        vertical-align: middle;
+    }
+
+
+
+    /* Cell 5: Pebble */
+    #main-app-header > a:nth-of-type(2) {
+        display: table-cell;
+        vertical-align: middle;
+        font-size: 0;
+        min-width: 99px;
+        margin: 0;
+        padding: 0;
+        padding-right: 5px;
+        text-align: center;
+    }
+
+
+
+    .fade-show-hide {
+        -webkit-transition: all linear 0.2s;
+        transition: all linear 0.2s;
+    }
+    .fade-show-hide.ng-hide {
+        opacity: 0;
+    }
+
+
+
+    #main-app-header > nav .active-btn {
+        background: #2a2a2a;
+        color:#fff;
+    }
+    .margin-right30{
+        display:inline-block;
+        margin-right: 10px;
+        color:white;
+    }
+
+        #logo{
+            padding-left: 20px;
+        }
+
+
+</style>
+<header id="main-app-header" ng-controller="pageHeaderCtrl as vmHeader">
+
+
+
+    <!-- Logo -->
+    <a id="logo" href="#/search">
+        <h5>TaaS</h5>
+        <span>{{ vmHeader.applicationVersion }}</span>
+    </a>
+
+
+
+
+    <!-- Buttons -->
+    <nav ng-hide="vmHeader.break1 && !vmHeader.menuButtons">
+        <span ng-show="vmHeader.break1"></span>
+
+        <button ui-sref="app.search" ui-sref-active="active-btn"
+                class="btn-default"
+                tooltip="Home" tooltip-placement="bottom">
+            <i class="fa fa-home" style=""></i>
+        </button>
+
+        <button ui-sref="app.profile" ui-sref-active="active-btn"
+                class="btn-default"
+                tooltip="Profile" tooltip-placement="bottom">
+            <i class="fa fa-user" style=""></i>
+        </button>
+
+        <button ui-sref="app.project" ui-sref-active="active-btn"
+                class="btn-default"
+                tooltip="Project Dashbaord" tooltip-placement="bottom">
+            <i class="fa fa-tasks" style=""></i>
+        </button>
+
+
+        <button ui-sref="app.payment" ui-sref-active="active-btn"
+                class="btn-default"
+                tooltip="Payment & Billing" tooltip-placement="bottom">
+            <i class="fa fa-usd" style=""></i>
+        </button>
+
+        <button ui-sref="app.bug" ui-sref-active="active-btn"
+                class="btn-default"
+                tooltip="Bug Tracker" tooltip-placement="bottom">
+            <i class="fa fa-bug" style=""></i>
+        </button>
+
+        <button ui-sref="app.newoffer" ui-sref-active="active-btn"
+                class="btn-default"
+                tooltip="New Offers" tooltip-placement="bottom">
+            <i class="fa fa-list" style=""></i>
+        </button>
+
+        <button ui-sref="app.notification" ui-sref-active="active-btn"
+                class="btn-default"
+                tooltip="Notification" tooltip-placement="bottom">
+            <i class="fa fa-comments" style=""></i>
+        </button>
+
+        <!--<button ui-sref="app.savedSearch"
+                ng-if="!((vmHeader.AuthServiceState.isOnlyInBasicRole || (vmHeader.AuthServiceState.isInScheduleRole && !vmHeader.AuthServiceState.isInAdvanceRole)) && !vmHeader.AuthServiceState.isInAdminRole)"
+                ui-sref-active="active-btn"
+                class="btn-default"
+                tooltip="Searches"
+                tooltip-placement="bottom">
+            <i class="fa fa-binoculars"></i>
+        </button>
+        <button ui-sref="app.schedule"
+                ng-if="!(!vmHeader.AuthServiceState.isInScheduleRole && !vmHeader.AuthServiceState.isInAdminRole)"
+                ui-sref-active="active-btn"
+                class="btn-default"
+                tooltip="Schedule"
+                tooltip-placement="bottom">
+            <i class="fa fa-clock-o"></i>
+        </button>
+        <span></span>-->
+        <button ui-sref="app.config" ui-sref-active="active-btn"
+                tooltip="Configuration"
+                class="btn-default"
+                tooltip-placement="bottom">
+            <i class="fa fa-cog"></i>
+        </button>
+        <span></span>
+    </nav>
+    <nav id="menu-nav" ng-show="vmHeader.break1">
+        <button
+                data-toggle="collapse"
+                data-target=".navbar-collapse"
+                ng-click="vmHeader.openMenu()">
+            <i class="fa fa-bars"></i>
+        </button>
+        <span></span>
+    </nav>
+
+
+
+</header>

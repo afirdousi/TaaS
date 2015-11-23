@@ -1,0 +1,36 @@
+<div id="searchEntryView" ng-controller="searchEntryViewCtrl as vmEntry" >
+
+    <div class="search-input-container" id="onPageSearchEntry">
+        <span class="search-input-border">
+            
+            
+            <!-- Attribute Operator Value Tag -->
+            <div data-ng-repeat="(key,tag) in vmEntry.currentInputTags" class="search-input-entered-text" ng-click="vmEntry.focusText()">
+                {{ tag.displayValue }}
+                <div data-ng-click="deleteTag(key)"></div>
+            </div>
+            
+            
+            <i class="fa fa-search" ng-class="{'invisible': !vmEntry.valuesExist || !vmEntry.isNotANumber}"></i>
+            <i class="fa fa-times-circle"  
+            ng-click="vmEntry.cleanMainSearchInput()">
+           </i>
+            
+             <!-- Real input from the user-->
+            <div class="text-enabler" ng-click="vmEntry.focusText()">
+                <!--   ng-model-options="{ debounce: 1500 }" -->
+                <input class="user-input" type="text" aria-label="Search Attribute"
+                       placeholder="{{ vmEntry.msg }}"
+                       ng-model="vmEntry.textEntry"/>
+
+        </div>
+            </span>
+
+
+    </div>
+
+
+
+
+
+</div>

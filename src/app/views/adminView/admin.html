@@ -1,0 +1,36 @@
+<div id="content" class="admin-view">
+    <div class="widget-body">           
+        <ul class="nav nav-tabs tabs-pull-right bordered">
+            <li class="admin-title"> Administrator View  </li>
+            <!-- <li class="dropdown dropdown-user" ng-class="{'active': true}" ng-init="vmAddUser.user='Add Users'">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" role="button" aria-expanded="false" data-toggle="tab">{{vmAddUser.user}} <span class="fa fa-caret-down"></span></a>
+                <ul class="dropdown-menu" role="menu">
+                    <li class="active" ng-click="vmAddUser.selectedView = 1">
+                        <a data-toggle="tab" ng-click="vmAddUser.user='Add Users';vmAddUser.clearSearchResults(vmAddUser.selectedView);" aria-expanded="true">
+                            <span class="mouse-pointer">Add Users</span>
+                        </a>
+                    </li>
+                    <li ng-click="vmAddUser.selectedView = 2">
+                        <a data-toggle="tab" ng-click="vmAddUser.getSavedUsers();vmAddUser.user='Saved Users'">
+                            <span class="mouse-pointer">Saved Users</span>
+                        </a>
+                    </li>                    
+                </ul>
+            </li> -->
+            <li ng-class="{'active': vmAdmin.isMaintenanceView}" ng-click="vmAdmin.selectMaintenance();" >
+                <a ui-sref="app.admin.maintenance">Maintenance</a>
+            </li>
+            <li ng-class="{'active': vmAdmin.isSolrConfigView}" ng-click="vmAdmin.selectSolrConfig();" >
+                <a ui-sref="app.admin.changeSolr">SOLR Configuration</a>
+            </li>
+            <li  ng-class="{'active' : vmAdmin.isUpdateUserView}" ng-click="vmAdmin.selectUpdateUser();">
+                <a ui-sref="app.admin.updateUser">Saved Users</a>
+            </li>
+            <li  ng-class="{'active' : vmAdmin.isAddUserView}" ng-click="vmAdmin.selectAddUser();">
+                <a ui-sref="app.admin.addUser">Add Users</a>
+            </li>
+        </ul>
+        <br/>
+        <div class="container-fluid"  ui-view="admin-content"></div>
+    </div>
+</div>

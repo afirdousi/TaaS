@@ -1,0 +1,82 @@
+<style>
+    .red {
+        color:#ff0000;
+    }
+    .save-search-model{
+        min-height: 310px; width: 330px;position:absolute; top:35px; right:48px; z-index: 20000; border:1px solid #EF9660; padding:15px; background-color: #f2f2f2;
+    }
+
+    /*input.ng-invalid.ng-dirty, textarea.ng-invalid.ng-dirty*/
+    input.ng-invalid-required,textarea.ng-invalid-required{
+        outline: none;
+        border-color: red;
+    }
+    .error-msg{
+        color:red;
+        font-size: 10px;
+    }
+    .frmInput{
+        width: 280px !important;;
+        text-color:10px !important;
+        outline:none !important;;
+        border:1px solid #bfbfbf !important;;
+        padding:2px !important;
+    }
+    .maintenance-msg {
+        background-color: red;
+        color:#fff;
+        padding: 10px;
+        line-height: 1.7 !important;
+        background-image: url('styles/img/maintenance.png');
+        background-repeat: no-repeat;
+        padding-left: 100px;
+        background-position: 20px 8px;
+        /*display: none;*/
+    }
+
+</style>
+<div id="ribbon" ng-controller="pageSubHeaderCtrl as vmSubHeader" ng-show="vmSubHeader.isSecure">
+    <div class="row maintenance-msg" ng-show="vmSubHeader.isAppDown">
+        <div class="col-sm-12 col-md-12 col-lg-12">
+            <!--The application is currently under maintenance mode and may not function properly.<br/>-->
+            <b ng-show="!vmSubHeader.hasSessionExpired">Maintenance Message:</b> <span> {{ vmSubHeader.maintenanceMessage }} </span>
+            <span ng-show="!vmSubHeader.authServiceState.isInAdminRole">You will logged out in <b>{{vmSubHeader.loggoutTickValue }}</b>seconds.</span>
+        </div>
+    </div>
+    <!--<div class="row">-->
+        <!--<div class="col-sm-1 col-md-2 col-lg-2">-->
+    <div id="nav-subheader" class="row">
+        <div id="nav-subheader-admin" class="col-sm-1 col-md-2 col-lg-2">
+
+            <div class="subheader-box">
+                <a href="#" class="header dropdown-toggle" data-toggle="dropdown" aria-expanded="false" style="line-height:2">
+                    <span class="visible-sm"> <i class="fa fa-user"></i> <span class="caret"></span></span>
+                    <span style="padding-top:7px;" class="visible-md visible-lg">Welcome, {{vmSubHeader.userName}} <span class="caret"></span></span></a>
+                <ul class="dropdown-menu" role="menu">
+                   <!-- <li>
+                        <a onclick="window.open('https://pebble2.searshc.com/Groups/Info/9101')">Pebble Your Feedback</a>
+                    </li>-->
+                    <li ng-if="vmSubHeader.authServiceState.isInAdminRole">
+                         <a ui-sref="app.admin.addUser">Admin View</a>                         
+                    </li>
+                    <li ng-if="vmSubHeader.authServiceState.isInAdminRole" class="divider"></li>
+                    <li>
+                        <a href="#" ng-click="vmSubHeader.logout()">Logout</a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+        <div class="col-sm-7 col-md-7 col-lg-7">
+            <div ng-show="vmSubHeader.inSavedSearchEditMode" smart-include="app/views/searchEntry/searchEntryView.html"></div>
+        </div>
+        <div class="col-sm-4 col-md-3 col-lg-3 text-right">
+
+
+        </div>
+    </div>
+    <div smart-include="app/views/modalDialog/modal-remove-all-filters.html"></div>
+
+
+
+</div>

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en-us" class="no-js" ng-app="mainApp">
+	<head>
+		<meta charset="utf-8">
+		<title>TaaS</title>
+		<meta name="description" content="Member Analytics Discovery Engine">
+		<meta name="author" content="Sears Holding Company">
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<!-- #CSS Links -->
+		<!-- Basic Styles -->
+		<link rel="stylesheet" type="text/css" media="screen" href="vendor/bootstrap/css/bootstrap.css">
+		<link rel="stylesheet" type="text/css" media="screen" href="vendor/font-awesome/css/font-awesome.css">
+		<link rel="stylesheet" type="text/css" media="screen" href="vendor/angular-ui-grid/css/ui-grid.css">
+        <!-- Responsive table-->
+        <link rel="stylesheet" type="text/css" media="screen" href="vendor/table-responsive/css/rwd-table.min.css">
+
+
+		<!-- SmartAdmin Styles : Caution! DO NOT change the order -->
+		<link rel="stylesheet" type="text/css" media="screen" href="styles/css/taas-application-plugins.css">
+		<link rel="stylesheet" type="text/css" media="screen" href="styles/css/taas-application.css">
+		<link rel="stylesheet" type="text/css" media="screen" href="styles/css/taas-application-skins.css">
+
+        <!-- Fonts -->
+        <!--<link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:300,400' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,900' rel='stylesheet' type='text/css'>-->
+		<!-- #FAVICONS -->
+		<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+	</head>
+
+	<body
+        data-smart-device-detect
+		data-smart-press
+		data-smart-layout
+		data-smart-page-title="TaaS"
+        class="fixed-header fixed-ribbon smart-style-3"
+        ng-controller="mainLayoutCtrl as vmMain"
+        ng-class="{'attribute-panel-removed':vmMain.removeAttributesPanel, 'filters-panel-removed':vmMain.removeFilterPanel , 'attributes-panel-hidden': vmMain.hideAttributesPanel, 'filters-panel-hidden': vmMain.hideFiltersPanel, 'filters-panel-expanded': vmMain.showExpandedFiltersPanel}">
+
+        <div id="rootView" ui-view="root" autoscroll="false"></div>
+
+    <!--[if lt IE 9]>
+        <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+
+        <script src="vendor/lodash/js/lodash.js"></script>
+        <script src="vendor/moment/js/moment.js"></script>
+        <script src="vendor/jquery/js/jquery.js"></script>
+        <script src="vendor/jquery/js/jquery.resize.js"></script>
+        <script src="vendor/d3/js/d3.js"></script>
+        <script src="vendor/uri.js/js/URI.js"></script>
+        <script src="vendor/jqueryui/js/jquery-ui.js"></script>
+        <script src="vendor/perfect-scrollbar/js/perfect-scrollbar.jquery.js"></script>
+        <script src="vendor/angular/js/angular.js"></script>
+        <script src="vendor/angular-ui-router/js/angular-ui-router.js"></script>
+        <script src="vendor/angular-animate/js/angular-animate.js"></script>
+        <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+        <script src="vendor/angular-bootstrap/js/ui-bootstrap-tpls.js"></script>
+        <script src="vendor/bootstrap/js/bootstrap-popover.js"></script>
+        <script src="vendor/angular-fullscreen/js/angular-fullscreen.js"></script>
+        <script src="vendor/angular-ui-grid/js/ui-grid.js"></script>
+        <script src="vendor/SmartAdmin/js/SmartNotification.js"></script>
+        <script src="vendor/masonry/js/masonry.pkgd.js"></script>
+        <script src="vendor/StickyHeader/fsm.js"></script>
+        <script src="vendor/CryptoJS/tripledes.js"></script>
+        <script src="vendor/table-responsive/js/rwd-table.js"></script>
+        <script src="vendor/angular-prompt/angular-prompt.js"></script>
+        <script src="vendor/angular-resource/angular-resource.min.js"></script>
+        <script src="vendor/excel-generator/FileSaver.js"></script>
+        <script src="vendor/excel-generator/xlsx.core.min.js"></script>
+        <script src="vendor/d3/js/d3.min.3.5.6.js"></script>
+        <script src="vendor/d3/js/topojson.min.js"></script>
+        <script src="vendor/dragtable-jquery/jquery.dragtable.js"></script>
+
+        <script src="app/module/smartAdminConfig.js"></script>
+        <script src="app/module/mainAppModule.js"></script>
+        <script src="app/module/webSettings.js"></script>
+        <script src="app/module/applicationConfig.js"></script>
+        <script src="app/module/applicationRoutes.js"></script>
+
+        <script src="app/services/localStorageService.js"></script>
+        <script src="app/services/sessionStorageService.js"></script>
+        <script src="app/services/smartMessageBox.js"></script>
+        <script src="app/services/attributeListService.js"></script>
+        <script src="app/services/configService.js"></script>
+        <script src="app/services/manageUsersService.js"></script>
+        <script src="app/services/manageUserUtilityService.js"></script>
+        <script src="app/services/schemaService.js"></script>
+        <script src="app/services/sharedQueryService.js"></script>
+        <script src="app/services/unsubscribeService.js"></script>
+        <script src="app/services/panelStates.js"></script>
+         <script src="app/services/jsLibraryService.js"></script>
+        <script src="app/services/authService.js"></script>
+        <script src="app/services/encryptionService.js"></script>
+        <script src="app/services/xlsxService.js"></script>
+        <script src="app/services/maintenanceService.js"></script>
+
+        <script src="app/directives/smartInclude.js"></script>
+        <script src="app/directives/smartLayout.js"></script>
+        <script src="app/directives/smartMenu.js"></script>
+        <script src="app/directives/smartPageTitle.js"></script>
+        <script src="app/directives/toggleMenu.js"></script>
+        <script src="app/directives/stateBreadcrumbs.js"></script>
+        <script src="app/directives/bigBreadcrumbs.js"></script>
+        <script src="app/directives/clickFeedbackDirective.js"></script>
+        <script src="app/directives/searchBoxDirective.js"></script>
+        <script src="app/directives/advanceSearchEntryDirective.js"></script>
+        <script src="app/directives/verticalScrollPanel.js"></script>
+        <script src="app/directives/smartClick.js"></script>
+        <script src="app/directives/stopParentScrollDirective.js"></script>
+        <script src="app/directives/displayPanelsLayout.js"></script>
+        <script src="app/directives/stickyHeaderResizer.js"></script>
+        <script src="app/directives/ngConfirmClick.js"></script>
+        <script src="app/directives/highlighter.js"></script>
+        <script src="app/directives/reportSearchBoxDirective.js"></script>
+        <script src="app/directives/smartPress.js"></script>
+        <script src="app/directives/appPulse.js"></script>
+        
+
+        <script src="app/views/mainLayout/mainLayoutCtrl.js"></script>
+
+        <script src="app/views/project/testerProjectCtrl.js"></script>
+        <script src="app/views/tester-profile/testerProfileCtrl.js"></script>
+        <script src="app/views/tester-payment/testerPaymentCtrl.js"></script>
+        <script src="app/views/tester-bug/testerBugCtrl.js"></script>
+        <script src="app/views/tester-newoffer/testerNewofferCtrl.js"></script>
+        <script src="app/views/notification/notificationCtrl.js"></script>
+
+        <script src="app/views/pageHeader/pageHeaderCtrl.js"></script>
+        <script src="app/views/pageSubHeader/pageSubHeaderCtrl.js"></script>
+        <script src="app/views/configurationView/configurationViewCtrl.js"></script>
+        <script src="app/views/dashboardView/dashboardViewCtrl.js"></script>
+        <script src="app/views/searchEntry/searchEntryViewCtrl.js"></script>
+        <script src="app/views/accessView/accessDeniedCtrl.js"></script>
+        <script src="app/views/login/loginCtrl.js"></script>
+        <script src="app/views/adminView/adminCtrl.js"></script>
+        <script src="app/views/userView/addUserCtrl.js"></script>
+        <script src="app/views/userView/updateUserCtrl.js"></script>
+        <script src="app/views/maintenanceView/maintenanceViewCtrl.js"></script>
+        <script src="app/views/maintenanceView/outageViewCtrl.js"></script>
+        <script src="app/views/savedSearchView/savedSearchCtrl.js"></script>
+
+
+        <script src="app/services/queries/currentQuery.js"></script>
+
+
+	</body>
+	
+</html>

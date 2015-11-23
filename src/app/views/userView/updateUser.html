@@ -1,0 +1,116 @@
+<div class="row">
+    <div class="data-loading" ng-if="vmUpdateUser.isLoadingData">
+        <i class="fa fa fa-spinner fa-pulse fa-3x"></i>
+        <span> Loading ... </span>
+    </div>
+    <div class="col-md-12 col-sm-12 col-lg-12 margin-bottom-10">
+        <div class="pull-left" ng-if="vmUpdateUser.existingUsers.length > 0">
+            <button class="btn btn-link" ng-click="vmUpdateUser.exportExcel()">
+                <i class="fa fa-file-excel-o"></i> Export Excel
+            </button>
+        </div> 
+        <div class="alert alert-success pull-left col-sm-8 col-md-8 col-lg-7 margin-bottom-10 save-msg" ng-show="vmUpdateUser.showMessage">
+           {{vmUpdateUser.message}}
+        </div>         
+        <div class="pull-right" ng-if="vmUpdateUser.existingUsers.length > 0">
+            Existing Users: <span ng-bind="vmUpdateUser.existingUsers.length"></span>            
+        </div>
+
+        <div class="clearfix"></div>
+    </div>
+</div>
+<div class="row" ng-if="vmUpdateUser.existingUsers.length > 0">
+    <div class="col-md-12 col-sm-12 col-lg-12 filter-search">
+        <input id="searchsavedUserTxt" type="text" ng-model="vmUpdateUser.searchString" placeholder="Search Users" class="form-control"/>
+    </div>
+</div>
+<div class="row" ng-if="vmUpdateUser.existingUsers.length > 0">
+    <div class="col-md-12 col-sm-12 col-lg-12  margin-bottom-10 user-search-outer-div">
+        <table class="table table-bordered table-hover" ng-init="sortSelected='';sortType=''">
+            <thead>
+                <th>#</th>
+                <th ng-init="sortReverse=true" ng-click="sortSelected='userName';sortReverse=!sortReverse">User Name
+                   <span>
+                        <i class="fa fa-sort-asc sort-asec-desc" ng-class="{'fa-md angle-up-arrow':(sortSelected !== 'userName'),'fa-lg':(sortSelected === 'userName'),'sort-disable': (sortSelected === 'userName' && sortReverse)}"> </i>
+                        <i class="fa fa-sort-desc sort-asec-desc" ng-class="{'fa-md angle-down-arrow':(sortSelected !== 'userName'),'fa-lg':(sortSelected === 'userName'),'sort-disable': (sortSelected === 'userName' && !sortReverse)}"> </i> 
+                    </span>
+                </th>
+                <th ng-init="sortReverse=true" ng-click="sortSelected='userId';sortReverse=!sortReverse">User Id
+                   <span>
+                        <i class="fa fa-sort-asc sort-asec-desc" ng-class="{'fa-md angle-up-arrow':(sortSelected !== 'userId'),'fa-lg':(sortSelected === 'userId'),'sort-disable': (sortSelected === 'userId' && sortReverse)}"> </i>
+                        <i class="fa fa-sort-desc sort-asec-desc" ng-class="{'fa-md angle-down-arrow':(sortSelected !== 'userId'),'fa-lg':(sortSelected === 'userId'),'sort-disable': (sortSelected === 'userId' && !sortReverse)}"> </i> 
+                    </span>
+                </th>
+                <th ng-init="sortReverse=true" ng-click="sortSelected='selectedRoles.isBasic';sortReverse=!sortReverse">Basic
+                   <span>
+                        <i class="fa fa-sort-asc sort-asec-desc" ng-class="{'fa-md angle-up-arrow':(sortSelected !== 'selectedRoles.isBasic'),'fa-lg':(sortSelected === 'selectedRoles.isBasic'),'sort-disable': (sortSelected === 'selectedRoles.isBasic' && sortReverse)}"> </i>
+                        <i class="fa fa-sort-desc sort-asec-desc" ng-class="{'fa-md angle-down-arrow':(sortSelected !== 'selectedRoles.isBasic'),'fa-lg':(sortSelected === 'selectedRoles.isBasic'),'sort-disable': (sortSelected === 'selectedRoles.isBasic' && !sortReverse)}"> </i> 
+                    </span>
+                </th>
+                <th ng-init="sortReverse=true" ng-click="sortSelected='selectedRoles.isAdvanced';sortReverse=!sortReverse">Save Search
+                    <span>
+                        <i class="fa fa-sort-asc sort-asec-desc" ng-class="{'fa-md angle-up-arrow':(sortSelected !== 'selectedRoles.isAdvanced'),'fa-lg':(sortSelected === 'selectedRoles.isAdvanced'),'sort-disable': (sortSelected === 'selectedRoles.isAdvanced' && sortReverse)}"> </i>
+                        <i class="fa fa-sort-desc sort-asec-desc" ng-class="{'fa-md angle-down-arrow':(sortSelected !== 'selectedRoles.isAdvanced'),'fa-lg':(sortSelected === 'selectedRoles.isAdvanced'),'sort-disable': (sortSelected === 'selectedRoles.isAdvanced' && !sortReverse)}"> </i> 
+                    </span>
+                </th>
+                <th ng-init="sortReverse=true" ng-click="sortSelected='selectedRoles.isSchedule';sortReverse=!sortReverse">Schedule
+                    <span>
+                        <i class="fa fa-sort-asc sort-asec-desc" ng-class="{'fa-md angle-up-arrow':(sortSelected !== 'selectedRoles.isSchedule'),'fa-lg':(sortSelected === 'selectedRoles.isSchedule'),'sort-disable': (sortSelected === 'selectedRoles.isSchedule' && sortReverse)}"> </i>
+                        <i class="fa fa-sort-desc sort-asec-desc" ng-class="{'fa-md angle-down-arrow':(sortSelected !== 'selectedRoles.isSchedule'),'fa-lg':(sortSelected === 'selectedRoles.isSchedule'),'sort-disable': (sortSelected === 'selectedRoles.isSchedule' && !sortReverse)}"> </i> 
+                    </span>
+                </th>
+                <th ng-init="sortReverse=true" ng-click="sortSelected='selectedRoles.isAdmin';sortReverse=!sortReverse">Admin
+                   <span>
+                        <i class="fa fa-sort-asc sort-asec-desc" ng-class="{'fa-md angle-up-arrow':(sortSelected !== 'selectedRoles.isAdmin'),'fa-lg':(sortSelected === 'selectedRoles.isAdmin'),'sort-disable': (sortSelected === 'selectedRoles.isAdmin' && sortReverse)}"> </i>
+                        <i class="fa fa-sort-desc sort-asec-desc" ng-class="{'fa-md angle-down-arrow':(sortSelected !== 'selectedRoles.isAdmin'),'fa-lg':(sortSelected === 'selectedRoles.isAdmin'),'sort-disable': (sortSelected === 'selectedRoles.isAdmin' && !sortReverse)}"> </i> 
+                    </span>
+                </th>
+                <th>
+                    Remove
+                </th>
+            </thead>
+            <tbody>
+                <tr ng-repeat="user in vmUpdateUser.existingUsers | filter:vmUpdateUser.searchString | orderBy:sortSelected:sortReverse">
+                    <td>
+                        <span ng-bind="$index + 1"></span>
+                    </td>                            
+                    <td>
+                        <span ng-bind="user.userName"></span>
+                    </td>
+                    <td>
+                        <span ng-bind="user.userId"></span>
+                    </td>
+                    <td>
+                        <input type="checkbox" ng-model="user.selectedRoles.isBasic" ng-disabled="" ng-click="user.selectedRoles.isAdvanced = false; user.selectedRoles.isSchedule = false; user.selectedRoles.isAdmin = false; vmUpdateUser.updateUser(user);"/>
+                    </td>
+                    <td>
+                        <input type="checkbox" ng-model="user.selectedRoles.isAdvanced" ng-disabled="" ng-click="user.selectedRoles.isAdmin = false;vmUpdateUser.updateUser(user);"/>
+                    </td>
+                     <td>
+                        <input type="checkbox" ng-model="user.selectedRoles.isSchedule" ng-disabled="" ng-click="user.selectedRoles.isAdmin = false; vmUpdateUser.updateUser(user);"/>
+                    </td>
+                    <td>
+                        <input type="checkbox" ng-model="user.selectedRoles.isAdmin" ng-disabled="" ng-click="vmUpdateUser.updateUser(user);"/>
+                    </td>
+                   
+                    <td>
+                        <i class="fa fa-lg fa-trash-o mouse-pointer"  ng-click="vmUpdateUser.removeUser = user" data-toggle="modal" data-target="#delete-user-popup"></i>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+<div id="delete-user-popup" class="modal fade"  role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-sm">
+        <div class="modal-content filter-content-style">      
+            <div class="modal-body">
+                <span> Do you want to remove  <br><bold>{{vmUpdateUser.removeUser.userName}}</bold></span>
+            </div>
+            <div class="filter-style">
+                <button type="button" class="btn btn-default btn-danger" ng-click="vmUpdateUser.deleteUser(vmUpdateUser.removeUser.userId);" data-dismiss="modal">Yes</button>
+                <button type="button" class="btn btn-default" data-dismiss="modal">No</button>
+            </div>
+        </div>
+    </div>
+</div>

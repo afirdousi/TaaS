@@ -1,0 +1,131 @@
+{
+  "UseInteractionsAttributeName": "InteractionDetail12Month",
+  "Views": [
+    {
+      "Group": "SYW Interactions Type",
+      "Name": "12 Months",
+      "AttrValue": "InteractionDetail12Month",
+      "TypeAttrValue": "InteractionType12Month"
+    },
+    {
+      "Group": "SYW Interactions Type",
+      "Name": "7 Days",
+      "AttrValue": "InteractionDetail7Day",
+      "TypeAttrValue": "InteractionType7Day"
+    }
+  ],
+  "Breakdowns": [
+    {
+      "Name": "Other Interaction Types",
+      "Hide": true
+    },
+    {
+      "Name": "Follow",
+      "Prefix": "Follow ||"
+    },
+    {
+      "Name": "Like",
+      "Prefix": "Like ||"
+    },
+    {
+      "Name": "Rate",
+      "Prefix": "Rate ||"
+    },
+    {
+      "Name": "Want",
+      "Prefix": "Want ||"
+    },
+    {
+      "Name": "Own",
+      "Prefix": "Own ||"
+    },
+    {
+      "Name": "Post",
+      "Prefix": "Post ||"
+    },
+    {
+      "Name": "Tag Item",
+      "Prefix": "TagItem ||"
+    },
+    {
+      "Name": "Review",
+      "Prefix": "Review ||"
+    },
+    {
+      "Name": "Share",
+      "Prefix": "Share ||"
+    },
+    {
+      "Name": "Recommend",
+      "Prefix": "Recommend ||"
+    },
+    {
+      "Name": "Invite Friends",
+      "Prefix": "InviteFriends ||"
+    },
+    {
+      "Name": "Catalog Created",
+      "Prefix": "CatalogCreated ||"
+    },
+    {
+      "Name": "Add To Catalog",
+      "Prefix": "AddToCatalog ||"
+    },
+    {
+      "Name": "Shared Product",
+      "Prefix": "SharedProduct ||"
+    },
+    {
+      "Name": "Comment On Story",
+      "Prefix": "CommentOnStory ||"
+    },
+    {
+      "Name": "Vote On Poll",
+      "Prefix": "VoteOnPoll ||"
+    },
+    {
+      "Name": "Voted On Topical Poll",
+      "Prefix": "VotedOnTopicalPoll ||"
+    },
+    {
+      "Name": "Create Poll",
+      "Prefix": "CreatePoll ||"
+    },
+    {
+      "Name": "User Joined",
+      "Prefix": "UserJoined ||"
+    },
+    {
+      "Name": "Profile Updated",
+      "Prefix": "ProfileUpdated ||"
+    },
+    {
+      "Name": "Mobile First Use",
+      "Prefix": "MobileFirstUse ||"
+    },
+    {
+      "Name": "Shopping",
+      "Prefix": "Shopping ||"
+    },
+    {
+      "Name": "Post Shopping",
+      "Prefix": "PostShopping ||"
+    },
+    {
+      "Name": "Question Asked",
+      "Prefix": "QuestionAsked ||"
+    },
+    {
+      "Name": "Earn Badge",
+      "Prefix": "EarnBadge ||"
+    },
+    {
+      "Name": "Imported External Product",
+      "Prefix": "ImportedExternalProduct ||"
+    },
+    {
+      "Name": "Add Product Media",
+      "Prefix": "AddProductMedia ||"
+    }
+  ]
+}

@@ -1,0 +1,94 @@
+[
+    {
+        "Group": "Store Location",
+        "Attribute": "DMA",
+        "AttributeCollectionMapping": "ShoppedStore12Month",
+        "ReportDisplayName": "DMA",
+        "Prefix":"06 || dma:",
+        "ReportOrder" : "A"
+    },{
+        "Group": "Store Location",
+        "Attribute": "District",
+        "AttributeCollectionMapping": "ShoppedStore12Month",
+        "ReportDisplayName": "District",
+        "Prefix":"04 || district:",
+        "ReportOrder": "B"
+    },{
+        "Group": "Store Location",
+        "Attribute": "Store",
+        "AttributeCollectionMapping": "ShoppedStore12Month",
+        "ReportDisplayName": "Store",
+        "Prefix":"01 || store:",
+        "ReportOrder" : "C"
+    },{
+        "Group": "Store Location",
+        "Attribute": "Store State",
+        "AttributeCollectionMapping": "ShoppedStore12Month",
+        "ReportDisplayName": "Store State",
+        "Prefix":"03 || state:",
+        "ReportOrder" : "D"
+    },{
+        "Group": "Store Location",
+        "Attribute": "Store Zipcode",
+        "AttributeCollectionMapping": "ShoppedStore12Month",
+        "ReportDisplayName": "Store Zipcode",
+        "Prefix":"05 || zipcode:",
+        "ReportOrder" :"E"
+    },{
+        "Group": "Sales & Trips",
+        "Attribute": "Sears Business Unit 12 months",
+        "AttributeCollectionMapping": "ShoppedSearsBU12Month",
+        "ReportDisplayName": "Sears Business Unit",
+        "ReportOrder" : "F"
+    },{
+        "Group": "Sales & Trips",
+        "Attribute": "Kmart Business Unit 12 months",
+        "AttributeCollectionMapping": "ShoppedKmartBU12Month",
+        "ReportDisplayName": "Kmart Business Unit",
+        "ReportOrder" : "G"
+    },{
+        "Group": "Sears Member Relationship Category",
+        "Attribute": "",
+        "AttributeCollectionMapping": "ShoppedSearsKV12Month",
+        "ReportDisplayName": "Sears MRC",
+        "ReportOrder" : "H"
+    },{
+        "Group": "Sales & Trips",
+        "Attribute": "Kmart MRC 12 months",
+        "AttributeCollectionMapping": "ShoppedKmartKV12Month",
+        "ReportDisplayName": "Kmart MRC",
+        "ReportOrder": "I"
+    },{
+        "Group": "Report",
+        "Attribute": "Store & Sears Business Unit",
+        "ReportDisplayName": "Store & Sears Business Unit",
+        "AttributeCollectionMapping": "ShoppedStore12Month,ShoppedSearsBU12Month",    
+        "Iscombo" : true,
+        "Prefix":"01 || store:",
+        "ReportOrder" : "J"
+    },{
+        "Group": "Report",
+        "Attribute": "Store & Kmart Business Unit",
+        "ReportDisplayName": "Store & Kmart Business Unit",
+        "AttributeCollectionMapping": "ShoppedStore12Month,ShoppedKmartBU12Month",
+        "Iscombo" : true,
+        "Prefix":"01 || store:",
+        "ReportOrder" : "K"
+    },{
+        "Group": "Report",
+        "Attribute": "Store & Sears MRC",
+        "ReportDisplayName": "Store & Sears MRC",
+        "AttributeCollectionMapping": "ShoppedStore12Month,ShoppedSearsKV12Month",
+        "Iscombo" : true,
+        "Prefix":"01 || store:",
+        "ReportOrder" : "L"
+    },{
+        "Group": "Report",
+        "Attribute": "Store & Kmart MRC",
+        "ReportDisplayName": "Store & Kmart MRC",
+        "AttributeCollectionMapping": "ShoppedStore12Month,ShoppedKmartKV12Month",
+        "Iscombo" : true,
+        "Prefix":"01 || store:",
+        "ReportOrder" : "M"
+    }
+]

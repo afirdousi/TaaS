@@ -1,0 +1,75 @@
+<div id="content" class="configuration-content content-padding-10">
+
+    <div class="row">
+        <div class="col-sm-12 col-md-6 col-lg-6">
+            <h2>
+                <i class="fa fa-cog"></i>
+                My Configuration
+            </h2>
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-6">
+            <div class="pull-right">
+                <button type="button" class="btn btn-default btn-sm" ng-click="vmConfig.restoreDefault()">
+                    Restore Default Settings
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div class="tab-content padding-10">
+        <div class="tab-pan fade in active">
+            <div shc-display-panels-layout>
+
+                <div shc-display-panel>
+                    <div>
+                        <header>
+                            <h2>Groups</h2>
+                        </header>
+                        <div>
+                            <h4>Display These Groups</h4>
+                            <form>
+                                <div class="checkbox" ng-if="!group.removeWidget || group.removeWidget === undefined" ng-repeat="group in vmConfig.groupsList">
+                                    <label>
+                                        <input type="checkbox" ng-model="group.displayGroup"
+                                               ng-change="vmConfig.onConfigUpdated()">
+                                        <i class="fa" ng-class="group.iconClass"></i>
+                                        {{group.groupName}}
+                                    </label>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+                <div shc-display-panel>
+                    <div>
+                        <header>
+                            <h2>Interactions</h2>
+                        </header>
+                        <div>
+                            <h4>Display These Interactions</h4>
+                            <form>
+<!--
+                                <div class="checkbox">
+                                    <label>
+                                        <input type="checkbox" ng-model="vmConfig.hideInteractionsWithNoResults"
+                                               ng-change="vmConfig.onConfigUpdated()">
+                                        <em>Hide interaction types with no result data.</em>
+                                    </label>
+                                </div>
+-->
+                                <div class="checkbox" ng-repeat="inter in vmConfig.interactionsList">
+                                    <label>
+                                        <input type="checkbox" ng-model="inter.displayInteraction"
+                                               ng-change="vmConfig.onConfigUpdated()">
+                                        {{inter.name}}
+                                    </label>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>    
+</div>

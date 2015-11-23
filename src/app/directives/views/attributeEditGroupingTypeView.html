@@ -1,0 +1,112 @@
+<div class="attribute-values-picker">
+
+    <div class="input-group search-bar">
+        <span class="input-group-addon" ng-class="{'search-disable':(vm.attributeValues.length <= 10 && vm.searchText === '') || vm.attributeDetails.IsRange}"><i class="fa fa-search fa-search-col"></i></span>
+        <input type="text" class="form-control form-text search-panel-input" aria-label="Search Attribute Values"
+               placeholder="Search All Available Values..."
+               ng-model="vm.searchText"
+               ng-change="vm.getAttributeValues()"
+               ng-model-options="{debounce: 500}" ng-disabled="(vm.attributeValues.length <= 10 && vm.searchText === '') || vm.attributeDetails.IsRange"
+               ng-class="{'search-disable':(vm.attributeValues.length <= 10 && vm.searchText === '') || vm.attributeDetails.IsRange}"/>
+        <span class="input-group-btn">
+            <span class="input-group-addon btn-no-border" ng-class="{'search-disable':(vm.attributeValues.length <= 10 && vm.searchText === '')|| vm.attributeDetails.IsRange}" type="button" ng-click="vm.clearSearchText()">
+                <i class="fa fa-times-circle fa-close" ng-class="{'search-disable':(vm.attributeValues.length <= 10 && vm.searchText === '') || vm.attributeDetails.IsRange}"></i>
+            </span>
+        </span>
+    </div>
+    <div class="breadcrumbs-bar">
+        <span>
+            <span ng-if="vm.isLevelOne" class="list-end">{{vm.levelDetails[0]}}</span>
+            <button class="btn btn-link" ng-if="vm.isLevelTwo" ng-click="vm.isLevelTwo = false; vm.isLevelOne = true;">{{vm.levelDetails[0]}}{{vm.selectedValue}}</button>
+            <span ng-if="vm.isLevelTwo" class="list-end">{{vm.levelDetails[1]}}</span>
+        </span>
+    </div>
+
+    <div class="titles-bar">
+        <div>
+            <button type="button" class="btn btn-link" ng-click="vm.toggleNameSortMode()">
+                <span>Values</span>
+                <!--<span ng-show="!(vm.sortNameAsc || vm.sortNameDesc)" class="sort-arrow-span-disabled">-->
+                    <!--<i class="fa fa-md fa-sort-asc angle-up-arrow"> </i>-->
+                    <!--<i class="fa fa-md fa-sort-desc angle-down-arrow"> </i>-->
+                <!--</span>-->
+                <!--<span ng-show="vm.sortNameAsc || vm.sortNameDesc" class="sort-arrow-span-disabled">-->
+                <!--<i class="fa fa-md fa-sort-asc" ng-class="{'sort-disable': vm.sortNameDesc}"> </i>-->
+                <!--<i class="fa fa-md fa-sort-desc sort-desc" ng-class="{ 'sort-disable': vm.sortNameAsc}"> </i>-->
+                <!--</span>-->
+            </button>
+        </div>
+        <div ng-class="{'fa-syw-allsource':vm.sywFlagValue}">
+            <!--<button type="button" class="btn btn-link pull-left" ng-click="vm.toggleCountSortMode()">-->
+            <button type="button" class="btn btn-link pull-left">
+                <!-- <span ng-show="!vm.sywFlagValue">count</span>-->
+                <span>Members</span>
+                <!--<span ng-show="!(vm.sortCountAsc || vm.sortCountDesc)" class="sort-arrow-span-disabled">-->
+                    <!--<i class="fa fa-md fa-sort-asc angle-up-arrow"> </i>-->
+                    <!--<i class="fa fa-md fa-sort-desc angle-down-arrow"> </i>-->
+                <!--</span>-->
+                <!--<span ng-show="vm.sortCountAsc || vm.sortCountDesc" class="sort-arrow-span-disabled">-->
+                <!--<i class="fa fa-md fa-sort-asc" ng-class="{'sort-disable': vm.sortCountDesc}"> </i>-->
+                <!--<i class="fa fa-md fa-sort-desc sort-desc" ng-class="{ 'sort-disable': vm.sortCountAsc}"> </i>-->
+                <!--</span>-->
+            </button>
+            <!--<button  ng-show="vm.sywFlagValue" type="button" class="btn btn-link pull-left" ng-click="vm.toggleCountSYWSortMode()">-->
+            <button  ng-show="vm.sywFlagValue" type="button" class="btn btn-link pull-left">
+                <span>SYW.com</span>
+                <!--<span ng-show="!(vm.sortSYWCountAsc || vm.sortSYWCountDesc)" class="sort-arrow-span-disabled">-->
+                    <!--<i class="fa fa-md fa-sort-asc angle-up-arrow"> </i>-->
+                    <!--<i class="fa fa-md fa-sort-desc angle-down-arrow"> </i>-->
+                <!--</span>-->
+                <!--<span ng-show="vm.sortSYWCountAsc || vm.sortSYWCountDesc" class="sort-arrow-span-disabled">-->
+                <!--<i class="fa fa-md fa-sort-asc" ng-class="{'sort-disable': vm.sortSYWCountDesc}"> </i>-->
+                <!--<i class="fa fa-md fa-sort-desc sort-desc" ng-class="{ 'sort-disable': vm.sortSYWCountAsc}"> </i>-->
+                <!--</span>-->
+            </button>
+        </div>
+
+    </div>
+
+
+    <div class="list-section">
+        <div class="load-spinner" ng-if="vm.spinner">
+            <i class="fa fa-spinner fa-pulse fa-lg"></i>
+            <span> Loading ... </span>
+        </div>
+        <ul>
+
+            <li  ng-if="vm.isLevelOne" class="row-cursor" ng-repeat="v in vm.attributeValues" ng-class="v.isSelectedAsFilter? 'active':''">
+                <div class="pull-left attribute-value-text" style="width: 68%">
+                    {{v.value}}
+                </div>
+                <div class="pull-left" ng-click="vm.addHierarchyAttributeFilter(v, false);">
+                    ({{v.count | number:0}})
+                </div>
+                <span ng-click="vm.isLevelOne = false; vm.isLevelTwo = true; vm.setAttribute(v.value);" class=" row-cursor pull-right drilldown-count-width"><i class="fa fa-lg fa-chevron-circle-right"></i></span>
+                <div class="clearfix"></div>
+            </li>
+            <li  ng-if="vm.isLevelTwo" ng-repeat="v in vm.attrValuesAndCount">
+                <div class="row-cursor" ng-click="vm.addAttributeFilter(v, false);">
+                    <div class="pull-left attribute-value-text value-syw-width">
+                        {{v.Title}}
+                    </div>
+                    <div class="pull-right count-width">
+                        <span>({{v.count | number:0}})</span>
+                    </div>
+                </div>
+                <div class="clearfix"></div>
+            </li>
+
+        </ul>
+    </div>
+
+    <div ng-if="vm.isLevelOne" class="loadMoreDiv bottom23">
+        <span style="color:#478eab; font-size:12px;">Showing top <span ng-if="vm.isSpinner"><i class="fa fa-spinner fa-pulse"></i></span><span ng-if="!vm.isSpinner">{{vm.attrValuesCount}} </span>values. </span>
+        <button class="pull-right loadMoreButton" ng-click="vm.loadMoreAttributes();" ng-disabled="vm.disableLoadMore" ng-class="{'disableLoadMore': vm.disableLoadMore}" disabled="disabled">Load More...</button>
+    </div>
+    <div ng-if="vm.isLevelTwo" class="loadMoreDiv bottom23">
+        <span style="color:#478eab; font-size:12px;">Showing top <span ng-if="vm.isSpinner"><i class="fa fa-spinner fa-pulse"></i></span><span ng-if="!vm.isSpinner">{{vm.attrValuesLevelTwoCount}} </span>values. </span>
+        <button class="pull-right loadMoreButton" ng-click="vm.loadMoreAttributes();" ng-disabled="vm.disableLoadMore" ng-class="{'disableLoadMore': vm.disableLoadMore}" disabled="disabled">Load More...</button>
+    </div>
+
+
+</div>

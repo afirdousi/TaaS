@@ -1,0 +1,17 @@
+<div smart-click>
+    <div smart-include="app/views/pageHeader/pageHeader.html" class="header"></div>
+    <div smart-include="app/views/pageSubHeader/pageSubHeader.html"></div>
+    <div smart-include="app/views/modalDialog/portrate-modal-dialog.html"></div>
+</div>
+
+<style type="text/css">
+    .maintenanceDown{
+        margin-top: 55px;
+    }
+</style>
+<div smart-click id="scrollable-content" ng-class="{'maintenanceDown':vmMain.isAppDown===true}">
+    <div ui-view="content" class="main-view"></div>
+</div>
+
+<!-- Modal -->
+<div smart-include="app/views/modalDialog/modal-dialog.html"></div>

@@ -1,0 +1,58 @@
+[
+  {
+    "id": "55abcdef0123456789000001",
+    "name": "Daily",
+    "createdOn": "2015-08-01T08:00:00Z",
+    "startDate": "2015-08-01T08:00:00Z",
+    "startTime": "00:00",
+    "frequency": {
+      "daily": {
+      },
+      "code": "D"
+    }
+  },
+  {
+    "id": "55abcdef0123456789000002",
+    "name": "Weekly",
+    "createdOn": "2015-08-01T08:00:00Z",
+    "startDate": "2015-08-01T08:00:00Z",
+    "startTime": "00:00",
+    "frequency": {
+      "weekly": {
+        "sunday": false,
+        "monday": true,
+        "tuesday": false,
+        "wednesday": false,
+        "thursday": false,
+        "friday": false,
+        "saturday": false
+      },
+      "code": "W"
+    }
+  },
+  {
+    "id": "55abcdef0123456789000003",
+    "name": "Monthly",
+    "createdOn": "2015-08-01T08:00:00Z",
+    "startDate": "2015-08-01T08:00:00Z",
+    "startTime": "00:00",
+    "frequency": {
+      "monthly": {
+        "day": 1
+      },
+      "code": "M"
+    }
+  },
+  {
+    "id": "55abcdef0123456789000007",
+    "name": "On Demand",
+    "createdOn": "2015-08-01T08:00:00Z",
+    "startDate": "2015-08-01T08:00:00Z",
+    "startTime": "00:00",
+    "frequency": {
+      "once": {
+      },
+      "code": "O"
+    }
+  }
+]

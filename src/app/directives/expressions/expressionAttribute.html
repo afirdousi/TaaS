@@ -1,0 +1,14 @@
+<div>
+    <span ng-click="handler.negateItem()">NOT</span>
+</div>
+<div class="query-tokens">
+    <span class="icons">
+        <i class="fa" ng-class="handler.node.iconClass"></i>
+    </span>
+    <span class="content">
+        {{handler.node.displayText}}
+    </span>
+    <span class="icons" ng-click="handler.removeItem()">
+        <i class="fa fa-times-circle"></i>
+    </span>
+</div>

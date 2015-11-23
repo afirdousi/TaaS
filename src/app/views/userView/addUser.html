@@ -1,0 +1,103 @@
+<div class="row">
+    <div class="col-md-12 col-sm-12 col-lg-12 margin-bottom-10">
+        <div class="pull-left search-txtbox">
+            <input id="searchUserTxt" type="text" ng-model="vmAddUser.searchedLDAPUser.LDAPName" placeholder="Search by First Name/Last Name/Enterprise ID" class="form-control search-user-txt" />
+        </div>
+        <div class="pull-left">
+            <button class="btn btn-primary" ng-click="vmAddUser.searchLDAPUsers()"  ng-disabled="vmAddUser.isSearchTextEmpty"><i class="fa fa-search"></i> Search</button>
+        </div>
+        <div class="pull-right" ng-if="vmAddUser.matchedLDAPUsers.length > 0">
+            Matching Results: <span ng-bind="vmAddUser.matchedLDAPUsers.length"></span>
+        </div>
+        <div class="clearfix"></div>
+    </div>
+
+    <div class="data-loading" ng-if="vmAddUser.isLoadingData && vmAddUser.matchedLDAPUsers.length < 1">
+        <i class="fa fa fa-spinner fa-pulse fa-3x"></i>
+        <span> Loading ... </span>
+    </div>
+</div>
+<div class="row" ng-if="vmAddUser.matchedLDAPUsers.length > 0">
+    <div class="col-md-12 col-sm-12 col-lg-12 filter-search">
+        <input id="searchsavedUserTxt" type="text" ng-model="vmAddUser.searchString" placeholder="Filter Users" class="form-control"/>
+    </div>
+</div>
+<div class="row" ng-if="vmAddUser.matchedLDAPUsers.length > 0">
+    <div class="col-md-12 col-sm-12 col-lg-12  margin-bottom-10 user-search-outer-div">
+        <table class="table table-bordered table-hover" ng-init="sortSelected='';sortType=''">
+            <thead>
+                <th>#</th>
+                <th ng-init="sortReverse=true" ng-click="sortSelected='Name';sortReverse=!sortReverse">User Name
+                   <span>
+                        <i class="fa fa-sort-asc sort-asec-desc" ng-class="{'fa-md angle-up-arrow':(sortSelected !== 'Name'),'fa-lg':(sortSelected === 'Name'),'sort-disable': (sortSelected === 'Name' && sortReverse)}"> </i>
+                        <i class="fa fa-sort-desc sort-asec-desc" ng-class="{'fa-md angle-down-arrow':(sortSelected !== 'Name'),'fa-lg':(sortSelected === 'Name'),'sort-disable': (sortSelected === 'Name' && !sortReverse)}"> </i> 
+                    </span>
+                </th>
+                <th ng-init="sortReverse=true" ng-click="sortSelected='Id';sortReverse=!sortReverse">User Id
+                   <span>
+                        <i class="fa fa-sort-asc sort-asec-desc" ng-class="{'fa-md angle-up-arrow':(sortSelected !== 'Id'),'fa-lg':(sortSelected === 'Id'),'sort-disable': (sortSelected === 'Id' && sortReverse)}"> </i>
+                        <i class="fa fa-sort-desc sort-asec-desc" ng-class="{'fa-md angle-down-arrow':(sortSelected !== 'Id'),'fa-lg':(sortSelected === 'Id'),'sort-disable': (sortSelected === 'Id' && !sortReverse)}"> </i> 
+                    </span>
+                </th>
+                <th ng-init="sortReverse=true" ng-click="sortSelected='selectedRoles.isBasic';sortReverse=!sortReverse">Basic
+                   <span>
+                        <i class="fa fa-sort-asc sort-asec-desc" ng-class="{'fa-md angle-up-arrow':(sortSelected !== 'selectedRoles.isBasic'),'fa-lg':(sortSelected === 'selectedRoles.isBasic'),'sort-disable': (sortSelected === 'selectedRoles.isBasic' && sortReverse)}"> </i>
+                        <i class="fa fa-sort-desc sort-asec-desc" ng-class="{'fa-md angle-down-arrow':(sortSelected !== 'selectedRoles.isBasic'),'fa-lg':(sortSelected === 'selectedRoles.isBasic'),'sort-disable': (sortSelected === 'selectedRoles.isBasic' && !sortReverse)}"> </i> 
+                    </span>
+                </th>
+                <th ng-init="sortReverse=true" ng-click="sortSelected='selectedRoles.isAdvanced';sortReverse=!sortReverse">Save Search
+                    <span>
+                        <i class="fa fa-sort-asc sort-asec-desc" ng-class="{'fa-md angle-up-arrow':(sortSelected !== 'selectedRoles.isAdvanced'),'fa-lg':(sortSelected === 'selectedRoles.isAdvanced'),'sort-disable': (sortSelected === 'selectedRoles.isAdvanced' && sortReverse)}"> </i>
+                        <i class="fa fa-sort-desc sort-asec-desc" ng-class="{'fa-md angle-down-arrow':(sortSelected !== 'selectedRoles.isAdvanced'),'fa-lg':(sortSelected === 'selectedRoles.isAdvanced'),'sort-disable': (sortSelected === 'selectedRoles.isAdvanced' && !sortReverse)}"> </i> 
+                    </span>
+                </th>
+                <th ng-init="sortReverse=true" ng-click="sortSelected='selectedRoles.isSchedule';sortReverse=!sortReverse">Schedule
+                    <span>
+                        <i class="fa fa-sort-asc sort-asec-desc" ng-class="{'fa-md angle-up-arrow':(sortSelected !== 'selectedRoles.isSchedule'),'fa-lg':(sortSelected === 'selectedRoles.isSchedule'),'sort-disable': (sortSelected === 'selectedRoles.isSchedule' && sortReverse)}"> </i>
+                        <i class="fa fa-sort-desc sort-asec-desc" ng-class="{'fa-md angle-down-arrow':(sortSelected !== 'selectedRoles.isSchedule'),'fa-lg':(sortSelected === 'selectedRoles.isSchedule'),'sort-disable': (sortSelected === 'selectedRoles.isSchedule' && !sortReverse)}"> </i> 
+                    </span>
+                </th>
+                <th ng-init="sortReverse=true" ng-click="sortSelected='selectedRoles.isAdmin';sortReverse=!sortReverse">Admin
+                   <span>
+                        <i class="fa fa-sort-asc sort-asec-desc" ng-class="{'fa-md angle-up-arrow':(sortSelected !== 'selectedRoles.isAdmin'),'fa-lg':(sortSelected === 'selectedRoles.isAdmin'),'sort-disable': (sortSelected === 'selectedRoles.isAdmin' && sortReverse)}"> </i>
+                        <i class="fa fa-sort-desc sort-asec-desc" ng-class="{'fa-md angle-down-arrow':(sortSelected !== 'selectedRoles.isAdmin'),'fa-lg':(sortSelected === 'selectedRoles.isAdmin'),'sort-disable': (sortSelected === 'selectedRoles.isAdmin' && !sortReverse)}"> </i> 
+                    </span>
+                </th>
+            </thead>
+            <tbody>
+                <tr ng-repeat="user in vmAddUser.matchedLDAPUsers | filter: vmAddUser.searchString | orderBy:sortSelected:sortReverse" ng-class="{'userExistRow':user.userExist}">
+                    <td>
+                        <span ng-bind="$index + 1"></span>
+                    </td>                            
+                    <td>
+                        <span ng-bind="user.Name"></span>
+                    </td>
+                    <td>
+                        <span ng-bind="user.Id"></span>
+                    </td>                                     
+                    <td>
+                        <input type="checkbox" ng-model="user.selectedRoles.isBasic" ng-disabled="user.userExist" ng-click="user.selectedRoles.isAdvanced = false; user.selectedRoles.isSchedule = false; user.selectedRoles.isAdmin = false; vmAddUser.updateRole(user);"/>
+                    </td>
+                    <td>
+                        <input type="checkbox" ng-model="user.selectedRoles.isAdvanced" ng-disabled="user.userExist" ng-click="user.selectedRoles.isAdmin = false; vmAddUser.updateRole(user);"/>
+                    </td>
+                    <td>
+                        <input type="checkbox" ng-model="user.selectedRoles.isSchedule" ng-disabled="user.userExist" ng-click="user.selectedRoles.isAdmin = false; vmAddUser.updateRole(user);"/>
+                    </td>
+                    <td>
+                        <input type="checkbox" ng-model="user.selectedRoles.isAdmin" ng-disabled="user.userExist" ng-click="vmAddUser.updateRole(user);"/>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+<div class="row" ng-if="vmAddUser.matchedLDAPUsers.length > 0">
+    <div class="pull-right col-sm-8 col-sm-offset-4 col-md-8 col-md-offset-4 col-lg-7 col-lg-offset-5 margin-bottom-10">
+        <button class="btn btn-primary" ng-click="vmAddUser.saveSelectedUsers();" 
+        ng-disabled="!vmAddUser.isSaveAccess"><i class="fa fa-floppy-o"></i> Save Selected Users</button>
+    </div>
+    <div class="alert alert-success pull-right col-sm-8 col-md-8 col-lg-7 margin-bottom-10 save-msg" ng-show="vmAddUser.showMessage">
+       {{vmAddUser.message}}
+    </div>
+</div>

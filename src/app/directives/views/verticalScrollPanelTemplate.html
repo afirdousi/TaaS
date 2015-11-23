@@ -1,0 +1,27 @@
+<div class="vertical-scroll-panel">
+
+    <div class="vertical-scroll-content">
+        <div ng-transclude shc-stop-parent-scroll ng-style="contentPanelStyle">
+        </div>
+    </div>
+   
+    <div id="attrPickerPanelToggle"
+         smart-click
+         class="minify-button attribute-picker-panel-only"
+         ng-click="onToggleButtonClicked()">
+        <i class="fa" ng-class="{'fa-arrow-circle-left': isPanelOpen, 'fa-arrow-circle-right': !isPanelOpen}"></i>
+    </div>
+
+    <button class="minify-button filter-panel-only"
+            ng-class="{'minify-button-right': isPanelDisabled}"
+            ng-disabled="isPanelDisabled"
+            ng-click="onToggleButtonClicked()">
+        <i class="fa" ng-class="{'fa-arrow-circle-right': isPanelOpen, 'fa-arrow-circle-left': !isPanelOpen}"></i>
+    </button>  
+
+    <div class="vertical-scroll-buttons">
+        <div class="panelScroll"><i class="fa fa-caret-up fa-2x"></i></div>
+        <div class="panelScroll"><i class="fa fa-caret-down fa-2x"></i></div>
+    </div>
+
+</div>

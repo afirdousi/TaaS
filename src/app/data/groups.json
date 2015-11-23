@@ -1,0 +1,314 @@
+[
+  {
+    "Group": "Basic Information",
+    "Class": "fa fa-user fa-lg",
+    "IsSYWProfile":true
+  },{
+    "Group": "Sales & Trips",
+    "Class": "fa fa-shopping-cart fa-lg",
+    "IsProfileOnly":false,
+    "hideWidget":true,
+    "MembershipAttributes": {
+      "ActiveMembers": {
+        "AttrName": "ShoppedSHCBU12Month"
+      },
+      "SearsMembers": {
+        "AttrName": "ShoppedSearsBU12Month"
+      },
+      "KMartMembers": {
+        "AttrName": "ShoppedKmartBU12Month"
+      }
+    }
+  },{
+  "Group": "Kmart MRC Sales",
+  "Class": "fa fa-qrcode fa-lg",
+  "SearchOnly":true
+},{
+    "Group": "Purchase Patterns",
+    "Class": "fa fa-qrcode fa-lg",
+    "SearchOnly":true
+},{
+    "Group": "Store Location",
+    "Class": "fa fa-map-marker fa-lg",
+    "UseFacetFields": true,
+    "SearchOnly":true
+  },{
+    "Group": "Format",
+    "Class": "fa fa-map-marker fa-lg",
+    "UseFacetFields": true,
+    "HideGroup": true,
+    "SearchOnly":true,
+    "IsGeographyTab":true
+  }, {
+    "Group": "Store",
+    "Class": "fa fa-map-marker fa-lg",
+    "UseFacetFields": true,
+    "HideGroup": true,
+    "SearchOnly":true,
+    "IsGeographyTab":true
+  },{
+    "Group": "District",
+    "Class": "fa fa-map-marker fa-lg",
+    "UseFacetFields": true,
+    "HideGroup": true,
+    "SearchOnly":true,
+    "IsGeographyTab":true
+  },{
+  "Group": "Store Group Cluster",
+  "Class": "fa fa-map-marker fa-lg",
+  "UseFacetFields": true,
+  "HideGroup": true,
+  "SearchOnly":true,
+  "IsGeographyTab":true
+  },
+  {
+    "Group": "Store Status",
+    "Class": "fa fa-map-marker fa-lg",
+    "UseFacetFields": true,
+    "HideGroup": true,
+    "SearchOnly":true,
+    "IsGeographyTab":true
+  },
+  {
+    "Group": "DMA",
+    "Class": "fa fa-map-marker fa-lg",
+    "UseFacetFields": true,
+    "HideGroup": true,
+    "SearchOnly":true,
+    "IsGeographyTab":true
+  },
+  {
+    "Group": "State",
+    "Class": "fa fa-map-marker fa-lg",
+    "UseFacetFields": true,
+    "HideGroup": true,
+    "SearchOnly":true,
+    "IsGeographyTab":true
+  },
+  {
+    "Group": "Store ZipCode",
+    "Class": "fa fa-map-marker fa-lg",
+    "UseFacetFields": true,
+    "HideGroup": true,
+    "SearchOnly":true,
+    "IsGeographyTab":true
+  },
+  {
+    "Group": "Competitor Density Within 5miles",
+    "Class": "fa fa-map-marker fa-lg",
+    "UseFacetFields": true,
+    "HideGroup": true,
+    "SearchOnly":true,
+    "IsGeographyTab":true
+  },
+  {
+  "Group": "Competitor Presence Within 5miles",
+  "Class": "fa fa-map-marker fa-lg",
+  "UseFacetFields": true,
+  "HideGroup": true,
+  "SearchOnly":true,
+  "IsGeographyTab":true
+  }, {
+  "Group": "Store Format Code",
+  "Class": "fa fa-map-marker fa-lg",
+  "UseFacetFields": true,
+  "HideGroup": true,
+  "SearchOnly":true,
+  "IsGeographyTab":true
+}, {
+  "Group": "Population Density",
+  "Class": "fa fa-map-marker fa-lg",
+  "UseFacetFields": true,
+  "HideGroup": true,
+  "SearchOnly":true,
+  "IsGeographyTab":true
+},
+  {
+    "Group": "Apparel and Beauty",
+    "Class": "fa fa-tags fa-lg",
+    "IsSYWProfile":true
+  },
+  {
+    "Group": "Automobile",
+    "Class": "fa fa-car fa-lg",
+    "IsProfileOnly":true
+  },
+  {
+    "Group": "Bank & Credit Cards",
+    "Class": "fa fa-university fa-lg",
+    "IsSYWProfile":true
+  },
+  {
+    "Group": "Cohort 12 Mo Active Shoppers",
+    "Class": "fa fa-users fa-lg",
+    "UseFacetFields": true,
+    "IsCohortSegmentTab": true
+  },
+  {
+    "Group": "Entertainment",
+    "Class": "fa fa-film fa-lg",
+    "IsSYWProfile":true
+  },
+  {
+    "Group": "Family & Relationships",
+    "Class": "fa fa-empire fa-lg",
+    "IsSYWProfile":true
+  },
+  {
+    "Group": "Health & Wellness",
+    "Class": "fa fa-leaf fa-lg",
+    "IsSYWProfile":true
+  },
+  {
+    "Group": "Hobbies/Travel and Vacation",
+    "Class": "fa fa-plane fa-lg",
+    "IsSYWProfile":true
+  },
+  {
+    "Group": "Home & Household Information",
+    "Class": "fa fa-home fa-lg",
+    "IsSYWProfile":true
+  },
+  {
+    "Group": "Lifestyle",
+    "Class": "fa fa-star fa-lg",
+    "IsSYWProfile":true
+  },
+  {
+    "Group": "SYW Interactions",
+    "Class": "fa fa-comments-o fa-lg",
+    "IsInteractions": true,
+    "IsInteractionsTab": true
+  },
+  {
+    "Group": "SYW Interactions Type",
+    "Class": "fa fa-comments-o fa-lg",
+    "UseFacetFields": true,
+    "IsInteractionsTab": true,
+    "HideGroup": true
+  },
+  {
+    "Group": "Web/Social",
+    "Class": "fa fa-connectdevelop fa-lg",
+    "SearchOnly":true
+  },
+  {
+    "Group": "Charitable Givings",
+    "Class": "fa fa-share-alt fa-lg",
+    "UseFacetFields": true,
+    "IsProfileOnly":true
+  },
+  {
+    "Group": "Primary Stores",
+    "Class": "fa fa-building fa-lg",
+    "hideWidget":true,
+    "IsProfileOnly":true
+  },{
+    "Group": "MSM",
+    "Class": "fa fa-user-times fa-lg",
+    "hideWidget":true,
+    "IsMSM": true,
+    "HideGroup": false
+  },{
+    "Group": "Contactability",
+    "Class": "fa fa-envelope fa-lg",
+    "UseFacetFields": true,
+    "SearchOnly":true
+  },{
+    "Group": "Segments",
+    "Class": "fa fa-tasks fa-lg",
+    "UseFacetFields": true,
+    "IsInteractionTab": true,
+    "IsCohortSegmentTab": true,
+    "removeWidget": true     
+  },{
+    "Group": "SYW Segments",
+    "Class": "fa fa-tasks fa-lg",
+    "UseFacetFields": true,
+    "IsCohortSegmentTab": true,
+    "HideGroup": true
+  },{
+    "Group": "MRC Segments",
+    "Class": "fa fa-tasks fa-lg",
+    "UseFacetFields": true,
+    "IsCohortSegmentTab": true,
+    "HideGroup": true
+  },{
+    "Group": "VAPP Segments",
+    "Class": "fa fa-tasks fa-lg",
+    "UseFacetFields": true,
+    "IsCohortSegmentTab": true,
+    "HideGroup": true
+  },
+  {
+    "Group": "Sears Business Unit",
+    "Class": "fa fa-credit-card fa-lg",
+    "UseFacetFields": true,
+    "HideGroup": true,
+    "IsSalesAndTransTab": true
+  },
+  {
+    "Group": "Sears Division",
+    "Class": "fa fa-credit-card fa-lg",
+    "UseFacetFields": true,
+    "HideGroup": true,
+    "IsSalesAndTransTab": true
+  },
+  {
+    "Group": "Sears Line",
+    "Class": "fa fa-credit-card fa-lg",
+    "UseFacetFields": true,
+    "HideGroup": true,
+    "IsSalesAndTransTab": true
+  },
+  {
+    "Group": "Kmart Business Unit",
+    "Class": "fa fa-credit-card fa-lg",
+    "UseFacetFields": true,
+    "HideGroup": true,
+    "IsSalesAndTransTab": true
+  },
+  {
+    "Group": "Kmart Division",
+    "Class": "fa fa-credit-card fa-lg",
+    "UseFacetFields": true,
+    "HideGroup": true,
+    "IsSalesAndTransTab": true
+  },
+  {
+    "Group": "Kmart Line",
+    "Class": "fa fa-credit-card fa-lg",
+    "UseFacetFields": true,
+    "HideGroup": true,
+    "IsSalesAndTransTab": true
+  },
+  {
+    "Group": "SHC Business Unit",
+    "Class": "fa fa-credit-card fa-lg",
+    "UseFacetFields": true,
+    "HideGroup": true,
+    "IsSalesAndTransTab": true
+  },
+  {
+    "Group": "Sears Member Relationship Category",
+    "Class": "fa fa-credit-card fa-lg",
+    "UseFacetFields": true,
+    "HideGroup": true,
+    "IsSalesAndTransTab": true
+  },
+  {
+    "Group": "Kmart Member Relationship Category",
+    "Class": "fa fa-credit-card fa-lg",
+    "UseFacetFields": true,
+    "HideGroup": true,
+    "IsSalesAndTransTab": true
+  },
+  {
+    "Group": "Last Transaction Month",
+    "Class": "fa fa-credit-card fa-lg",
+    "UseFacetFields": true,
+    "HideGroup": true,
+    "IsSalesAndTransTab": true
+  }
+
+]

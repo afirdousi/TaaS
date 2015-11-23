@@ -1,0 +1,5524 @@
+[{
+    "Group": "Apparel and Beauty",
+    "Attribute": "Height",
+    "AttributeCollectionMapping": "Height",
+    "Description": "This is members's  Profile Last Update Date",
+    "UIType": "UncontrolledContains",
+    "SYW": false,
+    "Gold": false,
+    "IsAttribute": true
+}, {
+    "Group": "Apparel and Beauty",
+    "Attribute": "Weight",
+    "AttributeCollectionMapping": "Weight",
+    "Description": "This is members's  Search Last Update Date",
+    "UIType": "UncontrolledContains",
+    "SYW": false,
+    "SYW": false,
+    "Gold": false,
+    "IsAttribute": true
+}, {
+    "Group": "Apparel and Beauty",
+    "Attribute": "Body Shape",
+    "AttributeCollectionMapping": "BodyShape",
+    "Description": "This is members's  Birthday",
+    "UIType": "UncontrolledContains",
+    "SYW": false,
+    "Gold": false,
+    "IsAttribute": true
+}, {
+    "Group": "Apparel and Beauty",
+    "Attribute": "T- Shirt Size",
+    "AttributeCollectionMapping": "TShirtSize",
+    "Description": "This is members's  Gender",
+    "UIType": "UncontrolledContains",
+    "SYW": false,
+    "Gold": false,
+    "IsAttribute": true
+}, {
+    "Group": "Apparel and Beauty",
+    "Attribute": "Shoe Size",
+    "AttributeCollectionMapping": "ShoeSize",
+    "Description": "This is members's  Ethnicity",
+    "UIType": "UncontrolledContains",
+    "SYW": false,
+    "Gold": false,
+    "IsAttribute": true
+}, {
+    "Group": "Apparel and Beauty",
+    "Attribute": "Bust",
+    "AttributeCollectionMapping": "Bust",
+    "Description": "This is members's  About Me",
+    "UIType": "UncontrolledContains",
+    "SYW": false,
+    "Gold": false,
+    "IsAttribute": true
+}, {
+    "Group": "Apparel and Beauty",
+    "Attribute": "Waist",
+    "AttributeCollectionMapping": "Waist",
+    "Description": "This is members's  Language",
+    "UIType": "UncontrolledContains",
+    "SYW": false,
+    "Gold": false,
+    "IsAttribute": true
+}, {
+    "Group": "Apparel and Beauty",
+    "Attribute": "Hip",
+    "AttributeCollectionMapping": "Hip",
+    "Description": "This is members's  Language Proficiency",
+    "UIType": "UncontrolledContains",
+    "SYW": false,
+    "Gold": false,
+    "IsAttribute": true
+}, {
+    "Group": "Apparel and Beauty",
+    "Attribute": "Favorite Clothing Style",
+    "AttributeCollectionMapping": "FavoriteClothingStyle",
+    "Description": "This is members's  Elementary School - Name",
+    "UIType": "UncontrolledContains",
+    "SYW": false,
+    "Gold": false,
+    "IsAttribute": true
+}, {
+    "Group": "Apparel and Beauty",
+    "Attribute": "Favorite Shirt Colors",
+    "AttributeCollectionMapping": "FavoriteShirtColors",
+    "Description": "This is members's  Elementary School - City",
+    "UIType": "UncontrolledContains",
+    "SYW": false,
+    "Gold": false,
+    "IsAttribute": true
+}, {
+    "Group": "Apparel and Beauty",
+    "Attribute": "Favorite Pants Color",
+    "AttributeCollectionMapping": "FavoritePantsColor",
+    "Description": "This is members's  Elementary School - State",
+    "UIType": "UncontrolledContains",
+    "SYW": false,
+    "Gold": false,
+    "IsAttribute": true
+}, {
+    "Group": "Apparel and Beauty",
+    "Attribute": "Favorite Shoe Colors",
+    "AttributeCollectionMapping": "FavoriteShoeColors",
+    "Description": "This is members's  Elementary School - Country",
+    "UIType": "UncontrolledContains",
+    "SYW": false,
+    "Gold": false,
+    "IsAttribute": true
+}, {
+    "Group": "Apparel and Beauty",
+    "Attribute": "Favorite Hat Styles",
+    "AttributeCollectionMapping": "FavoriteHatStyles",
+    "Description": "This is members's  Elementary School - From - Date",
+    "UIType": "UncontrolledContains",
+    "SYW": false,
+    "Gold": false,
+    "IsAttribute": true
+}, {
+    "Group": "Apparel and Beauty",
+    "Attribute": "Work Dress Code",
+    "AttributeCollectionMapping": "WorkDressCode",
+    "Description": "This is members's  Elementary School - To - Date",
+    "UIType": "UncontrolledContains",
+    "SYW": false,
+    "Gold": false,
+    "IsAttribute": true
+}, {
+    "Group": "Apparel and Beauty",
+    "Attribute": "Favorite Apparel Brands",
+    "AttributeCollectionMapping": "FavoriteApprelBrands",
+    "Description": "This is members's  Middle School - Name",
+    "UIType": "UncontrolledContains",
+    "SYW": false,
+    "Gold": false,
+    "IsAttribute": true
+}, {
+    "Group": "Apparel and Beauty",
+    "Attribute": "Preferred Beauty Products",
+    "AttributeCollectionMapping": "PreferredBeautyProducts",
+    "Description": "This is members's  Middle School - City",
+    "UIType": "UncontrolledContains",
+    "SYW": false,
+    "Gold": false,
+    "IsAttribute": true
+}, {
+    "Group": "Apparel and Beauty",
+    "Attribute": "Beauty Products Range",
+    "AttributeCollectionMapping": "BeautyProductsRange",
+    "Description": "This is members's  Middle School - State",
+    "UIType": "UncontrolledContains",
+    "SYW": false,
+    "Gold": false,
+    "IsAttribute": true
+}, {
+    "Group": "Apparel and Beauty",
+    "Attribute": "Beauty Services Frequency",
+    "AttributeCollectionMapping": "BeautyServicesFrequency",
+    "Description": "This is members's  Middle School - Country",
+    "UIType": "UncontrolledContains",
+    "SYW": false,
+    "Gold": false,
+    "IsAttribute": true
+}, {
+    "Group": "Apparel and Beauty",
+    "Attribute": "Personal Beauty Activities",
+    "AttributeCollectionMapping": "PersonalBeautyActivities",
+    "Description": "This is members's  Middle School - From - Date",
+    "UIType": "UncontrolledContains",
+    "SYW": false,
+    "Gold": false,
+    "IsAttribute": true
+}, {
+    "Group": "Automobile",
+    "Attribute": "Vehicle Count",
+    "AttributeCollectionMapping": "VehicleCount",
+    "Description": "This is members's  Middle School - To - Date",
+    "UIType": "UncontrolledContains",
+    "SYW": false,
+    "Gold": true,
+    "IsAttribute": true
+}, {
+    "Group": "Automobile",
+    "Attribute": "Truck Owner",
+    "AttributeCollectionMapping": "TruckOwnerInd",
+    "Description": "This is members's  High School - Name",
+    "UIType": "UncontrolledContains",
+    "SYW": false,
+    "Gold": true,
+    "IsAttribute": true
+}, {
+    "Group": "Automobile",
+    "Attribute": "Motorcycle Owner",
+    "AttributeCollectionMapping": "MotorcycleOwnerInd",
+    "Description": "This is members's  High School - City",
+    "UIType": "UncontrolledContains",
+    "SYW": false,
+    "Gold": true,
+    "IsAttribute": true
+}, {
+    "Group": "Automobile",
+    "Attribute": "Recreational Vehicle owner",
+    "AttributeCollectionMapping": "RecreationalVehicleownerInd",
+    "Description": "This is members's  High School - State",
+    "UIType": "UncontrolledContains",
+    "SYW": false,
+    "Gold": true,
+    "IsAttribute": true
+}, {
+    "Group": "Automobile",
+    "Attribute": "Vehicle Intend to Purchase",
+    "AttributeCollectionMapping": "VehicleIntendtoPurchaseInd",
+    "Description": "This is members's  High School - Country",
+    "UIType": "UncontrolledContains",
+    "SYW": false,
+    "Gold": true,
+    "IsAttribute": true
+}, {
+    "Group": "Bank & Credit Cards",
+    "Attribute": "Bank Name",
+    "AttributeCollectionMapping": "BankName",
+    "Description": "This is members's  High School - From - Date",
+    "UIType": "UncontrolledContains",
+    "SYW": false,
+    "Gold": false,
+    "IsAttribute": true
+}, {
+    "Group": "Bank & Credit Cards",
+    "Attribute": "Bank City",
+    "AttributeCollectionMapping": "BankCity",
+    "Description": "This is members's  High School - To - Date",
+    "UIType": "UncontrolledContains",
+    "SYW": false,
+    "Gold": false,
+    "IsAttribute": true
+}, {
+    "Group": "Bank & Credit Cards",
+    "Attribute": "Bank State",
+    "AttributeCollectionMapping": "BankState",
+    "Description": "This is members's  Undergraduate - Major",
+    "UIType": "UncontrolledContains",
+    "SYW": false,
+    "Gold": false,
+    "IsAttribute": true
+}, {
+    "Group": "Bank & Credit Cards",
+    "Attribute": "Bank Country",
+    "AttributeCollectionMapping": "BankCountry",
+    "Description": "This is members's  Undergraduate - Name",
+    "UIType": "UncontrolledContains",
+    "SYW": false,
+    "Gold": false,
+    "IsAttribute": true
+}, {
+    "Group": "Bank & Credit Cards",
+    "Attribute": "Bank Zip Code",
+    "AttributeCollectionMapping": "BankZipCode",
+    "Description": "This is members's  Undergraduate - City",
+    "UIType": "UncontrolledContains",
+    "SYW": false,
+    "Gold": false,
+    "IsAttribute": true
+}, {
+    "Group": "Bank & Credit Cards",
+    "Attribute": "Primary Credit Card",
+    "AttributeCollectionMapping": "PrimaryCreditCard",
+    "Description": "This is members's  Undergraduate - State",
+    "UIType": "UncontrolledContains",
+    "SYW": false,
+    "Gold": false,
+    "IsAllNone": true,
+    "IsAttribute": true
+}, {
+    "Group": "Bank & Credit Cards",
+    "Attribute": "Credit Cards in use",
+    "AttributeCollectionMapping": "CreditCardsInUse",
+    "Description": "This is members's  Undergraduate - Country",
+    "UIType": "UncontrolledContains",
+    "SYW": false,
+    "Gold": false,
+    "IsAllNone": true,
+    "IsAttribute": true
+}, {
+    "Group": "Bank & Credit Cards",
+    "Attribute": "Credit Cards",
+    "AttributeCollectionMapping": "CreditCards",
+    "Description": "This is members's  Undergraduate - From - Date",
+    "UIType": "UncontrolledContains",
+    "SYW": false,
+    "Gold": true,
+    "IsAttribute": true
+}, {
+    "Group": "Basic Information",
+    "Attribute": "Birthday",
+    "AttributeCollectionMapping": "Birthday",
+    "Description": "This is members's  Undergraduate - To - Date",
+    "UIType": "Date",
+    "SYW": false,
+    "Gold": true,
+    "IsNewUIDate": true,
+    "IsSlider": true,
+    "IsAttribute": true
+}, {
+    "Group": "Basic Information",
+    "Attribute": "Gender",
+    "AttributeCollectionMapping": "Gender",
+    "Description": "This is members's  Graduate - Major",
+    "UIType": "UncontrolledContains",
+    "SYW": false,
+    "Gold": true,
+    "IsAttribute": true
+}, {
+    "Group": "Basic Information",
+    "Attribute": "Ethnicity",
+    "AttributeCollectionMapping": "Ethnicity",
+    "Description": "This is members's  Graduate - Name",
+    "UIType": "UncontrolledContains",
+    "SYW": false,
+    "Gold": true,
+    "IsAllNone": true,
+    "IsAttribute": true
+}, {
+    "Group": "Basic Information",
+    "Attribute": "About Me",
+    "AttributeCollectionMapping": "AboutMe",
+    "Description": "This is members's  Graduate - City",
+    "UIType": "UncontrolledContains",
+    "SYW": false,
+    "Gold": false,
+    "IsAttribute": true
+}, {
+    "Group": "Basic Information",
+    "Attribute": "Language",
+    "AttributeCollectionMapping": "Language",
+    "Description": "This is members's  Graduate - State",
+    "UIType": "UncontrolledContains",
+    "SYW": false,
+    "Gold": true,
+    "IsAllNone": true,
+    "IsAttribute": true
+}, {
+    "Group": "Basic Information",
+    "Attribute": "Language Proficiency",
+    "AttributeCollectionMapping": "LanguageFluency",
+    "Description": "This is members's  Graduate - Country",
+    "UIType": "UncontrolledContains",
+    "SYW": false,
+    "Gold": false,
+    "IsAttribute": true
+}, {
+    "Group": "Basic Information",
+    "Attribute": "Elementary School - Name",
+    "AttributeCollectionMapping": "ElementrySchoolName",
+    "Description": "This is members's  Graduate - From - Date",
+    "UIType": "UncontrolledContains",
+    "SYW": false,
+    "Gold": false,
+    "IsAttribute": true
+}, {
+    "Group": "Basic Information",
+    "Attribute": "Elementary School - City",
+    "AttributeCollectionMapping": "ElementrySchoolCity",
+    "Description": "This is members's  Graduate - To - Date",
+    "UIType": "UncontrolledContains",
+    "SYW": false,
+    "Gold": false,
+    "IsAttribute": true
+}, {
+    "Group": "Basic Information",
+    "Attribute": "Elementary School - State",
+    "AttributeCollectionMapping": "ElementrySchoolState",
+    "Description": "This is members's  Post Graduate - Major",
+    "UIType": "UncontrolledContains",
+    "SYW": false,
+    "Gold": false,
+    "IsAttribute": true
+}, {
+    "Group": "Basic Information",
+    "Attribute": "Elementary School - Country",
+    "AttributeCollectionMapping": "ElementrySchoolCountry",
+    "Description": "This is members's  Post Graduate - Name",
+    "UIType": "UncontrolledContains",
+    "SYW": false,
+    "Gold": false,
+    "IsAttribute": true
+}, {
+    "Group": "Basic Information",
+    "Attribute": "Elementary School - From - Date",
+    "AttributeCollectionMapping": "ElementrySchoolFromDate",
+    "Description": "This is members's  Post Graduate - City",
+    "UIType": "Date",
+    "SYW": false,
+    "Gold": false,
+    "IsAttribute": true
+}, {
+    "Group": "Basic Information",
+    "Attribute": "Elementary School - To - Date",
+    "AttributeCollectionMapping": "ElementrySchoolToDate",
+    "Description": "This is members's  Post Graduate - State",
+    "UIType": "Date",
+    "SYW": false,
+    "Gold": false,
+    "IsAttribute": true
+}, {
+    "Group": "Basic Information",
+    "Attribute": "Middle School - Name",
+    "AttributeCollectionMapping": "MiddleSchoolName",
+    "Description": "This is members's  Post Graduate - Country",
+    "UIType": "UncontrolledContains",
+    "SYW": false,
+    "Gold": false,
+    "IsAttribute": true
+}, {
+    "Group": "Basic Information",
+    "Attribute": "Middle School - City",
+    "AttributeCollectionMapping": "MiddleSchoolCity",
+    "Description": "This is members's  Post Graduate - From - Date",
+    "UIType": "UncontrolledContains",
+    "SYW": false,
+    "Gold": false,
+    "IsAttribute": true
+}, {
+    "Group": "Basic Information",
+    "Attribute": "Middle School - State",
+    "AttributeCollectionMapping": "MiddleSchoolState",
+    "Description": "This is members's  Post Graduate - To - Date",
+    "UIType": "UncontrolledContains",
+    "SYW": false,
+    "Gold": false,
+    "IsAttribute": true
+}, {
+    "Group": "Basic Information",
+    "Attribute": "Middle School - Country",
+    "AttributeCollectionMapping": "MiddleSchoolCountry",
+    "Description": "This is members's  Are you Self Employed?",
+    "UIType": "UncontrolledContains",
+    "SYW": false,
+    "Gold": false,
+    "IsAttribute": true
+}, {
+    "Group": "Basic Information",
+    "Attribute": "Middle School - From - Date",
+    "AttributeCollectionMapping": "MiddleSchoolFromDate",
+    "Description": "This is members's  Employment Position",
+    "UIType": "Date",
+    "SYW": false,
+    "Gold": false,
+    "IsAttribute": true
+}, {
+    "Group": "Basic Information",
+    "Attribute": "Middle School - To - Date",
+    "AttributeCollectionMapping": "MiddleSchoolToDate",
+    "Description": "This is members's  Employment Company",
+    "UIType": "Date",
+    "SYW": false,
+    "Gold": false,
+    "IsAttribute": true
+}, {
+    "Group": "Basic Information",
+    "Attribute": "High School - Name",
+    "AttributeCollectionMapping": "HighSchoolName",
+    "Description": "This is members's  Employment City",
+    "UIType": "UncontrolledContains",
+    "SYW": false,
+    "Gold": false,
+    "IsAttribute": true
+}, {
+    "Group": "Basic Information",
+    "Attribute": "High School - City",
+    "AttributeCollectionMapping": "HighSchoolCity",
+    "Description": "This is members's  Employment State",
+    "UIType": "UncontrolledContains",
+    "SYW": false,
+    "Gold": false,
+    "IsAttribute": true
+}, {
+    "Group": "Basic Information",
+    "Attribute": "High School - State",
+    "AttributeCollectionMapping": "HighSchoolState",
+    "Description": "This is members's  Employment Country ",
+    "UIType": "UncontrolledContains",
+    "SYW": false,
+    "Gold": false,
+    "IsAttribute": true
+}, {
+    "Group": "Basic Information",
+    "Attribute": "High School - Country",
+    "AttributeCollectionMapping": "HighSchoolCountry",
+    "Description": "This is members's  Employment From - Date",
+    "UIType": "UncontrolledContains",
+    "SYW": false,
+    "Gold": false,
+    "IsAttribute": true
+}, {
+    "Group": "Basic Information",
+    "Attribute": "High School - From - Date",
+    "AttributeCollectionMapping": "HighSchoolFromDate",
+    "Description": "This is members's  Employment To - Date",
+    "UIType": "Date",
+    "SYW": false,
+    "Gold": false,
+    "IsAttribute": true
+}, {
+    "Group": "Basic Information",
+    "Attribute": "High School - To - Date",
+    "AttributeCollectionMapping": "HighSchoolToDate",
+    "Description": "This is members's  Employment Industry",
+    "UIType": "Date",
+    "SYW": false,
+    "Gold": false,
+    "IsAttribute": true
+}, {
+    "Group": "Basic Information",
+    "Attribute": "Undergraduate - Major",
+    "AttributeCollectionMapping": "UndergraduateMajor",
+    "Description": "This is members's  Professional Skills",
+    "UIType": "UncontrolledContains",
+    "SYW": false,
+    "Gold": false,
+    "IsAttribute": true
+}, {
+    "Group": "Basic Information",
+    "Attribute": "Undergraduate - Name",
+    "AttributeCollectionMapping": "UndergraduateName",
+    "Description": "This is members's  Prefer eco friendly products?",
+    "UIType": "UncontrolledContains",
+    "SYW": false,
+    "Gold": false,
+    "IsAttribute": true
+}, {
+    "Group": "Basic Information",
+    "Attribute": "Undergraduate - City",
+    "AttributeCollectionMapping": "UndergraduateCity",
+    "Description": "This is members's  Prefer locally manufactured products?",
+    "UIType": "UncontrolledContains",
+    "SYW": false,
+    "Gold": false,
+    "IsAttribute": true
+}, {
+    "Group": "Basic Information",
+    "Attribute": "Undergraduate - State",
+    "AttributeCollectionMapping": "UndergraduateState",
+    "Description": "This is members's  General Nutritional Preferences",
+    "UIType": "UncontrolledContains",
+    "SYW": false,
+    "Gold": false,
+    "IsAttribute": true
+}, {
+    "Group": "Basic Information",
+    "Attribute": "Undergraduate - Country",
+    "AttributeCollectionMapping": "UndergraduateCountry",
+    "Description": "This is members's  Cooking Expertise",
+    "UIType": "UncontrolledContains",
+    "SYW": false,
+    "Gold": false,
+    "IsAttribute": true
+}, {
+    "Group": "Basic Information",
+    "Attribute": "Undergraduate - From - Date",
+    "AttributeCollectionMapping": "UndergraduateFromDate",
+    "Description": "This is members's  Alcohol Drinking Habits?",
+    "UIType": "Date",
+    "SYW": false,
+    "Gold": false,
+    "IsAttribute": true
+}, {
+    "Group": "Basic Information",
+    "Attribute": "Undergraduate - To - Date",
+    "AttributeCollectionMapping": "UndergraduateToDate",
+    "Description": "This is members's  Favorite Restaurants",
+    "UIType": "Date",
+    "SYW": false,
+    "Gold": false,
+    "IsAttribute": true
+}, {
+    "Group": "Basic Information",
+    "Attribute": "Graduate - Major",
+    "AttributeCollectionMapping": "GraduateMajor",
+    "Description": "This is members's  Host Guests Frequency",
+    "UIType": "UncontrolledContains",
+    "SYW": false,
+    "Gold": false,
+    "IsAttribute": true
+}, {
+    "Group": "Basic Information",
+    "Attribute": "Graduate - Name",
+    "AttributeCollectionMapping": "GraduateName",
+    "Description": "This is members's  Favorite Dishes",
+    "UIType": "UncontrolledContains",
+    "SYW": false,
+    "Gold": false,
+    "IsAttribute": true
+}, {
+    "Group": "Basic Information",
+    "Attribute": "Graduate - City",
+    "AttributeCollectionMapping": "GraduateCity",
+    "Description": "This is members's  Cook For?",
+    "UIType": "UncontrolledContains",
+    "SYW": false,
+    "Gold": false,
+    "IsAttribute": true
+}, {
+    "Group": "Basic Information",
+    "Attribute": "Graduate - State",
+    "AttributeCollectionMapping": "GraduateState",
+    "Description": "This is members's  Cooking Reason",
+    "UIType": "UncontrolledContains",
+    "SYW": false,
+    "Gold": false,
+    "IsAttribute": true
+}, {
+    "Group": "Basic Information",
+    "Attribute": "Graduate - Country",
+    "AttributeCollectionMapping": "GraduateCountry",
+    "Description": "This is members's  Favorite Music Artists",
+    "UIType": "UncontrolledContains",
+    "SYW": false,
+    "Gold": false,
+    "IsAttribute": true
+}, {
+    "Group": "Basic Information",
+    "Attribute": "Graduate - From - Date",
+    "AttributeCollectionMapping": "GraduateFromDate",
+    "Description": "This is members's  Favorite Music Styles",
+    "UIType": "Date",
+    "SYW": false,
+    "Gold": false,
+    "IsAttribute": true
+}, {
+    "Group": "Basic Information",
+    "Attribute": "Graduate - To - Date",
+    "AttributeCollectionMapping": "GraduateToDate",
+    "Description": "This is members's  Favorite Music Stores",
+    "UIType": "Date",
+    "SYW": false,
+    "Gold": false,
+    "IsAttribute": true
+}, {
+    "Group": "Basic Information",
+    "Attribute": "Post Graduate - Major",
+    "AttributeCollectionMapping": "PostGraduateMajor",
+    "Description": "This is members's  Online Music Services",
+    "UIType": "UncontrolledContains",
+    "SYW": false,
+    "Gold": false,
+    "IsAttribute": true
+}, {
+    "Group": "Basic Information",
+    "Attribute": "Post Graduate - Name",
+    "AttributeCollectionMapping": "PostGraduateName",
+    "Description": "This is members's  Favorite Movies",
+    "UIType": "UncontrolledContains",
+    "SYW": false,
+    "Gold": false,
+    "IsAttribute": true
+}, {
+    "Group": "Basic Information",
+    "Attribute": "Post Graduate - City",
+    "AttributeCollectionMapping": "PostGraduateCity",
+    "Description": "This is members's  Favorite Genres",
+    "UIType": "UncontrolledContains",
+    "SYW": false,
+    "Gold": false,
+    "IsAttribute": true
+}, {
+    "Group": "Basic Information",
+    "Attribute": "Post Graduate - State",
+    "AttributeCollectionMapping": "PostGraduateState",
+    "Description": "This is members's  Cinema Visit Frequency",
+    "UIType": "UncontrolledContains",
+    "SYW": false,
+    "Gold": false,
+    "IsAttribute": true
+}, {
+    "Group": "Basic Information",
+    "Attribute": "Post Graduate - Country",
+    "AttributeCollectionMapping": "PostGraduateCountry",
+    "Description": "This is members's  Movie Renting Frequency?",
+    "UIType": "UncontrolledContains",
+    "SYW": false,
+    "Gold": false,
+    "IsAttribute": true
+}, {
+    "Group": "Basic Information",
+    "Attribute": "Post Graduate - From - Date",
+    "AttributeCollectionMapping": "PostGraduateFromDate",
+    "Description": "This is members's  Magazine Subscriptions",
+    "UIType": "Date",
+    "SYW": false,
+    "Gold": false,
+    "IsAttribute": true
+}, {
+    "Group": "Basic Information",
+    "Attribute": "Post Graduate - To - Date",
+    "AttributeCollectionMapping": "PostGraduateToDate",
+    "Description": "This is members's  Number Of Books Read Annualy?",
+    "UIType": "Date",
+    "SYW": false,
+    "Gold": false,
+    "IsAttribute": true
+}, {
+    "Group": "Basic Information",
+    "Attribute": "Are you Self Employed? ",
+    "AttributeCollectionMapping": "AreyouSelfEmployed",
+    "Description": "This is members's  Favorite Authors",
+    "UIType": "UncontrolledContains",
+    "SYW": false,
+    "Gold": false,
+    "IsAttribute": true,
+    "IsIndicator": true
+}, {
+    "Group": "Basic Information",
+    "Attribute": "Employment Position",
+    "AttributeCollectionMapping": "EmploymentPosition",
+    "Description": "This is members's  Favorite Books",
+    "UIType": "UncontrolledContains",
+    "SYW": false,
+    "Gold": false,
+    "IsAttribute": true
+}, {
+    "Group": "Basic Information",
+    "Attribute": "Employment Company",
+    "AttributeCollectionMapping": "EmploymentCompany",
+    "Description": "This is members's  Travel Frequency",
+    "UIType": "UncontrolledContains",
+    "SYW": false,
+    "Gold": false,
+    "IsAttribute": true
+}, {
+    "Group": "Basic Information",
+    "Attribute": "Employment City",
+    "AttributeCollectionMapping": "EmploymentCity",
+    "Description": "This is members's  Vacation Frequency",
+    "UIType": "UncontrolledContains",
+    "SYW": false,
+    "Gold": false,
+    "IsAttribute": true
+}, {
+    "Group": "Basic Information",
+    "Attribute": "Employment State",
+    "AttributeCollectionMapping": "EmploymentState",
+    "Description": "This is members's  Preferable Vacation Months",
+    "UIType": "UncontrolledContains",
+    "SYW": false,
+    "Gold": false,
+    "IsAttribute": true
+}, {
+    "Group": "Basic Information",
+    "Attribute": "Employment Country ",
+    "AttributeCollectionMapping": "EmploymentCountry",
+    "Description": "This is members's  Preferable Vacation Destination",
+    "UIType": "UncontrolledContains",
+    "SYW": false,
+    "Gold": false,
+    "IsAttribute": true
+}, {
+    "Group": "Basic Information",
+    "Attribute": "Employment From - Date",
+    "AttributeCollectionMapping": "EmploymentFromDate",
+    "Description": "This is members's  Preferable Vacation Type",
+    "UIType": "Date",
+    "SYW": false,
+    "Gold": false,
+    "IsAttribute": true
+}, {
+    "Group": "Basic Information",
+    "Attribute": "Employment To - Date",
+    "AttributeCollectionMapping": "EmploymentToDate",
+    "Description": "This is members's  Pet Type",
+    "UIType": "Date",
+    "SYW": false,
+    "Gold": false,
+    "IsAttribute": true
+}, {
+    "Group": "Basic Information",
+    "Attribute": "Employment Industry",
+    "AttributeCollectionMapping": "EmploymentIndustry",
+    "Description": "This is members's  Pet Breed",
+    "UIType": "UncontrolledContains",
+    "SYW": false,
+    "Gold": false,
+    "IsAttribute": true
+}, {
+    "Group": "Basic Information",
+    "Attribute": "Professional Skills",
+    "AttributeCollectionMapping": "ProfessionalSkills",
+    "Description": "This is members's  Pet Weight",
+    "UIType": "UncontrolledContains",
+    "SYW": false,
+    "Gold": false,
+    "IsAllNone": true,
+    "IsAttribute": true
+}, {
+    "Group": "Basic Information",
+    "Attribute": "Home Address City",
+    "AttributeCollectionMapping": "HomeAddressCity",
+    "Description": "This is members's  Pet Birthday",
+    "UIType": "UncontrolledContains",
+    "SYW": false,
+    "Gold": false,
+    "IsAttribute": true
+}, {
+    "Group": "Basic Information",
+    "Attribute": "Home Address State Code",
+    "AttributeCollectionMapping": "HomeAddressStateCode",
+    "Description": "This is members's  Electricity Company",
+    "UIType": "UncontrolledContains",
+    "SYW": false,
+    "Gold": false,
+    "IsAttribute": true
+}, {
+    "Group": "Basic Information",
+    "Attribute": "Home Address State Name",
+    "AttributeCollectionMapping": "HomeAddressStateName",
+    "Description": "This is members's  Gas Company",
+    "UIType": "UncontrolledContains",
+    "SYW": false,
+    "Gold": false,
+    "IsAttribute": true
+}, {
+    "Group": "Basic Information",
+    "Attribute": "Home Address City State Code",
+    "AttributeCollectionMapping": "HomeAddressCityStateCode",
+    "Description": "This is members's  Internet Service Provider",
+    "UIType": "UncontrolledContains",
+    "SYW": false,
+    "Gold": false,
+    "IsAttribute": true
+}, {
+    "Group": "Basic Information",
+    "Attribute": "Home Address Country",
+    "AttributeCollectionMapping": "HomeAddressCountry",
+    "Description": "This is members's  Mobile Network Provider",
+    "UIType": "UncontrolledContains",
+    "SYW": false,
+    "Gold": false,
+    "IsAttribute": true
+}, {
+    "Group": "Basic Information",
+    "Attribute": "Home Address ZIP Code",
+    "AttributeCollectionMapping": "HomeAddressZIPCode",
+    "Description": "This is members's  Primary Grocery Store",
+    "UIType": "UncontrolledContains",
+    "SYW": false,
+    "Gold": false,
+    "IsAttribute": true
+}, {
+    "Group": "Basic Information",
+    "Attribute": "Work Address City",
+    "AttributeCollectionMapping": "WorkAddressCity",
+    "Description": "This is members's  Primary Drug Store",
+    "UIType": "UncontrolledContains",
+    "SYW": false,
+    "Gold": false,
+    "IsAttribute": true
+}, {
+    "Group": "Basic Information",
+    "Attribute": "Work Address State Name",
+    "AttributeCollectionMapping": "WorkAddressStateName",
+    "Description": "This is members's  Telephone Company",
+    "UIType": "UncontrolledContains",
+    "SYW": false,
+    "Gold": false,
+    "IsAttribute": true
+}, {
+    "Group": "Basic Information",
+    "Attribute": "Work Address State Code",
+    "AttributeCollectionMapping": "WorkAddressStateCode",
+    "Description": "This is members's  Waste Management Company",
+    "UIType": "UncontrolledContains",
+    "SYW": false,
+    "Gold": false,
+    "IsAttribute": true
+}, {
+    "Group": "Basic Information",
+    "Attribute": "Work Address Country",
+    "AttributeCollectionMapping": "WorkAddressCountry",
+    "Description": "This is members's  Water Company",
+    "UIType": "UncontrolledContains",
+    "SYW": false,
+    "Gold": false,
+    "IsAttribute": true
+}, {
+    "Group": "Basic Information",
+    "Attribute": "Work Address ZIP Code",
+    "AttributeCollectionMapping": "WorkAddressZIPCode",
+    "Description": "This is members's  Membership Airline Club",
+    "UIType": "UncontrolledContains",
+    "SYW": false,
+    "Gold": false,
+    "IsAttribute": true
+}, {
+    "Group": "Basic Information",
+    "Attribute": "Parents Address City",
+    "AttributeCollectionMapping": "ParentsAddressCity",
+    "Description": "This is members's  Membership Rental Car Club",
+    "UIType": "UncontrolledContains",
+    "SYW": false,
+    "Gold": false,
+    "IsAttribute": true
+}, {
+    "Group": "Basic Information",
+    "Attribute": "Parents Address State",
+    "AttributeCollectionMapping": "ParentsAddressState",
+    "Description": "This is members's  Membership AARP",
+    "UIType": "UncontrolledContains",
+    "SYW": false,
+    "Gold": false,
+    "IsAttribute": true
+}, {
+    "Group": "Basic Information",
+    "Attribute": "Parents Address Country",
+    "AttributeCollectionMapping": "ParentsAddressCountry",
+    "Description": "This is members's  Religion",
+    "UIType": "UncontrolledContains",
+    "SYW": false,
+    "Gold": false,
+    "IsAttribute": true
+}, {
+    "Group": "Basic Information",
+    "Attribute": "Parents Address ZIP Code",
+    "AttributeCollectionMapping": "ParentsAddressZIPCode",
+    "Description": "This is members's  Political Party",
+    "UIType": "UncontrolledContains",
+    "SYW": false,
+    "Gold": false,
+    "IsAttribute": true
+},{
+    "Group": "Basic Information",
+    "Attribute": "Email Domain",
+    "AttributeCollectionMapping": "EmailDomain",
+    "Description": "This is members's  Type of home",
+    "UIType": "UncontrolledContains",
+    "SYW": false,
+    "Gold": false,
+    "IsAttribute": true
+}, {
+    "Group": "Basic Information",
+    "Attribute": "Birthday Month",
+    "AttributeCollectionMapping": "BirthdayMonth",
+    "Description": "This is members's  Number of Bedrooms",
+    "UIType": "UncontrolledContains",
+    "SYW": true,
+    "Gold": true,
+    "IsAttribute": false
+}, {
+    "Group": "Basic Information",
+    "Attribute": "Birthday Year",
+    "AttributeCollectionMapping": "BirthdayYear",
+    "Description": "This is members's  Number of Bathrooms",
+    "UIType": "UncontrolledContains",
+    "SYW": true,
+    "Gold": true,
+    "IsAttribute": false
+}, {
+    "Group": "Basic Information",
+    "Attribute": "College School Names list",
+    "AttributeCollectionMapping": "CollegeSchoolNames",
+    "Description": "This is members's  Mattresses Size",
+    "UIType": "UncontrolledContains",
+    "SYW": false,
+    "Gold": false,
+    "IsAttribute": true
+}, {
+    "Group": "Basic Information",
+    "Attribute": "College To Dates list",
+    "AttributeCollectionMapping": "CollegeToDates",
+    "Description": "This is members's  Primary Building Material",
+    "UIType": "Date",
+    "SYW": false,
+    "Gold": false,
+    "IsAttribute": true
+}, {
+    "Group": "Basic Information",
+    "Attribute": "College From Dates list",
+    "AttributeCollectionMapping": "CollegeFromDates",
+    "Description": "This is members's  Home Ownership Type",
+    "UIType": "Date",
+    "SYW": false,
+    "Gold": false,
+    "IsAttribute": true
+}, {
+    "Group": "Basic Information",
+    "Attribute": "Event Birthday Dates list",
+    "AttributeCollectionMapping": "EventBirthdayDates",
+    "Description": "This is members's  Time of Residence",
+    "UIType": "Date",
+    "SYW": false,
+    "Gold": false,
+    "IsAttribute": true
+}, {
+    "Group": "Basic Information",
+    "Attribute": "Event Anniversary Dates list",
+    "AttributeCollectionMapping": "EventAnniversaryDates",
+    "Description": "This is members's  Type of yard",
+    "UIType": "Date",
+    "SYW": false,
+    "Gold": false,
+    "IsAttribute": true
+}, {
+    "Group": "Basic Information",
+    "Attribute": "Event Anniversary Month list",
+    "AttributeCollectionMapping": "EventAnniversaryMonth",
+    "Description": "EventAnniversaryMonth",
+    "UIType": "UncontrolledContains",
+    "SYW": false,
+    "Gold": false,
+    "IsAttribute": true
+}, {
+    "Group":"Basic Information",
+    "Attribute":"Associate?",
+    "AttributeCollectionMapping":"AssociateInd",
+    "Description":"AssociateInd",
+    "UIType":"UncontrolledContains",
+    "SYW":false,
+    "Gold":true,
+    "IsAttribute":true,
+    "IsIndicator": true
+}, {
+    "Group": "Basic Information",
+    "Attribute": "Enroll Date",
+    "AttributeCollectionMapping": "EnrollDate",
+    "Description": "This is members's  TV Subscription Packages",
+    "UIType": "Date",
+    "SYW": false,
+    "Gold": true,
+    "IsAttribute": true
+}, {
+    "Group": "Basic Information",
+    "Attribute": "Enroll source",
+    "AttributeCollectionMapping": "Enrollsource",
+    "Description": "This is members's  Favorite TV Channels",
+    "UIType": "UncontrolledContains",
+    "SYW": false,
+    "Gold": true,
+    "IsAttribute": true
+}, {
+    "Group": "Basic Information",
+    "Attribute": "Enroll Location",
+    "AttributeCollectionMapping": "EnrollLocation",
+    "Description": "This is members's  Favorite TV Shows",
+    "UIType": "UncontrolledContains",
+    "SYW": false,
+    "Gold": true,
+    "IsAttribute": true
+}, {
+    "Group": "Basic Information",
+    "Attribute": "Household Income",
+    "AttributeCollectionMapping": "HouseholdIncome",
+    "Description": "This is members's  Use Netflix?",
+    "UIType": "UncontrolledContains",
+    "SYW": false,
+    "Gold": true,
+    "IsAttribute": true
+}, {
+    "Group": "Basic Information",
+    "Attribute": "Occupation ",
+    "AttributeCollectionMapping": "Occupation",
+    "Description": "This is members's  Own Apple TV",
+    "UIType": "UncontrolledContains",
+    "SYW": false,
+    "Gold": true,
+    "IsAllNone": true,
+    "IsAttribute": true
+}, {
+    "Group": "Basic Information",
+    "Attribute": "Owns A Computer?",
+    "AttributeCollectionMapping": "OwnsComputerInd",
+    "Description": "This is members's  Car Make",
+    "UIType": "UncontrolledContains",
+    "SYW": false,
+    "Gold": true,
+    "IsAttribute": true
+}, {
+    "Group": "Basic Information",
+    "Attribute": "College Graduate",
+    "AttributeCollectionMapping": "CollegeGraduateInd",
+    "Description": "This is members's  Car Model",
+    "UIType": "UncontrolledContains",
+    "SYW": false,
+    "Gold": true,
+    "IsAttribute": true
+}, {
+    "Group": "Basic Information",
+    "Attribute": "Mobile Phone Device",
+    "AttributeCollectionMapping": "MobilePhoneDeviceInd",
+    "Description": "This is members's  Car Year",
+    "UIType": "UncontrolledContains",
+    "SYW": false,
+    "Gold": true,
+    "IsAttribute": true
+}, {
+    "Group": "Basic Information",
+    "Attribute": "Veteran",
+    "AttributeCollectionMapping": "Veteran",
+    "Description": "This is members's  Car Warranty Expiration",
+    "UIType": "UncontrolledContains",
+    "SYW": false,
+    "Gold": true,
+    "IsAttribute": true
+}, {
+    "Group": "Basic Information",
+    "Attribute": "Education Level",
+    "AttributeCollectionMapping": "EducationLevel",
+    "Description": "This is members's  Car Last Maintenance Date",
+    "UIType": "UncontrolledContains",
+    "SYW": false,
+    "Gold": true,
+    "IsAttribute": true
+}, {
+    "Group": "Basic Information",
+    "Attribute": "Member Age",
+    "AttributeCollectionMapping": "MemberAge",
+    "Description": "This is members's  Car Milege",
+    "UIType": "UncontrolledContains",
+    "SYW": false,
+    "Gold": true,
+    "IsAllNone": true,
+    "IsRange": true,
+    "IsNoMinMax": true,
+    "IsInteger": true,
+    "IsAttribute": true
+}, {
+    "Group": "Basic Information",
+    "Attribute": "Member Annual Income",
+    "AttributeCollectionMapping": "YearlyIncome",
+    "Description": "This is members's  Motorbike Model",
+    "UIType": "UncontrolledContains",
+    "SYW": false,
+    "Gold": false,
+    "IsAttribute": true
+}, {
+    "Group": "Basic Information",
+    "Attribute": "Birthday SYW",
+    "Description": "This is members's  Motorbike Year",
+    "UIType": "Date",
+    "SYW": true,
+    "Gold": false,
+    "IsAttribute": true
+}, {
+    "Group": "Basic Information",
+    "Attribute": "Gender SYW",
+    "Description": "This is members's  Motorbike Warranty Expiration",
+    "UIType": "UncontrolledContains",
+    "SYW": true,
+    "Gold": false,
+    "IsAttribute": true
+}, {
+    "Group": "Basic Information",
+    "Attribute": "Ethnicity SYW",
+    "Description": "This is members's  Motorbike Last Maintenance Date",
+    "UIType": "UncontrolledContains",
+    "SYW": true,
+    "Gold": false,
+    "IsAttribute": true
+}, {
+    "Group": "Basic Information",
+    "Attribute": "Language SYW",
+    "Description": "This is members's  Motorbike Milege",
+    "UIType": "UncontrolledContains",
+    "SYW": true,
+    "Gold": false,
+    "IsAttribute": true
+}, {
+    "Group": "Basic Information",
+    "Attribute": "Birthday Month SYW",
+    "Description": "This is members's  Height",
+    "UIType": "UncontrolledContains",
+    "SYW": true,
+    "Gold": true,
+    "IsAttribute": false
+}, {
+    "Group": "Basic Information",
+    "Attribute": "Birthday Year SYW",
+    "Description": "This is members's  Weight",
+    "UIType": "UncontrolledContains",
+    "SYW": true,
+    "Gold": true,
+    "IsAttribute": false
+}, {
+    "Group": "Basic Information",
+    "Attribute": "Education Level SYW",
+    "Description": "This is members's  Body Shape",
+    "UIType": "UncontrolledContains",
+    "SYW": true,
+    "Gold": false,
+    "IsAttribute": true
+}, {
+    "Group": "Basic Information",
+    "Attribute": "Member Age SYW",
+    "Description": "This is members's  T- Shirt Size",
+    "UIType": "UncontrolledContains",
+    "SYW": true,
+    "Gold": false,
+    "IsAttribute": true
+}, {
+    "Group": "Basic Information",
+    "Attribute": "Home Address SYW",
+    "Description": "This is members's  Shoe Size",
+    "UIType": "UncontrolledContains",
+    "SYW": true,
+    "Gold": false,
+    "IsAttribute": true
+}, {
+  "Group": "Web/Social",
+  "Attribute": "Social Media Profiles",
+  "AttributeCollectionMapping": "SocialMediaProfiles",
+  "Description": "This is members's  Relationship Status",
+  "UIType": "UncontrolledContains",
+  "SYW": false,
+  "Gold": true,
+  "IsAllNone": true,
+  "DisplayOrder":"AA",
+  "IsAttribute": true
+},{
+    "Group": "Web/Social",
+    "Attribute": "Tweet Content Search Tags",
+    "AttributeCollectionMapping": "TweetContentSearchTags",
+    "Description": "",
+    "UIType": "DrillDownSpecial",
+    "IsTopSearch":false,
+    "SYW": false,
+    "Gold": true,
+    "IsAll": false,
+    "IsAttribute": true,
+    "DisplayOrder":"AB",
+    "LevelsPrefix": "",
+    "IsAllNone": false,
+    "Levels": [
+        {
+            "Title": "Source",
+            "AttributeName": "TweetContentSearchTags",
+            "Prefix":"01 || ",
+            "LevelKey":"tagsrc:"
+        },
+        {
+            "Title": "Category",
+            "AttributeName": "TweetContentSearchTags",
+            "Prefix":"01_02 || ",
+            "LevelKey":"tagcatg:"
+        },
+        {
+            "Title": "Search Word",
+            "AttributeName": "TweetContentSearchTags",
+            "Prefix":"01_02_03 || ",
+            "LevelKey":"srchword:"
+        }
+    ]
+},{
+    "Group": "Web/Social",
+    "Attribute": "Klout Score",
+    "AttributeCollectionMapping": "KloutScore",
+    "Description": "This is members's  KloutScore",
+    "UIType": "UncontrolledContains",
+    "SYW": false,
+    "Gold": true,
+    "IsAllNone": false,
+    "DisplayOrder":"AC",
+    "IsAttribute": true
+},{
+    "Group": "Web/Social",
+    "Attribute": "Websites -> Browsing Behavior -> Categories",
+    "AttributeCollectionMapping": "WebTraitsSiteTypeVerticals7Day",
+    "Description": "",
+    "UIType": "DrillDownSpecial",
+    "IsTopSearch":false,
+    "SYW": false,
+    "Gold": true,
+    "IsAll": false,
+    "IsAttribute": true,
+    "IsWebSocial": true,
+    "DisplayOrder":"AH",
+    "LevelsPrefix": "",
+    "IsAllNone": false,
+    "Levels": [
+        {
+            "Title": "Websites(7 days)",
+            "AttributeName": "WebTraitsSiteTypeVerticals7Day",
+            "Prefix":"01 || ",
+            "LevelKey":"website:"
+        },
+        {
+            "Title": "Browsing Behavior(7 Days)",
+            "AttributeName": "WebTraitsSiteTypeVerticals7Day",
+            "Prefix":"01_02 || ",
+            "LevelKey":"traittype:"
+        },
+        {
+            "Title": "Categories(7 Days)",
+            "AttributeName": "WebTraitsSiteTypeVerticals7Day",
+            "Prefix":"01_02_03 || ",
+            "LevelKey":"vertical:"
+        }
+    ]
+},{
+    "Group": "Web/Social",
+    "Attribute": "Websites -> Categories",
+    "AttributeCollectionMapping": "WebTraitsSiteTypeVerticals7Day",
+    "Description": "",
+    "UIType": "DrillDownSpecial",
+    "IsTopSearch":false,
+    "SYW": false,
+    "Gold": true,
+    "IsAll": false,
+    "IsAttribute": true,
+    "IsWebSocial": true,
+    "DisplayOrder":"AJ",
+    "LevelsPrefix": "",
+    "IsAllNone": false,
+    "Levels": [
+        {
+            "Title": "Websites(7 Days)",
+            "AttributeName": "WebTraitsSiteTypeVerticals7Day",
+            "Prefix":"01 || ",
+            "LevelKey":"website:"
+        },
+        {
+            "Title": "Categories(7 Days)",
+            "AttributeName": "WebTraitsSiteTypeVerticals7Day",
+            "Prefix":"01_03 || ",
+            "LevelKey":"vertical:"
+        }
+    ]
+},{
+    "Group": "Web/Social",
+    "Attribute": "Websites -> Browsing Behavior",
+    "AttributeCollectionMapping": "WebTraitsSiteTypeVerticals7Day",
+    "Description": "",
+    "UIType": "DrillDownSpecial",
+    "IsTopSearch":false,
+    "SYW": false,
+    "Gold": true,
+    "IsAll": false,
+    "IsAttribute": true,
+    "IsWebSocial": true,
+    "DisplayOrder":"AI",
+    "LevelsPrefix": "",
+    "IsAllNone": false,
+    "Levels": [
+        {
+            "Title": "Websites(7 Days)",
+            "AttributeName": "WebTraitsSiteTypeVerticals7Day",
+            "Prefix":"01 || ",
+            "LevelKey":"website:"
+        },
+        {
+            "Title": "Browsing Behavior(7 Days)",
+            "AttributeName": "WebTraitsSiteTypeVerticals7Day",
+            "Prefix":"01_02 || ",
+            "LevelKey":"traittype:"
+        }
+    ]
+},{
+    "Group": "Web/Social",
+    "Attribute": "Websites -> Browsing Behavior -> Categories (30 Days)",
+    "AttributeCollectionMapping": "WebTraitsSiteTypeVerticals30Day",
+    "Description": "",
+    "UIType": "DrillDownSpecial",
+    "IsTopSearch":false,
+    "SYW": false,
+    "Gold": true,
+    "IsAll": false,
+    "IsAttribute": false,
+    "IsWebSocial": true,
+    "DisplayOrder":"AJ",
+    "LevelsPrefix": "",
+    "IsAllNone": false,
+    "Levels": [
+        {
+            "Title": "Websites(30 days)",
+            "AttributeName": "WebTraitsSiteTypeVerticals30Day",
+            "Prefix":"01 || ",
+            "LevelKey":"website:"
+        },
+        {
+            "Title": "Browsing Behavior(7 Days)",
+            "AttributeName": "WebTraitsSiteTypeVerticals30Day",
+            "Prefix":"01_02 || ",
+            "LevelKey":"traittype:"
+        },
+        {
+            "Title": "Categories(7 Days)",
+            "AttributeName": "WebTraitsSiteTypeVerticals30Day",
+            "Prefix":"01_02_03 || ",
+            "LevelKey":"vertical:"
+        }
+    ]
+},{
+    "Group": "Web/Social",
+    "Attribute": "Websites -> Categories (30 Days)",
+    "AttributeCollectionMapping": "WebTraitsSiteTypeVerticals30Day",
+    "Description": "",
+    "UIType": "DrillDownSpecial",
+    "IsTopSearch":false,
+    "SYW": false,
+    "Gold": true,
+    "IsAll": false,
+    "IsAttribute": false,
+    "IsWebSocial": true,
+    "DisplayOrder":"AK",
+    "LevelsPrefix": "",
+    "IsAllNone": false,
+    "Levels": [
+        {
+            "Title": "Websites(30 Days)",
+            "AttributeName": "WebTraitsSiteTypeVerticals30Day",
+            "Prefix":"01 || ",
+            "LevelKey":"website:"
+        },
+        {
+            "Title": "Categories(30 Days)",
+            "AttributeName": "WebTraitsSiteTypeVerticals30Day",
+            "Prefix":"01_03 || ",
+            "LevelKey":"vertical:"
+        }
+    ]
+},{
+    "Group": "Web/Social",
+    "Attribute": "Websites -> Browsing Behavior (30 Days)",
+    "AttributeCollectionMapping": "WebTraitsSiteTypeVerticals30Day",
+    "Description": "",
+    "UIType": "DrillDownSpecial",
+    "IsTopSearch":false,
+    "SYW": false,
+    "Gold": true,
+    "IsAll": false,
+    "IsAttribute": false,
+    "IsWebSocial": true,
+    "DisplayOrder":"AL",
+    "LevelsPrefix": "",
+    "IsAllNone": false,
+    "Levels": [
+        {
+            "Title": "Websites(30 Days)",
+            "AttributeName": "WebTraitsSiteTypeVerticals30Day",
+            "Prefix":"01 || ",
+            "LevelKey":"website:"
+        },
+        {
+            "Title": "Browsing Behavior(30 Days)",
+            "AttributeName": "WebTraitsSiteTypeVerticals30Day",
+            "Prefix":"01_02 || ",
+            "LevelKey":"traittype:"
+        }
+    ]
+},{
+    "Group": "Web/Social",
+    "Attribute": "Websites -> Browsing Behavior -> Categories (60 Days)",
+    "AttributeCollectionMapping": "WebTraitsSiteTypeVerticals60Day",
+    "Description": "",
+    "UIType": "DrillDownSpecial",
+    "IsTopSearch":false,
+    "SYW": false,
+    "Gold": true,
+    "IsAll": false,
+    "IsAttribute": false,
+    "IsWebSocial": true,
+    "DisplayOrder":"AM",
+    "LevelsPrefix": "",
+    "IsAllNone": false,
+    "Levels": [
+        {
+            "Title": "Websites(60 days)",
+            "AttributeName": "WebTraitsSiteTypeVerticals60Day",
+            "Prefix":"01 || ",
+            "LevelKey":"website:"
+        },
+        {
+            "Title": "Browsing Behavior(60 Days)",
+            "AttributeName": "WebTraitsSiteTypeVerticals60Day",
+            "Prefix":"01_02 || ",
+            "LevelKey":"traittype:"
+        },
+        {
+            "Title": "Categories(60 Days)",
+            "AttributeName": "WebTraitsSiteTypeVerticals60Day",
+            "Prefix":"01_02_03 || ",
+            "LevelKey":"vertical:"
+        }
+    ]
+},{
+    "Group": "Web/Social",
+    "Attribute": "Websites -> Categories (60 Days)",
+    "AttributeCollectionMapping": "WebTraitsSiteTypeVerticals60Day",
+    "Description": "",
+    "UIType": "DrillDownSpecial",
+    "IsTopSearch":false,
+    "SYW": false,
+    "Gold": true,
+    "IsAll": false,
+    "IsAttribute": false,
+    "IsWebSocial": true,
+    "DisplayOrder":"AN",
+    "LevelsPrefix": "",
+    "IsAllNone": false,
+    "Levels": [
+        {
+            "Title": "Websites(60 Days)",
+            "AttributeName": "WebTraitsSiteTypeVerticals60Day",
+            "Prefix":"01 || ",
+            "LevelKey":"website:"
+        },
+        {
+            "Title": "Categories(30 Days)",
+            "AttributeName": "WebTraitsSiteTypeVerticals60Day",
+            "Prefix":"01_03 || ",
+            "LevelKey":"vertical:"
+        }
+    ]
+},{
+    "Group": "Web/Social",
+    "Attribute": "Websites -> Browsing Behavior (60 Days)",
+    "AttributeCollectionMapping": "WebTraitsSiteTypeVerticals60Day",
+    "Description": "",
+    "UIType": "DrillDownSpecial",
+    "IsTopSearch":false,
+    "SYW": false,
+    "Gold": true,
+    "IsAll": false,
+    "IsAttribute": false,
+    "IsWebSocial": true,
+    "DisplayOrder":"AO",
+    "LevelsPrefix": "",
+    "IsAllNone": false,
+    "Levels": [
+        {
+            "Title": "Websites(60 Days)",
+            "AttributeName": "WebTraitsSiteTypeVerticals60Day",
+            "Prefix":"01 || ",
+            "LevelKey":"website:"
+        },
+        {
+            "Title": "Browsing Behavior(60 Days)",
+            "AttributeName": "WebTraitsSiteTypeVerticals60Day",
+            "Prefix":"01_02 || ",
+            "LevelKey":"traittype:"
+        }
+    ]
+},{
+    "Group": "Web/Social",
+    "Attribute": "Websites -> Browsing Behavior -> Categories (90 Days)",
+    "AttributeCollectionMapping": "WebTraitsSiteTypeVerticals90Day",
+    "Description": "",
+    "UIType": "DrillDownSpecial",
+    "IsTopSearch":false,
+    "SYW": false,
+    "Gold": true,
+    "IsAll": false,
+    "IsAttribute": false,
+    "IsWebSocial": true,
+    "DisplayOrder":"AP",
+    "LevelsPrefix": "",
+    "IsAllNone": false,
+    "Levels": [
+        {
+            "Title": "Websites(90 days)",
+            "AttributeName": "WebTraitsSiteTypeVerticals90Day",
+            "Prefix":"01 || ",
+            "LevelKey":"website:"
+        },
+        {
+            "Title": "Browsing Behavior(90 days)",
+            "AttributeName": "WebTraitsSiteTypeVerticals90Day",
+            "Prefix":"01_02 || ",
+            "LevelKey":"traittype:"
+        },
+        {
+            "Title": "Categories(90 days)",
+            "AttributeName": "WebTraitsSiteTypeVerticals90Day",
+            "Prefix":"01_02_03 || ",
+            "LevelKey":"vertical:"
+        }
+    ]
+},{
+    "Group": "Web/Social",
+    "Attribute": "Websites -> Categories (90 Days)",
+    "AttributeCollectionMapping": "WebTraitsSiteTypeVerticals90Day",
+    "Description": "",
+    "UIType": "DrillDownSpecial",
+    "IsTopSearch":false,
+    "SYW": false,
+    "Gold": true,
+    "IsAll": false,
+    "IsAttribute": false,
+    "IsWebSocial": true,
+    "DisplayOrder":"AQ",
+    "LevelsPrefix": "",
+    "IsAllNone": false,
+    "Levels": [
+        {
+            "Title": "Websites(90 days)",
+            "AttributeName": "WebTraitsSiteTypeVerticals90Day",
+            "Prefix":"01 || ",
+            "LevelKey":"website:"
+        },
+        {
+            "Title": "Categories(90 days)",
+            "AttributeName": "WebTraitsSiteTypeVerticals90Day",
+            "Prefix":"01_03 || ",
+            "LevelKey":"vertical:"
+        }
+    ]
+},{
+    "Group": "Web/Social",
+    "Attribute": "Websites -> Browsing Behavior (90 Days)",
+    "AttributeCollectionMapping": "WebTraitsSiteTypeVerticals90Day",
+    "Description": "",
+    "UIType": "DrillDownSpecial",
+    "IsTopSearch":false,
+    "SYW": false,
+    "Gold": true,
+    "IsAll": false,
+    "IsAttribute": false,
+    "IsWebSocial": true,
+    "DisplayOrder":"AR",
+    "LevelsPrefix": "",
+    "IsAllNone": false,
+    "Levels": [
+        {
+            "Title": "Websites(90 Days)",
+            "AttributeName": "WebTraitsSiteTypeVerticals90Day",
+            "Prefix":"01 || ",
+            "LevelKey":"website:"
+        },
+        {
+            "Title": " Browsing Behavior(90 Days)",
+            "AttributeName": "WebTraitsSiteTypeVerticals90Day",
+            "Prefix":"01_02 || ",
+            "LevelKey":"traittype:"
+        }
+    ]
+},{
+    "Group": "Charitable Givings",
+    "Attribute": "Charitable Givings",
+    "AttributeCollectionMapping": "CharitableGivings",
+    "Description": "This is members's  Bust",
+    "UIType": "UncontrolledContains",
+    "SYW": false,
+    "Gold": true,
+    "IsAttribute": true
+}, {
+    "Group": "Cohort 12 Mo Active Shoppers",
+    "Attribute": "Craftsman club?",
+    "AttributeCollectionMapping": "CraftsmanClubInd",
+    "Description": "This is members's  TV Provider",
+    "UIType": "UncontrolledContains",
+    "SYW": false,
+    "Gold": true,
+    "DisplayOrder":"CA",
+    "IsAttribute": true
+}, {
+    "Group": "Cohort 12 Mo Active Shoppers",
+    "Attribute": "SHC Tripper Bucket",
+    "AttributeCollectionMapping": "TripperBucket",
+    "Description": "This is members's  Waist",
+    "UIType": "UncontrolledContains",
+    "SYW": false,
+    "Gold": false,
+    "IsAllNone": true,
+    "DisplayOrder":"CJ",
+    "IsAttribute": true
+}, {
+    "Group": "Cohort 12 Mo Active Shoppers",
+    "Attribute": "Sears Tripper Bucket",
+    "AttributeCollectionMapping": "FormatTripperSears",
+    "Description": "This is members's  Sears Tripper",
+    "UIType": "UncontrolledContains",
+    "SYW": false,
+    "Gold": false,
+    "DisplayOrder":"CM",
+    "IsAttribute": true
+}, {
+    "Group": "Cohort 12 Mo Active Shoppers",
+    "Attribute": "Kmart Tripper Bucket",
+    "AttributeCollectionMapping": "FormatTripperKmart",
+    "Description": "This is members's  Kmart Tripper",
+    "UIType": "UncontrolledContains",
+    "SYW": false,
+    "Gold": false,
+    "DisplayOrder":"CP",
+    "IsAttribute": true
+}, {
+    "Group": "Cohort 12 Mo Active Shoppers",
+    "Attribute": "Kmart MRC Tripper - Name -> Tripper Bucket",
+    "AttributeCollectionMapping": "MRCFormatTripperKmart",
+    "Description": "",
+    "UIType": "DrillDown",
+    "IsTopSearch":false,
+    "SYW": false,
+    "Gold": false,
+    "IsAll": false,
+    "IsAttribute": true,
+    "DisplayOrder":"CN",
+    "LevelsPrefix": "Kmart MRC Tripper",
+    "IsAllNone": false,
+    "Levels": [
+        {
+            "Title": "Name",
+            "AttributeName": "MRCFormatTripperKmart_s",
+            "Prefix":"kvname:"
+        },
+        {
+            "Title": "TripperBucket",
+            "AttributeName": "MRCFormatTripperKmart",
+            "isPrefix":true
+
+        }
+    ]
+}, {
+    "Group": "Cohort 12 Mo Active Shoppers",
+    "Attribute": "Sears MRC Tripper - Name -> Tripper Bucket",
+    "AttributeCollectionMapping": "MRCFormatTripperSears",
+    "Description": "",
+    "UIType": "DrillDown",
+    "IsTopSearch":false,
+    "SYW": false,
+    "Gold": false,
+    "IsAll": false,
+    "IsAttribute": true,
+    "DisplayOrder":"CK",
+    "LevelsPrefix": "Sears MRC Tripper",
+    "IsAllNone": false,
+    "Levels": [
+        {
+            "Title": "Name",
+            "AttributeName": "MRCFormatTripperSears_s",
+            "Prefix":"kvname:"
+        },
+        {
+            "Title": "TripperBucket",
+            "AttributeName": "MRCFormatTripperSears",
+            "isPrefix":true
+
+        }
+    ]
+},{
+    "Group": "Cohort 12 Mo Active Shoppers",
+    "Attribute": "Online Active",
+    "AttributeCollectionMapping": "OnlineActvInd",
+    "Description": "This is members's  Hip",
+    "UIType": "UncontrolledContains",
+    "SYW": false,
+    "Gold": false,
+    "DisplayOrder":"CD",
+    "IsAttribute": true
+}, {
+    "Group": "Cohort 12 Mo Active Shoppers",
+    "Attribute": "Redeemer",
+    "AttributeCollectionMapping": "RedeemerInd",
+    "Description": "This is members's  Favorite Clothing Style",
+    "UIType": "UncontrolledContains",
+    "SYW": false,
+    "Gold": false,
+    "Gold": false,
+    "DisplayOrder":"CE",
+    "IsAttribute": true
+}, {
+    "Group": "Cohort 12 Mo Active Shoppers",
+    "Attribute": "Sears CC User",
+    "AttributeCollectionMapping": "SrsCCUserInd",
+    "Description": "This is members's  Favorite Shirt Colors",
+    "UIType": "UncontrolledContains",
+    "SYW": false,
+    "Gold": false,
+    "DisplayOrder":"CG",
+    "IsAttribute": true
+}, {
+    "Group": "Cohort 12 Mo Active Shoppers",
+    "Attribute": "SYW Max",
+    "AttributeCollectionMapping": "SywMaxInd",
+    "Description": "This is members's  Favorite Pants Color",
+    "UIType": "UncontrolledContains",
+    "SYW": false,
+    "Gold": false,
+    "DisplayOrder":"CF",
+    "IsAttribute": true
+}, {
+    "Group": "Cohort 12 Mo Active Shoppers",
+    "Attribute": "SywVIP",
+    "AttributeCollectionMapping": "SywrVIPInd",
+    "Description": "This is members's  Favorite Shoe Colors",
+    "UIType": "UncontrolledContains",
+    "SYW": false,
+    "Gold": false,
+    "IsAllNone": true,
+    "DisplayOrder":"CH",
+    "IsAttribute": true
+}, {
+    "Group": "Cohort 12 Mo Active Shoppers",
+    "Attribute": "Emailable",
+    "AttributeCollectionMapping": "EmailInd",
+    "Description": "This is members's  Favorite Hat Styles",
+    "UIType": "UncontrolledContains",
+    "SYW": false,
+    "Gold": false,
+    "DisplayOrder":"CB",
+    "IsAttribute": true
+}, {
+    "Group": "Cohort 12 Mo Active Shoppers",
+    "Attribute": "SHC Spend Bucket",
+    "AttributeCollectionMapping": "SpendBucket",
+    "Description": "This is members's  Work Dress Code",
+    "UIType": "UncontrolledContains",
+    "SYW": false,
+    "Gold": false,
+    "IsAllNone": false,
+    "DisplayOrder":"CI",
+    "IsAttribute": true
+}, {
+    "Group": "Cohort 12 Mo Active Shoppers",
+    "Attribute": "Sears Spend Bucket",
+    "AttributeCollectionMapping": "SpendBucketSears",
+    "Description": "This is members's  Sears Spend Bucket",
+    "UIType": "UncontrolledContains",
+    "SYW": false,
+    "Gold": false,
+    "DisplayOrder":"CL",
+    "IsAttribute": true
+}, {
+    "Group": "Cohort 12 Mo Active Shoppers",
+    "Attribute": "Kmart Spend Bucket",
+    "AttributeCollectionMapping": "SpendBucketKmart",
+    "Description": "This is members's  Kmart Spend Bucket",
+    "UIType": "UncontrolledContains",
+    "SYW": false,
+    "Gold": false,
+    "DisplayOrder":"CO",
+    "IsAttribute": true
+}, {
+    "Group": "Cohort 12 Mo Active Shoppers",
+    "Attribute": "KidVantage Member?",
+    "AttributeCollectionMapping": "MembershipKidAdvantageInd",
+    "Description": "This is members's  Favorite Apprel Brands",
+    "UIType": "UncontrolledContains",
+    "SYW": false,
+    "Gold": false,
+    "DisplayOrder":"CC",
+    "IsAttribute": true
+}, {
+    "Group": "Contactability",
+    "Attribute": "Home Phone",
+    "AttributeCollectionMapping": "ContactDetails",
+    "Description": "",
+    "UIType": "UncontrolledContains",
+    "IsTopSearch":false,
+    "SYW": false,
+    "Gold": true,
+    "IsAll": true,
+    "IsAttribute": true,
+    "IsContactDetails": true,
+    "IsAllNone": false,
+    "Prefix":"02 || type:homephone",
+    "Levels":[
+        {
+            "Title": "Valid Home Phone",
+            "Prefix": "02_03 || type:homephone || isvalidformat:"
+        },
+        {
+            "Title": "Opt in Home Phone",
+            "Prefix": "02_04 || type:homephone || optin:y"
+        }
+    ]
+},{
+    "Group": "Contactability",
+    "Attribute": "Mobile Phone",
+    "AttributeCollectionMapping": "ContactDetails",
+    "Description": "",
+    "UIType": "UncontrolledContains",
+    "IsTopSearch":false,
+    "SYW": false,
+    "Gold": true,
+    "IsAll": true,
+    "IsAttribute": true,
+    "IsContactDetails": true,
+    "IsAllNone": false,
+    "Prefix":"02 || type:mobilephone",
+    "Levels":[
+        {
+            "Title": "Valid Mobile Phone",
+            "Prefix": "02_03 || type:mobilephone || isvalidformat:y"
+        },
+        {
+            "Title": "Opt in Mobile Phone",
+            "Prefix": "02_04 || type:mobilephone || optin:y"
+        }
+    ]
+},{
+    "Group": "Contactability",
+    "Attribute": "Email OptIn",
+    "AttributeCollectionMapping": "ContactDetails",
+    "Description": "",
+    "UIType": "UncontrolledContains",
+    "IsTopSearch":false,
+    "SYW": false,
+    "Gold": true,
+    "IsAll": true,
+    "IsAttribute": true,
+    "IsContactDetails": true,
+    "IsAllNone": false,
+    "Prefix":"02 || type:email",
+    "Levels":[
+        {
+            "Title": "",
+            "Prefix": "02_04 || type:email || optin:"
+        },
+        {
+            "Title": "Valid Email",
+            "Prefix": "02_03 || type:email || isvalidformat:y"
+        }
+
+    ]
+},{
+    "Group": "Contactability",
+    "Attribute": "Email Contact 6 Months",
+    "AttributeCollectionMapping": "EmailContact6Month",
+    "Description": "This is members's Email Contact 6Month",
+    "UIType": "UncontrolledContains",
+    "IsTopSearch":false,
+    "SYW": false,
+    "Gold": false,
+    "IsAll": true,
+    "IsAttribute": true,
+    "IsAllNone": false
+},{
+    "Group": "Contactability",
+    "Attribute": "Email Contact 12 Months",
+    "AttributeCollectionMapping": "EmailContact12Month",
+    "Description": "This is members's Email Contact 12Month",
+    "UIType": "UncontrolledContains",
+    "IsTopSearch":false,
+    "SYW": false,
+    "Gold": false,
+    "IsAll": true,
+    "IsAttribute": true,
+    "IsAllNone": false
+},{
+    "Group": "Entertainment",
+    "Attribute": "Favorite Music Artists",
+    "AttributeCollectionMapping": "FavoriteMusicArtists",
+    "Description": "This is members's  Arts & Crafts",
+    "UIType": "UncontrolledContains",
+    "SYW": false,
+    "Gold": false,
+    "IsAttribute": true
+}, {
+    "Group": "Entertainment",
+    "Attribute": "Favorite Music Styles",
+    "AttributeCollectionMapping": "FavoriteMusicStyles",
+    "Description": "This is members's  Collection Hobbies",
+    "UIType": "UncontrolledContains",
+    "SYW": false,
+    "Gold": false,
+    "IsAttribute": true
+}, {
+    "Group": "Entertainment",
+    "Attribute": "Favorite Music Stores",
+    "AttributeCollectionMapping": "FavoriteMusicStores",
+    "Description": "This is members's  Games",
+    "UIType": "UncontrolledContains",
+    "SYW": false,
+    "Gold": false,
+    "IsAttribute": true
+}, {
+    "Group": "Entertainment",
+    "Attribute": "Online Music Services",
+    "AttributeCollectionMapping": "OnlineMusicServices",
+    "Description": "This is members's  Martial Arts",
+    "UIType": "UncontrolledContains",
+    "SYW": false,
+    "Gold": false,
+    "IsAttribute": true
+}, {
+    "Group": "Entertainment",
+    "Attribute": "Favorite Movies",
+    "AttributeCollectionMapping": "FavoriteMovies",
+    "Description": "This is members's  Outdoor Activities",
+    "UIType": "UncontrolledContains",
+    "SYW": false,
+    "Gold": false,
+    "IsAttribute": true
+}, {
+    "Group": "Entertainment",
+    "Attribute": "Favorite Genres",
+    "AttributeCollectionMapping": "FavoriteGenres",
+    "Description": "This is members's  Performing Arts",
+    "UIType": "UncontrolledContains",
+    "SYW": false,
+    "Gold": false,
+    "IsAttribute": true
+}, {
+    "Group": "Entertainment",
+    "Attribute": "Cinema Visit Frequency",
+    "AttributeCollectionMapping": "CinemaVisitFrequency",
+    "Description": "This is members's  Science & Electronics",
+    "UIType": "UncontrolledContains",
+    "SYW": false,
+    "Gold": false,
+    "IsAttribute": true
+}, {
+    "Group": "Entertainment",
+    "Attribute": "Movie Renting Frequency?",
+    "AttributeCollectionMapping": "MovieRentingFrequency",
+    "Description": "This is members's  Individual Sports",
+    "UIType": "UncontrolledContains",
+    "SYW": false,
+    "Gold": false,
+    "IsAttribute": true
+}, {
+    "Group": "Entertainment",
+    "Attribute": "Magazine Subscriptions",
+    "AttributeCollectionMapping": "MagazineSubscriptions",
+    "Description": "This is members's  Racket Sports",
+    "UIType": "UncontrolledContains",
+    "SYW": false,
+    "Gold": false,
+    "IsAttribute": true
+}, {
+    "Group": "Entertainment",
+    "Attribute": "Number Of Books Read Annualy?",
+    "AttributeCollectionMapping": "NumberOfBooksReadAnnualy",
+    "Description": "This is members's  Team Sports",
+    "UIType": "UncontrolledContains",
+    "SYW": false,
+    "Gold": false,
+    "IsAttribute": true
+}, {
+    "Group": "Entertainment",
+    "Attribute": "Favorite Authors",
+    "AttributeCollectionMapping": "FavoriteAuthors",
+    "Description": "This is members's  Water Sports",
+    "UIType": "UncontrolledContains",
+    "SYW": false,
+    "Gold": false,
+    "IsAttribute": true
+}, {
+    "Group": "Entertainment",
+    "Attribute": "Favorite Books",
+    "AttributeCollectionMapping": "FavoriteBooks",
+    "Description": "This is members's  Wheeled Sports",
+    "UIType": "UncontrolledContains",
+    "SYW": false,
+    "Gold": false,
+    "IsAttribute": true
+}, {
+    "Group": "Entertainment",
+    "Attribute": "TV Provider",
+    "AttributeCollectionMapping": "TVProvider",
+    "Description": "This is members's  Winter Sports",
+    "UIType": "UncontrolledContains",
+    "SYW": false,
+    "Gold": false,
+    "IsAttribute": true
+}, {
+    "Group": "Entertainment",
+    "Attribute": "TV Subscription Packages",
+    "AttributeCollectionMapping": "TVSubscriptionPackages",
+    "Description": "This is members's  Other",
+    "UIType": "UncontrolledContains",
+    "SYW": false,
+    "Gold": false,
+    "IsAttribute": true
+}, {
+    "Group": "Entertainment",
+    "Attribute": "Favorite TV Channels",
+    "AttributeCollectionMapping": "FavoriteTVChannels",
+    "Description": "This is members's  Indoor Hobbies",
+    "UIType": "UncontrolledContains",
+    "SYW": false,
+    "Gold": false,
+    "IsAttribute": true
+}, {
+    "Group": "Entertainment",
+    "Attribute": "Favorite TV Shows",
+    "AttributeCollectionMapping": "FavoriteTVShows",
+    "Description": "This is members's  Indoor Competitive Hobbies",
+    "UIType": "UncontrolledContains",
+    "SYW": false,
+    "Gold": false,
+    "IsAttribute": true
+}, {
+    "Group": "Entertainment",
+    "Attribute": "Use Netflix? ",
+    "AttributeCollectionMapping": "NetflixSubscription",
+    "Description": "This is members's  Outdoor Hobbies",
+    "UIType": "UncontrolledContains",
+    "SYW": false,
+    "Gold": false,
+    "IsAttribute": true,
+  "IsIndicator": true
+}, {
+    "Group": "Entertainment",
+    "Attribute": "Own Apple TV ",
+    "AttributeCollectionMapping": "OwnAppleTV",
+    "Description": "This is members's  Observation Hobbies",
+    "UIType": "UncontrolledContains",
+    "SYW": false,
+    "Gold": false,
+    "IsAttribute": true,
+  "IsIndicator": true
+
+}, {
+    "Group": "Entertainment",
+    "Attribute": "Number Of TVs In Home",
+    "AttributeCollectionMapping": "NumberOfTVsInHome",
+    "Description": "This is members's  Outdoor Competitive Hobbies",
+    "UIType": "UncontrolledContains",
+    "SYW": false,
+    "Gold": false,
+    "IsAttribute": true
+}, {
+    "Group": "Family & Relationships",
+    "Attribute": "Relationship Status",
+    "AttributeCollectionMapping": "RelationshipStatus",
+    "Description": "This is members's  Spouse Birth Date",
+    "UIType": "UncontrolledContains",
+    "SYW": false,
+    "Gold": true,
+    "IsAttribute": true
+}, {
+    "Group": "Family & Relationships",
+    "Attribute": "Spouse Gender",
+    "AttributeCollectionMapping": "SpouseGender",
+    "Description": "This is members's  Spouse Anniversary",
+    "UIType": "UncontrolledContains",
+    "SYW": false,
+    "Gold": false,
+    "IsAttribute": true
+}, {
+    "Group": "Family & Relationships",
+    "Attribute": "Spouse Birth Date",
+    "AttributeCollectionMapping": "SpouseBirthDate",
+    "Description": "This is members's  Child Gender",
+    "UIType": "Date",
+    "SYW": false,
+    "Gold": false,
+    "IsAttribute": true
+}, {
+    "Group": "Family & Relationships",
+    "Attribute": "Spouse Anniversary",
+    "AttributeCollectionMapping": "SpouseAnniversary",
+    "Description": "This is members's  Child Birth Date",
+    "UIType": "Date",
+    "SYW": false,
+    "Gold": false,
+    "IsAttribute": true
+}, {
+    "Group": "Family & Relationships",
+    "Attribute": "Child Gender",
+    "AttributeCollectionMapping": "ChildGender",
+    "Description": "This is members's  Child Anniversary",
+    "UIType": "UncontrolledContains",
+    "SYW": false,
+    "Gold": false,
+    "IsAttribute": true
+}, {
+    "Group": "Family & Relationships",
+    "Attribute": "Child Birth Date",
+    "AttributeCollectionMapping": "ChildBirthDate",
+    "Description": "This is members's  Expecting Baby?",
+    "UIType": "Date",
+    "SYW": false,
+    "Gold": false,
+    "IsAttribute": true
+}, {
+    "Group": "Family & Relationships",
+    "Attribute": "Child Anniversary",
+    "AttributeCollectionMapping": "ChildAnniversary",
+    "Description": "This is members's  Expected Baby Gender?",
+    "UIType": "Date",
+    "SYW": false,
+    "Gold": false,
+    "IsAttribute": true
+}, {
+    "Group": "Family & Relationships",
+    "Attribute": "Expecting Baby? ",
+    "AttributeCollectionMapping": "ExpectingBaby",
+    "Description": "This is members's  Expected Baby Due Date",
+    "UIType": "UncontrolledContains",
+    "SYW": false,
+    "Gold": true,
+    "IsAttribute": true,
+  "IsIndicator": true
+}, {
+    "Group": "Family & Relationships",
+    "Attribute": "Expected Baby Gender?",
+    "AttributeCollectionMapping": "ExpectedBabyGender",
+    "Description": "This is members's  Father Birthday",
+    "UIType": "UncontrolledContains",
+    "SYW": false,
+    "Gold": false,
+    "IsAttribute": true
+}, {
+    "Group": "Family & Relationships",
+    "Attribute": "Expected Baby Due Date",
+    "AttributeCollectionMapping": "ExpectedBabyDueDate",
+    "Description": "This is members's  Mother Birth day",
+    "UIType": "Date",
+    "SYW": false,
+    "Gold": false,
+    "IsAttribute": true
+}, {
+    "Group": "Family & Relationships",
+    "Attribute": "Father Birthday",
+    "AttributeCollectionMapping": "FatherBirthday",
+    "Description": "This is members's  Parents' Anniversary",
+    "UIType": "Date",
+    "SYW": false,
+    "Gold": false,
+    "IsAttribute": true
+}, {
+    "Group": "Family & Relationships",
+    "Attribute": "Mother Birth day",
+    "AttributeCollectionMapping": "MotherBirthday",
+    "Description": "This is members's  Siblings Gender",
+    "UIType": "Date",
+    "SYW": false,
+    "Gold": false,
+    "IsAttribute": true
+}, {
+    "Group": "Family & Relationships",
+    "Attribute": "Parents' Anniversary",
+    "AttributeCollectionMapping": "ParentsAnniversary",
+    "Description": "This is members's  Sibling Anniversary",
+    "UIType": "Date",
+    "SYW": false,
+    "Gold": false,
+    "IsAttribute": true
+}, {
+    "Group": "Family & Relationships",
+    "Attribute": "Siblings Gender",
+    "AttributeCollectionMapping": "SiblingsGender",
+    "Description": "This is members's  Sibling BirthDay",
+    "UIType": "UncontrolledContains",
+    "SYW": false,
+    "Gold": false,
+    "IsAttribute": true
+}, {
+    "Group": "Family & Relationships",
+    "Attribute": "Sibling Anniversary",
+    "AttributeCollectionMapping": "SiblingAnniversary",
+    "Description": "This is members's  Do You Wear Corrective Lenses?",
+    "UIType": "Date",
+    "SYW": false,
+    "Gold": false,
+    "IsAttribute": true
+}, {
+    "Group": "Family & Relationships",
+    "Attribute": "Sibling BirthDay",
+    "AttributeCollectionMapping": "SiblingBirthDay",
+    "Description": "This is members's  Corrective Lenses Left Eye Prescription",
+    "UIType": "Date",
+    "SYW": false,
+    "Gold": false,
+    "IsAttribute": true
+}, {
+    "Group": "Family & Relationships",
+    "Attribute": "Child Room",
+    "AttributeCollectionMapping": "ChildRoom",
+    "Description": "This is members's  Corrective Lenses Right Eye Prescription",
+    "UIType": "UncontrolledContains",
+    "SYW": false,
+    "Gold": false,
+    "IsAttribute": true
+}, {
+    "Group": "Family & Relationships",
+    "Attribute": "Children Extra Curricular Activities",
+    "AttributeCollectionMapping": "ChildrenExtraCurricularActivities",
+    "Description": "This is members's  Do You Exercise At Gym?",
+    "UIType": "UncontrolledContains",
+    "SYW": false,
+    "Gold": false,
+    "IsAttribute": true
+}, {
+    "Group": "Family & Relationships",
+    "Attribute": "Children Sports Related Activities",
+    "AttributeCollectionMapping": "ChildrenSportsRelatedActivities",
+    "Description": "This is members's  Gym Club",
+    "UIType": "UncontrolledContains",
+    "SYW": false,
+    "Gold": false,
+    "IsAttribute": true
+}, {
+    "Group": "Family & Relationships",
+    "Attribute": "Children School Uniform",
+    "AttributeCollectionMapping": "ChildrenSchoolUniform",
+    "Description": "This is members's  Monthly Cost of Gym",
+    "UIType": "UncontrolledContains",
+    "SYW": false,
+    "Gold": false,
+    "IsAttribute": true
+}, {
+    "Group": "Family & Relationships",
+    "Attribute": "Residents in Household",
+    "AttributeCollectionMapping": "ResidentsinHousehold",
+    "Description": "This is members's  Health Issues",
+    "UIType": "UncontrolledContains",
+    "SYW": false,
+    "Gold": true,
+    "IsAttribute": true
+}, {
+    "Group": "Family & Relationships",
+    "Attribute": "Empty Nester",
+    "AttributeCollectionMapping": "EmptyNesterInd",
+    "Description": "This is members's  Exercise Frequency",
+    "UIType": "UncontrolledContains",
+    "SYW": false,
+    "Gold": true,
+    "IsAttribute": true
+}, {
+    "Group": "Family & Relationships",
+    "Attribute": "Entering Adulthood",
+    "AttributeCollectionMapping": "EnteringAdulthoodInd",
+    "Description": "This is members's  Trying to lose weight",
+    "UIType": "UncontrolledContains",
+    "SYW": false,
+    "Gold": true,
+    "IsAttribute": true
+}, {
+    "Group": "Family & Relationships",
+    "Attribute": "Newlywed",
+    "AttributeCollectionMapping": "NewlywedInd",
+    "Description": "This is members's  Use Supplements Or Vitamins?",
+    "UIType": "UncontrolledContains",
+    "SYW": false,
+    "Gold": true,
+    "IsAttribute": true
+}, {
+    "Group": "Family & Relationships",
+    "Attribute": "Recent Divorce",
+    "AttributeCollectionMapping": "RecentDivorceInd",
+    "Description": "This is members's  Smoking",
+    "UIType": "UncontrolledContains",
+    "SYW": false,
+    "Gold": true,
+    "IsAttribute": true
+}, {
+    "Group": "Family & Relationships",
+    "Attribute": "Child Near High School Graduation in HH:",
+    "AttributeCollectionMapping": "ChildNearHighSchoolGraduationinHHInd",
+    "Description": "This is members's  Wearable Computing Gadgets",
+    "UIType": "UncontrolledContains",
+    "SYW": false,
+    "Gold": true,
+    "IsAttribute": true
+}, {
+    "Group": "Family & Relationships",
+    "Attribute": "Recent Home Buyer",
+    "AttributeCollectionMapping": "RecentHomeBuyerInd",
+    "Description": "This is members's  Home Address City",
+    "UIType": "UncontrolledContains",
+    "SYW": false,
+    "Gold": true,
+    "IsAttribute": true
+}, {
+    "Group": "Family & Relationships",
+    "Attribute": "Recent Mortgage Borrower",
+    "AttributeCollectionMapping": "RecentMortgageBorrowerInd",
+    "Description": "This is members's  Home Address State Code",
+    "UIType": "UncontrolledContains",
+    "SYW": false,
+    "Gold": true,
+    "IsAttribute": true
+}, {
+    "Group": "Family & Relationships",
+    "Attribute": "New Mover",
+    "AttributeCollectionMapping": "NewMoverInd",
+    "Description": "This is members's  Home Address State Name",
+    "UIType": "UncontrolledContains",
+    "SYW": false,
+    "Gold": true,
+    "IsAttribute": true
+}, {
+    "Group": "Family & Relationships",
+    "Attribute": "New Parent",
+    "AttributeCollectionMapping": "NewParentInd",
+    "Description": "This is members's  Home Address City State Code",
+    "UIType": "UncontrolledContains",
+    "SYW": false,
+    "Gold": true,
+    "IsAttribute": true
+}, {
+    "Group": "Family & Relationships",
+    "Attribute": "Has Children",
+    "AttributeCollectionMapping": "HasChildren",
+    "Description": "This is members's  Home Address Country",
+    "UIType": "UncontrolledContains",
+    "SYW": false,
+    "Gold": true,
+    "IsAttribute": true
+}, {
+    "Group": "Family & Relationships",
+    "Attribute": "Relationship Status SYW",
+    "Description": "This is members's  Home Address ZIP Code",
+    "UIType": "UncontrolledContains",
+    "SYW": true,
+    "Gold": false,
+    "IsAttribute": true
+}, {
+    "Group": "Family & Relationships",
+    "Attribute": "Has Children SYW",
+    "Description": "This is members's  Work Address City",
+    "UIType": "UncontrolledContains",
+    "SYW": true,
+    "Gold": false,
+    "IsAttribute": true
+}, {
+  "Group": "Family & Relationships",
+  "Attribute": "Expecting Baby SYW",
+  "Description": "",
+  "UIType": "UncontrolledContains",
+  "SYW": true,
+  "Gold": false,
+  "IsAttribute": true
+}, {
+    "Group": "Health & Wellness",
+    "Attribute": "Prefer eco friendly products? ",
+    "AttributeCollectionMapping": "Preferecofriendlyproducts",
+    "Description": "This is members's  Work Address State Name",
+    "UIType": "UncontrolledContains",
+    "SYW": false,
+    "Gold": false,
+    "IsAttribute": true,
+  "IsIndicator": true
+}, {
+    "Group": "Health & Wellness",
+    "Attribute": "Prefer locally manufactured products? ",
+    "AttributeCollectionMapping": "Preferlocallymanufacturedproducts",
+    "Description": "This is members's  Work Address State Code",
+    "UIType": "UncontrolledContains",
+    "SYW": false,
+    "Gold": false,
+    "IsAttribute": true,
+  "IsIndicator": true
+
+}, {
+    "Group": "Health & Wellness",
+    "Attribute": "General Nutritional Preferences",
+    "AttributeCollectionMapping": "GeneralNutritionalPreferences",
+    "Description": "This is members's  Work Address Country",
+    "UIType": "UncontrolledContains",
+    "SYW": false,
+    "Gold": false,
+    "IsAttribute": true
+}, {
+    "Group": "Health & Wellness",
+    "Attribute": "Cooking Expertise",
+    "AttributeCollectionMapping": "CookingExpertise",
+    "Description": "This is members's  Work Address ZIP Code",
+    "UIType": "UncontrolledContains",
+    "SYW": false,
+    "Gold": false,
+    "IsAttribute": true
+}, {
+    "Group": "Health & Wellness",
+    "Attribute": "Alcohol Drinking Habits?",
+    "AttributeCollectionMapping": "AlcoholDrinkingHabits",
+    "Description": "This is members's  Parents Address City",
+    "UIType": "UncontrolledContains",
+    "SYW": false,
+    "Gold": false,
+    "IsAttribute": true
+}, {
+    "Group": "Health & Wellness",
+    "Attribute": "Favorite Restaurants",
+    "AttributeCollectionMapping": "FavoriteRestaurants",
+    "Description": "This is members's  Parents Address State",
+    "UIType": "UncontrolledContains",
+    "SYW": false,
+    "Gold": false,
+    "IsAttribute": true
+}, {
+    "Group": "Health & Wellness",
+    "Attribute": "Host Guests Frequency",
+    "AttributeCollectionMapping": "HostGuestsFrequency",
+    "Description": "This is members's  Parents Address Country",
+    "UIType": "UncontrolledContains",
+    "SYW": false,
+    "Gold": false,
+    "IsAttribute": true
+}, {
+    "Group": "Health & Wellness",
+    "Attribute": "Favorite Dishes",
+    "AttributeCollectionMapping": "FavoriteDishes",
+    "Description": "This is members's  Parents Address ZIP Code",
+    "UIType": "UncontrolledContains",
+    "SYW": false,
+    "Gold": false,
+    "IsAttribute": true
+}, {
+    "Group": "Health & Wellness",
+    "Attribute": "Cook For?",
+    "AttributeCollectionMapping": "CookingFor",
+    "Description": "This is members's  Home Phone Number",
+    "UIType": "UncontrolledContains",
+    "SYW": false,
+    "Gold": false,
+    "IsAttribute": true
+}, {
+    "Group": "Health & Wellness",
+    "Attribute": "Cooking Reason",
+    "AttributeCollectionMapping": "CookingReason",
+    "Description": "This is members's  Cell Phone Number",
+    "UIType": "UncontrolledContains",
+    "SYW": false,
+    "Gold": false,
+    "IsAttribute": true
+}, {
+    "Group": "Health & Wellness",
+    "Attribute": "Do You Wear Corrective Lenses? ",
+    "AttributeCollectionMapping": "DoYouWearCorrectiveLenses",
+    "Description": "This is members's  Work Phone Number",
+    "UIType": "UncontrolledContains",
+    "SYW": false,
+    "Gold": false,
+    "IsAttribute": true,
+  "IsIndicator": true
+}, {
+    "Group": "Health & Wellness",
+    "Attribute": "Corrective Lenses Left Eye Prescription",
+    "AttributeCollectionMapping": "CorrectiveLensesLeftEyePrescription",
+    "Description": "This is members's  Bank Name",
+    "UIType": "UncontrolledContains",
+    "SYW": false,
+    "Gold": false,
+    "IsAttribute": true
+}, {
+    "Group": "Health & Wellness",
+    "Attribute": "Corrective Lenses Right Eye Prescription",
+    "AttributeCollectionMapping": "CorrectiveLensesRightEyePrescription",
+    "Description": "This is members's  Bank City",
+    "UIType": "UncontrolledContains",
+    "SYW": false,
+    "Gold": false,
+    "IsAttribute": true
+}, {
+    "Group": "Health & Wellness",
+    "Attribute": "Do You Exercise At Gym?",
+    "AttributeCollectionMapping": "DoYouExerciseAtGym",
+    "Description": "This is members's  Bank State",
+    "UIType": "UncontrolledContains",
+    "SYW": false,
+    "Gold": false,
+    "IsAttribute": true
+}, {
+    "Group": "Health & Wellness",
+    "Attribute": "Gym Club",
+    "AttributeCollectionMapping": "GymClub",
+    "Description": "This is members's  Bank Country",
+    "UIType": "UncontrolledContains",
+    "SYW": false,
+    "Gold": false,
+    "IsAttribute": true
+}, {
+    "Group": "Health & Wellness",
+    "Attribute": "Monthly Cost of Gym",
+    "AttributeCollectionMapping": "MonthlyCostOfGym",
+    "Description": "This is members's  Bank Zip Code",
+    "UIType": "UncontrolledContains",
+    "SYW": false,
+    "Gold": false,
+    "IsAttribute": true
+}, {
+    "Group": "Health & Wellness",
+    "Attribute": "Health Issues",
+    "AttributeCollectionMapping": "HealthIssues",
+    "Description": "This is members's  Primary Credit Card",
+    "UIType": "UncontrolledContains",
+    "SYW": false,
+    "Gold": false,
+    "IsAttribute": true
+}, {
+    "Group": "Health & Wellness",
+    "Attribute": "Exercise Frequency",
+    "AttributeCollectionMapping": "ExerciseFrequency",
+    "Description": "This is members's  Credit Cards in use",
+    "UIType": "UncontrolledContains",
+    "SYW": false,
+    "Gold": false,
+    "IsAttribute": true
+}, {
+    "Group": "Health & Wellness",
+    "Attribute": "Trying to lose weight ",
+    "AttributeCollectionMapping": "TryingToLoseWeight",
+    "Description": "This is members's  Average Car Mileage Per year",
+    "UIType": "UncontrolledContains",
+    "SYW": false,
+    "Gold": false,
+    "IsAttribute": true,
+  "IsIndicator": true
+}, {
+    "Group": "Health & Wellness",
+    "Attribute": "Use Supplements Or Vitamins? ",
+    "AttributeCollectionMapping": "UseSupplementsOrVitamins",
+    "Description": "This is members's  Preferred Beauty Products",
+    "UIType": "UncontrolledContains",
+    "SYW": false,
+    "Gold": false,
+    "IsAttribute": true,
+  "IsIndicator": true
+}, {
+    "Group": "Health & Wellness",
+    "Attribute": "Smoking",
+    "AttributeCollectionMapping": "SmokingHabits",
+    "Description": "This is members's  Beauty Products Range",
+    "UIType": "UncontrolledContains",
+    "SYW": false,
+    "Gold": false,
+    "IsAttribute": true
+}, {
+    "Group": "Health & Wellness",
+    "Attribute": "Wearable Computing Gadgets",
+    "AttributeCollectionMapping": "WearableComputingGadgets",
+    "Description": "This is members's  Beauty Services Frequency",
+    "UIType": "UncontrolledContains",
+    "SYW": false,
+    "Gold": false,
+    "IsAttribute": true
+}, {
+    "Group": "Health & Wellness",
+    "Attribute": "Exercise Reasons",
+    "AttributeCollectionMapping": "ExerciseReasons",
+    "Description": "This is members's  Car Usage",
+    "UIType": "UncontrolledContains",
+    "SYW": false,
+    "Gold": false,
+    "IsAttribute": true
+}, {
+    "Group": "Health & Wellness",
+    "Attribute": "Interested In Sporting Goods Products?",
+    "AttributeCollectionMapping": "InterestedInSportingGoodsProducts",
+    "Description": "This is members's  Child Room",
+    "UIType": "UncontrolledContains",
+    "SYW": false,
+    "Gold": false,
+    "IsAttribute": true
+}, {
+    "Group": "Health & Wellness",
+    "Attribute": "Activities To Stay In Shape",
+    "AttributeCollectionMapping": "ActivitiesToStayInShape",
+    "Description": "This is members's  Children Extra Curricular Activities",
+    "UIType": "UncontrolledContains",
+    "SYW": false,
+    "Gold": false,
+    "IsAttribute": true
+}, {
+    "Group": "Hobbies/Travel and Vacation",
+    "Attribute": "Travel Frequency",
+    "AttributeCollectionMapping": "TravelFrequency",
+    "Description": "This is members's  Children Sports Related Activities",
+    "UIType": "UncontrolledContains",
+    "SYW": false,
+    "Gold": false,
+    "IsAttribute": true
+}, {
+    "Group": "Hobbies/Travel and Vacation",
+    "Attribute": "Vacation Frequency",
+    "AttributeCollectionMapping": "VacationFrequency",
+    "Description": "This is members's  Decor Update Frequency",
+    "UIType": "UncontrolledContains",
+    "SYW": false,
+    "Gold": false,
+    "IsAttribute": true
+}, {
+    "Group": "Hobbies/Travel and Vacation",
+    "Attribute": "Preferable Vacation Months",
+    "AttributeCollectionMapping": "PreferableVacationMonths",
+    "Description": "This is members's  Exercise Reasons",
+    "UIType": "UncontrolledContains",
+    "SYW": false,
+    "Gold": false,
+    "IsAttribute": true
+}, {
+    "Group": "Hobbies/Travel and Vacation",
+    "Attribute": "Preferable Vacation Destination",
+    "AttributeCollectionMapping": "PreferableVacationDestination",
+    "Description": "This is members's  Furniture Style/Theme",
+    "UIType": "UncontrolledContains",
+    "SYW": false,
+    "Gold": false,
+    "IsAttribute": true
+}, {
+    "Group": "Hobbies/Travel and Vacation",
+    "Attribute": "Preferable Vacation Type",
+    "AttributeCollectionMapping": "PreferableVacationType",
+    "Description": "This is members's  Garage Type",
+    "UIType": "UncontrolledContains",
+    "SYW": false,
+    "Gold": false,
+    "IsAttribute": true
+}, {
+    "Group": "Hobbies/Travel and Vacation",
+    "Attribute": "Arts & Crafts",
+    "AttributeCollectionMapping": "ArtsCrafts",
+    "Description": "This is members's  Preferred Home Furnishing Shop",
+    "UIType": "UncontrolledContains",
+    "SYW": false,
+    "Gold": false,
+    "IsAttribute": true
+}, {
+    "Group": "Hobbies/Travel and Vacation",
+    "Attribute": "Collection Hobbies",
+    "AttributeCollectionMapping": "CollectionHobbies",
+    "Description": "This is members's  Home Maintenance",
+    "UIType": "UncontrolledContains",
+    "SYW": false,
+    "Gold": false,
+    "IsAttribute": true
+}, {
+    "Group": "Hobbies/Travel and Vacation",
+    "Attribute": "Games",
+    "AttributeCollectionMapping": "Games",
+    "Description": "This is members's  Residence Duration",
+    "UIType": "UncontrolledContains",
+    "SYW": false,
+    "Gold": false,
+    "IsAttribute": true
+}, {
+    "Group": "Hobbies/Travel and Vacation",
+    "Attribute": "Martial Arts",
+    "AttributeCollectionMapping": "MartialArts",
+    "Description": "This is members's  Things To Look In a New Car ",
+    "UIType": "UncontrolledContains",
+    "SYW": false,
+    "Gold": false,
+    "IsAttribute": true
+}, {
+    "Group": "Hobbies/Travel and Vacation",
+    "Attribute": "Outdoor Activities",
+    "AttributeCollectionMapping": "OutdoorActivities",
+    "Description": "This is members's  Number Of TVs In Home",
+    "UIType": "UncontrolledContains",
+    "SYW": false,
+    "Gold": false,
+    "IsAttribute": true
+}, {
+    "Group": "Hobbies/Travel and Vacation",
+    "Attribute": "Performing Arts",
+    "AttributeCollectionMapping": "PerformingArts",
+    "Description": "This is members's  Other Rooms Type",
+    "UIType": "UncontrolledContains",
+    "SYW": false,
+    "Gold": false,
+    "IsAttribute": true
+}, {
+    "Group": "Hobbies/Travel and Vacation",
+    "Attribute": "Science & Electronics",
+    "AttributeCollectionMapping": "ScienceElectronics",
+    "Description": "This is members's  Own Google Glass?",
+    "UIType": "UncontrolledContains",
+    "SYW": false,
+    "Gold": false,
+    "IsAttribute": true
+}, {
+    "Group": "Hobbies/Travel and Vacation",
+    "Attribute": "Individual Sports",
+    "AttributeCollectionMapping": "IndividualSports",
+    "Description": "This is members's  Balcony/Patio Size",
+    "UIType": "UncontrolledContains",
+    "SYW": false,
+    "Gold": false,
+    "IsAttribute": true
+}, {
+    "Group": "Hobbies/Travel and Vacation",
+    "Attribute": "Racket Sports",
+    "AttributeCollectionMapping": "RacketSports",
+    "Description": "This is members's  Personal Beauty Activities",
+    "UIType": "UncontrolledContains",
+    "SYW": false,
+    "Gold": false,
+    "IsAttribute": true
+}, {
+    "Group": "Hobbies/Travel and Vacation",
+    "Attribute": "Team Sports",
+    "AttributeCollectionMapping": "TeamSports",
+    "Description": "This is members's  Preferred Yard Activities",
+    "UIType": "UncontrolledContains",
+    "SYW": false,
+    "Gold": false,
+    "IsAttribute": true
+}, {
+    "Group": "Hobbies/Travel and Vacation",
+    "Attribute": "Water Sports",
+    "AttributeCollectionMapping": "WaterSports",
+    "Description": "This is members's  Preferred Weather For Outdoor Activities",
+    "UIType": "UncontrolledContains",
+    "SYW": false,
+    "Gold": false,
+    "IsAttribute": true
+}, {
+    "Group": "Hobbies/Travel and Vacation",
+    "Attribute": "Wheeled Sports",
+    "AttributeCollectionMapping": "WheeledSports",
+    "Description": "This is members's  Preferred Smart Phone Type",
+    "UIType": "UncontrolledContains",
+    "SYW": false,
+    "Gold": false,
+    "IsAttribute": true
+}, {
+    "Group": "Hobbies/Travel and Vacation",
+    "Attribute": "Winter Sports",
+    "AttributeCollectionMapping": "WinterSports",
+    "Description": "This is members's  Children School Uniform",
+    "UIType": "UncontrolledContains",
+    "SYW": false,
+    "Gold": false,
+    "IsAttribute": true
+}, {
+    "Group": "Hobbies/Travel and Vacation",
+    "Attribute": "Other",
+    "AttributeCollectionMapping": "Other",
+    "Description": "This is members's  Preferred Smart Phone Features",
+    "UIType": "UncontrolledContains",
+    "SYW": false,
+    "Gold": false,
+    "IsAttribute": true
+}, {
+    "Group": "Hobbies/Travel and Vacation",
+    "Attribute": "Indoor Hobbies",
+    "AttributeCollectionMapping": "IndoorHobbies",
+    "Description": "This is members's  Interested In Sporting Goods Products?",
+    "UIType": "UncontrolledContains",
+    "SYW": false,
+    "Gold": false,
+    "IsAttribute": true
+}, {
+    "Group": "Hobbies/Travel and Vacation",
+    "Attribute": "Indoor Competitive Hobbies",
+    "AttributeCollectionMapping": "IndoorCompetitiveHobbies",
+    "Description": "This is members's  Activities To Stay In Shape",
+    "UIType": "UncontrolledContains",
+    "SYW": false,
+    "Gold": false,
+    "IsAttribute": true
+}, {
+    "Group": "Hobbies/Travel and Vacation",
+    "Attribute": "Outdoor Hobbies",
+    "AttributeCollectionMapping": "OutdoorHobbies",
+    "Description": "This is members's  Vehicle Care",
+    "UIType": "UncontrolledContains",
+    "SYW": false,
+    "Gold": false,
+    "IsAttribute": true
+}, {
+    "Group": "Hobbies/Travel and Vacation",
+    "Attribute": "Observation Hobbies",
+    "AttributeCollectionMapping": "ObservationHobbies",
+    "Description": "This is members's  Vehicle Related Activities",
+    "UIType": "UncontrolledContains",
+    "SYW": false,
+    "Gold": false,
+    "IsAttribute": true
+}, {
+    "Group": "Hobbies/Travel and Vacation",
+    "Attribute": "Outdoor Competitive Hobbies",
+    "AttributeCollectionMapping": "OutdoorCompetitiveHobbies",
+    "Description": "This is members's  Social Media Profiles",
+    "UIType": "UncontrolledContains",
+    "SYW": false,
+    "Gold": false,
+    "IsAttribute": true
+}, {
+    "Group": "Hobbies/Travel and Vacation",
+    "Attribute": "Preferred Yard Activities",
+    "AttributeCollectionMapping": "PreferredYardActivities",
+    "Description": "This is members's  Email Domain",
+    "UIType": "UncontrolledContains",
+    "SYW": false,
+    "Gold": false,
+    "IsAttribute": true
+}, {
+    "Group": "Hobbies/Travel and Vacation",
+    "Attribute": "Preferred Weather For Outdoor Activities",
+    "AttributeCollectionMapping": "PreferredWeatherForOutdoorActivities",
+    "Description": "This is members's  Tripper Bucket",
+    "UIType": "UncontrolledContains",
+    "SYW": false,
+    "Gold": false,
+    "IsAttribute": true
+}, {
+    "Group": "Hobbies/Travel and Vacation",
+    "Attribute": "Hobbies General",
+    "AttributeCollectionMapping": "HobbiesGeneral",
+    "Description": "This is members's  Online Active",
+    "UIType": "UncontrolledContains",
+    "SYW": false,
+    "Gold": true,
+    "IsAttribute": true
+}, {
+    "Group": "Hobbies/Travel and Vacation",
+    "Attribute": "Sports Participant Hobbies",
+    "AttributeCollectionMapping": "SportsParticipantHobbies",
+    "Description": "This is members's  Redeemer",
+    "UIType": "UncontrolledContains",
+    "SYW": false,
+    "Gold": true,
+    "IsAttribute": true
+}, {
+    "Group": "Hobbies/Travel and Vacation",
+    "Attribute": "Sports Spectator Hobbies",
+    "AttributeCollectionMapping": "SportsSpectatorHobbies",
+    "Description": "This is members's  Sears CC User",
+    "UIType": "UncontrolledContains",
+    "SYW": false,
+    "Gold": true,
+    "IsAttribute": true
+}, {
+    "Group": "Hobbies/Travel and Vacation",
+    "Attribute": "Gadgets/Electronics Hobbies",
+    "AttributeCollectionMapping": "GadgetsElectronicsHobbies",
+    "Description": "This is members's  SYW Max",
+    "UIType": "UncontrolledContains",
+    "SYW": false,
+    "Gold": true,
+    "IsAttribute": true
+}, {
+    "Group": "Hobbies/Travel and Vacation",
+    "Attribute": "Health & Wellness Hobbies",
+    "AttributeCollectionMapping": "HealthnWellnessHobbies",
+    "Description": "This is members's  SywVIP",
+    "UIType": "UncontrolledContains",
+    "SYW": false,
+    "Gold": true,
+    "IsAttribute": true
+}, {
+    "Group": "Hobbies/Travel and Vacation",
+    "Attribute": "Family Hobbies",
+    "AttributeCollectionMapping": "FamilyHobbies",
+    "Description": "This is members's  Emailable",
+    "UIType": "UncontrolledContains",
+    "SYW": false,
+    "Gold": true,
+    "IsAttribute": true
+}, {
+    "Group": "Hobbies/Travel and Vacation",
+    "Attribute": "Animal Related Hobbies",
+    "AttributeCollectionMapping": "AnimalRelatedHobbies",
+    "Description": "This is members's  Spend Bucket",
+    "UIType": "UncontrolledContains",
+    "SYW": false,
+    "Gold": false,
+    "IsAttribute": true
+}, {
+    "Group": "Hobbies/Travel and Vacation",
+    "Attribute": "All Hobbies",
+    "AttributeCollectionMapping": "AllHobbies",
+    "Description": "This is members's  Birthday Month",
+    "UIType": "UncontrolledContains",
+    "SYW": false,
+    "Gold": true,
+    "IsAttribute": true
+}, {
+    "Group": "Hobbies/Travel and Vacation",
+    "Attribute": "All Hobbies SYW",
+    "Description": "This is members's  Birthday Year",
+    "UIType": "UncontrolledContains",
+    "SYW": true,
+    "Gold": false,
+    "IsAttribute": true
+}, {
+    "Group": "Home & Household Information",
+    "Attribute": "Electricity Company",
+    "AttributeCollectionMapping": "ElectricityCompany",
+    "Description": "This is members's  College School Names list",
+    "UIType": "UncontrolledContains",
+    "SYW": false,
+    "Gold": false,
+    "IsAttribute": true
+}, {
+    "Group": "Home & Household Information",
+    "Attribute": "Gas Company",
+    "AttributeCollectionMapping": "GasCompany",
+    "Description": "This is members's  College To Dates list",
+    "UIType": "UncontrolledContains",
+    "SYW": false,
+    "Gold": false,
+    "IsAttribute": true
+}, {
+    "Group": "Home & Household Information",
+    "Attribute": "Internet Service Provider",
+    "AttributeCollectionMapping": "InternetServiceProvider",
+    "Description": "This is members's  College From Dates list",
+    "UIType": "UncontrolledContains",
+    "SYW": false,
+    "Gold": false,
+    "IsAttribute": true
+}, {
+    "Group": "Home & Household Information",
+    "Attribute": "Mobile Network Provider",
+    "AttributeCollectionMapping": "MobileNetworkProvider",
+    "Description": "This is members's  Event Birthday Dates list",
+    "UIType": "UncontrolledContains",
+    "SYW": false,
+    "Gold": false,
+    "IsAttribute": true
+}, {
+    "Group": "Home & Household Information",
+    "Attribute": "Primary Grocery Store",
+    "AttributeCollectionMapping": "PrimaryGroceryStore",
+    "Description": "This is members's  Event Anniversary Dates list",
+    "UIType": "UncontrolledContains",
+    "SYW": false,
+    "Gold": false,
+    "IsAttribute": true
+}, {
+    "Group": "Home & Household Information",
+    "Attribute": "Primary Drug Store",
+    "AttributeCollectionMapping": "PrimaryDrugStore",
+    "Description": "This is members's  Event Anniversary Month list",
+    "UIType": "UncontrolledContains",
+    "SYW": false,
+    "Gold": false,
+    "IsAttribute": true
+}, {
+    "Group": "Home & Household Information",
+    "Attribute": "Telephone Company",
+    "AttributeCollectionMapping": "TelephoneCompany",
+    "Description": "This is members's  Active Membership",
+    "UIType": "UncontrolledContains",
+    "SYW": false,
+    "Gold": false,
+    "IsAttribute": true
+}, {
+    "Group": "Home & Household Information",
+    "Attribute": "Waste Management Company",
+    "AttributeCollectionMapping": "WasteManagementCompany",
+    "Description": "This is members's  Associate?",
+    "UIType": "UncontrolledContains",
+    "SYW": false,
+    "Gold": false,
+    "IsAttribute": true
+}, {
+    "Group": "Home & Household Information",
+    "Attribute": "Water Company",
+    "AttributeCollectionMapping": "WaterCompany",
+    "Description": "This is members's  Phone Opt in?",
+    "UIType": "UncontrolledContains",
+    "SYW": false,
+    "Gold": false,
+    "IsAttribute": true
+}, {
+    "Group": "Home & Household Information",
+    "Attribute": "Type of home",
+    "AttributeCollectionMapping": "TypeOfHome",
+    "Description": "This is members's  Craftman club?",
+    "UIType": "UncontrolledContains",
+    "SYW": false,
+    "Gold": true,
+    "IsAttribute": true
+}, {
+    "Group": "Home & Household Information",
+    "Attribute": "Number of Bedrooms",
+    "AttributeCollectionMapping": "NumberofBedrooms",
+    "Description": "This is members's  Kid Advantage Member?",
+    "UIType": "UncontrolledContains",
+    "SYW": false,
+    "Gold": false,
+    "IsAttribute": true
+}, {
+    "Group": "Home & Household Information",
+    "Attribute": "Number of Bathrooms",
+    "AttributeCollectionMapping": "NumberofBathrooms",
+    "Description": "This is members's  Enroll Date",
+    "UIType": "UncontrolledContains",
+    "SYW": false,
+    "Gold": false,
+    "IsAttribute": true
+}, {
+    "Group": "Home & Household Information",
+    "Attribute": "Mattresses Size",
+    "AttributeCollectionMapping": "MattressesSize",
+    "Description": "This is members's  Enroll source",
+    "UIType": "UncontrolledContains",
+    "SYW": false,
+    "Gold": false,
+    "IsAttribute": true
+}, {
+    "Group": "Home & Household Information",
+    "Attribute": "Primary Building Material",
+    "AttributeCollectionMapping": "PrimaryBuildingMaterial",
+    "Description": "This is members's  Enroll Location",
+    "UIType": "UncontrolledContains",
+    "SYW": false,
+    "Gold": false,
+    "IsAttribute": true
+}, {
+    "Group": "Home & Household Information",
+    "Attribute": "Home Ownership Type",
+    "AttributeCollectionMapping": "HomeOwnershipType",
+    "Description": "This is members's  Household Income",
+    "UIType": "UncontrolledContains",
+    "SYW": false,
+    "Gold": true,
+    "IsAttribute": true
+}, {
+    "Group": "Home & Household Information",
+    "Attribute": "Time of Residence",
+    "AttributeCollectionMapping": "TimeOfResidence",
+    "Description": "This is members's  Occupation ",
+    "UIType": "UncontrolledContains",
+    "SYW": false,
+    "Gold": false,
+    "IsAttribute": true
+}, {
+    "Group": "Home & Household Information",
+    "Attribute": "Type of yard",
+    "AttributeCollectionMapping": "Typeofyard",
+    "Description": "This is members's  Home Value",
+    "UIType": "UncontrolledContains",
+    "SYW": false,
+    "Gold": false,
+    "IsAttribute": true
+}, {
+    "Group": "Home & Household Information",
+    "Attribute": "Yard Square Footage",
+    "AttributeCollectionMapping": "YardSquareFootage",
+    "Description": "This is members's  Home Address Move in Date",
+    "UIType": "UncontrolledContains",
+    "SYW": false,
+    "Gold": false,
+    "IsAttribute": true
+}, {
+    "Group": "Home & Household Information",
+    "Attribute": "Yard - Garage? ",
+    "AttributeCollectionMapping": "YardGarage",
+    "Description": "This is members's  Home Construction Year",
+    "UIType": "UncontrolledContains",
+    "SYW": false,
+    "Gold": false,
+    "IsAttribute": true,
+  "IsIndicator": true
+}, {
+    "Group": "Home & Household Information",
+    "Attribute": "Yard - Shed? ",
+    "AttributeCollectionMapping": "YardShed",
+    "Description": "This is members's  Home Address Latitude Degrees",
+    "UIType": "UncontrolledContains",
+    "SYW": false,
+    "Gold": false,
+    "IsAttribute": true,
+  "IsIndicator": true
+}, {
+    "Group": "Home & Household Information",
+    "Attribute": "Yard - Trees?",
+    "AttributeCollectionMapping": "YardTrees",
+    "Description": "This is members's  Home Address Longitude Degrees",
+    "UIType": "UncontrolledContains",
+    "SYW": false,
+    "Gold": false,
+    "IsAttribute": true
+}, {
+    "Group": "Home & Household Information",
+    "Attribute": "Car Make",
+    "AttributeCollectionMapping": "CarMake",
+    "Description": "This is members's  Home Address Latitude Radians",
+    "UIType": "UncontrolledContains",
+    "SYW": false,
+    "Gold": false,
+    "IsAttribute": true
+}, {
+    "Group": "Home & Household Information",
+    "Attribute": "Car Model",
+    "AttributeCollectionMapping": "CarModel",
+    "Description": "This is members's  Home Address Longitude Radians",
+    "UIType": "UncontrolledContains",
+    "SYW": false,
+    "Gold": false,
+    "IsAttribute": true
+}, {
+    "Group": "Home & Household Information",
+    "Attribute": "Car Year",
+    "AttributeCollectionMapping": "CarYear",
+    "Description": "This is members's  Residents in Household",
+    "UIType": "UncontrolledContains",
+    "SYW": false,
+    "Gold": false,
+    "IsAttribute": true
+}, {
+    "Group": "Home & Household Information",
+    "Attribute": "Car Warranty Expiration",
+    "AttributeCollectionMapping": "CarWarrantyExpiration",
+    "Description": "This is members's  Hobbies General",
+    "UIType": "Date",
+    "SYW": false,
+    "Gold": false,
+    "IsAttribute": true
+}, {
+    "Group": "Home & Household Information",
+    "Attribute": "Car Last Maintenance Date",
+    "AttributeCollectionMapping": "CarLastMaintenanceDate",
+    "Description": "This is members's  Sports Participant Hobbies",
+    "UIType": "Date",
+    "SYW": false,
+    "Gold": false,
+    "IsAttribute": true
+}, {
+    "Group": "Home & Household Information",
+    "Attribute": "Car Milege",
+    "AttributeCollectionMapping": "CarMilege",
+    "Description": "This is members's  Sports Spectator Hobbies",
+    "UIType": "UncontrolledContains",
+    "SYW": false,
+    "Gold": false,
+    "IsAttribute": true
+}, {
+    "Group": "Home & Household Information",
+    "Attribute": "Motorbike Make",
+    "AttributeCollectionMapping": "MotorbikeMake",
+    "Description": "This is members's  Gadgets/Electronics Hobbies",
+    "UIType": "UncontrolledContains",
+    "SYW": false,
+    "Gold": false,
+    "IsAttribute": true
+}, {
+    "Group": "Home & Household Information",
+    "Attribute": "Motorbike Model",
+    "AttributeCollectionMapping": "MotorbikeModel",
+    "Description": "This is members's  Health & Wellness Hobbies",
+    "UIType": "UncontrolledContains",
+    "SYW": false,
+    "Gold": false,
+    "IsAttribute": true
+}, {
+    "Group": "Home & Household Information",
+    "Attribute": "Motorbike Year",
+    "AttributeCollectionMapping": "MotorbikeYear",
+    "Description": "This is members's  Family Hobbies",
+    "UIType": "UncontrolledContains",
+    "SYW": false,
+    "Gold": false,
+    "IsAttribute": true
+}, {
+    "Group": "Home & Household Information",
+    "Attribute": "Motorbike Warranty Expiration",
+    "AttributeCollectionMapping": "MotorbikeWarrantyExpiration",
+    "Description": "This is members's  Vehicle Count",
+    "UIType": "Date",
+    "SYW": false,
+    "Gold": false,
+    "IsAttribute": true
+}, {
+    "Group": "Home & Household Information",
+    "Attribute": "Motorbike Last Maintenance Date",
+    "AttributeCollectionMapping": "MotorbikeLastMaintenanceDate",
+    "Description": "This is members's  Truck Owner",
+    "UIType": "Date",
+    "SYW": false,
+    "Gold": false,
+    "IsAttribute": true
+}, {
+    "Group": "Home & Household Information",
+    "Attribute": "Motorbike Milege",
+    "AttributeCollectionMapping": "MotorbikeMilege",
+    "Description": "This is members's  Motorcycle Owner",
+    "UIType": "UncontrolledContains",
+    "SYW": false,
+    "Gold": false,
+    "IsAttribute": true
+}, {
+    "Group": "Home & Household Information",
+    "Attribute": "Average Car Mileage Per year",
+    "AttributeCollectionMapping": "AverageCarMileagePeryear",
+    "Description": "This is members's  Recreational Vehicle owner",
+    "UIType": "UncontrolledContains",
+    "SYW": false,
+    "Gold": false,
+    "IsAttribute": true
+}, {
+    "Group": "Home & Household Information",
+    "Attribute": "Car Usage",
+    "AttributeCollectionMapping": "CarUsage",
+    "Description": "This is members's  Owns A Computer?",
+    "UIType": "UncontrolledContains",
+    "SYW": false,
+    "Gold": false,
+    "IsAttribute": true
+}, {
+    "Group": "Home & Household Information",
+    "Attribute": "Decor Update Frequency",
+    "AttributeCollectionMapping": "DecorUpdateFrequency",
+    "Description": "This is members's  Has Internet Service?",
+    "UIType": "UncontrolledContains",
+    "SYW": false,
+    "Gold": false,
+    "IsAttribute": true
+}, {
+    "Group": "Home & Household Information",
+    "Attribute": "Furniture Style/Theme",
+    "AttributeCollectionMapping": "FurnitureStyleTheme",
+    "Description": "This is members's  Personal Computer Operating System:",
+    "UIType": "UncontrolledContains",
+    "SYW": false,
+    "Gold": false,
+    "IsAttribute": true
+}, {
+    "Group": "Home & Household Information",
+    "Attribute": "Garage Type",
+    "AttributeCollectionMapping": "GarageType",
+    "Description": "This is members's  College Graduate",
+    "UIType": "UncontrolledContains",
+    "SYW": false,
+    "Gold": false,
+    "IsAttribute": true
+}, {
+    "Group": "Home & Household Information",
+    "Attribute": "Preferred Home Furnishing Shop",
+    "AttributeCollectionMapping": "PreferredHomeFurnishingShop",
+    "Description": "This is members's  Empty Nester",
+    "UIType": "UncontrolledContains",
+    "SYW": false,
+    "Gold": false,
+    "IsAttribute": true
+}, {
+    "Group": "Home & Household Information",
+    "Attribute": "Home Maintenance",
+    "AttributeCollectionMapping": "HomeMaintenance",
+    "Description": "This is members's  Entering Adulthood",
+    "UIType": "UncontrolledContains",
+    "SYW": false,
+    "Gold": false,
+    "IsAttribute": true
+}, {
+    "Group": "Home & Household Information",
+    "Attribute": "Residence Duration",
+    "AttributeCollectionMapping": "ResidenceDuration",
+    "Description": "This is members's  Vehicle Intend to Purchase",
+    "UIType": "UncontrolledContains",
+    "SYW": false,
+    "Gold": true,
+    "IsAttribute": true
+}, {
+    "Group": "Home & Household Information",
+    "Attribute": "Things To Look In a New Car ",
+    "AttributeCollectionMapping": "ThingsToLookInaNewCar",
+    "Description": "This is members's  Newlywed",
+    "UIType": "UncontrolledContains",
+    "SYW": false,
+    "Gold": false,
+    "IsAttribute": true
+}, {
+    "Group": "Home & Household Information",
+    "Attribute": "Other Rooms Type",
+    "AttributeCollectionMapping": "OtherRoomsType",
+    "Description": "This is members's  Recent Divorce",
+    "UIType": "UncontrolledContains",
+    "SYW": false,
+    "Gold": false,
+    "IsAttribute": true
+}, {
+    "Group": "Home & Household Information",
+    "Attribute": "Balcony/Patio Size",
+    "AttributeCollectionMapping": "BalconyPatioSize",
+    "Description": "This is members's  Child Near High School Graduation in HH:",
+    "UIType": "UncontrolledContains",
+    "SYW": false,
+    "Gold": false,
+    "IsAttribute": true
+}, {
+    "Group": "Home & Household Information",
+    "Attribute": "Vehicle Care",
+    "AttributeCollectionMapping": "VehicleCare",
+    "Description": "This is members's  Recent Home Buyer",
+    "UIType": "UncontrolledContains",
+    "SYW": false,
+    "Gold": false,
+    "IsAttribute": true
+}, {
+    "Group": "Home & Household Information",
+    "Attribute": "Vehicle Related Activities",
+    "AttributeCollectionMapping": "VehicleRelatedActivities",
+    "Description": "This is members's  Recent Mortgage Borrower",
+    "UIType": "UncontrolledContains",
+    "SYW": false,
+    "Gold": false,
+    "IsAttribute": true
+}, {
+    "Group": "Home & Household Information",
+    "Attribute": "Home Value",
+    "AttributeCollectionMapping": "HomeValue",
+    "Description": "This is members's  New Mover",
+    "UIType": "UncontrolledContains",
+    "SYW": false,
+    "Gold": true,
+    "IsAttribute": true
+}, {
+    "Group": "Home & Household Information",
+    "Attribute": "Home Address Move in Date",
+    "AttributeCollectionMapping": "HomeAddressMoveinDate",
+    "Description": "This is members's  New Parent",
+    "UIType": "Date",
+    "SYW": false,
+    "Gold": true,
+    "IsAttribute": true
+}, {
+    "Group": "Home & Household Information",
+    "Attribute": "Home Construction Year",
+    "AttributeCollectionMapping": "HomeConstructionYear",
+    "Description": "This is members's  Home Equity Available Range Code",
+    "UIType": "UncontrolledContains",
+    "SYW": false,
+    "Gold": true,
+    "IsAttribute": true
+}, {
+    "Group": "Home & Household Information",
+    "Attribute": "Home Address Latitude Degrees",
+    "AttributeCollectionMapping": "HomeAddressLatitudeDegrees",
+    "Description": "This is members's  Square Footage",
+    "UIType": "UncontrolledContains",
+    "SYW": false,
+    "Gold": true,
+    "IsAttribute": true
+}, {
+    "Group": "Home & Household Information",
+    "Attribute": "Home Address Longitude Degrees",
+    "AttributeCollectionMapping": "HomeAddressLongitudeDegrees",
+    "Description": "This is members's  Mobile Phone Device",
+    "UIType": "UncontrolledContains",
+    "SYW": false,
+    "Gold": true,
+    "IsAttribute": true
+}, {
+    "Group": "Home & Household Information",
+    "Attribute": "Home Address Latitude Radians",
+    "AttributeCollectionMapping": "HomeAddressLatitudeRadians",
+    "Description": "This is members's  Credit Cards",
+    "UIType": "UncontrolledContains",
+    "SYW": false,
+    "Gold": true,
+    "IsAttribute": true
+}, {
+    "Group": "Home & Household Information",
+    "Attribute": "Home Address Longitude Radians",
+    "AttributeCollectionMapping": "HomeAddressLongitudeRadians",
+    "Description": "This is members's  Charitable Givings",
+    "UIType": "UncontrolledContains",
+    "SYW": false,
+    "Gold": true,
+    "IsAttribute": true
+}, {
+    "Group": "Home & Household Information",
+    "Attribute": "Has Internet Service?",
+    "AttributeCollectionMapping": "InternetServiceInd",
+    "Description": "This is members's  Veteran",
+    "UIType": "UncontrolledContains",
+    "SYW": false,
+    "Gold": true,
+    "IsAttribute": true
+}, {
+    "Group": "Home & Household Information",
+    "Attribute": "Personal Computer Operating System:",
+    "AttributeCollectionMapping": "PersonalComputerOperatingSystem",
+    "Description": "This is members's  Home Exterior Code",
+    "UIType": "UncontrolledContains",
+    "SYW": false,
+    "Gold": true,
+    "IsAttribute": true
+}, {
+    "Group": "Home & Household Information",
+    "Attribute": "Home Equity Available Range Code",
+    "AttributeCollectionMapping": "HomeEquityAvailableRangeCode",
+    "Description": "This is members's  Home Heat Source Code",
+    "UIType": "UncontrolledContains",
+    "SYW": false,
+    "Gold": true,
+    "IsAttribute": true
+}, {
+    "Group": "Home & Household Information",
+    "Attribute": "Lot Square Footage",
+    "AttributeCollectionMapping": "SquareFootage",
+    "Description": "This is members's  Home Roof Type Code",
+    "UIType": "UncontrolledContains",
+    "SYW": false,
+    "Gold": true,
+    "IsAttribute": true
+}, {
+    "Group": "Home & Household Information",
+    "Attribute": "Home Exterior Code",
+    "AttributeCollectionMapping": "HomeExteriorCode",
+    "Description": "This is members's  Home Room Quantity",
+    "UIType": "UncontrolledContains",
+    "SYW": false,
+    "Gold": true,
+    "IsAttribute": true
+}, {
+    "Group": "Home & Household Information",
+    "Attribute": "Home Heat Source Code",
+    "AttributeCollectionMapping": "HomeHeatSourceCode",
+    "Description": "This is members's  Swimming Pool",
+    "UIType": "UncontrolledContains",
+    "SYW": false,
+    "Gold": true,
+    "IsAttribute": true
+}, {
+    "Group": "Home & Household Information",
+    "Attribute": "Home Roof Type Code",
+    "AttributeCollectionMapping": "HomeRoofTypeCode",
+    "Description": "This is members's  Animal Related Hobbies",
+    "UIType": "UncontrolledContains",
+    "SYW": false,
+    "Gold": true,
+    "IsAttribute": true
+}, {
+    "Group": "Home & Household Information",
+    "Attribute": "Home Room Quantity",
+    "AttributeCollectionMapping": "HomeRoomQuantity",
+    "Description": "This is members's  All Hobbies",
+    "UIType": "UncontrolledContains",
+    "SYW": false,
+    "Gold": true,
+    "IsAttribute": true
+}, {
+    "Group": "Home & Household Information",
+    "Attribute": "Swimming Pool",
+    "AttributeCollectionMapping": "SwimmingPoolInd",
+    "Description": "This is members's  VAPP",
+    "UIType": "UncontrolledContains",
+    "SYW": false,
+    "Gold": true,
+    "IsAttribute": true
+}, {
+    "Group": "Home & Household Information",
+    "Attribute": "Home Purchase Price",
+    "AttributeCollectionMapping": "HomePurchasePrice",
+    "Description": "This is members's  SYW Segments",
+    "UIType": "UncontrolledContains",
+    "SYW": false,
+    "Gold": false,
+    "IsRange": true,
+    "IsNoMinMax": true,
+    "IsAttribute": true
+}, {
+    "Group": "Home & Household Information",
+    "Attribute": "Mortgage Payments",
+    "AttributeCollectionMapping": "MortgagePayments",
+    "Description": "This is members's  Education Level",
+    "UIType": "UncontrolledContains",
+    "SYW": false,
+    "Gold": false,
+    "IsAttribute": true
+}, {
+    "Group": "Home & Household Information",
+    "Attribute": "Monthly Rent",
+    "AttributeCollectionMapping": "MonthlyRent",
+    "Description": "This is members's  Has Children",
+    "UIType": "UncontrolledContains",
+    "SYW": false,
+    "Gold": false,
+    "IsAttribute": true
+}, {
+    "Group": "Home & Household Information",
+    "Attribute": "Type of home SYW",
+    "Description": "This is members's  Member Age",
+    "UIType": "UncontrolledContains",
+    "SYW": true,
+    "Gold": false,
+    "IsAttribute": true
+}, {
+  "Group": "Home & Household Information",
+  "Attribute": "Home Size SquareFeet",
+  "AttributeCollectionMapping": "HomeSizeSquareFeet",
+  "Description": "This is members's  Home Address",
+  "UIType": "UncontrolledContains",
+  "SYW": false,
+  "Gold": true,
+  "IsAttribute": true
+},{
+    "Group": "Home & Household Information",
+    "Attribute": "HomeSizeSquareFeet_SYW",
+    "AttributeCollectionMapping": "HomeSizeSquareFeet_SYW",
+    "Description": "This is members's  Home Address",
+    "UIType": "UncontrolledContains",
+    "SYW": true,
+    "Gold": false,
+    "IsAttribute": true
+}, {
+    "Group": "Home & Household Information",
+    "Attribute": "Home Ownership Type SYW",
+    "AttributeCollectionMapping": "HomeOwnershipType_SYW",
+    "Description": "This is members's  Home Purchase Price",
+    "UIType": "UncontrolledContains",
+    "SYW": true,
+    "Gold": false,
+    "IsAttribute": true
+}, {
+    "Group": "Home & Household Information",
+    "Attribute": "Residence Duration SYW",
+    "AttributeCollectionMapping": "ResidenceDuration_SYW",
+    "Description": "This is members's  Mortgage Payments",
+    "UIType": "UncontrolledContains",
+    "SYW": true,
+    "Gold": false,
+    "IsAttribute": true
+}, {
+    "Group": "Lifestyle",
+    "Attribute": "Pet Type",
+    "AttributeCollectionMapping": "PetType",
+    "Description": "",
+    "UIType": "UncontrolledContains",
+    "SYW": false,
+    "Gold": true,
+    "IsAllNone": true,
+    "IsAttribute": true
+}, {
+    "Group": "Lifestyle",
+    "Attribute": "Pet Breed",
+    "AttributeCollectionMapping": "PetBreed",
+    "Description": "",
+    "UIType": "UncontrolledContains",
+    "SYW": false,
+    "Gold": false,
+    "IsAllNone": true,
+    "IsAttribute": true
+}, {
+    "Group": "Lifestyle",
+    "Attribute": "Pet Weight",
+    "AttributeCollectionMapping": "PetWeight",
+    "Description": "This is members's  Shopped Sears BU 12 months",
+    "UIType": "UncontrolledContains",
+    "SYW": false,
+    "Gold": false,
+    "IsAttribute": true
+}, {
+    "Group": "Lifestyle",
+    "Attribute": "Pet Birthday",
+    "AttributeCollectionMapping": "PetBirthday",
+    "Description": "This is members's  Shopped Kmart BU 12 months",
+    "UIType": "Date",
+    "SYW": false,
+    "Gold": false,
+    "IsAttribute": true
+}, {
+    "Group": "Lifestyle",
+    "Attribute": "Membership Airline Club",
+    "AttributeCollectionMapping": "MembershipAirlineClub",
+    "Description": "This is members's  Shopped SHC BU 12 months",
+    "UIType": "UncontrolledContains",
+    "SYW": false,
+    "Gold": false,
+    "IsAttribute": true
+}, {
+    "Group": "Lifestyle",
+    "Attribute": "Membership Rental Car Club",
+    "AttributeCollectionMapping": "MembershipRentalCarClub",
+    "Description": "This is members's  Shopped Sears Killer Vertical 12 months",
+    "UIType": "UncontrolledContains",
+    "SYW": false,
+    "Gold": false,
+    "IsAttribute": true
+}, {
+    "Group": "Lifestyle",
+    "Attribute": "Membership AARP ",
+    "AttributeCollectionMapping": "MembershipAARP",
+    "Description": "This is members's  Shopped Kmart Killer Verticals 12 months",
+    "UIType": "UncontrolledContains",
+    "SYW": false,
+    "Gold": false,
+    "IsAttribute": true,
+  "IsIndicator": true
+}, {
+    "Group": "Lifestyle",
+    "Attribute": "Religion",
+    "AttributeCollectionMapping": "Religion",
+    "Description": "This is members's  Shopped Sears Business Units DIV 12 months",
+    "UIType": "UncontrolledContains",
+    "SYW": false,
+    "Gold": false,
+    "IsAttribute": true
+}, {
+    "Group": "Lifestyle",
+    "Attribute": "Political Party",
+    "AttributeCollectionMapping": "PoliticalParty",
+    "Description": "This is members's  Shopped Kmart BU DIV 12 months",
+    "UIType": "UncontrolledContains",
+    "SYW": false,
+    "Gold": true,
+    "IsAllNone": false,
+    "IsAttribute": true
+}, {
+    "Group": "Lifestyle",
+    "Attribute": "Charity Name",
+    "AttributeCollectionMapping": "CharityName",
+    "Description": "This is members's  Shopped Sears BU DIV Line 12 months",
+    "UIType": "UncontrolledContains",
+    "SYW": false,
+    "Gold": false,
+    "IsAttribute": true
+}, {
+    "Group": "Lifestyle",
+    "Attribute": "Charity Key Contact",
+    "AttributeCollectionMapping": "CharityKeyContact",
+    "Description": "This is members's  Shopped Kmart BU DIV Line 12 months",
+    "UIType": "UncontrolledContains",
+    "SYW": false,
+    "Gold": false,
+    "IsAttribute": true
+}, {
+    "Group": "Lifestyle",
+    "Attribute": "Charity Time of year",
+    "AttributeCollectionMapping": "CharityTimeOfYear",
+    "Description": "This is members's  Last Transaction Date",
+    "UIType": "UncontrolledContains",
+    "SYW": false,
+    "Gold": false,
+    "IsAttribute": true
+}, {
+    "Group": "Lifestyle",
+    "Attribute": "Own Google Glass? ",
+    "AttributeCollectionMapping": "OwnGoogleGlass",
+    "Description": "This is members's  Pet Owner Indicator",
+    "UIType": "UncontrolledContains",
+    "SYW": false,
+    "Gold": false,
+    "IsAttribute": true,
+  "IsIndicator": true
+}, {
+    "Group": "Lifestyle",
+    "Attribute": "Preferred Smart Phone Type",
+    "AttributeCollectionMapping": "PreferredSmartPhoneType",
+    "Description": "This is members's  SYW Profile Indicator",
+    "UIType": "UncontrolledContains",
+    "SYW": false,
+    "Gold": false,
+    "IsAttribute": true
+}, {
+    "Group": "Lifestyle",
+    "Attribute": "Preferred Smart Phone Features",
+    "AttributeCollectionMapping": "PreferredSmartPhoneFeatures",
+    "Description": "This is members's  Birthday SYW",
+    "UIType": "UncontrolledContains",
+    "SYW": false,
+    "Gold": false,
+    "IsAttribute": true
+}, {
+    "Group": "Lifestyle",
+    "Attribute": "Pet Owner Indicator ",
+    "AttributeCollectionMapping": "PetOwnerInd",
+    "Description": "This is members's  Gender SYW",
+    "UIType": "UncontrolledContains",
+    "SYW": false,
+    "Gold": true,
+    "IsAttribute": true,
+    "IsIndicator": true
+}, {
+    "Group": "Lifestyle",
+    "Attribute": "SYW Profile Indicator",
+    "AttributeCollectionMapping": "SYWProfileInd",
+    "Description": "This is members's  Ethnicity SYW",
+    "UIType": "UncontrolledContains",
+    "SYW": true,
+    "Gold": true,
+    "IsAttribute": true
+}, {
+    "Group": "Lifestyle",
+    "Attribute": "Pet Type SYW",
+    "AttributeCollectionMapping": "PetType_SYW",
+    "Description": "This is members's  Language SYW",
+    "UIType": "UncontrolledContains",
+    "SYW": true,
+    "Gold": false,
+    "IsAttribute": true
+}, {
+    "Group": "Lifestyle",
+    "Attribute": "Political Party SYW",
+    "AttributeCollectionMapping": "PoliticalParty_SYW",
+    "Description": "This is members's  Pet Type SYW",
+    "UIType": "UncontrolledContains",
+    "SYW": true,
+    "Gold": false,
+    "IsAttribute": true
+}, {
+    "Group": "Lifestyle",
+    "Attribute": "Pet Owner Indicator SYW ",
+    "AttributeCollectionMapping": "PetOwnerInd_SYW",
+    "Description": "This is members's Pet Owner Indicator SYW",
+    "UIType": "UncontrolledContains",
+    "SYW": true,
+    "Gold": false,
+    "IsAttribute": true,
+    "IsIndicator": true
+}, {
+    "Group": "Primary Stores",
+    "Attribute": "Sears Primary Store",
+    "AttributeCollectionMapping": "PrimaryStoreSears",
+    "Description": "This is members's  Type of home SYW",
+    "UIType": "UncontrolledContains",
+    "SYW": false,
+    "Gold": true,
+    "IsAllNone": true,
+    "DisplayOrder":"PA",
+    "IsAttribute": true
+},{
+    "Group": "Primary Stores",
+    "Attribute": "Sears Primary Store Radius Bucket",
+    "AttributeCollectionMapping": "PrimaryStoreRadiusBucketSears",
+    "Description": "This is members's  PrimaryStoreRadiusBucketSears",
+    "UIType": "UncontrolledContains",
+    "SYW": false,
+    "Gold": true,
+    "IsAllNone": true,
+    "DisplayOrder":"PD",
+    "IsAttribute": true
+},{
+    "Group": "Primary Stores",
+    "Attribute": "Kmart Primary Store Radius Bucket",
+    "AttributeCollectionMapping": "PrimaryStoreRadiusBucketKmart",
+    "Description": "This is members's  PrimaryStoreRadiusBucketKmart",
+    "UIType": "UncontrolledContains",
+    "SYW": false,
+    "Gold": true,
+    "IsAllNone": true,
+    "DisplayOrder":"PG",
+    "IsAttribute": true
+},{
+  "Group": "Primary Stores",
+  "Attribute": "Sears MSA Segments Indicator",
+  "AttributeCollectionMapping": "PrimaryStoreTopMemberSearsInd",
+  "Description": "",
+  "UIType": "UncontrolledContains",
+  "SYW": false,
+  "Gold": true,
+  "IsAttribute": true,
+  "DisplayOrder":"PB"
+},{
+    "Group": "Primary Stores",
+    "Attribute": "Sears MSA Segments",
+    "AttributeCollectionMapping": "MSASegmentTop2000Sears",
+    "Description": "",
+    "UIType": "UncontrolledContains",
+    "SYW": false,
+    "Gold": true,
+    "IsTopMSASegments": true,
+    "IsAttribute": true,
+    "DisplayOrder":"PC"
+},{
+    "Group": "Primary Stores",
+    "Attribute": "Sears MSA Segments",
+    "AttributeCollectionMapping": "MSASegmentTop5000Sears",
+    "Description": "",
+    "UIType": "UncontrolledContains",
+    "SYW": false,
+    "Gold": true,
+    "IsTopMSASegments": true,
+    "IsAttribute": false,
+    "DisplayOrder":"PC"
+},{
+    "Group": "Primary Stores",
+    "Attribute": "Kmart Primary Store",
+    "AttributeCollectionMapping": "PrimaryStoreKmart",
+    "Description": "",
+    "UIType": "UncontrolledContains",
+    "SYW": false,
+    "Gold": true,
+    "IsAllNone": true,
+    "DisplayOrder":"PE",
+    "IsAttribute": true
+},{
+    "Group": "Primary Stores",
+    "Attribute": "Kmart MSA Segments Indicator",
+    "AttributeCollectionMapping": "PrimaryStoreTopMemberKmartInd",
+    "Description": "",
+    "UIType": "UncontrolledContains",
+    "SYW": false,
+    "Gold": true,
+    "DisplayOrder":"PF",
+    "IsAttribute": true
+},{
+    "Group": "Primary Stores",
+    "Attribute": "Kmart MSA Segments",
+    "AttributeCollectionMapping": "MSASegmentTop2000Kmart",
+    "Description": "",
+    "UIType": "UncontrolledContains",
+    "SYW": false,
+    "Gold": true,
+    "IsTopMSASegments": true,
+    "DisplayOrder":"PG",
+    "IsAttribute": true
+},{
+    "Group": "Primary Stores",
+    "Attribute": "Kmart MSA Segments",
+    "AttributeCollectionMapping": "MSASegmentTop5000Kmart",
+    "Description": "",
+    "UIType": "UncontrolledContains",
+    "SYW": false,
+    "Gold": true,
+    "IsTopMSASegments": true,
+    "DisplayOrder":"PG",
+    "IsAttribute": false
+},{
+    "Group": "Sales & Trips",
+    "Attribute": "SHC Active Members 12 Months",
+    "AttributeCollectionMapping": "ActiveMember",
+    "Description": "SHC ActiveMember",
+    "UIType": "UncontrolledContains",
+    "SYW": false,
+    "Gold": true,
+    "IsAll": true,
+    "IsAttribute": true,
+    "IsAllNone": false,
+    "DisplayOrder":"AA"
+  },{
+    "Group": "Sales & Trips",
+    "Attribute": "SHC Active Shoppers ",
+    "AttributeCollectionMapping": "ActiveShoppers",
+    "Description": "This is members's  SHC Active shoppers",
+    "UIType": "UncontrolledContains",
+    "SYW": false,
+    "Gold": true,
+    "IsAll": true,
+    "IsAttribute": true,
+    "IsAllNone": true,
+    "DisplayOrder":"AB"
+}, {
+    "Group": "Sales & Trips",
+    "Attribute": "SHC Active Redeemers ",
+    "AttributeCollectionMapping": "ActiveRedeemers",
+    "Description": "This is members's  SHC Active Redeemers",
+    "UIType": "UncontrolledContains",
+    "SYW": false,
+    "Gold": true,
+    "IsAll": true,
+    "IsAttribute": true,
+    "IsAllNone": true,
+    "DisplayOrder":"AC"
+},{
+    "Group": "Sales & Trips",
+    "Attribute": "SHC Business Unit 12 months",
+    "AttributeCollectionMapping": "ShoppedSHCBU12Month",
+    "Description": "This is members's  Residence Duration SYW",
+    "UIType": "UncontrolledContains",
+    "SYW": false,
+    "Gold": true,
+    "IsAll": true,
+    "IsAttribute": true,
+    "IsAllNone": true,
+    "DisplayOrder":"FA"
+}, {
+    "Group": "Sales & Trips",
+    "Attribute": "Sears - BU -> Div -> Line -> Subline -> Item",
+    "AttributeCollectionMapping": "ShoppedSearsBUDivLine12Month",
+    "Description": "",
+    "UIType": "DrillDown",
+    "IsTopSearch":false,
+    "SYW": false,
+    "Gold": true,
+    "IsAll": false,
+    "IsAttribute": true,
+    "DisplayOrder":"GA",
+    "LevelsPrefix": "Sears",
+    "IsAllNone": false,
+    "Levels": [
+        {
+            "Title": "BU",
+            "AttributeName": "ShoppedSearsBU12Month"
+        },
+        {
+            "Title": "Div",
+            "AttributeName": "ShoppedSearsBUDiv12Month"
+        },
+        {
+            "Title": "Line",
+            "AttributeName": "ShoppedSearsBUDivLine12Month"
+        },
+        {
+            "Title": "Subline",
+            "AttributeName": "ShoppedSearsBUDivLineSubline12Month"
+        },
+        {
+            "Title": "Item",
+            "AttributeName": "ShoppedSearsBUDivLineSublineItem12Month"
+        }
+    ]
+},{
+    "Group": "Sales & Trips",
+    "Attribute": "Sears Business Unit 12 months",
+    "AttributeCollectionMapping": "ShoppedSearsBU12Month",
+    "Description": "This is members's  Home Ownership Type SYW",
+    "ReportDisplayName": "Sears Business Unit",
+    "UIType": "UncontrolledContains",
+    "SYW": false,
+    "Gold": true,
+    "IsAll": true,
+    "IsAttribute": true,
+    "IsAllNone": true,
+    "DisplayOrder":"GB"
+
+}, {
+  "Group": "Sales & Trips",
+  "Attribute": "Sears Division 12 months",
+  "AttributeCollectionMapping": "ShoppedSearsBUDiv12Month",
+  "Description": "",
+  "UIType": "UncontrolledContains",
+  "SYW": false,
+  "Gold": true,
+  "IsAllNone": true,
+  "IsAttribute": true,
+  "DisplayOrder":"GC"
+}, {
+    "Group": "Sales & Trips",
+    "Attribute": "Sears Line 12 months",
+    "AttributeCollectionMapping": "ShoppedSearsBUDivLine12Month",
+    "Description": "",
+    "UIType": "UncontrolledContains",
+    "SYW": false,
+    "Gold": true,
+    "IsAllNone": true,
+    "IsAttribute": true,
+    "DisplayOrder":"GD"
+},{
+    "Group": "Sales & Trips",
+    "Attribute": "Sears Subline 12 months",
+    "AttributeCollectionMapping": "ShoppedSearsBUDivLineSubline12Month",
+    "Description": "",
+    "UIType": "UncontrolledContains",
+    "SYW": false,
+    "Gold": true,
+    "IsAllNone": true,
+    "IsAttribute": true,
+    "DisplayOrder":"GE"
+},{
+    "Group": "Sales & Trips",
+    "Attribute": "Sears Item 12 months",
+    "AttributeCollectionMapping": "ShoppedSearsBUDivLineItem12Month",
+    "Description": "",
+    "UIType": "UncontrolledContains",
+    "SYW": false,
+    "Gold": true,
+    "IsAllNone": true,
+    "IsAttribute": true,
+    "DisplayOrder":"GF"
+
+}, {
+    "Group": "Sales & Trips",
+    "Attribute": "Sears - MRC -> MRC SubName -> Item",
+    "AttributeCollectionMapping": "ShoppedSearsKVSubNmItem12Month",
+    "Description": "",
+    "UIType": "DrillDown",
+    "IsTopSearch":false,
+    "SYW": false,
+    "Gold": true,
+    "IsAll": false,
+    "IsAttribute": true,
+    "DisplayOrder":"IA",
+    "LevelsPrefix": "Sears",
+    "IsAllNone": false,
+    "Levels": [
+        {
+            "Title": "MRC",
+            "AttributeName": "ShoppedSearsKV12Month"
+        },
+        {
+            "Title": "Subname",
+            "AttributeName": "ShoppedSearsKVSubNm12Month"
+        },
+        {
+            "Title": "Item",
+            "AttributeName": "ShoppedSearsKVSubNmItem12Month"
+        }
+    ]
+},{
+  "Group": "Sales & Trips",
+  "Attribute": "Kmart - BU -> Div -> Line -> Category -> Item",
+  "AttributeCollectionMapping": "ShoppedKmartBUDivLine12Month",
+  "Description": "",
+  "UIType": "DrillDown",
+  "IsTopSearch":false,
+  "SYW": false,
+  "Gold": true,
+  "IsAll": false,
+  "IsAttribute": true,
+  "DisplayOrder":"HA",
+  "LevelsPrefix": "Kmart",
+  "Levels": [
+    {
+      "Title": "BU",
+      "AttributeName": "ShoppedKmartBU12Month"
+    },
+    {
+      "Title": "Div",
+      "AttributeName": "ShoppedKmartBUDiv12Month"
+    },
+    {
+      "Title": "Line",
+      "AttributeName": "ShoppedKmartBUDivLine12Month"
+    },
+    {
+       "Title": "Category",
+       "AttributeName": "ShoppedKmartBUDivLineSubline12Month"
+    },
+    {
+      "Title": "Item",
+      "AttributeName": "ShoppedKmartBUDivLineSublineItem12Month"
+    }
+  ]
+}, {
+  "Group": "Sales & Trips",
+  "Attribute": "Kmart - MRC -> MRC SubName -> Item",
+  "AttributeCollectionMapping": "ShoppedKmartKVSubNmItem12Month",
+  "Description": "",
+  "UIType": "DrillDown",
+  "IsTopSearch":false,
+  "SYW": false,
+  "Gold": true,
+  "IsAll": false,
+  "IsAttribute": true,
+  "DisplayOrder":"IB",
+  "LevelsPrefix": "Kmart",
+  "IsAllNone": false,
+  "Levels": [
+    {
+      "Title": "MRC",
+      "AttributeName": "ShoppedKmartKV12Month"
+    },
+    {
+      "Title": "Subname",
+      "AttributeName": "ShoppedKmartKVSubNm12Month"
+    },
+    {
+      "Title": "Item",
+      "AttributeName": "ShoppedKmartKVSubNmItem12Month"
+    }
+  ]
+}, {
+    "Group": "Sales & Trips",
+    "Attribute": "Kmart Business Unit 12 months",
+    "AttributeCollectionMapping": "ShoppedKmartBU12Month",
+    "ReportDisplayName": "Kmart Business Unit",
+    "Description": "",
+    "UIType": "UncontrolledContains",
+    "SYW": false,
+    "Gold": true,
+    "IsAll": true,
+    "IsAttribute": true,
+    "IsAllNone": true,
+    "DisplayOrder":"HB"
+}, {
+  "Group": "Sales & Trips",
+  "Attribute": "Kmart Division 12 months",
+  "AttributeCollectionMapping": "ShoppedKmartBUDiv12Month",
+  "Description": "",
+  "UIType": "UncontrolledContains",
+  "SYW": false,
+  "Gold": true,
+  "IsAll": true,
+  "IsAttribute": true,
+  "IsAllNone": true,
+  "DisplayOrder":"HC"
+}, {
+  "Group": "Sales & Trips",
+  "Attribute": "Kmart Line 12 months",
+  "AttributeCollectionMapping": "ShoppedKmartBUDivLine12Month",
+  "Description": "This is members's  Relationship Status SYW",
+  "UIType": "UncontrolledContains",
+  "SYW": false,
+  "Gold": true,
+  "IsAll": true,
+  "IsAttribute": true,
+  "IsAllNone": true,
+  "DisplayOrder":"HD"
+},{
+    "Group": "Sales & Trips",
+    "Attribute": "Kmart Category 12 months",
+    "AttributeCollectionMapping": "ShoppedKmartBUDivLineSubline12Month",
+    "Description": "This is members's  Relationship Status SYW",
+    "UIType": "UncontrolledContains",
+    "SYW": false,
+    "Gold": true,
+    "IsAll": true,
+    "IsAttribute": true,
+    "IsAllNone": true,
+    "DisplayOrder":"HE"
+},{
+    "Group": "Sales & Trips",
+    "Attribute": "Kmart MRC Total Sales",
+    "AttributeCollectionMapping": "TotalSalesKmartMRC",
+    "Description": "This is members's  Kmart MRC sales",
+    "UIType": "UncontrolledContains",
+    "SYW": true,
+    "Gold": true,
+    "IsAll": true,
+    "IsAttribute": true,
+    "IsAllNone": true,
+    "IsRange": true,
+    "IsInteger": false,
+    "DisplayOrder":"HZ"
+
+},{
+  "Group": "Sales & Trips",
+  "Attribute": "Kmart Item 12 months",
+  "AttributeCollectionMapping": "ShoppedKmartBUDivLineItem12Month",
+  "Description": "This is members's  Relationship Status SYW",
+  "UIType": "UncontrolledContains",
+  "SYW": false,
+  "Gold": true,
+  "IsAll": true,
+  "IsAttribute": true,
+  "IsAllNone": true,
+  "DisplayOrder":"HF"
+}, {
+    "Group": "Sales & Trips",
+    "Attribute": "Kmart MRC 12 months",
+    "AttributeCollectionMapping": "ShoppedKmartKV12Month",
+    "ReportDisplayName": "Kmart MRC",
+    "Description": "",
+    "UIType": "UncontrolledContains",
+    "SYW": false,
+    "Gold": true,
+    "IsAttribute": false,
+    "IsAllNone": true,
+    "DisplayOrder": "CG"
+},{
+    "Group": "Sales & Trips",
+    "Attribute": "Kmart MRC Sub Name 12 months",
+    "AttributeCollectionMapping": "ShoppedKmartKVSubNm12Month",
+    "Description": "",
+    "UIType": "UncontrolledContains",
+    "SYW": false,
+    "Gold": true,
+    "IsAttribute": false,
+    "IsAllNone": true,
+    "DisplayOrder": "CH"
+},{
+    "Group": "Sales & Trips",
+    "Attribute": "Kmart MRC Sub Name Item 12 months",
+    "AttributeCollectionMapping": "ShoppedKmartKVSubNmItem12Month",
+    "Description": "",
+    "UIType": "UncontrolledContains",
+    "SYW": false,
+    "Gold": true,
+    "IsAttribute": false,
+    "IsAllNone": true,
+    "DisplayOrder": "CI"
+},{
+    "Group": "Sales & Trips",
+    "Attribute": "SHC Redemption Trips",
+    "AttributeCollectionMapping": "TotalRedemptionTripsSHC",
+    "Description": "This is members's  Total Redemption Trips SHC",
+    "UIType": "UncontrolledContains",
+    "SYW": false,
+    "Gold": true,
+    "IsRange": true,
+    "IsInteger": true,
+    "DisplayOrder": "BD",
+    "IsAttribute": true
+},{
+    "Group": "Sales & Trips",
+    "Attribute": "Sears Redemption Trips",
+    "AttributeCollectionMapping": "TotalRedemptionTripsSears",
+    "Description": "This is members's  Total Redemption Trips Sears",
+    "UIType": "UncontrolledContains",
+    "SYW": false,
+    "Gold": true,
+    "IsRange": true,
+    "IsInteger": true,
+    "DisplayOrder": "CD",
+    "IsAttribute": true
+}, {
+    "Group": "Sales & Trips",
+    "Attribute": "Kmart Redemption Trips",
+    "AttributeCollectionMapping": "TotalRedemptionTripsKmart",
+    "Description": "This is members's  Total Redemption Trips Kmart",
+    "UIType": "UncontrolledContains",
+    "SYW": false,
+    "Gold": true,
+    "IsRange": true,
+    "IsInteger": true,
+    "DisplayOrder": "DD",
+    "IsAttribute": true
+},{
+    "Group": "Sales & Trips",
+    "Attribute": "Last Transaction Date",
+    "AttributeCollectionMapping": "LastTransactionDate",
+    "Description": "This is members's  Member Age SYW",
+    "UIType": "Date",
+    "SYW": false,
+    "Gold": true,
+    "IsNewUIDate": true,
+    "DisplayOrder": "J",
+    "IsAttribute": true
+} ,{
+    "Group": "Purchase Patterns",
+    "Attribute": "Shopped Online/Store",
+    "AttributeCollectionMapping": "ShoppedOnlineInstore",
+    "Description": "",
+    "UIType": "UncontrolledContains",
+    "SYW": false,
+    "Gold": true,
+    "IsAttribute": true,
+    "IsAllNone": false,
+    "DisplayOrder": "HB"
+  },{
+  "Group": "Sales & Trips",
+  "Attribute": "SHC Sales 12 Months",
+  "AttributeCollectionMapping": "TotalSalesSHC",
+  "Description": "",
+  "UIType": "UncontrolledContains",
+  "SYW": false,
+  "Gold": true,
+  "IsAllNone": true,
+  "IsAttribute": true,
+  "IsRange": true,
+  "IsInteger": false,
+  "DisplayOrder": "BA"
+},{
+    "Group": "Sales & Trips",
+    "Attribute": "SHC Margin 12 Months",
+    "AttributeCollectionMapping": "TotalMarginSHC",
+    "Description": "",
+    "UIType": "UncontrolledContains",
+    "SYW": false,
+    "Gold": true,
+    "IsAllNone": true,
+    "IsAttribute": true,
+    "IsRange": true,
+    "IsInteger": false,
+    "DisplayOrder": "BB"
+}, {
+  "Group": "Sales & Trips",
+  "Attribute": "Sears Sales 12 Months",
+  "AttributeCollectionMapping": "TotalSalesSears",
+  "Description": "",
+  "UIType": "UncontrolledContains",
+  "SYW": false,
+  "Gold": true,
+  "IsAllNone": true,
+  "IsAttribute": true,
+  "IsRange": true,
+  "IsInteger": false,
+  "DisplayOrder": "CA"
+},{
+  "Group": "Sales & Trips",
+  "Attribute": "Kmart Sales 12 Months",
+  "AttributeCollectionMapping": "TotalSalesKmart",
+  "Description": "",
+  "UIType": "UncontrolledContains",
+  "SYW": false,
+  "Gold": true,
+  "IsAllNone": true,
+  "IsAttribute": true,
+  "IsRange": true,
+  "IsInteger": false,
+  "DisplayOrder": "DA"
+},{
+    "Group": "Sales & Trips",
+    "Attribute": "SHC Trips 12 Months",
+    "AttributeCollectionMapping": "TotalTripsSHC",
+    "Description": "",
+    "UIType": "UncontrolledContains",
+    "SYW": false,
+    "Gold": true,
+    "IsAllNone": false,
+    "IsAttribute": true,
+    "IsRange": true,
+    "IsInteger": true,
+    "DisplayOrder": "BC"
+},{
+    "Group": "Sales & Trips",
+    "Attribute": "Sears Trips 12 Months",
+    "AttributeCollectionMapping": "TotalTripsSears",
+    "Description": "",
+    "UIType": "UncontrolledContains",
+    "SYW": false,
+    "Gold": true,
+    "IsAllNone": true,
+    "IsAttribute": true,
+    "IsRange": true,
+    "IsInteger": true,
+    "DisplayOrder": "CC"
+},{
+    "Group": "Sales & Trips",
+    "Attribute": "Sears Margin 12 Months",
+    "AttributeCollectionMapping": "TotalMarginSears",
+    "Description": "",
+    "UIType": "UncontrolledContains",
+    "SYW": false,
+    "Gold": true,
+    "IsAllNone": true,
+    "IsAttribute": true,
+    "IsRange": true,
+    "IsInteger": false,
+    "DisplayOrder": "CB"
+}, {
+    "Group": "Sales & Trips",
+    "Attribute": "Kmart Trips 12 Months",
+    "AttributeCollectionMapping": "TotalTripsKmart",
+    "Description": "",
+    "UIType": "UncontrolledContains",
+    "SYW": false,
+    "Gold": true,
+    "IsAllNone": true,
+    "IsAttribute": true,
+    "IsRange": true,
+    "IsInteger": true,
+    "DisplayOrder": "DC"
+},{
+    "Group": "Sales & Trips",
+    "Attribute": "Kmart Margin 12 Months",
+    "AttributeCollectionMapping": "TotalMarginKmart",
+    "Description": "",
+    "UIType": "UncontrolledContains",
+    "SYW": false,
+    "Gold": true,
+    "IsAllNone": true,
+    "IsAttribute": true,
+    "IsRange": true,
+    "IsInteger": false,
+    "DisplayOrder": "DB"
+}, {
+    "Group": "Sales & Trips",
+    "Attribute": "Balance Points",
+    "AttributeCollectionMapping": "PointsBalance",
+    "Description": "",
+    "UIType": "UncontrolledContains",
+    "SYW": false,
+    "Gold": true,
+    "IsAllNone": false,
+    "IsAttribute": true,
+    "IsRange": false,
+    "IsMemberPoints": true,
+    "IsInteger":false,
+    "DisplayOrder": "EA"
+},{
+    "Group": "Sales & Trips",
+    "Attribute": "Expiring Points Current Calendar Quarter End",
+    "AttributeCollectionMapping": "PointsExpiringCurrentCalendarQuarterend",
+    "Description": "",
+    "UIType": "UncontrolledContains",
+    "SYW": false,
+    "Gold": true,
+    "IsAllNone": false,
+    "IsAttribute": true,
+    "IsRange": false,
+    "IsMemberPoints": true,
+    "IsInteger": false,
+    "DisplayOrder": "EB"
+},{
+    "Group": "Sales & Trips",
+    "Attribute": "Expiring Points Next Calendar Quarter End",
+    "AttributeCollectionMapping": "PointsExpiringNextCalendarQuarterend",
+    "Description": "",
+    "UIType": "UncontrolledContains",
+    "SYW": false,
+    "Gold": true,
+    "IsAllNone": false,
+    "IsAttribute": true,
+    "IsRange": false,
+    "IsMemberPoints": true,
+    "IsInteger": false,
+    "DisplayOrder": "EC"
+},{
+    "Group": "Sales & Trips",
+    "Attribute": "Expiring Points Previous Calendar Month",
+    "AttributeCollectionMapping": "PointsExpiredPreviousCalendarMonth",
+    "Description": "",
+    "UIType": "UncontrolledContains",
+    "SYW": false,
+    "Gold": true,
+    "IsAllNone": false,
+    "IsAttribute": true,
+    "IsRange": false,
+    "IsMemberPoints": true,
+    "IsInteger": false,
+    "DisplayOrder": "ED"
+},{
+    "Group": "Purchase Patterns",
+    "Attribute": "Shopped Holiday Week",
+    "AttributeCollectionMapping": "ShoppedHolidayWeek",
+    "Description": "",
+    "UIType": "DrillDownSpecial",
+    "IsTopSearch":false,
+    "SYW": false,
+    "Gold": true,
+    "IsAll": true,
+    "IsAttribute": true,
+    "DisplayOrder":"HB",
+    "LevelsPrefix": "Shopped Holiday Week",
+    "IsAllNone": false,
+    "Levels": [
+        {
+            "Title": "Year",
+            "AttributeName": "ShoppedHolidayWeek",
+            "Prefix":"01 || ",
+            "LevelKey":"year:"
+        },
+        {
+            "Title": "Holiday",
+            "AttributeName": "ShoppedHolidayWeek",
+            "Prefix":"01_02 || ",
+            "LevelKey":"holiday:"
+        }
+    ]
+},{
+    "Group": "Purchase Patterns",
+    "Attribute": "Shopping Seasons",
+    "AttributeCollectionMapping": "ShoppedFiscalMonth12Month",
+    "Description": "",
+    "UIType": "GroupingType",
+    "IsTopSearch":false,
+    "SYW": false,
+    "Gold": true,
+    "IsAll": true,
+    "IsAttribute": true,
+    "DisplayOrder":"HC",
+    "LevelsPrefix": "",
+    "IsAllNone": false,
+    "Levels": [
+        {
+            "Title": "Winter",
+            "ValueOne": "01",
+            "ValueTwo": "02"
+        },
+        {
+            "Title": "Spring",
+            "ValueOne": "03",
+            "ValueTwo": "04"
+        },
+        {
+            "Title": "Summer",
+            "ValueOne": "05",
+            "ValueTwo": "06"
+        },
+        {
+            "Title": "Back to School",
+            "ValueOne": "07",
+            "ValueTwo": "08"
+        },
+        {
+            "Title": "Fall",
+            "ValueOne": "09",
+            "ValueTwo": "10"
+        },
+        {
+            "Title": "Holiday",
+            "ValueOne": "11",
+            "ValueTwo": "12"
+        }
+    ]
+},{
+    "Group": "Purchase Patterns",
+    "Attribute": "Kmart MRC Broken Patterns",
+    "AttributeCollectionMapping": "SYWSegmentsMRC",
+    "Description": "This is members's MRC Segments",
+    "UIType": "UncontrolledContains",
+    "SYW": false,
+    "Gold": false,
+    "IsAllNone": true,
+    "DisplayOrder":"HD",
+    "IsAttribute": true
+},{
+    "Group": "MRC Segments",
+    "Attribute": "MRC Segments ",
+    "AttributeCollectionMapping": "SYWSegmentsMRC",
+    "Description": "This is members's MRC Segments",
+    "UIType": "UncontrolledContains",
+    "SYW": false,
+    "Gold": false,
+    "IsAttribute": false
+},{
+    "Group": "Store Location",
+    "Attribute": "Store -> Store State",
+    "AttributeCollectionMapping": "ShoppedStore12Month",
+    "Description": "",
+    "UIType": "DrillDownSpecial",
+    "IsTopSearch":false,
+    "SYW": false,
+    "Gold": true,
+    "IsAttribute": true,
+    "DisplayOrder":"AA",
+    "LevelsPrefix": "",
+    "IsAllNone": false,
+    "Levels": [
+        {
+            "Title": "Store",
+            "AttributeName": "ShoppedStore12Month",
+            "Prefix":"01 || ",
+            "LevelKey":"store:"
+        },
+        {
+            "Title": "Store State",
+            "AttributeName": "ShoppedStore12Month",
+            "Prefix":"01_03 || ",
+            "LevelKey":"state:"
+        }
+    ]
+},{
+    "Group": "Store Location",
+    "Attribute": "Store State -> Store Zip Code",
+    "AttributeCollectionMapping": "ShoppedStore12Month",
+    "Description": "",
+    "UIType": "DrillDownSpecial",
+    "IsTopSearch":false,
+    "SYW": false,
+    "Gold": true,
+    "IsAttribute": true,
+    "DisplayOrder":"AB",
+    "LevelsPrefix": "",
+    "IsAllNone": false,
+    "Levels": [
+        {
+            "Title": "Store State",
+            "AttributeName": "ShoppedStore12Month",
+            "Prefix":"03 || ",
+            "LevelKey":"state:"
+        },
+        {
+            "Title": "Store Zipcode",
+            "AttributeName": "ShoppedStore12Month",
+            "Prefix":"03_05 || ",
+            "LevelKey":"zipcode:"
+        }
+    ]
+},{
+    "Group": "Store Location",
+    "Attribute": "Store District -> Store Zipcode",
+    "AttributeCollectionMapping": "ShoppedStore12Month",
+    "Description": "",
+    "UIType": "DrillDownSpecial",
+    "IsTopSearch":false,
+    "SYW": false,
+    "Gold": true,
+    "IsAttribute": true,
+    "DisplayOrder":"AC",
+    "LevelsPrefix": "",
+    "IsAllNone": false,
+    "Levels": [
+        {
+            "Title": "Store District",
+            "AttributeName": "ShoppedStore12Month",
+            "Prefix":"04 || ",
+            "LevelKey":"district:"
+        },
+        {
+            "Title": "Store Zipcode",
+            "AttributeName": "ShoppedStore12Month",
+            "Prefix":"04_05 || ",
+            "LevelKey":"zipcode:"
+        }
+    ]
+},{
+    "Group": "Store Location",
+    "Attribute": "Store State -> Store Status",
+    "AttributeCollectionMapping": "ShoppedStore12Month",
+    "Description": "",
+    "UIType": "DrillDownSpecial",
+    "IsTopSearch":false,
+    "SYW": false,
+    "Gold": true,
+    "IsAttribute": true,
+    "DisplayOrder":"AD",
+    "LevelsPrefix": "",
+    "IsAllNone": false,
+    "Levels": [
+        {
+            "Title": "Store State",
+            "AttributeName": "ShoppedStore12Month",
+            "Prefix":"03 || ",
+            "LevelKey":"state:"
+        },
+        {
+            "Title": "Store Status",
+            "AttributeName": "ShoppedStore12Month",
+            "Prefix":"03_08 || ",
+            "LevelKey":"locationstatus:"
+        }
+    ]
+},{
+    "Group": "Store Location",
+    "Attribute": "Store State -> Store Format Code",
+    "AttributeCollectionMapping": "ShoppedStore12Month",
+    "Description": "",
+    "UIType": "DrillDownSpecial",
+    "IsTopSearch":false,
+    "SYW": false,
+    "Gold": true,
+    "IsAttribute": true,
+    "DisplayOrder":"AE",
+    "LevelsPrefix": "",
+    "IsAllNone": false,
+    "Levels": [
+        {
+            "Title": "Store State",
+            "AttributeName": "ShoppedStore12Month",
+            "Prefix":"03 || ",
+            "LevelKey":"state:"
+        },
+        {
+            "Title": "Store Format Code",
+            "AttributeName": "ShoppedStore12Month",
+            "Prefix":"03_09 || ",
+            "LevelKey":"storeformatcode:"
+        }
+    ]
+},{
+    "Group": "Store Location",
+    "Attribute": "Store Zipcode -> Population Density",
+    "AttributeCollectionMapping": "ShoppedStore12Month",
+    "Description": "",
+    "UIType": "DrillDownSpecial",
+    "IsTopSearch":false,
+    "SYW": false,
+    "Gold": true,
+    "IsAttribute": true,
+    "DisplayOrder":"AF",
+    "LevelsPrefix": "",
+    "IsAllNone": false,
+    "Levels": [
+        {
+            "Title": "Store Zipcode",
+            "AttributeName": "ShoppedStore12Month",
+            "Prefix":"05 || ",
+            "LevelKey":"zipcode:"
+        },
+        {
+            "Title": "Population Density",
+            "AttributeName": "ShoppedStore12Month",
+            "Prefix":"05_10 || ",
+            "LevelKey":"populationdensity:"
+        }
+    ]
+},{
+    "Group": "Store Location",
+    "Attribute": "Store",
+    "AttributeCollectionMapping": "ShoppedStore12Month",
+    "ReportDisplayName": "Store",
+    "Description": "",
+    "UIType": "UncontrolledContains",
+    "SYW": false,
+    "Gold": true,
+    "IsAttribute": true,
+    "Prefix":"01 || store:",
+    "IsAllNone": false,
+    "DisplayOrder": "HA"
+},{
+    "Group": "Store Location",
+    "Attribute": "Store Format",
+    "AttributeCollectionMapping": "ShoppedStore12Month",
+    "Description": "",
+    "UIType": "UncontrolledContains",
+    "SYW": false,
+    "Gold": true,
+    "IsAttribute": true,
+    "Prefix":"02 || format:",
+    "DisplayOrder": "HB"
+},{
+    "Group": "Store Location",
+    "Attribute": "Store Format Code",
+    "AttributeCollectionMapping": "ShoppedStore12Month",
+    "Description": "",
+    "UIType": "UncontrolledContains",
+    "SYW": false,
+    "Gold": true,
+    "IsAttribute": true,
+    "Prefix":"09 || storeformatcode:",
+    "DisplayOrder": "HC"
+},{
+    "Group": "Store Location",
+    "Attribute": "Store Group Cluster",
+    "AttributeCollectionMapping": "ShoppedStore12Month",
+    "Description": "",
+    "UIType": "UncontrolledContains",
+    "SYW": false,
+    "Gold": true,
+    "IsAttribute": true,
+    "Prefix":"07 || storegroupcluster:",
+    "IsAllNone": false,
+    "DisplayOrder": "HD"
+},{
+    "Group": "Store Location",
+    "Attribute": "Store State",
+    "AttributeCollectionMapping": "ShoppedStore12Month",
+    "ReportDisplayName": "Store State",
+    "Description": "",
+    "UIType": "UncontrolledContains",
+    "SYW": false,
+    "Gold": true,
+    "IsAttribute": true,
+    "Prefix":"03 || state:",
+    "IsAllNone": false,
+    "DisplayOrder": "HE"
+},{
+    "Group": "Store Location",
+    "Attribute": "Store Status",
+    "AttributeCollectionMapping": "ShoppedStore12Month",
+    "Description": "",
+    "UIType": "UncontrolledContains",
+    "SYW": false,
+    "Gold": true,
+    "IsAttribute": true,
+    "Prefix":"08 || locationstatus:",
+    "DisplayOrder": "HF"
+},{
+    "Group": "Store Location",
+    "Attribute": "Store Zipcode",
+    "AttributeCollectionMapping": "ShoppedStore12Month",
+    "ReportDisplayName": "Store Zipcode",
+    "Description": "",
+    "UIType": "UncontrolledContains",
+    "SYW": false,
+    "Gold": true,
+    "IsAttribute": true,
+    "Prefix":"05 || zipcode:",
+    "DisplayOrder": "HG"
+},{
+    "Group": "Store Location",
+    "Attribute": "DMA",
+    "AttributeCollectionMapping": "ShoppedStore12Month",
+    "ReportDisplayName": "DMA",
+    "Description": "",
+    "UIType": "UncontrolledContains",
+    "SYW": false,
+    "Gold": true,
+    "IsAttribute": true,
+    "Prefix":"06 || dma:",
+    "IsAllNone": false,
+    "DisplayOrder": "HH"
+},{
+    "Group": "Store Location",
+    "Attribute": "District",
+    "AttributeCollectionMapping": "ShoppedStore12Month",
+    "ReportDisplayName": "District",
+    "Description": "",
+    "UIType": "UncontrolledContains",
+    "SYW": false,
+    "Gold": true,
+    "IsAttribute": true,
+    "Prefix":"04 || district:",
+    "IsAllNone": false,
+    "DisplayOrder": "HI"
+},{
+    "Group": "Store Location",
+    "Attribute": "Population Density",
+    "AttributeCollectionMapping": "ShoppedStore12Month",
+    "Description": "",
+    "UIType": "UncontrolledContains",
+    "SYW": false,
+    "Gold": true,
+    "IsAttribute": true,
+    "Prefix":"10 || populationdensity:",
+    "DisplayOrder": "HJ"
+},{
+    "Group": "Store Location",
+    "Attribute": "Competitor Density within 5 miles",
+    "AttributeCollectionMapping": "ShoppedStore12Month",
+    "Description": "",
+    "UIType": "UncontrolledContains",
+    "SYW": false,
+    "Gold": true,
+    "IsAttribute": true,
+    "Prefix":"11 || competitordensitywithin5miles:",
+    "DisplayOrder": "HK"
+},{
+    "Group": "Store Location",
+    "Attribute": "Competitor Presence within 5 miles",
+    "AttributeCollectionMapping": "ShoppedStore12Month",
+    "Description": "",
+    "UIType": "UncontrolledContains",
+    "SYW": false,
+    "Gold": true,
+    "IsAttribute": true,
+    "Prefix":"12 || competitorpresencewithin5miles:",
+    "IsAllNone": false,
+    "DisplayOrder": "HL"
+},{
+    "Group": "Store Location",
+    "Attribute": "New Competitor within 5 miles",
+    "AttributeCollectionMapping": "ShoppedStore12Month",
+    "Description": "",
+    "UIType": "UncontrolledContains",
+    "SYW": false,
+    "Gold": true,
+    "IsAttribute": true,
+    "Prefix":"13 || newcompetitorpresencewithin5miles:",
+    "IsAllNone": false,
+    "DisplayOrder": "HM"
+},{
+    "Group": "Segments",
+    "Attribute": "SYW Perks Segments",
+    "AttributeCollectionMapping": "VAPP",
+    "Description": "This is members's  VAPP Segments",
+    "UIType": "UncontrolledContains",
+    "SYW": false,
+    "Gold": false,
+    "IsAllNone": true,
+    "DisplayOrder": "SB",
+    "IsAttribute": true
+}, {
+    "Group": "Segments",
+    "Attribute": "SYW Segments",
+    "AttributeCollectionMapping": "SYWSegments",
+    "Description": "This is members's  Pet Owner Indicator SYW",
+    "UIType": "UncontrolledContains",
+    "SYW": false,
+    "Gold": false,
+    "IsAllNone": true,
+    "DisplayOrder": "SA",
+    "IsAttribute": true
+},{
+    "Group": "Segments",
+    "Attribute": "Used Shop Bolt",
+    "AttributeCollectionMapping": "ShopBoltIndicator",
+    "Description": "This is members's  ShopBoltIndicator",
+    "UIType": "UncontrolledContains",
+    "SYW": false,
+    "Gold": true,
+    "IsAllNone": false,
+    "DisplayOrder":"SC",
+    "IsAttribute": true
+},{
+    "Group": "VAPP Segments",
+    "Attribute": "SYW Perks Segments",
+    "AttributeCollectionMapping": "VAPP",
+    "Description": "This is members's  VAPP Segments",
+    "UIType": "UncontrolledContains",
+    "SYW": false,
+    "Gold": false,
+    "IsAllNone": true,
+    "IsAttribute": true
+}, {
+    "Group": "SYW Segments",
+    "Attribute": "SYW Segments",
+    "AttributeCollectionMapping": "SYWSegments",
+    "Description": "This is members's  Pet Owner Indicator SYW",
+    "UIType": "UncontrolledContains",
+    "SYW": false,
+    "Gold": false,
+    "IsAllNone": true,
+    "IsAttribute": true
+}, {
+    "Group": "Sears Business Unit",
+    "Attribute": "",
+    "AttributeCollectionMapping": "ShoppedSearsBU12Month",
+    "Description": "",
+    "UIType": "UncontrolledContains",
+    "IsTopSearch":false,
+    "Gold": true,
+    "SYW":true,
+    "IsAttribute": false
+}, {
+    "Group": "Sears Division",
+    "Attribute": "",
+    "AttributeCollectionMapping": "ShoppedSearsBUDiv12Month",
+    "Description": "",
+    "UIType": "UncontrolledContains",
+    "IsTopSearch":false,
+    "Gold": true,
+    "SYW":true,
+    "IsAttribute": false
+},{
+    "Group": "Sears Line",
+    "Attribute": "",
+    "AttributeCollectionMapping": "ShoppedSearsBUDivLine12Month",
+    "Description": "",
+    "UIType": "UncontrolledContains",
+    "IsTopSearch":false,
+    "Gold": true,
+    "SYW":true,
+    "IsAttribute": false
+}, {
+    "Group": "Kmart Business Unit",
+    "Attribute": "",
+    "AttributeCollectionMapping": "ShoppedKmartBU12Month",
+    "Description": "",
+    "UIType": "UncontrolledContains",
+    "IsTopSearch":false,
+    "Gold": true,
+    "SYW":true,
+    "IsAttribute": false
+}, {
+    "Group": "Kmart Division",
+    "Attribute": "",
+    "AttributeCollectionMapping": "ShoppedKmartBUDiv12Month",
+    "Description": "",
+    "UIType": "UncontrolledContains",
+    "IsTopSearch":false,
+    "Gold": true,
+    "SYW":true,
+    "IsAttribute": false
+},{
+    "Group": "Kmart Line",
+    "Attribute": "",
+    "AttributeCollectionMapping": "ShoppedKmartBUDivLine12Month",
+    "Description": "",
+    "UIType": "UncontrolledContains",
+    "IsTopSearch":false,
+    "Gold": true,
+    "SYW":true,
+    "IsAttribute": false
+}, {
+  "Group": "SHC Business Unit",
+  "Attribute": "",
+  "AttributeCollectionMapping": "ShoppedSHCBU12Month",
+  "Description": "",
+  "UIType": "UncontrolledContains",
+  "IsTopSearch":false,
+  "Gold": true,
+  "SYW":true,
+  "IsAttribute": false
+}, {
+    "Group": "Sears Member Relationship Category",
+    "Attribute": "",
+    "AttributeCollectionMapping": "ShoppedSearsKV12Month",
+    "ReportDisplayName": "Sears MRC",
+    "Description": "",
+    "UIType": "UncontrolledContains",
+    "IsTopSearch":false,
+    "Gold": true,
+    "SYW":true,
+    "IsAttribute": false
+}, {
+    "Group": "Kmart Member Relationship Category",
+    "Attribute": "",
+    "AttributeCollectionMapping": "ShoppedKmartKV12Month",
+    "Description": "",
+    "UIType": "UncontrolledContains",
+    "IsTopSearch":false,
+    "Gold": true,
+    "SYW":true,
+    "IsAttribute": false
+},{
+    "Group": "Last Transaction Month",
+    "Attribute": "",
+    "AttributeCollectionMapping": "LastTransactionDateMonth",
+    "Description": "",
+    "UIType": "UncontrolledContains",
+    "IsTopSearch":false,
+    "Gold": true,
+    "SYW":true,
+    "IsAttribute": false
+},{
+    "Group": "SHC Last Transaction Month",
+    "Attribute": "",
+    "AttributeCollectionMapping": "LastTransactionDateMonth",
+    "Description": "",
+    "UIType": "UncontrolledContains",
+    "IsTopSearch":false,
+    "Gold": true,
+    "SYW":true,
+    "IsAttribute": false
+}, {
+    "Group": "Sears Last Transaction Month",
+    "Attribute": "",
+    "AttributeCollectionMapping": "LastTransactionDateMonth",
+    "Description": "",
+    "UIType": "UncontrolledContains",
+    "IsTopSearch":false,
+    "Gold": true,
+    "SYW":true,
+    "IsAttribute": false
+}, {
+    "Group": "Kmart Last Transaction Month",
+    "Attribute": "",
+    "AttributeCollectionMapping": "LastTransactionDateMonth",
+    "Description": "",
+    "UIType": "UncontrolledContains",
+    "IsTopSearch":false,
+    "Gold": true,
+    "SYW":true,
+    "IsAttribute": false
+}, {
+    "Group": "Format",
+    "Attribute": "",
+    "AttributeCollectionMapping": "ShoppedStore12Month",
+    "Description": "",
+    "Prefix":"02 || format:",
+    "UIType": "UncontrolledContains",
+    "IsTopSearch":false,
+    "Gold": true,
+    "SYW":true,
+    "IsGeographyTab":true,
+    "IsAttribute": false
+},{
+    "Group": "Store Format Code",
+    "Attribute": "",
+    "AttributeCollectionMapping": "ShoppedStore12Month",
+    "Description": "",
+    "Prefix":"09 || storeformatcode:",
+    "UIType": "UncontrolledContains",
+    "IsTopSearch":false,
+    "Gold": true,
+    "SYW":true,
+    "IsGeographyTab":true,
+    "IsAttribute": false
+}, {
+    "Group": "Store",
+    "Attribute": "",
+    "AttributeCollectionMapping": "ShoppedStore12Month",
+    "Description": "",
+    "Prefix":"01 || store:",
+    "UIType": "UncontrolledContains",
+    "IsTopSearch":false,
+    "Gold": true,
+    "SYW":true,
+    "IsGeographyTab":true,
+    "IsAttribute": false
+},{
+    "Group": "District",
+    "Attribute": "",
+    "AttributeCollectionMapping": "ShoppedStore12Month",
+    "Description": "",
+    "Prefix":"04 || district:",
+    "UIType": "UncontrolledContains",
+    "IsTopSearch":false,
+    "Gold": true,
+    "SYW":true,
+    "IsGeographyTab":true,
+    "IsAttribute": false
+},{
+    "Group": "Store Group Cluster",
+    "Attribute": "",
+    "AttributeCollectionMapping": "ShoppedStore12Month",
+    "Description": "",
+    "Prefix":"07 || storegroupcluster:",
+    "UIType": "UncontrolledContains",
+    "IsTopSearch":false,
+    "Gold": true,
+    "SYW":true,
+    "IsGeographyTab":true,
+    "IsAttribute": false
+},{
+    "Group": "Store Status",
+    "Attribute": "",
+    "AttributeCollectionMapping": "ShoppedStore12Month",
+    "Description": "",
+    "Prefix":"08 || locationstatus:",
+    "UIType": "UncontrolledContains",
+    "IsTopSearch":false,
+    "Gold": true,
+    "SYW":true,
+    "IsGeographyTab":true,
+    "IsAttribute": false
+},{
+    "Group": "DMA",
+    "Attribute": "",
+    "AttributeCollectionMapping": "ShoppedStore12Month",
+    "Description": "",
+    "Prefix":"06 || dma:",
+    "UIType": "UncontrolledContains",
+    "IsTopSearch":false,
+    "Gold": true,
+    "SYW":true,
+    "IsGeographyTab":true,
+    "IsAttribute": false
+},{
+        "Group": "State",
+        "Attribute": "",
+        "AttributeCollectionMapping": "ShoppedStore12Month",
+        "Description": "",
+        "Prefix":"03 || state:",
+        "UIType": "UncontrolledContains",
+        "IsTopSearch":false,
+        "Gold": true,
+        "SYW":true,
+    "IsGeographyTab":true,
+    "IsAttribute": false
+}, {
+    "Group": "Store ZipCode",
+    "Attribute": "",
+    "AttributeCollectionMapping": "ShoppedStore12Month",
+    "Description": "",
+    "Prefix":"05 || zipcode:",
+    "UIType": "UncontrolledContains",
+    "IsTopSearch":false,
+    "Gold": true,
+    "SYW":true,
+    "IsGeographyTab":true,
+    "IsAttribute": false,
+     "ReportOrder" : "D"
+},{
+    "Group": "Population Density",
+    "Attribute": "",
+    "AttributeCollectionMapping": "ShoppedStore12Month",
+    "Description": "",
+    "Prefix":"10 || populationdensity:",
+    "UIType": "UncontrolledContains",
+    "IsTopSearch":false,
+    "Gold": true,
+    "SYW":true,
+    "IsGeographyTab":true,
+    "IsAttribute": false
+},{
+    "Group": "Competitor Density Within 5miles",
+    "Attribute": "",
+    "AttributeCollectionMapping": "ShoppedStore12Month",
+    "Description": "",
+    "Prefix":"11 || competitordensitywithin5miles:",
+    "UIType": "UncontrolledContains",
+    "IsTopSearch":false,
+    "Gold": true,
+    "SYW":true,
+    "IsGeographyTab":true,
+    "IsAttribute": false
+},{
+    "Group": "Competitor Presence Within 5miles",
+    "Attribute": "",
+    "AttributeCollectionMapping": "ShoppedStore12Month",
+    "Description": "",
+    "Prefix":"12 || competitorpresencewithin5miles:",
+    "UIType": "UncontrolledContains",
+    "IsTopSearch":false,
+    "Gold": true,
+    "SYW":true,
+    "IsGeographyTab":true,
+    "IsAttribute": false
+},{
+    "Group": "New Competitor Presence Within 5miles",
+    "Attribute": "",
+    "AttributeCollectionMapping": "ShoppedStore12Month",
+    "Description": "",
+    "Prefix":"13 || newcompetitorpresencewithin5miles:",
+    "UIType": "UncontrolledContains",
+    "IsTopSearch":false,
+    "Gold": true,
+    "SYW":true,
+    "IsGeographyTab":true,
+    "IsAttribute": false
+},
+{
+        "Group": "Report",
+        "Attribute": "Store & Sears Business Unit",
+        "ReportDisplayName": "Store & Sears Business Unit",
+        "AttributeCollectionMapping": "ShoppedStore12Month,ShoppedSearsBU12Month",
+        "Description": "",
+        "UIType": "UncontrolledContains",
+        "SYW": false,
+        "Gold": false,
+        "IsAll": false,
+        "IsAttribute": false,
+        "DisplayOrder":"GB",
+        "Iscombo" : true,
+        "Prefix":"01 || store:",
+        "IsTopSearch":false
+
+},
+{
+        "Group": "Report",
+        "Attribute": "Store & Kmart Business Unit",
+        "ReportDisplayName": "Store & Kmart Business Unit",
+        "AttributeCollectionMapping": "ShoppedStore12Month,ShoppedKmartBU12Month",
+        "Description": "",
+        "UIType": "UncontrolledContains",
+        "SYW": false,
+        "Gold": false,
+        "IsAll": false,
+        "IsAttribute": false,
+        "DisplayOrder":"GB",
+        "Iscombo" : true,
+        "Prefix":"01 || store:",
+        "IsTopSearch":false
+
+},
+{
+        "Group": "Report",
+        "Attribute": "Store & Sears MRC",
+        "ReportDisplayName": "Store & Sears MRC",
+        "AttributeCollectionMapping": "ShoppedStore12Month,ShoppedSearsKV12Month",
+        "Description": "",
+        "UIType": "UncontrolledContains",
+        "SYW": false,
+        "Gold": false,
+        "IsAll": false,
+        "IsAttribute": false,
+        "DisplayOrder":"GB",
+        "Iscombo" : true,
+        "Prefix":"01 || store:",
+        "IsTopSearch":false
+
+},
+{
+        "Group": "Report",
+        "Attribute": "Store & Kmart MRC",
+        "ReportDisplayName": "Store & Kmart MRC",
+        "AttributeCollectionMapping": "ShoppedStore12Month,ShoppedKmartKV12Month",
+        "Description": "",
+        "UIType": "UncontrolledContains",
+        "SYW": false,
+        "Gold": false,
+        "IsAll": false,
+        "IsAttribute": false,
+        "DisplayOrder":"GB",
+        "Iscombo" : true,
+        "Prefix":"01 || store:",
+        "IsTopSearch":false
+
+}, {
+    "Group": "Kmart MRC Sales",
+    "Attribute": "Kmart MRC Sales Baby",
+    "AttributeCollectionMapping": "TotalSalesKmartMRC_2001_Baby",
+    "UIType": "UncontrolledContains",
+    "SYW": false,
+    "Gold": true,
+    "IsAttribute": true,
+    "IsAllNone": false,
+    "IsRange": true,
+    "IsInteger": false
+}, {
+    "Group": "Kmart MRC Sales",
+    "Attribute": "Kmart MRC Sales Beauty",
+    "AttributeCollectionMapping": "TotalSalesKmartMRC_2002_Beauty",
+    "UIType": "UncontrolledContains",
+    "SYW": false,
+    "Gold": true,
+    "IsAttribute": true,
+    "IsAllNone": false,
+    "IsRange": true,
+    "IsInteger": false
+  }, {
+    "Group": "Kmart MRC Sales",
+    "Attribute": "Kmart MRC Sales Beverages",
+    "AttributeCollectionMapping": "TotalSalesKmartMRC_2003_Beverages",
+    "UIType": "UncontrolledContains",
+    "SYW": false,
+    "Gold": true,
+    "IsAttribute": true,
+    "IsAllNone": false,
+    "IsRange": true,
+    "IsInteger": false
+  }, {
+  "Group": "Kmart MRC Sales",
+  "Attribute": "Kmart MRC Sales Breads",
+  "AttributeCollectionMapping": "TotalSalesKmartMRC_2004_Breads",
+  "UIType": "UncontrolledContains",
+  "SYW": false,
+  "Gold": true,
+  "IsAttribute": true,
+  "IsAllNone": false,
+  "IsRange": true,
+  "IsInteger": false
+}, {
+  "Group": "Kmart MRC Sales",
+  "Attribute": "Kmart MRC Sales Cheese",
+  "AttributeCollectionMapping": "TotalSalesKmartMRC_2005_Cheese",
+  "UIType": "UncontrolledContains",
+  "SYW": false,
+  "Gold": true,
+  "IsAttribute": true,
+  "IsAllNone": false,
+  "IsRange": true,
+  "IsInteger": false
+},  {
+  "Group": "Kmart MRC Sales",
+  "Attribute": "Kmart MRC Sales Cleaning Supplies",
+  "AttributeCollectionMapping": "TotalSalesKmartMRC_2006_CleaningSupplies",
+  "UIType": "UncontrolledContains",
+  "SYW": false,
+  "Gold": true,
+  "IsAttribute": true,
+  "IsAllNone": false,
+  "IsRange": true,
+  "IsInteger": false
+},{
+  "Group": "Kmart MRC Sales",
+  "Attribute": "Kmart MRC Sales CoffeeTea",
+  "AttributeCollectionMapping": "TotalSalesKmartMRC_2007_CoffeeTea",
+  "UIType": "UncontrolledContains",
+  "SYW": false,
+  "Gold": true,
+  "IsAttribute": true,
+  "IsAllNone": false,
+  "IsRange": true,
+  "IsInteger": false
+}, {
+  "Group": "Kmart MRC Sales",
+  "Attribute": "Kmart MRC Sales Dessert",
+  "AttributeCollectionMapping": "TotalSalesKmartMRC_2008_Dessert",
+  "UIType": "UncontrolledContains",
+  "SYW": false,
+  "Gold": true,
+  "IsAttribute": true,
+  "IsAllNone": false,
+  "IsRange": true,
+  "IsInteger": false
+}, {
+  "Group": "Kmart MRC Sales",
+  "Attribute": "Kmart MRC Sales Family Planning",
+  "AttributeCollectionMapping": "TotalSalesKmartMRC_2009_FamilyPlanning",
+  "UIType": "UncontrolledContains",
+  "SYW": false,
+  "Gold": true,
+  "IsAttribute": true,
+  "IsAllNone": false,
+  "IsRange": true,
+  "IsInteger": false
+}, {
+  "Group": "Kmart MRC Sales",
+  "Attribute": "Kmart MRC Sales Fruit",
+  "AttributeCollectionMapping": "TotalSalesKmartMRC_2010_Fruit",
+  "UIType": "UncontrolledContains",
+  "SYW": false,
+  "Gold": true,
+  "IsAttribute": true,
+  "IsAllNone": false,
+  "IsRange": true,
+  "IsInteger": false
+}, {
+  "Group": "Kmart MRC Sales",
+  "Attribute": "Kmart MRC Sales Holiday decorating",
+  "AttributeCollectionMapping": "TotalSalesKmartMRC_2011_Holidaydecorating",
+  "UIType": "UncontrolledContains",
+  "SYW": false,
+  "Gold": true,
+  "IsAttribute": true,
+  "IsAllNone": false,
+  "IsRange": true,
+  "IsInteger": false
+}, {
+  "Group": "Kmart MRC Sales",
+  "Attribute": "Kmart MRC Sales Home Entertainment",
+  "AttributeCollectionMapping": "TotalSalesKmartMRC_2012_HomeEntertainment",
+  "UIType": "UncontrolledContains",
+  "SYW": false,
+  "Gold": true,
+  "IsAttribute": true,
+  "IsAllNone": false,
+  "IsRange": true,
+  "IsInteger": false
+}, {
+  "Group": "Kmart MRC Sales",
+  "Attribute": "Kmart MRC Sales Mobiledevices",
+  "AttributeCollectionMapping": "TotalSalesKmartMRC_2013_Mobiledevices",
+  "UIType": "UncontrolledContains",
+  "SYW": false,
+  "Gold": true,
+  "IsAttribute": true,
+  "IsAllNone": false,
+  "IsRange": true,
+  "IsInteger": false
+}, {
+  "Group": "Kmart MRC Sales",
+  "Attribute": "Kmart MRC Sales Pets",
+  "AttributeCollectionMapping": "TotalSalesKmartMRC_2014_Pets",
+  "UIType": "UncontrolledContains",
+  "SYW": false,
+  "Gold": true,
+  "IsAttribute": true,
+  "IsAllNone": false,
+  "IsRange": true,
+  "IsInteger": false
+}, {
+  "Group": "Kmart MRC Sales",
+  "Attribute": "Kmart MRC Sales Pharmacy",
+  "AttributeCollectionMapping": "TotalSalesKmartMRC_2015_Pharmacy",
+  "UIType": "UncontrolledContains",
+  "SYW": false,
+  "Gold": true,
+  "IsAttribute": true,
+  "IsAllNone": false,
+  "IsRange": true,
+  "IsInteger": false
+}, {
+  "Group": "Kmart MRC Sales",
+  "Attribute": "Kmart MRC Sales Prepared Meals",
+  "AttributeCollectionMapping": "TotalSalesKmartMRC_2016_PreparedMeals",
+  "UIType": "UncontrolledContains",
+  "SYW": false,
+  "Gold": true,
+  "IsAttribute": true,
+  "IsAllNone": false,
+  "IsRange": true,
+  "IsInteger": false
+}, {
+  "Group": "Kmart MRC Sales",
+  "Attribute": "Kmart MRC Sales Smoking Cessation",
+  "AttributeCollectionMapping": "TotalSalesKmartMRC_2017_SmokingCessation",
+  "UIType": "UncontrolledContains",
+  "SYW": false,
+  "Gold": true,
+  "IsAttribute": true,
+  "IsAllNone": false,
+  "IsRange": true,
+  "IsInteger": false
+}, {
+  "Group": "Kmart MRC Sales",
+  "Attribute": "Kmart MRC Sales Vegetable",
+  "AttributeCollectionMapping": "TotalSalesKmartMRC_2018_Vegetable",
+  "UIType": "UncontrolledContains",
+  "SYW": false,
+  "Gold": true,
+  "IsAttribute": true,
+  "IsAllNone": false,
+  "IsRange": true,
+  "IsInteger": false
+}, {
+    "Group": "Kmart MRC Sales",
+    "Attribute": "Kmart MRC Sales Vitamins",
+    "AttributeCollectionMapping": "TotalSalesKmartMRC_2019_Vitamins",
+    "UIType": "UncontrolledContains",
+    "SYW": false,
+    "Gold": true,
+    "IsAttribute": true,
+    "IsAllNone": false,
+    "IsRange": true,
+    "IsInteger": false
+  }, {
+  "Group": "Kmart MRC Sales",
+  "Attribute": "Kmart MRC Sales Weight Loss",
+  "AttributeCollectionMapping": "TotalSalesKmartMRC_2020_WeightLoss",
+  "UIType": "UncontrolledContains",
+  "SYW": false,
+  "Gold": true,
+  "IsAttribute": true,
+  "IsAllNone": false,
+  "IsRange": true,
+  "IsInteger": false
+},{
+  "Group": "Kmart MRC Sales",
+  "Attribute": "Kmart MRC Sales Wine/Beer/Liquor",
+  "AttributeCollectionMapping": "TotalSalesKmartMRC_2021_WineBeerLiquor",
+  "UIType": "UncontrolledContains",
+  "SYW": false,
+  "Gold": true,
+  "IsAttribute": true,
+  "IsAllNone": false,
+  "IsRange": true,
+  "IsInteger": false
+}, {
+  "Group": "Kmart MRC Sales",
+  "Attribute": "Kmart MRC Sales Mens Grooming",
+  "AttributeCollectionMapping": "TotalSalesKmartMRC_2022_MensGrooming",
+  "UIType": "UncontrolledContains",
+  "SYW": false,
+  "Gold": true,
+  "IsAttribute": true,
+  "IsAllNone": false,
+  "IsRange": true,
+  "IsInteger": false
+}]

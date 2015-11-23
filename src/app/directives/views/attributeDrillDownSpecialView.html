@@ -1,0 +1,107 @@
+<div class="drill-down-picker">
+
+    <div class="input-group search-bar">
+        <span class="input-group-addon" ng-class="{'search-disable':vm.attributeValues.length <= 10 && vm.searchText === ''}"><i class="fa fa-search fa-search-col"></i></span>
+        <input type="text" class="form-control form-text search-panel-input" aria-label="Search Attribute Values"
+               placeholder="Search All Available Values..."
+               ng-model="vm.searchText"
+               ng-change="vm.getAttributeValues()"
+               ng-model-options="{debounce: 500}" ng-disabled="vm.attributeValues.length <= 10 && vm.searchText === ''"
+               ng-class="{'search-disable':vm.attributeValues.length <= 10 && vm.searchText === ''}"/>
+        <span class="input-group-btn">
+            <span class="input-group-addon btn-no-border" ng-class="{'search-disable':vm.attributeValues.length <= 10 && vm.searchText === ''}" type="button" ng-click="vm.clearSearchText()">
+                <i class="fa fa-times-circle fa-close" ng-class="{'search-disable':vm.attributeValues.length <= 10 && vm.searchText === ''}"></i>
+            </span>
+        </span>
+    </div>
+    <div style="overflow:visible;" ng-if="vm.attributeDetails.IsWebSocial && vm.isFirstLevel">
+        <!-- Tabs start here -->
+        <div class="date-radio-padding" style="margin-top:4px;">
+            <label class="label label-primary customLabels" ng-click="vm.chooseAttribute(); vm.SevenDaysActive = true; vm.changeAttribute(7);" ng-class="{'tabs_active' :vm.SevenDaysActive}" ng-model="vm.AttributeLabel">7 days</label>
+            <label class="label label-primary customLabels" style="margin-right:4px;" ng-click="vm.chooseAttribute(); vm.ThirtyDaysActive = true; vm.changeAttribute(30);" ng-model="vm.AttributeLabel" ng-class="{'tabs_active' :vm.ThirtyDaysActive}" > 30 days </label>
+            <label class="label label-primary customLabels" style="margin-right:4px;" ng-click="vm.chooseAttribute(); vm.SixtyDaysActive = true; vm.changeAttribute(60);" ng-model="vm.AttributeLabel"  ng-class="{'tabs_active' :vm.SixtyDaysActive}"> 60 days </label>
+            <label class="label label-primary customLabels" style="margin-right:4px;" ng-click="vm.chooseAttribute(); vm.NintyDaysActive = true; vm.changeAttribute(90);" ng-model="vm.AttributeLabel"  ng-class="{'tabs_active' :vm.NintyDaysActive}"> 90 days </label>
+
+        </div>
+        <!-- Tabs end here -->
+    </div>
+
+    <div class="breadcrumbs-bar">
+        <span ng-repeat="lv in vm.levelDetails">
+            <span ng-if="!$first"> &gt; </span>
+            <span ng-if="!$last">
+                <button class="btn btn-link" ng-click="vm.goBackToLevel($index)">{{lv.label}}</button>:
+            </span>
+            <span ng-if="$last" class="list-end">{{lv.label}}</span>
+            <span ng-if="lv.value">{{lv.value}}</span>
+        </span>
+    </div>
+
+    <div class="titles-bar" ng-class="{'can-drilldown': !vm.isLastLevel}">
+        <div>
+            <!--<button type="button" class="btn btn-link" ng-click="vm.toggleNameSortMode()">-->
+            <button type="button" class="btn btn-link">
+                <span>Values</span>
+                <!--<span ng-show="!(vm.sortNameAsc || vm.sortNameDesc)" class="sort-arrow-span-disabled"> -->
+                    <!--<i class="fa fa-md fa-sort-asc angle-up-arrow"> </i>-->
+                    <!--<i class="fa fa-md fa-sort-desc angle-down-arrow"> </i> -->
+                <!--</span>-->
+                <!--<i class="fa fa-lg" ng-class="{'fa-sort-asc': vm.sortNameAsc, 'fa-sort-desc': vm.sortNameDesc}"></i>-->
+            </button>
+        </div>
+        <div>
+            <!--<button type="button" class="btn btn-link pull-left" ng-click="vm.toggleCountSortMode()">-->
+            <button type="button" class="btn btn-link pull-left">
+                <span>Members</span>
+                <!--<span ng-show="!(vm.sortCountAsc || vm.sortCountDesc)" class="sort-arrow-span-disabled"> -->
+                    <!--<i class="fa fa-md fa-sort-asc angle-up-arrow"> </i>-->
+                    <!--<i class="fa fa-md fa-sort-desc angle-down-arrow"> </i> -->
+                <!--</span>-->
+                <!--<i class="fa fa-lg" ng-class="{'fa-sort-asc': vm.sortCountAsc, 'fa-sort-desc': vm.sortCountDesc}"></i>-->
+            </button>
+        </div>
+     <!--   <div ng-if="!vm.isLastLevel">
+            {{vm.nextLevelName}}
+        </div>-->
+    </div>
+
+    <div class="list-section">
+        <div class="load-spinner" ng-if="vm.spinner">
+            <i class="fa fa-spinner fa-lg fa-pulse"></i>
+            <span> Loading ... </span>
+        </div>
+        <ul ng-if="!vm.isLastLevel && !vm.spinner">
+            <li ng-repeat="v in vm.attributeValues">
+                <div class="row-cursor" ng-click="vm.selectValue(v, false)">
+                    <div class="pull-left attribute-value-text value-syw-width">
+                        {{v.displayValue}}
+                    </div>
+                    <div class="row-cursor pull-left count-width">
+                        ({{v.count | number:0}})
+                    </div>
+                </div>
+                <div ng-hide="v.displayValue === 'All' || v.displayValue === 'None'" class="row-cursor pull-right drilldown-count-width" ng-click="vm.selectValue(v, true)">
+                    <i class="fa fa-lg fa-chevron-circle-right"></i>
+                </div>
+                <div class="clearfix"></div>
+            </li>
+        </ul>
+        <ul ng-if="vm.isLastLevel && !vm.spinner">
+            <li class="row-cursor" ng-repeat="v in vm.attributeValues"
+                ng-click="vm.selectValue(v, false)">
+                <div class="pull-left attribute-value-text value-width">
+                    {{v.displayValue}}
+                </div>
+                <div class="pull-right">
+                    ({{v.count | number:0}})
+                </div>
+                <div class="clearfix"></div>
+            </li>
+        </ul>
+    </div>
+    <div class="loadMoreDiv">
+        <span style="color:#478eab; font-size:12px;">Showing top <span ng-if="vm.isSpinner"><i class="fa fa-spinner fa-pulse"></i></span><span ng-if="!vm.isSpinner">{{vm.attrValuesCount}}</i></span> values. </span>
+        <button class="pull-right loadMoreButton" ng-click="vm.loadMoreAttributes();" ng-disabled="vm.disableLoadMore" ng-class="{'disableLoadMore': vm.disableLoadMore}" disabled="disabled">Load More...</button>
+    </div>
+
+</div>

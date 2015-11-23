@@ -1,0 +1,13 @@
+<div ng-show="handler.isNegatable">
+    <span ng-click="handler.negateItem()">NOT</span>
+</div>
+<div>
+    <div><span
+        ng-click="handler.toggleAppendToExpressionMode($event, 1)"
+        ng-class="{'selected-mode': handler.isAppendToNewGroupMode, 'inactive': !handler.isSelected}">Subgroup</span><span
+        ng-click="handler.toggleAppendToExpressionMode($event, 2)"
+        ng-class="{'selected-mode': !handler.isAppendToNewGroupMode, 'inactive': !handler.isSelected}">Append</span><span
+        class="icons"
+        ng-click="handler.removeItem()"><i class="fa fa-lg fa-times-circle"></i></span></div>
+    <div ng-transclude></div>
+</div>

@@ -1,0 +1,7 @@
+{
+    "userId": "test",
+    "userName": "Test User",
+    "roles": [
+        "admin"
+    ]
+}

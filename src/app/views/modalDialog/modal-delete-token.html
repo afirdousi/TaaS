@@ -1,0 +1,16 @@
+<div id="delete-token" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+	<div class="modal-dialog modal-sm">
+		<div class="modal-content filter-content-style">
+			<div class="modal-body">
+				<!-- <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+				</button><br> -->
+				<span> Do you want to remove the filter?<br><b>{{tokenDetails.attrKey}} = {{tokenDetails.attrDisplayValue}}{{tokenDetails.dateOne}}<span ng-if="tokenDetails.dateTwo"> To {{tokenDetails.dateTwo}}</span></b></span>
+			</div>
+			<div class="filter-style">
+				<button type="button" class="btn btn-default btn-danger" data-dismiss="modal" ng-click="vmSubHeader.removeTokens(tokenDetails);">Yes</button>
+				<button type="button" class="btn btn-default" data-dismiss="modal">No</button>
+			</div>
+		</div>
+	</div>
+</div>

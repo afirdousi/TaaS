@@ -1,0 +1,38 @@
+<div id="content" class="group-panels">
+    <div class="widget-body">
+        <header role="heading">
+            <div class="searchViewHeader">
+                <h6 style="display:inline;">{{ vmProject.pageHeader }}</h6></div>
+            <div id="tabsView" class="pull-right visible-sm-inline-block visible-lg-inline-block visible-md-inline-block ">
+
+                <!--Page Heading Start-->
+
+                <ul style="display:inline-flex;" class="nav nav-tabs pull-right in visible-lg " >
+                    <li ng-class="{'active' : vmProject.isCurrentProjectView}" ng-click="vmProject.selectCurrentProjectView();" style="cursor:pointer;">
+                        <a data-toggle="tab"><span class="visible-lg">Current Project</span></a>
+                    </li>
+                    <li ng-class="{'active' : vmProject.isPastProjectView}" ng-click="vmProject.selectPastProjectView();" style="cursor:pointer;">
+                        <a data-toggle="tab"><span class="visible-lg">Past Project</span></a>
+                    </li>
+                </ul>
+
+                <!--Page Heading End-->
+                <div class="clearfix"></div>
+            </div>
+        </header>
+        <div class="clearfix"></div>
+        <br/>
+
+        <div class="tab-content" ng-show="vmProject.isCurrentProjectView">
+            <div class="page-wrapper">
+                Current Project Details...
+            </div>
+        </div>
+
+        <div class="tab-content" ng-show="vmProject.isPastProjectView">
+            <div class="page-wrapper">
+                Past Project Details...
+            </div>
+        </div>
+    </div>
+</div>

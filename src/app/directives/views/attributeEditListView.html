@@ -1,0 +1,245 @@
+<div class="attribute-values-picker">
+
+    <div class="input-group search-bar">
+        <span class="input-group-addon" ng-class="{'search-disable':(vm.attributeValues.length <= 10 && vm.searchText === '') || vm.attributeDetails.IsRange}"><i class="fa fa-search fa-search-col"></i></span>
+        <input type="text" class="form-control form-text search-panel-input" aria-label="Search Attribute Values"
+               placeholder="Search All Available Values..."
+               ng-model="vm.searchText"
+               ng-change="vm.getAttributeValues()"
+               ng-model-options="{debounce: 500}" ng-disabled="(vm.attributeValues.length <= 10 && vm.searchText === '') || vm.attributeDetails.IsRange"
+                ng-class="{'search-disable':(vm.attributeValues.length <= 10 && vm.searchText === '') || vm.attributeDetails.IsRange}"/>
+        <span class="input-group-btn">
+            <span class="input-group-addon btn-no-border" ng-class="{'search-disable':(vm.attributeValues.length <= 10 && vm.searchText === '')|| vm.attributeDetails.IsRange}" type="button" ng-click="vm.clearSearchText()">
+                <i class="fa fa-times-circle fa-close" ng-class="{'search-disable':(vm.attributeValues.length <= 10 && vm.searchText === '') || vm.attributeDetails.IsRange}"></i>
+            </span>
+        </span>
+    </div>
+<!-- Added following div for MSM hierarchy -->
+    <div ng-if="vm.attributeDetails.IsMSM" class="breadcrumbs-bar">
+        <span>
+            <span ng-if="vm.isModelName" class="list-end">{{vm.levelDetails[0]}}</span>
+            <button class="btn btn-link" ng-if="vm.isPercentBucket" ng-click="vm.isPercentBucket = false; vm.isModelName = true;">{{vm.levelDetails[0]}}</button>
+            <span ng-if="vm.isPercentBucket" class="list-end">{{vm.levelDetails[1]}}</span>
+        </span>
+    </div>
+    <div ng-if="vm.attributeDetails.IsMemberPoints || vm.attributeDetails.IsTopMSASegments" style="margin:6px">
+        <div >
+            <label class="label label-primary customLabels" ng-class="{'tabs_active' :vm.PointsActive}" ng-click="vm.setTabActive(); vm.PointsActive = true; vm.chooseAttribute(); " ng-model="vm.Points"  style="margin:4px">
+                <span ng-if="vm.attributeDetails.IsMemberPoints">Points</span>
+                <span  ng-if="vm.attributeDetails.IsTopMSASegments">Top 2000</span>
+            </label>
+            <label class="label label-primary customLabels" ng-class="{'tabs_active' :vm.BucketsActive}" ng-click="vm.setTabActive(); vm.BucketsActive = true; vm.chooseAttribute();" ng-model="vm.Buckets"  style="margin:5px">
+                <span ng-if="vm.attributeDetails.IsMemberPoints">Buckets</span>
+                <span  ng-if="vm.attributeDetails.IsTopMSASegments">Top 5000</span>
+            </label>
+        </div>
+    </div>
+    <div ng-if="!vm.attributeDetails.IsRange" class="titles-bar">
+        <div>
+            <!--<button type="button" class="btn btn-link" ng-click="vm.toggleNameSortMode()">-->
+            <button type="button" class="btn btn-link">
+                <span>Values</span>
+                <!--<span ng-show="!(vm.sortNameAsc || vm.sortNameDesc)" class="sort-arrow-span-disabled">-->
+                    <!--&lt;!&ndash;<i class="fa fa-md fa-sort-asc angle-up-arrow"> </i>&ndash;&gt;-->
+                    <!--&lt;!&ndash;<i class="fa fa-md fa-sort-desc angle-down-arrow"> </i> &ndash;&gt;-->
+                <!--</span>-->
+                <!--<span ng-show="vm.sortNameAsc || vm.sortNameDesc" class="sort-arrow-span-disabled"> -->
+                <!--&lt;!&ndash;<i class="fa fa-md fa-sort-asc" ng-class="{'sort-disable': vm.sortNameDesc}"> </i>&ndash;&gt;-->
+                <!--&lt;!&ndash;<i class="fa fa-md fa-sort-desc sort-desc" ng-class="{ 'sort-disable': vm.sortNameAsc}"> </i> &ndash;&gt;-->
+                <!--</span>-->
+            </button>
+        </div>
+        <div ng-class="{'fa-syw-allsource':vm.sywFlagValue}">
+            <!--<button type="button" class="btn btn-link pull-left" ng-click="vm.toggleCountSortMode()">-->
+            <button type="button" class="btn btn-link pull-left">
+                <!-- <span ng-show="!vm.sywFlagValue">count</span> -->
+                <span>Members</span>
+                <!--<span ng-show="!(vm.sortCountAsc || vm.sortCountDesc)" class="sort-arrow-span-disabled"> -->
+                    <!--<i class="fa fa-md fa-sort-asc angle-up-arrow"> </i>-->
+                    <!--<i class="fa fa-md fa-sort-desc angle-down-arrow"> </i> -->
+                <!--</span>-->
+                <!--<span ng-show="vm.sortCountAsc || vm.sortCountDesc" class="sort-arrow-span-disabled"> -->
+                <!--<i class="fa fa-md fa-sort-asc" ng-class="{'sort-disable': vm.sortCountDesc}"> </i>-->
+                <!--<i class="fa fa-md fa-sort-desc sort-desc" ng-class="{ 'sort-disable': vm.sortCountAsc}"> </i> -->
+                <!--</span>-->
+            </button>
+            <!--<button  ng-show="vm.sywFlagValue" type="button" class="btn btn-link pull-left" ng-click="vm.toggleCountSYWSortMode()">-->
+            <button  ng-show="vm.sywFlagValue" type="button" class="btn btn-link pull-left">
+                <span>SYW.com</span>
+                <!--<span ng-show="!(vm.sortSYWCountAsc || vm.sortSYWCountDesc)" class="sort-arrow-span-disabled"> -->
+                    <!--<i class="fa fa-md fa-sort-asc angle-up-arrow"> </i>-->
+                    <!--<i class="fa fa-md fa-sort-desc angle-down-arrow"> </i> -->
+                <!--</span>-->
+                <!--<span ng-show="vm.sortSYWCountAsc || vm.sortSYWCountDesc" class="sort-arrow-span-disabled"> -->
+                <!--<i class="fa fa-md fa-sort-asc" ng-class="{'sort-disable': vm.sortSYWCountDesc}"> </i>-->
+                <!--<i class="fa fa-md fa-sort-desc sort-desc" ng-class="{ 'sort-disable': vm.sortSYWCountAsc}"> </i> -->
+                <!--</span>-->
+            </button>
+        </div>
+      
+</div>
+
+
+    <div ng-if="!vm.attributeDetails.IsRange && !vm.attributeDetails.IsMSM && !vm.attributeDetails.IsContactDetails" class="list-section">
+        <div class="load-spinner" ng-if="vm.spinner">
+            <i class="fa fa-spinner fa-pulse fa-lg"></i>
+            <span> Loading ... </span>
+        </div>
+        <ul>
+
+            <li  ng-if="!vm.sywFlagValue" class="row-cursor" ng-repeat="v in vm.attributeValues" ng-click="vm.addAttributeFilter(v, false); v.isSelectedAsFilter=true;" ng-init="v.isSelectedAsFilter=false" ng-class="v.isSelectedAsFilter? 'active':''">
+                <div class="pull-left attribute-value-text value-width">
+                    {{v.displayValue}}&nbsp;{{v.ageInYears}}
+                </div>
+                <div  ng-if = 'v.sywCount > 0 ' class="pull-right">
+                   ({{v.sywCount  | number:0}})
+                </div>
+                <div class="pull-right">
+                    ({{v.count | number:0}})
+                </div>
+                <div class="clearfix"></div>
+            </li>
+              <li  ng-if="vm.sywFlagValue" ng-repeat="v in vm.attributeValues">
+                <div class="row-cursor" ng-click="vm.addAttributeFilter(v, false); v.isSelectedAsFilter=true;">
+                    <div class="pull-left attribute-value-text value-syw-width">
+                        {{v.displayValue}}&nbsp;{{v.ageInYears}}
+                    </div>
+                    <div class="pull-left count-width">
+                        <span>({{v.count | number:0}})</span>
+                    </div>
+                </div>
+                <div ng-click="vm.addAttributeFilter(v, true); v.isSelectedAsFilter=true;" class="pull-right count-width">
+                   <span class="row-cursor">&nbsp;({{v.sywCount>0 ? v.sywCount : 0 | number}})</span>
+                </div>
+                <div class="clearfix"></div>
+            </li>
+
+        </ul>
+    </div>
+    <div ng-if="vm.attributeDetails.IsMSM" class="list-section">
+        <div class="load-spinner" ng-if="vm.spinner">
+            <i class="fa fa-spinner fa-pulse fa-lg"></i>
+            <span> Loading ... </span>
+        </div>
+        <div  ng-if="!vm.spinner">
+            <ul>
+                <li ng-repeat="attr in vm.msmModelNames" ng-if="vm.isModelName" >
+                    <div class="pull-left attribute-value-text" style="width:70%">
+                        <span class="row-cursor">{{attr.description}}</span>
+                    </div>
+                    <div  ng-click="vm.addAttributeFilter(attr, false); attr.isSelectedAsFilter=true;">
+                        <span class="pull-left" style="text-align: right; width:20%">({{ attr.count | number:0 }})</span>
+                    </div>
+                    <span ng-click="vm.isModelName = false; vm.isPercentBucket = true; vm.setAttribute(attr);" class=" row-cursor pull-right drilldown-count-width"><i class="fa fa-lg fa-chevron-circle-right"></i></span>
+                </li>
+                <li ng-repeat="attr in vm.msmModelNamesCount" ng-if="vm.isPercentBucket">
+                    <div class="pull-left attribute-value-text value-width" ng-click="vm.addAttributeFilter(attr, false); attr.isSelectedAsFilter=true;">
+                        <span class="row-cursor">{{ attr.displayValue }}</span>
+                    </div>
+                    <div  ng-click="vm.addAttributeFilter(attr, false); attr.isSelectedAsFilter=true;">
+                        <span class="row-cursor pull-right">({{ attr.count | number:0 }})</span>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+    </div>
+    <div ng-if="vm.attributeDetails.IsContactDetails" class="list-section">
+        <div>
+            <ul>
+                <li ng-if="!vm.sywFlagValue" ng-repeat="attr in vm.newattributeValues" ng-if="vm.isModelName">
+                    <div class="pull-left attribute-value-text value-width" ng-click="vm.addAttributeFilter(attr, false); attr.isSelectedAsFilter=true;">
+                        <span class="row-cursor">{{ attr.displayValue }}</span>
+                    </div>
+                    <div  ng-click="vm.addAttributeFilter(attr, false); attr.isSelectedAsFilter=true;">
+                        <span class="row-cursor pull-right">({{ attr.count | number:0 }})</span>
+                    </div>
+                </li>
+                <li ng-if="vm.sywFlagValue" ng-repeat="attr in vm.newattributeValues" ng-if="vm.isModelName">
+                    <div class="pull-left attribute-value-text" style="width:57%" ng-click="vm.addAttributeFilter(attr, false); attr.isSelectedAsFilter=true;">
+                        <span class="row-cursor">{{ attr.displayValue }}</span>
+                    </div>
+                    <div  ng-click="vm.addAttributeFilter(attr, false); attr.isSelectedAsFilter=true;">
+                        <span class="row-cursor pull-left">({{ attr.count | number:0 }})</span>
+                    </div>
+                    <div  ng-click="vm.addAttributeFilter(attr, true); attr.isSelectedAsFilter=true;">
+                        <span class="row-cursor" style="margin-left:30px;">({{ attr.sywcount | number:0 }})</span>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div ng-if="vm.attributeDetails.IsRange">
+        <!-- Tabs start here -->
+        <div class="date-radio-padding" style="margin-top:10px;">
+            <label class="label label-primary " style="cursor:pointer;font-size: 12.5px;" ng-click="vm.chooseOperator(); vm.rangeActive = true;" ng-class="{'tabs_active' :vm.rangeActive}" ng-model="vm.operatorLabel">Range</label>
+            <label class="label label-primary operatorsLabels" tooltip="Less Than" ng-click="vm.chooseOperator(); vm.lessThanOprActive = true;" ng-model="vm.operatorLabel" ng-class="{'tabs_active' :vm.lessThanOprActive}" > < </label>
+            <label class="label label-primary operatorsLabels" tooltip="Less Than Equal To" ng-click="vm.chooseOperator(); vm.lessThanEqualToOprActive = true;" ng-model="vm.operatorLabel"  ng-class="{'tabs_active' :vm.lessThanEqualToOprActive}"> <= </label>
+            <label class="label label-primary operatorsLabels" tooltip="Greater Than" ng-click="vm.chooseOperator(); vm.greaterThanOprActive = true;" ng-model="vm.operatorLabel"  ng-class="{'tabs_active' :vm.greaterThanOprActive}"> > </label>
+            <label class="label label-primary operatorsLabels" tooltip="Greater Than Equal To" ng-click="vm.chooseOperator(); vm.greaterThanEqualToOprActive = true;" ng-model="vm.operatorLabel"  ng-class="{'tabs_active' :vm.greaterThanEqualToOprActive}"> >= </label>
+            <label class="label label-primary operatorsLabels" tooltip="Equal To" ng-click="vm.chooseOperator(); vm.equalToOprActive = true;" ng-model="vm.operatorLabel"  ng-class="{'tabs_active' :vm.equalToOprActive}"> = </label>
+            <label class="label label-primary operatorsLabels" tooltip="Not Equal To" style="padding-right:5px;" ng-click="vm.chooseOperator(); vm.notEqualToOprActive = true;" ng-model="vm.operatorLabel"  ng-class="{'tabs_active' :vm.notEqualToOprActive}"> &ne; </label>
+        </div>
+        <!-- Tabs end here -->
+        <hr style="margin-top: 5px; margin-bottom: 5px; border-top: 1px solid #aaa9a9">
+        <div ng-if="vm.rangeActive"class="form-group">
+            <strong class="margin">From</strong>
+            <input type="text" class="inlineInput form-control" placeholder="Min" ng-model="vm.inputFrom" ng-change="vm.inputTo = vm.inputFrom; vm.setEnableFilter(); vm.getselectedValues();" ng-click="vm.isValidInput = null; ">
+            <strong class="margin">To</strong>
+            <input type="text" class="inlineInput form-control"  placeholder="Max" ng-model="vm.inputTo" tabindex="1" ng-change="vm.setEnableFilter(); vm.getselectedValues()">
+        </div>
+        <div ng-if="!vm.rangeActive" class="form-group">
+            <strong class="margin">Value</strong>
+            <input type="text" style="width: 100px;" class="inlineInput form-control" placeholder="Enter value" ng-model="vm.value" ng-change="vm.enableFilter = true;"/>
+        </div>
+        <div ng-if="vm.attributeDetails.IsInteger && !vm.attributeDetails.IsNoMinMax" style="font-size: 12px;font-weight: bold;">
+
+            <div>Minimum value: {{ vm.minValue }}<span ng-if="vm.isSpinner"><i class="fa fa-spinner fa-pulse fa-lg"></i></span></div>
+            <div>Maximum value: {{ vm.maxValue }}<span ng-if="vm.isSpinner"><i class="fa fa-spinner fa-pulse fa-lg"></i></span></div>
+        </div>
+        <div ng-if="!vm.attributeDetails.IsInteger && !vm.attributeDetails.IsNoMinMax" style="font-size: 12px;font-weight: bold;">
+            <div>Minimum value: {{ vm.minValue | number:2}}<span ng-if="vm.isSpinner"><i class="fa fa-spinner fa-pulse fa-lg"></i></span></div>
+            <div>Maximum value: {{ vm.maxValue | number:2}}<span ng-if="vm.isSpinner"><i class="fa fa-spinner fa-pulse fa-lg"></i></span></div>
+        </div>
+        <div>
+            <input type="button" value="Add Filter" class="btn btn-primary btn-add-filter marginLeft" ng-click="vm.validateInputRange(); vm.clearInput();" ng-disabled="!vm.enableFilter" disabled="disabled">
+        </div>
+
+
+        <hr style="margin-top: 5px; margin-bottom: 5px; border-top: 1px solid #aaa9a9">
+     <!-- Note: Do not remove this commented code. This feature is for next release.   <p style="margin-top:10px"><strong >Click to Add Filter</strong></p>
+        <div class="titles-bar">
+            <span>name</span>
+            <span class="pull-right">All Sources</span>
+        </div>
+        <div class="attribute-values-picker">
+           <div class="list-section">
+                <ul>
+                    <li class="row-cursor"  ng-repeat="v in vm.rangeAndAnyNoneValues" ng-click="vm.addAttributeFilter(v.value, v.displayValue,false);" ng-class="v.isSelectedAsFilter? 'active':''">
+                        <div class="pull-left attribute-value-text value-width">
+                            {{ v.name }}
+                        </div>
+                        <div class="pull-right">
+                            ({{v.count | number:0}})
+                        </div>
+                        <div class="clearfix"></div>
+                    </li>
+                </ul>
+            </div>
+        </div> -->
+        <alert ng-if="vm.isValidInput" type="danger">{{ vm.alertText }}<i style="cursor:pointer; margin-left:10px;" class="fa fa-times-circle" ng-click="vm.isValidInput = null"></i>
+        </alert>
+        <div class="clearfix"></div>
+    </div>
+
+    <div ng-if="!vm.attributeDetails.IsRange && !vm.attributeDetails.IsMSM" class="loadMoreDiv">
+        <span style="color:#478eab; font-size:12px;">Showing top <span ng-if="vm.isSpinner"><i class="fa fa-spinner fa-pulse"></i></span><span ng-if="!vm.isSpinner">{{vm.attrValuesCount}} </span>values. </span>
+        <button class="pull-right loadMoreButton" ng-click="vm.loadMoreAttributes();" ng-disabled="vm.disableLoadMore" ng-class="{'disableLoadMore': vm.disableLoadMore}" disabled="disabled">Load More...</button>
+    </div>
+    <div ng-if="!vm.attributeDetails.IsRange && vm.attributeDetails.IsMSM" class="loadMoreDiv bottom23" >
+        <span style="color:#478eab; font-size:12px;">Showing top <span ng-if="vm.isSpinner"><i class="fa fa-spinner fa-pulse"></i></span><span ng-if="!vm.isSpinner">{{vm.isModelName? vm.attrModelNamesCount:vm.attrPercentBucketValuesCount}} </span>values. </span>
+        <button class="pull-right loadMoreButton" ng-click="vm.loadMoreAttributes();" ng-disabled="vm.disableLoadMore" ng-class="{'disableLoadMore': vm.disableLoadMore}" disabled="disabled">Load More...</button>
+    </div>
+
+</div>

@@ -1,0 +1,37 @@
+{
+  "available": [
+  ],
+  "defaults": [
+    {
+      "title": "Gender Breakdown",
+      "view": "distribution",
+      "attr": "Gender",
+      "columnSpan": 4
+    },
+    {
+      "title": "Ethnicity Breakdown",
+      "view": "distribution",
+      "attr": "Ethnicity",
+      "columnSpan": 4
+    },
+    {
+      "title": "Age Breakdown",
+      "view": "distribution",
+      "attr": "BirthdayYear",
+      "isYear": true,
+      "columnSpan": 4
+    },
+    {
+      "title": "Home Address U.S.A. Breakdown",
+      "view": "united-states",
+      "attr": "HomeAddressStateName",
+      "columnSpan": 6
+    },
+    {
+      "title": "Age Breakdown",
+      "view": "years",
+      "attr": "BirthdayYear",
+      "columnSpan": 6
+    }
+  ]
+}

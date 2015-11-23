@@ -1,0 +1,27 @@
+{
+  "portNumber": 9955,
+  "solrUrl": "/taas/solr",
+  "appClientId": "TaaS-v-0.0.1",
+  "ldapAddress": "LDAP://xxx.xxx.xx",
+  "contextRoot" : "/taas",
+  "useBuild": false,
+  "applicationVersion":"",
+  "environment":"dev",
+  "authentication": {
+    "secretKey": "TOP*SECRET!KEY",
+    "authorizedClients": [
+      {
+        "id": "browser",
+        "secret": "taas*app"
+      }
+    ]
+  },
+  "mongodb": {
+    "host": "xxx.xxx.com",
+    "user": "mongouser",
+    "password": "mongouser123",
+    "database": "taas_db",
+    "port": 27000,
+    "useSSL": false
+  }
+}

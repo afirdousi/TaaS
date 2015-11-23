@@ -1,0 +1,48 @@
+<div class="container-fluid login-nav-bar">
+	<div class="row">
+		<div class="col-xs-7 col-sm-6 col-md-4 col-lg-3 padding-left-8" ng-controller="pageHeaderCtrl as vmHeader">
+	        <span class="pull-left">
+	           <!-- <img src="styles/img/taas-logo.png">-->
+	        </span>
+	        
+		        <span class="title-text">
+		                Testing as a Framework (SJSU Fall 2015)<br/>
+		        
+		        <span class="version-txt pull-right" ng-bind="vmHeader.applicationVersion"></span></span>
+	     	
+	    </div>
+
+    </div>
+</div>
+<div class="page-background" ng-controller="loginCtrl as vmLogin">
+	<form name="loginForm" ng-submit="vmLogin.login(vmLogin.credential)">
+		<div class="login-box">
+			<h2>Sign In</h2>
+			<div class="input-group form-group">
+				<span class="input-group-addon">
+					<i class="fa fa-user fa-fw"></i>
+				</span>
+			<input class="form-control" type="text" placeholder="Enterprise ID" ng-model="vmLogin.credential.username"  required>
+			</div>
+			<div class="input-group form-group"> <span class="input-group-addon"><i class="fa fa-key fa-fw"></i></span>
+				<input class="form-control" type="password" placeholder="Password" ng-model="vmLogin.credential.password" required>
+			</div>
+			<div class="checkbox" ng-if="false">
+			<label>
+				<input type="checkbox" ng-if="false"> Remember Me </label>
+			</div>
+			<button type="submit" class="btn">Sign In</button>
+			<p>&nbsp;</p>
+			<div class="loginResult" ng-if="vmLogin.isInvalidCredential"> {{ vmLogin.loginResult }} </div>
+			
+			<div class="text-center"><a href="mailto:forgot-password@taassjsu.com;?Subject=Request%20For%20TaaS%20Application%20Access%20-Forgot Password" target="_blank">Forgot password</a> | <a href="mailto:forgot-username@taassjsu.com;?Subject=Request%20For%20TaaS%20Application%20Access%20-Forgot User Name">Forgot Username</a></div>
+		</div>
+		
+	</form>
+</div>
+
+
+
+
+
+
