@@ -17579,3 +17579,35 @@ select::-ms-expand {
   color: #fff;
   background-color: #f0ad4e;
 }
+
+
+.panel-purple {
+  border-color: #80080;
+}
+
+.panel-purple .panel-heading {
+  border-color: #80080;
+  color: #fff;
+  background-color: #80080;
+}
+
+
+
+.panel-beach {
+  border-color: #CA854F;
+  background-color: #CA854F;
+  color:#fff;
+}
+
+.panel-beach.panel-heading {
+  border-color: #CA854F;
+  color: #fff;
+  background-color: #CA854F;
+}
+
+
+
+
+
+
+

@@ -118,6 +118,23 @@
                         authorizedRoles: [USER_ROLES.admin, USER_ROLES.basic]
                     }
                 })
+                .state('app.project.detail', {
+                    url: '/detail',
+                    views: {
+                        "detail@app.project": {
+                            templateUrl: 'app/views/project/tester-project-detail.html',
+                            controller: 'testerProjectDetailCtrl',
+                            controllerAs: 'vmProjectDetail'
+                        }
+                    },
+                    params:{
+                      projectId:null
+                    },
+                    data: {
+                        title: 'Project Details',
+                        authorizedRoles: [USER_ROLES.admin, USER_ROLES.basic]
+                    }
+                })
                .state('app.config', {
                     url: '/config',
                     views: {
