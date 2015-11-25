@@ -2,7 +2,7 @@
 var _ = require('lodash');
 var jwt = require('jsonwebtoken');
 var fs = require('fs');
-var testUserFileName = __dirname + '../../../__TestUser__.json';
+var testUserFileName = ('../../__TestUser__.json');
 
 module.exports = function(webSettings) {
 

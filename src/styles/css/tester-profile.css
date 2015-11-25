@@ -1,0 +1,236 @@
+/* Center Adjustments
+-----------------------------
+-----------------------------*/
+.center-text {
+    text-align: center;
+}
+
+/* Visibility-Adjustments
+---------------------------------
+---------------------------------*/
+.hidden {
+    visibility:hidden;
+}
+
+/* Micro-Adjustments
+---------------------------------
+---------------------------------*/
+.right {
+    float:right;
+}
+
+.left {
+    float:left;
+}
+
+/* Padding Adjustments -----------
+==================================*/
+.nopaddingall {
+    padding:0px 0px 0px 0px;
+}
+
+.minipaddingall {
+    padding:5px;
+}
+
+.smallpaddingall {
+    padding:10px;
+}
+
+.medpaddingall {
+    padding:20px;
+}
+
+.largepaddingall {
+    padding:30px;
+}
+
+/* LEFT Padding Adjustments------------*/
+.nopaddingleft {
+    padding-left:0;
+}
+
+.minipaddingleft {
+    padding-left:5px;
+}
+
+.smallpaddingleft {
+    padding-left:10px;
+}
+
+.medpaddingleft {
+    padding-left:20px;
+}
+
+.largepaddingleft {
+    padding-left:30px;
+}
+
+/* RIGHT Padding Adjustments------------*/
+.nopaddingright {
+    padding-right:0;
+}
+
+.minipaddingright {
+    padding-right:5px;
+}
+
+.smallpaddingright {
+    padding-right:10px;
+}
+
+.medpaddingright {
+    padding-right:20px;
+}
+
+.largepaddingright {
+    padding-right:30px;
+}
+
+/* TOP Padding Adjustments------------*/
+.nopaddingtop {
+    padding-top:0px;
+}
+
+.minipaddingtop {
+    padding-top:5px;
+}
+
+.smallpaddingtop {
+    padding-top:10px;
+}
+
+.medpaddingtop {
+    padding-top:20px;
+}
+
+.largepaddingtop {
+    padding-top:30px;
+}
+
+/* BOTTOM Padding Adjustments------------*/
+.nopaddingbottom {
+    padding-bottom:0px;
+}
+
+.minipaddingbottom {
+    padding-bottom:5px;
+}
+
+.smallpaddingbottom {
+    padding-bottom:10px;
+}
+
+.medpaddingbottom {
+    padding-bottom:20px;
+}
+
+.largepaddingbottom {
+    padding-bottom:30px;
+}
+
+/* Margin Adjustments -----------
+==================================*/
+.nomarginall {
+    margin:0px 0px 0px 0px;
+}
+
+.minimarginall {
+    margin:5px;
+}
+
+.smallmarginall {
+    margin:10px;
+}
+
+.medmarginall {
+    margin:20px;
+}
+
+.largemarginall {
+    margin:30px;
+}
+
+/* LEFT margin Adjustments------------*/
+.nomarginleft {
+    margin-left:0;
+}
+
+.minimarginleft {
+    margin-left:5px;
+}
+
+.smallmarginleft {
+    margin-left:10px;
+}
+
+.medmarginleft {
+    margin-left:20px;
+}
+
+.largemarginleft {
+    margin-left:30px;
+}
+
+/* RIGHT margin Adjustments------------*/
+.nomarginright {
+    margin-right:0;
+}
+
+.minimarginright {
+    margin-right:5px;
+}
+
+.smallmarginright {
+    margin-right:10px;
+}
+
+.medmarginright {
+    margin-right:20px;
+}
+
+.largemarginright {
+    margin-right:30px;
+}
+
+/* TOP margin Adjustments------------*/
+.nomargintop {
+    margin-top:0px;
+}
+
+.minimargintop {
+    margin-top:5px;
+}
+
+.smallmargintop {
+    margin-top:10px;
+}
+
+.medmargintop {
+    margin-top:20px;
+}
+
+.largemargintop {
+    margin-top:30px;
+}
+
+/* BOTTOM margin Adjustments------------*/
+.nomarginbottom {
+    margin-bottom:0px;
+}
+
+.minimarginbottom {
+    margin-bottom:5px;
+}
+
+.smallmarginbottom {
+    margin-bottom:10px;
+}
+
+.medmarginbottom {
+    margin-bottom:20px;
+}
+
+.largemarginbottom {
+    margin-bottom:30px;
+}

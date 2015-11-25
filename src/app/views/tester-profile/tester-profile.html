@@ -1,18 +1,20 @@
-
 <div id="content" class="group-panels">
     <div class="widget-body">
         <header role="heading">
             <div class="searchViewHeader">
                 <h6 style="display:inline;">{{ vmTesterProfile.pageHeader }}</h6></div>
-            <div id="tabsView" class="pull-right visible-sm-inline-block visible-lg-inline-block visible-md-inline-block ">
+            <div id="tabsView"
+                 class="pull-right visible-sm-inline-block visible-lg-inline-block visible-md-inline-block ">
 
                 <!--Page Heading Start-->
 
-                <ul style="display:inline-flex;" class="nav nav-tabs pull-right in visible-lg " >
-                    <li ng-class="{'active' : vmTesterProfile.isOption1}" ng-click="vmTesterProfile.selectOption1();" style="cursor:pointer;">
+                <ul style="display:inline-flex;" class="nav nav-tabs pull-right in visible-lg ">
+                    <li ng-class="{'active' : vmTesterProfile.isOption1}" ng-click="vmTesterProfile.selectOption1();"
+                        style="cursor:pointer;">
                         <a data-toggle="tab"><span class="visible-lg">Option 1</span></a>
                     </li>
-                    <li ng-class="{'active' : vmTesterProfile.isOption2}" ng-click="vmTesterProfile.selectOption2();" style="cursor:pointer;">
+                    <li ng-class="{'active' : vmTesterProfile.isOption2}" ng-click="vmTesterProfile.selectOption2();"
+                        style="cursor:pointer;">
                         <a data-toggle="tab"><span class="visible-lg">Option 2</span></a>
                     </li>
                 </ul>
@@ -27,7 +29,284 @@
         <div class="tab-content" ng-show="vmTesterProfile.isOption1">
 
             <div class="page-wrapper">
-                Option#1
+
+                <!-- 1st Container: User Personal Information -->
+                <div class="container-fluid">
+                    <div class="row largemarginbottom smallmargintop">
+                        <div class="col-lg-2 col-md-2 col-sm-12">
+
+                            <div class="panel panel-primary">
+                                <div class="panel-heading text-center">
+                                    <h3 class="panel-title">Profile Picture</h3>
+                                </div>
+                                <a id="cambiarFotoBtn" href="#changePicModal">
+                                    <div class="panel-body text-center">
+                                        <img class="img-responsive text-center" src="http://placehold.it/125x125">
+                                    </div>
+                                    <div class="panel-footer smallpaddingleft text-center">
+                                        <em> Change Picture</em>
+                                    </div>
+                                </a>
+                            </div>
+
+                        </div><!-- Profile Picture -->
+                        <div class="col-lg-10 col-md-10 col-sm-12">
+
+                            <div class="panel panel-primary">
+                                <div class="panel-heading text-center">
+                                    <h3 class="panel-title">Personal Details</h3>
+                                </div>
+                                <div class="panel-body">
+                                    <div class="row">
+
+                                        <div class="col-lg-6 col-md-6 col-sm-12">
+
+                                            <div class="row smallpaddingbottom">
+                                                <div class="col-lg-4 col-md-4 col-sm-2">
+                                                    <strong>Name: </strong>
+                                                </div>
+                                                <div class="col-lg-8 col-md-8 col-sm-4">
+                                                    John Smith
+                                                </div>
+                                            </div>
+
+                                            <div class="row smallpaddingbottom">
+                                                <div class="col-lg-4 col-md-4 col-sm-2">
+                                                    <strong>Username: </strong>
+                                                </div>
+                                                <div class="col-lg-8 col-md-8 col-sm-4">
+                                                    JSmith334
+                                                </div>
+                                            </div>
+
+                                            <div class="row smallpaddingbottom">
+                                                <div class="col-lg-4 col-md-4 col-sm-2">
+                                                    <strong>Email: </strong>
+                                                </div>
+                                                <div class="col-lg-8 col-md-8 col-sm-4">
+                                                    john.smith@gmail.com
+                                                </div>
+                                            </div>
+
+                                            <div class="row smallpaddingbottom">
+                                                <div class="col-lg-4 col-md-4 col-sm-2">
+                                                    <strong>Phone: </strong>
+                                                </div>
+                                                <div class="col-lg-8 col-md-8 col-sm-4">
+                                                    (433) 845-8723
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                        <div class="col-lg-6 col-md-6 col-sm-12">
+
+                                            <div class="panel panel-purple nomarginbottom">
+                                                <div class="panel-heading">
+                                                    <div class="row">
+                                                        <div class="col-xs-12 text-center" id="badge-list">
+                                                            <i class="fa fa-star fa-4x medpaddingleft"></i>
+                                                            <i class="fa fa-trophy fa-4x medpaddingleft"></i>
+                                                            <i class="fa fa-diamond fa-4x medpaddingleft"></i>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <a href="#" ui-sref="app.ranking.detail({userId:1})">
+                                                    <div class="panel-footer text-center">
+                                                        <ul class="list-inline nomarginbottom">
+                                                            <li><strong>Current Ranking: </strong></li>
+                                                            <li>DIAMOND</li>
+                                                        </ul>
+
+                                                    </div>
+                                                </a>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="panel-footer minipaddingall smallpaddingleft">
+                                    <div class="dropdown nomarginall">
+                                        <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1"
+                                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                            How It Looks
+                                            <span class="caret"></span>
+                                        </button>
+                                        <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                                            <li><a href="#">Private</a></li>
+                                            <li><a href="#">Public</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <!-- User Data -->
+                    </div>
+                </div><!-- End 1st Container: User Personal Information -->
+
+                <!-- 2nd Container: Skills -->
+                <div class="container-fluid">
+                    <div class="row largemarginbottom smallmargintop">
+
+                        <div class="col-lg-12 col-md-12 col-sm-12">
+
+                            <div class="panel panel-primary">
+                                <div class="panel-heading">
+                                    <h3 class="panel-title">Skills<a href="#"><i class="fa fa-pencil-square-o pull-right"> Edit</i></a></h3>
+                                </div>
+                                <div class="table-responsive">
+                                    <table class="table table-hover table-condensed">
+                                    <thead>
+                                    <tr>
+                                        <th class="col-lg-2 col-md-2 col-sm-2"><h4 class="nomarginall nopaddingall"><strong>Skill</strong></h4></th>
+                                        <th class="col-lg-8 col-md-8 col-sm-8"><h4 class="nomarginall nopaddingall"><strong>Description</strong></h4></th>
+                                        <th class="col-lg-2 col-md-2 col-sm-2"><h4 class="nomarginall nopaddingall"><strong>Experience (years)</strong></h4></th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr>
+                                        <td>Cobol</td>
+                                        <td>Primarily used for business, finance, and administrative systems for companies and governments</td>
+                                        <td>25</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Pascal</td>
+                                        <td>Development for the Apple Lisa, and in the early years of the Macintosh</td>
+                                        <td>13</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Fortran</td>
+                                        <td>Usen in numerical weather prediction, finite element analysis, computational fluid
+                                            dynamics, computational physics and computational chemistry.
+                                        </td>
+                                        <td>22</td>
+                                    </tr>
+                                    <tr>
+                                        <td><button type="button" class="btn btn-success"><i class="fa fa-plus"></i></button></td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div><!-- End 2nd Container: Skills -->
+
+                <!-- 3rd Container: Certifications -->
+                <div class="container-fluid">
+                    <div class="row largemarginbottom smallmargintop">
+
+                        <div class="col-lg-12 col-md-12 col-sm-12">
+
+                            <div class="panel panel-primary">
+                                <div class="panel-heading">
+                                    <h3 class="panel-title">Certifications<a href="#"><i class="fa fa-pencil-square-o pull-right"> Edit</i></a></h3>
+                                </div>
+                                <div class="table-responsive">
+                                    <table class="table table-hover table-condensed">
+                                        <thead>
+                                        <tr>
+                                            <th class="col-lg-2 col-md-2 col-sm-2"><h4 class="nomarginall nopaddingall"><strong>Certification</strong></h4></th>
+                                            <th class="col-lg-8 col-md-8 col-sm-8"><h4 class="nomarginall nopaddingall"><strong>Description</strong></h4></th>
+                                            <th class="col-lg-2 col-md-2 col-sm-2"><h4 class="nomarginall nopaddingall"><strong>Date</strong></h4></th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                        <tr>
+                                            <td>Microsoft MCSA</td>
+                                            <td>Windows Server 2012 certification</td>
+                                            <td>14-Jul-13</td>
+                                        </tr>
+                                        <tr>
+                                            <td>OOP</td>
+                                            <td>Object Oriented Programming certification from CodeCademy</td>
+                                            <td>11-Dec-14</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Cisco CCENT</td>
+                                            <td>Cisco Certified Entry Networking Technician (CCENT)</td>
+                                            <td>22-Jan-15</td>
+                                        </tr>
+                                        <tr>
+                                            <td><button type="button" class="btn btn-success"><i class="fa fa-plus"></i></button></td>
+                                            <td></td>
+                                            <td></td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div><!-- End 3rd Container: Certification -->
+
+                <!-- 4th Container: Past Projects -->
+                <div class="container-fluid">
+                    <div class="row largemarginbottom smallmargintop">
+
+                        <div class="col-lg-12 col-md-12 col-sm-12">
+
+                            <div class="panel panel-primary">
+                                <div class="panel-heading">
+                                    <h3 class="panel-title">Past Projects<a href="#"><i class="fa fa-pencil-square-o pull-right"> Edit</i></a></h3>
+                                </div>
+                                <div class="table-responsive">
+                                    <table class="table table-hover table-condensed">
+                                        <thead>
+                                        <tr>
+                                            <th class="col-lg-2 col-md-2 col-sm-2"><h4 class="nomarginall nopaddingall"><strong>Project</strong></h4></th>
+                                            <th class="col-lg-8 col-md-8 col-sm-8"><h4 class="nomarginall nopaddingall"><strong>Description</strong></h4></th>
+                                            <th class="col-lg-2 col-md-2 col-sm-2"><h4 class="nomarginall nopaddingall"><strong>Date</strong></h4></th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                        <tr>
+                                            <td>Palm Pilot App</td>
+                                            <td>Calculator application for the new Palm Pilot</td>
+                                            <td>18-Apr-90</td>
+                                        </tr>
+                                        <tr>
+                                            <td>iOS iPhone/iPad App</td>
+                                            <td>Application for the iPhone and iPad devices; Monitoring of heart rate.</td>
+                                            <td>25-Mar-14</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Android App</td>
+                                            <td>Android application for storing information about popular movies</td>
+                                            <td>30-Sep-14</td>
+                                        </tr>
+                                        <tr>
+                                            <td><button type="button" class="btn btn-success"><i class="fa fa-plus"></i></button></td>
+                                            <td></td>
+                                            <td></td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div><!-- End 4th Container: Past Projects -->
+
+                <!-- 5th Container: Save Data -->
+                <div class="container-fluid">
+                    <div class="row largemarginbottom smallmargintop medpaddingall">
+
+                        <button type="button" class="btn btn-warning btn-lg btn-block">Save Data</button>
+
+                    </div>
+                </div><!-- End 5th Container: Save Data -->
+
             </div>
         </div>
 
