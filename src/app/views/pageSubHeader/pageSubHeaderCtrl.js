@@ -13,7 +13,6 @@
             'AUTH_EVENTS',
             '$state',
             '$q',
-            'maintenanceService',
             '$timeout',
             PageSubHeaderCtrl
         ]).
@@ -34,7 +33,7 @@
         }
     };
 
-    function PageSubHeaderCtrl($rootScope, smartMessageBox, localStorage, panelStates,AuthService,AuthServiceState,AUTH_EVENTS, $state,$q,maintenanceService,$timeout) {
+    function PageSubHeaderCtrl($rootScope, smartMessageBox, localStorage, panelStates,AuthService,AuthServiceState,AUTH_EVENTS, $state,$q,$timeout) {
 
         var self=this;
         this.$rootScope = $rootScope;
@@ -49,7 +48,6 @@
         this.$state = $state;
         this.businessInitiativeLst = [];
         this.$q = $q;
-        this.maintenanceService = maintenanceService;
         this.hasSessionExpired = false;
         this.isAppDown = false;
         this.clickedAdmin = false;
@@ -57,21 +55,13 @@
 
         this.filterIMV = "";
 
-        $rootScope.$on('MAINTENANCE_MODE_ON',function(){
-            self.isAppDown = true;
-            self.maintenanceMessage = self.maintenanceService.appStatus.msg;
-        });
 
-        $rootScope.$on('MAINTENANCE_MODE_OFF',function(){
-            self.isAppDown = false;
-            self.maintenanceMessage ='';
-        });
 
         $rootScope.$on('JWT_NODE_SESSION_EXPIRED',function(){
             //console.log("JWT_NODE_SESSION_EXPIRED caught from Page Sub Header!!!!!");
             self.hasSessionExpired = true;
             self.isAppDown = true;
-            self.maintenanceMessage ='Your session has expired. Please logout and log back in again.';// self.maintenanceService.appStatus.msg;
+            self.maintenanceMessage ='Your session has expired. Please logout and log back in again.';
 
             self.$timeout(function(){
                 self.hasSessionExpired = false;

@@ -16,12 +16,11 @@
             'AUTH_EVENTS',
             '$interval',
             'AuthService',
-            'maintenanceService',
             'AuthServiceState',
             MainLayoutCtrl
         ]);
 
-    function MainLayoutCtrl($state, panelStates,$rootScope,AUTH_EVENTS,$interval,AuthService,maintenanceService,AuthServiceState) {
+    function MainLayoutCtrl($state, panelStates,$rootScope,AUTH_EVENTS,$interval,AuthService,AuthServiceState) {
         this.$state = $state;
         this.panelStates = panelStates;
         this.rootScope=$rootScope;
@@ -29,23 +28,13 @@
         this.AUTH_EVENTS = AUTH_EVENTS;
         this.$interval = $interval;
         this.authService = AuthService;
-        this.maintenanceService = maintenanceService;
+
         this.authServiceState = AuthServiceState;
 
         //Global Flag for SAVED SEARCH EDIT MODE
         this.isSavedSearchEditModeGlobal = false;
         this.editSavedSearchTitleGlobal = '';
         this.isAppDown = false;
-
-        var self = this;
-
-        $rootScope.$on('MAINTENANCE_MODE_ON',function(){
-            self.isAppDown = true;
-        });
-        $rootScope.$on('MAINTENANCE_MODE_OFF',function(){
-            self.isAppDown = false;
-        });
-
 
     }
 
