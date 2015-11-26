@@ -1,3 +1,4 @@
+
 (function() {
     'use strict';
 
@@ -37,7 +38,7 @@
         },
         selectOption2: function() {
             this.selectedView = 2;
-        },
+        }
 
     }
 
