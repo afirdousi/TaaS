@@ -43,7 +43,7 @@ function initializeWebServer() {
 
     app.use(webSettings.contextRoot + '/api', app.oauth.authorise(), require('./server/api/usersAPI'));
     app.use(webSettings.contextRoot + '/api', app.oauth.authorise(), require('./server/api/currentUserAPI'));
-    app.use(webSettings.contextRoot + '/api',app.oauth.authorise(), require('./server/api/maintenanceAPI'));
+    //app.use(webSettings.contextRoot + '/api',app.oauth.authorise(), require('./server/api/maintenanceAPI'));
 
 
     var basePath = __dirname;

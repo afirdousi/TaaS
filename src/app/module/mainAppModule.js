@@ -147,9 +147,8 @@
         'AuthServiceState',
         '$window',
         '$',
-        'maintenanceService',
         '$timeout',
-        function ($rootScope, $state, $urlRouter, AUTH_EVENTS, AuthServiceState, $window, $,maintenanceService,$timeout) {
+        function ($rootScope, $state, $urlRouter, AUTH_EVENTS, AuthServiceState, $window, $,$timeout) {
 
             $rootScope.$on(
                 '$stateChangeStart',
@@ -173,23 +172,7 @@
 
             $rootScope.$on(AUTH_EVENTS.loginSuccess, function () {
 
-                /// Todo: Convert maintenanceService to a provider and resolve it in the .config / Remove all the code below
-
-                if (!AuthServiceState.isInAdminRole) {
-                    if (!maintenanceService.appStatus.status) {
-                        maintenanceService
-                            .getApplicationState()
-                            .then(function () {
-                                if(maintenanceService.appStatus.status==='D'){
-                                    $state.go('app.outage');
-                                }else{
-                                    $state.go('app.search');
-                                }
-                            });
-                    }
-                }else{
-                    $state.go('app.search');
-                }
+                $state.go('app.search');
 
             });
 
@@ -197,20 +180,6 @@
                 $state.go('app.login');
             });
 
-            $rootScope.$on("MAINTENANCE_MODE_ON", function () {
-               // //console.log("AUTH_EVENTS.appInMaintenance caught in Main App Module");
-                if (!AuthServiceState.isInAdminRole) {
-
-                    //For Non Admin Users, Start the 30 seconds Timer
-                    //console.log("Starting timer for basic user...Will log out in 30 seconds.");
-                    $timeout(function(){
-
-                        ////console.log("Loggin out Basic user now");
-                        $state.go('app.outage');
-
-                    },30000);
-                }
-            });
 
             ///////////////////////////////////////////////////////////////////////
             // TODO: move the below to a directive (on the BODY element)
