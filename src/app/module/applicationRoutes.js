@@ -34,6 +34,21 @@
                         authorizedRoles: [USER_ROLES.admin, USER_ROLES.basic]
                     }
                 })
+                .state('app.admin-dashbaord', {
+                    url: '/admin-dashboard',
+                    views: {
+                        "content@app": {
+                            templateUrl: 'app/views/dashboardAdminView/admin-dashboardView.html',
+                            controller: 'dashboardAdminViewCtrl',
+                            controllerAs: 'vmAdminDashboard'
+                        }
+                    },
+                    data: {
+                        title: 'Search',
+                        isSearchView: true,
+                        authorizedRoles: [USER_ROLES.admin, USER_ROLES.basic]
+                    }
+                })
                .state('app.profile', {
                     url: '/profile',
                     views: {
