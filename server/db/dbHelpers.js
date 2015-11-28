@@ -16,6 +16,9 @@ DbHelpers.prototype = {
     },
 
     getCollection: function(name) {
+
+        console.log("Get Collection : " + name);
+
         return mongodbClient
             .connect()
             .then(function(db) {
@@ -25,32 +28,12 @@ DbHelpers.prototype = {
             });
     },
 
-    getUserProfileCollection: function() {
-        return this.getCollection("made_userprofile");
-    },
-
-    getSavedSearchCollection: function() {
-        return this.getCollection("made_savedsearch");
-    },
-    
-    getScheduledJobsCollection: function() {
-        return this.getCollection("made_scheduled_jobs");
-    },
-
-    getSavedSearchCounterCollection: function() {
-        return this.getCollection("made_savedsearch_counter");
-    },
-
-    getSavedSollarCollection: function() {
-        return this.getCollection("made_solrconfig");
-    },
-
-    wrapCollection: function(collection) {
-        return new PromiseWrappedCollection(collection);
-    },
-
     getAppMaintenanceCollection: function() {
-        return this.getCollection("made_app_maintenance");
+        return this.getCollection("taas_maintenance");
+    },
+
+    getTesterProfileCollection: function() {
+        return this.getCollection("tester_profile");
     }
 };
 
