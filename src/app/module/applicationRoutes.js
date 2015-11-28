@@ -49,6 +49,21 @@
                         authorizedRoles: [USER_ROLES.admin, USER_ROLES.basic]
                     }
                 })
+                .state('app.provider-dashbaord', {
+                    url: '/provider-dashboard',
+                    views: {
+                        "content@app": {
+                            templateUrl: 'app/views/dashboardProviderView/provider-dashboardView.html',
+                            controller: 'providerDashboardViewCtrl',
+                            controllerAs: 'vmProviderDashboard'
+                        }
+                    },
+                    data: {
+                        title: 'Search',
+                        isSearchView: true,
+                        authorizedRoles: [USER_ROLES.admin, USER_ROLES.basic]
+                    }
+                })
                .state('app.profile', {
                     url: '/profile',
                     views: {

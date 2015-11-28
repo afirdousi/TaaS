@@ -1,0 +1,664 @@
+<style>
+    #badge-list i{
+        margin:0px 20px;
+    }
+
+    /*D3 Heat Map Realted -- STARTS*/
+    .day {
+        fill: #fff;
+        stroke: #ccc;
+    }
+
+    .month {
+        fill: none;
+        stroke: #000;
+        stroke-width: 2px;
+    }
+
+    .RdYlGn .q0-11{fill:rgb(165,0,38)}
+    .RdYlGn .q1-11{fill:rgb(215,48,39)}
+    .RdYlGn .q2-11{fill:rgb(244,109,67)}
+    .RdYlGn .q3-11{fill:rgb(253,174,97)}
+    .RdYlGn .q4-11{fill:rgb(254,224,139)}
+    .RdYlGn .q5-11{fill:rgb(255,255,191)}
+    .RdYlGn .q6-11{fill:rgb(217,239,139)}
+    .RdYlGn .q7-11{fill:rgb(166,217,106)}
+    .RdYlGn .q8-11{fill:rgb(102,189,99)}
+    .RdYlGn .q9-11{fill:rgb(26,152,80)}
+    .RdYlGn .q10-11{fill:rgb(0,104,55)}
+
+    /*D3 Heat Map Realted -- ENDS*/
+
+</style>
+
+<script>
+
+    var width = 960,
+            height = 136,
+            cellSize = 17; // cell size
+
+    var percentt = d3.format(".1%"),
+            format = d3.time.format("%Y-%m-%d");
+
+    var color = d3.scale.quantize()
+            .domain([-.05, .05])
+            .range(d3.range(11).map(function(d) { return "q" + d + "-11"; }));
+
+    var svg = d3.select("#workmap").selectAll("svg")
+            .data(d3.range(2015, 2016))
+            .enter().append("svg")
+            .attr("width", width)
+            .attr("height", height)
+            .attr("class", "RdYlGn")
+            .append("g")
+            .attr("transform", "translate(" + ((width - cellSize * 53) / 2) + "," + (height - cellSize * 7 - 1) + ")");
+
+    svg.append("text")
+            .attr("transform", "translate(-6," + cellSize * 3.5 + ")rotate(-90)")
+            .style("text-anchor", "middle")
+            .text(function(d) { return d; });
+
+    var rect = svg.selectAll(".day")
+            .data(function(d) { return d3.time.days(new Date(d, 0, 1), new Date(d + 1, 0, 1)); })
+            .enter().append("rect")
+            .attr("class", "day")
+            .attr("width", cellSize)
+            .attr("height", cellSize)
+            .attr("x", function(d) { return d3.time.weekOfYear(d) * cellSize; })
+            .attr("y", function(d) { return d.getDay() * cellSize; })
+            .datum(format);
+
+    rect.append("title")
+            .text(function(d) { return d; });
+
+    svg.selectAll(".month")
+            .data(function(d) { return d3.time.months(new Date(d, 0, 1), new Date(d + 1, 0, 1)); })
+            .enter().append("path")
+            .attr("class", "month")
+            .attr("d", monthPath);
+
+    d3.csv("../../data/tester-heatmap.csv", function(error, csv) {
+        if (error) throw error;
+
+        var data = d3.nest()
+                .key(function(d) { return d.Date; })
+                .rollup(function(d) { return (d[0].Close - d[0].Open) / d[0].Open; })
+                .map(csv);
+
+        rect.filter(function(d) { return d in data; })
+                .attr("class", function(d) { return "day " + color(data[d]); })
+                .select("title")
+                .text(function(d) { return d + ": " + percent(data[d]); });
+    });
+
+    function monthPath(t0) {
+        var t1 = new Date(t0.getFullYear(), t0.getMonth() + 1, 0),
+                d0 = t0.getDay(), w0 = d3.time.weekOfYear(t0),
+                d1 = t1.getDay(), w1 = d3.time.weekOfYear(t1);
+        return "M" + (w0 + 1) * cellSize + "," + d0 * cellSize
+                + "H" + w0 * cellSize + "V" + 7 * cellSize
+                + "H" + w1 * cellSize + "V" + (d1 + 1) * cellSize
+                + "H" + (w1 + 1) * cellSize + "V" + 0
+                + "H" + (w0 + 1) * cellSize + "Z";
+    }
+
+    d3.select(self.frameElement).style("height", "2910px");
+
+</script>
+
+
+<div id="content" class="dashboard group-panels">
+    <div class="widget-body">
+        <header role="heading">
+            <div class="searchViewHeader">
+                <h6 style="display:inline;">{{ vmProviderDashboard.pageHeader }}</h6></div>
+            <div id="tabsView" class="pull-right visible-sm-inline-block visible-lg-inline-block visible-md-inline-block ">
+
+                <!--Page Heading Start-->
+
+                <ul style="display:inline-flex;" class="nav nav-tabs pull-right in visible-lg " >
+                    <li ng-class="{'active' : vmProviderDashboard.isDashboardView}" ng-click="vmProviderDashboard.selectDashboardView();" style="cursor:pointer;">
+                        <a data-toggle="tab"><span class="visible-lg">Home</span></a>
+                    </li>
+
+                    <li ng-class="{'active' :vmProviderDashboard.isReportView}" ng-click="vmProviderDashboard.selectReportDataView();" style="cursor:pointer;">
+                        <a data-toggle="tab"><span class="visible-lg">Report</span></a>
+                    </li>
+
+                </ul>
+
+                <!--Page Heading End-->
+                <div class="clearfix"></div>
+            </div>
+        </header>
+
+
+        <div class="tab-content padding-10">
+            <div class="tab-pan fade in active">
+                <div ng-if="!vmProviderDashboard.isReportView">
+                </div>
+
+            </div>
+        </div>
+
+        <div class="tab-content" ng-show="vmProviderDashboard.isDashboardView">
+
+            <div class="page-wrapper">
+                <!-- /.row -->
+
+                <!--BIG BOXES-->
+                <div class="row">
+                    <div class="col-lg-3 col-md-6">
+                        <div class="panel panel-primary">
+                            <div class="panel-heading">
+                                <div class="row">
+                                    <div class="col-xs-3">
+                                        <i class="fa fa-user fa-5x"></i>
+                                    </div>
+                                    <div class="col-xs-9 text-right">
+                                        <!--<div class="huge">26</div>-->
+                                        <div><h2>Profile</h2></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <a href="#" ui-sref="app.profile">
+                                <div class="panel-footer">
+                                    <span class="pull-left">View Details</span>
+                                    <a ui-sref="app.profile"><span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span></a>
+                                    <div class="clearfix"></div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="panel panel-green">
+                            <div class="panel-heading">
+                                <div class="row">
+                                    <div class="col-xs-3">
+                                        <i class="fa fa-usd fa-5x"></i>
+                                    </div>
+                                    <div class="col-xs-9 text-right">
+                                        <div><h2>My Funds</h2></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <a href="#" ui-sref="app.profile">
+                                <div class="panel-footer">
+                                    <span class="pull-left">View Details</span>
+                                    <!-- <a ui-sref="app.profile"><span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span></a>-->
+                                    <div class="clearfix"></div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6">
+                        <div class="panel panel-orange">
+                            <div class="panel-heading">
+                                <div class="row">
+                                    <div class="col-xs-3">
+                                        <i class="fa fa-mobile fa-5x"></i>
+                                        <!-- <i class="fa fa-sun-o fa-5x"></i>
+                                         <i class="fa fa-graduation-cap fa-5x"></i>-->
+                                    </div>
+                                    <div class="col-xs-9 text-right">
+                                        <div><h2>My Projects</h2></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <a href="#" ui-sref="app.profile">
+                                <div class="panel-footer">
+                                    <span class="pull-left">View Details</span>
+                                    <!-- <a ui-sref="app.profile"><span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span></a>-->
+                                    <div class="clearfix"></div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-lg-3 col-md-6">
+                            <div class="panel panel-red">
+                                <div class="panel-heading">
+                                    <div class="row">
+                                        <div class="col-xs-3">
+                                            <i class="fa fa-comment fa-5x"></i>
+                                        </div>
+                                        <div class="col-xs-9 text-right">
+                                            <!-- <div class="huge">124</div>-->
+
+                                            <div class = "huge"><h2>Feedback</h2></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <a href="#" ui-sref="app.payment">
+                                    <div class="panel-footer">
+                                        <span class="pull-left">View Details</span>
+                                        <a ui-sref="app.payment"><span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span></a>
+                                        <div class="clearfix"></div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+
+
+
+
+
+
+
+
+
+                        <!--<div class="col-lg-9 col-md-6">
+                                <div id="workmap"></div>
+                            </div>-->
+
+
+                    </div>
+
+                    <div class="row">
+                        <div class="col-lg-8 col-md-8">
+                            <div class="panel panel-default">
+
+                                <!--Deadlines-->
+
+                                <!--<div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <i class="fa fa-list fa-fw"></i> Deadlines
+                                        <div class="pull-right">
+                                            <div class="btn-group">
+                                                <button type="button" class="btn btn-default btn-xs dropdown-toggle" data-toggle="dropdown">
+                                                    Actions
+                                                    <span class="caret"></span>
+                                                </button>
+                                                <ul class="dropdown-menu pull-right" role="menu">
+                                                    <li><a href="#">Action</a>
+                                                    </li>
+                                                    <li><a href="#">Another action</a>
+                                                    </li>
+                                                    <li><a href="#">Something else here</a>
+                                                    </li>
+                                                    <li class="divider"></li>
+                                                    <li><a href="#">Separated link</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="panel-body">
+                                        <div class="list-group">
+                                            <a href="#" class="list-group-item">
+                                                <i class="fa fa-folder-open fa-fw"></i> project_name
+                                                <span class="pull-right text-muted small"><em>$incentive</em>
+                                                </span>
+                                            </a>
+                                            <a href="#" class="list-group-item">
+                                                <i class="fa fa-folder-open fa-fw"></i> project_name
+                                                <span class="pull-right text-muted small"><em>$incentive</em>
+                                                </span>
+                                            </a>
+                                            <a href="#" class="list-group-item">
+                                                <i class="fa fa-folder-open fa-fw"></i> project_name
+                                                <span class="pull-right text-muted small"><em>$incentive</em>
+                                                </span>
+                                            </a>
+                                            <a href="#" class="list-group-item">
+                                                <i class="fa fa-folder-open fa-fw"></i> project_name
+                                                <span class="pull-right text-muted small"><em>$incentive</em>
+                                                </span>
+                                            </a>
+                                            <a href="#" class="list-group-item">
+                                                <i class="fa fa-folder-open fa-fw"></i> project_name
+                                                <span class="pull-right text-muted small"><em>$incentive</em>
+                                                </span>
+                                            </a>
+
+                                        </div>
+                                        <!-- /.panel-body -1->
+                                    </div>
+                                </div>
+
+                                    <!--Recommended Projects-->
+                                <div class="panel-heading">
+                                    <i class="fa fa-users fa-fw"></i> Recommended Testers
+                                    <div class="pull-right">
+                                        <div class="btn-group">
+                                            <button type="button" class="btn btn-default btn-xs dropdown-toggle" data-toggle="dropdown">
+                                                Actions
+                                                <span class="caret"></span>
+                                            </button>
+                                            <ul class="dropdown-menu pull-right" role="menu">
+                                                <li><a href="#">Action</a>
+                                                </li>
+                                                <li><a href="#">Another action</a>
+                                                </li>
+                                                <li><a href="#">Something else here</a>
+                                                </li>
+                                                <li class="divider"></li>
+                                                <li><a href="#">Separated link</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="panel-body">
+                                    <div class="list-group">
+                                        <a href="#" class="list-group-item">
+                                            <i class="fa fa-user fa-fw"></i> tester_name
+                                            <span class="pull-right text-muted small"><em>$rate/bug</em>
+                                            </span>
+                                        </a>
+                                        <a href="#" class="list-group-item">
+                                            <i class="fa fa-user fa-fw"></i> tester_name
+                                            <span class="pull-right text-muted small"><em>$rate/bug</em>
+                                            </span>
+                                        </a>
+                                        <a href="#" class="list-group-item">
+                                            <i class="fa fa-user fa-fw"></i> tester_name
+                                            <span class="pull-right text-muted small"><em>$rate/bug</em>
+                                            </span>
+                                        </a>
+                                        <a href="#" class="list-group-item">
+                                            <i class="fa fa-user fa-fw"></i> tester_name
+                                            <span class="pull-right text-muted small"><em>$rate/bug</em>
+                                            </span>
+                                        </a>
+                                        <a href="#" class="list-group-item">
+                                            <i class="fa fa-user fa-fw"></i> tester_name
+                                            <span class="pull-right text-muted small"><em>$rate/bug</em>
+                                            </span>
+                                        </a>
+
+                                    </div>
+                                    <!-- /.panel-body -->
+                                </div>
+                            </div>
+
+
+
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <i class="fa fa-money fa-fw"></i> Payment Notification
+                                    <div class="pull-right">
+                                        <div class="btn-group">
+                                            <button type="button" class="btn btn-default btn-xs dropdown-toggle" data-toggle="dropdown">
+                                                Actions
+                                                <span class="caret"></span>
+                                            </button>
+                                            <ul class="dropdown-menu pull-right" role="menu">
+                                                <li><a href="#">Action</a>
+                                                </li>
+                                                <li><a href="#">Another action</a>
+                                                </li>
+                                                <li><a href="#">Something else here</a>
+                                                </li>
+                                                <li class="divider"></li>
+                                                <li><a href="#">Separated link</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- /.panel-heading -->
+                                <div class="panel-body">
+                                    <div class="row">
+                                        <div class="col-lg-12">
+                                            <div class="table-responsive">
+                                                <table class="table table-bordered table-hover table-striped">
+                                                    <thead>
+                                                    <tr>
+                                                        <th>#</th>
+                                                        <th>Date</th>
+                                                        <th>Time</th>
+                                                        <th>Amount</th>
+                                                    </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                    <tr>
+                                                        <td>3326</td>
+                                                        <td>10/21/2013</td>
+                                                        <td>3:29 PM</td>
+                                                        <td>$321.33</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>3325</td>
+                                                        <td>10/21/2013</td>
+                                                        <td>3:20 PM</td>
+                                                        <td>$234.34</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>3324</td>
+                                                        <td>10/21/2013</td>
+                                                        <td>3:03 PM</td>
+                                                        <td>$724.17</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>3323</td>
+                                                        <td>10/21/2013</td>
+                                                        <td>3:00 PM</td>
+                                                        <td>$23.71</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>3322</td>
+                                                        <td>10/21/2013</td>
+                                                        <td>2:49 PM</td>
+                                                        <td>$8345.23</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>3321</td>
+                                                        <td>10/21/2013</td>
+                                                        <td>2:23 PM</td>
+                                                        <td>$245.12</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>3320</td>
+                                                        <td>10/21/2013</td>
+                                                        <td>2:15 PM</td>
+                                                        <td>$5663.54</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>3319</td>
+                                                        <td>10/21/2013</td>
+                                                        <td>2:13 PM</td>
+                                                        <td>$943.45</td>
+                                                    </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+
+                                        </div>
+                                        <!-- /.panel -->
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+                        </div>
+
+
+                        <div class="col-lg-4 nested">
+                            <div class="center-block">
+                                <button type="button" class="btn btn-primary btn-lg" href="#">
+                                    <i class="fa fa-plus"></i> Create New Project
+                                </button>
+                            </div>
+                            <br>
+                        </div>
+
+                        <div class="col-lg-4 nested">
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <i class="fa fa-search"></i> Search Testers
+                                </div>
+
+                                <div class="panel-body">
+                                    <div class="form-inline">
+
+                                        <input type="text" class="input-group" placeholder="Search">
+
+                                        <button type="button" class="btn btn-default">Submit</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- /.col-lg-8 -->
+                        <div class="col-lg-4 nested">
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <i class="fa fa-bell fa-fw"></i> Notifications Panel
+                                </div>
+                                <!-- /.panel-heading -->
+                                <div class="panel-body">
+                                    <div class="list-group">
+                                        <a href="#" class="list-group-item">
+                                            <i class="fa fa-bug fa-fw"></i> New Bug Found
+                                    <span class="pull-right text-muted small"><em>4 minutes ago</em>
+                                    </span>
+                                        </a>
+                                        <a href="#" class="list-group-item">
+                                            <i class="fa fa-shopping-cart fa-fw"></i> 3 New Bids
+                                    <span class="pull-right text-muted small"><em>12 minutes ago</em>
+                                    </span>
+                                        </a>
+                                        <a href="#" class="list-group-item">
+                                            <i class="fa fa-envelope fa-fw"></i> Bug Report Received
+                                    <span class="pull-right text-muted small"><em>27 minutes ago</em>
+                                    </span>
+                                        </a>
+                                        <a href="#" class="list-group-item">
+                                            <i class="fa fa-tasks fa-fw"></i> Task Completed
+                                    <span class="pull-right text-muted small"><em>43 minutes ago</em>
+                                    </span>
+                                        </a>
+                                        <a href="#" class="list-group-item">
+                                            <i class="fa fa-upload fa-fw"></i> Server Rebooted
+                                    <span class="pull-right text-muted small"><em>11:32 AM</em>
+                                    </span>
+                                        </a>
+                                        <a href="#" class="list-group-item">
+                                            <i class="fa fa-bolt fa-fw"></i> Server Crashed!
+                                    <span class="pull-right text-muted small"><em>11:13 AM</em>
+                                    </span>
+                                        </a>
+                                        <a href="#" class="list-group-item">
+                                            <i class="fa fa-warning fa-fw"></i> Server Not Responding
+                                    <span class="pull-right text-muted small"><em>10:57 AM</em>
+                                    </span>
+                                        </a>
+                                        <a href="#" class="list-group-item">
+                                            <i class="fa fa-shopping-cart fa-fw"></i> New Bid Recieved
+                                    <span class="pull-right text-muted small"><em>9:49 AM</em>
+                                    </span>
+                                        </a>
+                                        <a href="#" class="list-group-item">
+                                            <i class="fa fa-money fa-fw"></i> Payment Dispatched
+                                    <span class="pull-right text-muted small"><em>Yesterday</em>
+                                    </span>
+                                        </a>
+                                    </div>
+                                    <!-- /.list-group -->
+                                    <a href="#" class="btn btn-default btn-block">View All Alerts</a>
+                                </div>
+                                <!-- /.panel-body -->
+                            </div>
+
+                        </div>
+                        <!-- /.col-lg-4 -->
+                    </div>
+                    <!-- /.row -->
+                </div>
+
+            </div>
+
+
+
+            <div class="tab-content" ng-show="vmProviderDashboard.isReportView">
+                <div class="page-wrapper">
+                    <div class="row">
+                        <div class="col-lg-12 col-md-12">
+                            <div class="panel panel-default">
+
+                                <!--Deadlines-->
+
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <i class="fa fa-list fa-fw"></i>
+                                        <div class="pull-right">
+                                            <div class="btn-group">
+                                                <button type="button" class="btn btn-default btn-xs dropdown-toggle" data-toggle="dropdown">
+                                                    Filter
+                                                    <span class="caret"></span>
+                                                </button>
+                                                <ul class="dropdown-menu pull-right" role="menu">
+                                                    <li><a href="#">Payment Reports</a>
+                                                    </li>
+                                                    <li><a href="#">Project Completeion Report</a>
+                                                    </li>
+                                                    <li><a href="#">Conflict Report</a>
+                                                    </li>
+                                                    <li class="divider"></li>
+                                                    <li><a href="#">Usage Report</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="panel-body">
+                                        <div class="list-group">
+                                            <a href="#" class="list-group-item">
+                                                <i class="fa fa-folder-open fa-fw"></i> Annaul Report
+                                            <span class="pull-right text-muted small"><em>Financial</em>
+                                            </span>
+                                            </a>
+                                            <a href="#" class="list-group-item">
+                                                <i class="fa fa-folder-open fa-fw"></i> Half Yearly Report
+                                            <span class="pull-right text-muted small"><em>Financial</em>
+                                            </span>
+                                            </a>
+                                            <a href="#" class="list-group-item">
+                                                <i class="fa fa-folder-open fa-fw"></i> Quarter Report
+                                            <span class="pull-right text-muted small"><em>Financial</em>
+                                            </span>
+                                            </a>
+
+                                            <a href="#" class="list-group-item">
+                                                <i class="fa fa-folder-open fa-fw"></i> Completeion History
+                                            <span class="pull-right text-muted small"><em>Project</em>
+                                            </span>
+                                            </a>
+
+                                            <a href="#" class="list-group-item">
+                                                <i class="fa fa-folder-open fa-fw"></i> Conflict History - Annaul
+                                            <span class="pull-right text-muted small"><em>Project</em>
+                                            </span>
+                                            </a>
+                                            <a href="#" class="list-group-item">
+                                                <i class="fa fa-folder-open fa-fw"></i> Conflict History - Last 6 Months
+                                            <span class="pull-right text-muted small"><em>Project</em>
+                                            </span>
+                                            </a>
+                                            <a href="#" class="list-group-item">
+                                                <i class="fa fa-folder-open fa-fw"></i> Conflict History - This Quarter
+                                            <span class="pull-right text-muted small"><em>Project</em>
+                                            </span>
+                                            </a>
+
+
+
+                                        </div>
+                                        <!-- /.panel-body -->
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+    </div>
