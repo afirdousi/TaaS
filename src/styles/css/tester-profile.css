@@ -234,3 +234,24 @@
 .largemarginbottom {
     margin-bottom:30px;
 }
+
+.bkg-primary {
+    background-color: #337ab7;
+    color: #fff;
+}
+.bkg-success {
+    background-color: #5cb85c;
+    color: #fff;
+}
+.bkg-info {
+    background-color: #5bc0de;
+    color: #fff;
+}
+.bkg-warning {
+    background-color: #f0ad4e;
+    color: #fff;
+}
+.bkg-danger {
+    background-color: #d9534f;
+    color: #fff;
+}

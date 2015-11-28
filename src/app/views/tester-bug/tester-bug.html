@@ -23,12 +23,274 @@
         <div class="clearfix"></div>
         <br/>
 
+
+
+
+
+
+
+
         <div class="tab-content" ng-show="vmTesterBug.isOption1">
 
             <div class="page-wrapper">
-                Option#1
+
+                <!-- 1st Container: User Personal Information -->
+                <div class="container-fluid">
+
+                    <div class="row largemarginbottom smallmargintop">
+
+                        <div class="col-lg-3 col-md-3 col-sm-3" >
+                            <div class="panel panel-primary pull-left">
+                                <div class="panel-body text-center">
+                                        <h3><strong>Project:</strong> iOS Shoe Shine</h3>
+                                    </div>
+                                <div class="panel-footer smallpaddingleft text-center">
+                                    <div class="dropdown nomarginall">
+                                        <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu2"
+                                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                            Filter
+                                            <span class="caret"></span>
+                                        </button>
+                                        <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                                            <li><a href="#">Open</a></li>
+                                            <li><a href="#">Due</a></li>
+                                            <li><a href="#">Closed</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div><!-- ./First Column: Project and Filter  -->
+
+                        <div class="col-lg-7 col-md-7 col-sm-7">
+                            <div id="projectsPerSystem" style="height: 190px;"></div>
+                        </div>
+                        <div class="col-lg-2 col-md-2 col-sm-2" >
+                            <div class="panel panel-primary pull-right">
+                                <br>
+
+                                <div class="panel-body text-center">
+                                    <button type="button" class="btn btn-primary"><i class="fa fa-plus"> New Bug</i></button>
+                                </div>
+                                <br>
+
+                                <div class="panel-footer smallpaddingleft text-center">
+                                    <em> Submit New Bug</em>
+                                </div>
+                            </div>
+                        </div><!-- ./Second Column: Submit Button -->
+
+                    </div><!-- ./First Row: Project and Submit -->
+
+                    <div class="row largemarginbottom smallmargintop">
+
+                        <div class="col-lg-2 col-md-2 col-sm-2" >
+                            <div class="panel panel-primary">
+                                <div class="panel-body text-center">
+                                    <h1>23</h1>
+                                </div>
+                                <div class="panel-footer smallpaddingleft text-center bkg-primary">
+                                    <em>Open Bugs</em>
+                                </div>
+                            </div>
+                        </div><!-- ./First Column: Open Bugs  -->
+
+                        <div class="col-lg-2 col-md-2 col-sm-2" >
+                            <div class="panel panel-success">
+                                <div class="panel-body text-center">
+                                    <h1>31</h1>
+                                </div>
+                                <div class="panel-footer smallpaddingleft text-center bkg-success">
+                                    <em>Closed Bugs</em>
+                                </div>
+                            </div>
+                        </div><!-- ./Second Column: Closed Bugs -->
+
+                        <div class="col-lg-2 col-md-2 col-sm-2" >
+                            <div class="panel panel-danger">
+                                <div class="panel-body text-center">
+                                    <h1>2</h1>
+                                </div>
+                                <div class="panel-footer smallpaddingleft text-center bkg-danger">
+                                    <em>Overdue</em>
+                                </div>
+                            </div>
+                        </div><!-- ./3rd Column: Over Due  -->
+
+                        <div class="col-lg-2 col-md-2 col-sm-2" >
+                            <div class="panel panel-warning">
+                                <div class="panel-body text-center">
+                                    <h1>4</h1>
+                                </div>
+                                <div class="panel-footer smallpaddingleft text-center bkg-warning">
+                                    <em>Due Today</em>
+                                </div>
+                            </div>
+                        </div><!-- ./4th Column: Due Today -->
+
+                        <div class="col-lg-2 col-md-2 col-sm-2" >
+                            <div class="panel panel-info">
+                                <div class="panel-body text-center">
+                                    <h1>40</h1>
+                                </div>
+                                <div class="panel-footer smallpaddingleft text-center bkg-info">
+                                    <em>Due Next 7 Days</em>
+                                </div>
+                            </div>
+                        </div><!-- ./5th Column: Due Next 7 Days  -->
+
+                        <div class="col-lg-2 col-md-2 col-sm-2" >
+                            <div class="panel panel-success">
+                                <div class="panel-body text-center">
+                                    <h1>88%</h1>
+                                </div>
+                                <div class="panel-footer smallpaddingleft text-center bkg-success">
+                                    <em>Efficiency Level</em>
+                                </div>
+                            </div>
+                        </div><!-- ./6th Column: Efficiency Level -->
+
+                    </div><!-- ./Second Row: Summary Panels -->
+
+                    <div class="row largemarginbottom smallmargintop">
+
+                        <div class="col-lg-12 col-md-12 col-sm-12" >
+                            <div class="panel panel-primary">
+                                <div class="panel-heading text-center">
+                                    <h3 class="panel-title">Bug Tracker</h3>
+                                </div>
+                                <div class="panel-body">
+                                    <div class="row">
+
+                                        <div class="col-lg-12 col-md-12 col-sm-12">
+
+                                            <div class="panel-body">
+                                                <table class="table table-hover table-condensed table-responsive">
+                                                    <thead>
+                                                    <tr>
+                                                        <th class="col-lg-2 col-md-2 col-sm-2 text-center"><h4 class="nomarginall nopaddingall"><strong>App</strong></h4></th>
+                                                        <th class="col-lg-3 col-md-3 col-sm-3 text-center"><h4 class="nomarginall nopaddingall"><strong>Bug</strong></h4></th>
+                                                        <th class="col-lg-2 col-md-2 col-sm-2 text-center"><h4 class="nomarginall nopaddingall"><strong>Reporter</strong></h4></th>
+                                                        <th class="col-lg-2 col-md-2 col-sm-2 text-center"><h4 class="nomarginall nopaddingall"><strong>Created</strong></h4></th>
+                                                        <th class="col-lg-1 col-md-1 col-sm-1 text-center"><h4 class="nomarginall nopaddingall"><strong>Status</strong></h4></th>
+                                                        <th class="col-lg-2 col-md-2 col-sm-2 text-center"><h4 class="nomarginall nopaddingall"><strong>Due</strong></h4></th>
+                                                    </tr>
+                                                    </thead>
+                                                    <tfoot>
+                                                    <tr class="warning">
+                                                        <td></td>
+                                                        <td class="text-center"><strong>Total Bugs</strong></td>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td></td>
+                                                        <td class="text-center"><strong>34</strong></td>
+                                                    </tr>
+                                                    </tfoot>
+                                                    <tbody>
+                                                    <tr>
+                                                        <td>iOS APP: Shoe Shine</td>
+                                                        <td>App Crash when 'next' button pressed</td>
+                                                        <td class="text-center">John Smith</td>
+                                                        <td class="text-center">06-06-15</td>
+                                                        <td class="text-center">Open</td>
+                                                        <td class="text-center">06-28-15</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td></td>
+                                                        <td>Incorrect user shown when first tab selected</td>
+                                                        <td class="text-center">Peter Lash</td>
+                                                        <td class="text-center">06-08-15</td>
+                                                        <td class="text-center">Open</td>
+                                                        <td class="text-center">07-12-15</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td></td>
+                                                        <td>Container Position Shifted</td>
+                                                        <td class="text-center">Steve Marting</td>
+                                                        <td class="text-center">06-26-15</td>
+                                                        <td class="text-center">Open</td>
+                                                        <td class="text-center">07-20-15</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Android APP: Star Wars</td>
+                                                        <td>Incorrect color shown on login</td>
+                                                        <td class="text-center">Marta Stweard</td>
+                                                        <td class="text-center">07-06-15</td>
+                                                        <td class="text-center">Due</td>
+                                                        <td class="text-center">08-07-15</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td></td>
+                                                        <td>Connection Error when switching networks</td>
+                                                        <td class="text-center">Maria DB</td>
+                                                        <td class="text-center">05-20-15</td>
+                                                        <td class="text-center">Due</td>
+                                                        <td class="text-center">06-28-15</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td></td>
+                                                        <td>No action when button pressed</td>
+                                                        <td class="text-center">Thomas Woods</td>
+                                                        <td class="text-center">04-09-15</td>
+                                                        <td class="text-center">Closed</td>
+                                                        <td class="text-center">05-13-15</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Web App: Testing as a Service</td>
+                                                        <td>No Sound at App Start</td>
+                                                        <td class="text-center">Nancy Temple</td>
+                                                        <td class="text-center">04-16-15</td>
+                                                        <td class="text-center">Closed</td>
+                                                        <td class="text-center">05-18-15</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td></td>
+                                                        <td>App Crash at start</td>
+                                                        <td class="text-center">Carlos Steed</td>
+                                                        <td class="text-center">05-01-15</td>
+                                                        <td class="text-center">Due</td>
+                                                        <td class="text-center">06-23-15</td>
+                                                    </tr>
+                                                    </tbody>
+                                                </table>
+
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="panel-footer minipaddingall smallpaddingleft">
+                                    <div class="dropdown nomarginall">
+                                        <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1"
+                                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                            Filter By App
+                                            <span class="caret"></span>
+                                        </button>
+                                        <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                                            <li><a href="#">iOS</a></li>
+                                            <li><a href="#">Android</a></li>
+                                            <li><a href="#">Web App</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div><!-- ./Third Row: Bugs Details -->
+
+                </div>
             </div>
         </div>
+
+
+
+
+
+
+
+
+
+
 
         <div class="tab-content" ng-show="vmTesterBug.isOption2">
 
@@ -38,3 +300,5 @@
         </div>
     </div>
 </div>
+
+<script type="text/javascript" src="app/views/tester-bug/tester-bug.js"></script>
