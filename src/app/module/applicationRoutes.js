@@ -25,7 +25,7 @@
                         "content@app": {
                             templateUrl: 'app/views/dashboardView/tester-dashboardView.html',
                             controller: 'dashboardViewCtrl',
-                            controllerAs: 'vmSearch'
+                            controllerAs: 'vmTesterDashboard'
                         }
                     },
                     data: {
