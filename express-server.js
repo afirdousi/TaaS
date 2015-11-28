@@ -46,6 +46,21 @@ function initializeWebServer() {
     //app.use(webSettings.contextRoot + '/api',app.oauth.authorise(), require('./server/api/maintenanceAPI'));
 
 
+    ////////////////////////////////////////////////////
+    /// TaaS Internal API
+    ////////////////////////////////////////////////////
+
+    //Tester
+    app.use(webSettings.contextRoot + '/api',app.oauth.authorise(), require('./server/api/tester/profile'));
+
+    //Provider
+
+
+    //Admin
+
+
+    ////////////////////////////////////////////////////
+
     var basePath = __dirname;
     var assetsPath = webSettings.useBuild ? "/dist/web" : "/src";
     app.use(webSettings.contextRoot, express.static(basePath + assetsPath));

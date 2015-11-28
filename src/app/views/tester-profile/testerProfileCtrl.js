@@ -7,17 +7,22 @@
             '$rootScope',
             '$scope',
             'panelStates',
+            'testerProfileService',
             TesterProfileCtrl
         ]);
 
-    function TesterProfileCtrl($rootScope, $scope, panelStates) {
+    function TesterProfileCtrl($rootScope, $scope, panelStates,testerProfileService) {
 
         this.panelStates = panelStates;
         this.$scope = $scope;
         this.$rootScope = $rootScope;
+        this.testerProfile = testerProfileService;
 
         this.selectedView = 1;
+        this.profile = {}; // full profile data is populated in this one
 
+
+        this.init();
 
     }
 
@@ -38,6 +43,21 @@
         selectOption2: function() {
             this.selectedView = 2;
         },
+        init: function () {
+            var self = this;
+
+            this.testerProfile
+                .getFullProfile()
+                .then(function(data){
+
+                    //console.log("Profile data is here:");
+                    //console.log(data);
+
+                    self.profile = data;
+
+                });
+
+        }
 
     }
 

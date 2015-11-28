@@ -17,11 +17,11 @@
     ]
   },
   "mongodb": {
-    "host": "xxx.xxx.com",
-    "user": "mongouser",
-    "password": "mongouser123",
-    "database": "taas_db",
-    "port": 27000,
+    "host": "localhost",
+    "user": "",
+    "password": "",
+    "database": "taas_sjsu",
+    "port": 27017,
     "useSSL": false
   }
 }
