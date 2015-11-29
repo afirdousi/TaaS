@@ -1,55 +1,1267 @@
 [
-{"id":ObjectId("565804c24d6f63475d330900"),"title":"Pocket","description":"Nulla ut erat id mauris vulputate elementum. Nullam varius. Nulla facilisi.","platform":"windows","creator_id":ObjectId("565804c24d6f63475d340900"),"creation_date":"7/11/2015","tester_id":ObjectId("565804c24d6f63475d350900"),"current_status":"done","status_history":[{}]},
-{"id":ObjectId("565804c24d6f63475d360900"),"title":"Flipboard","description":"In hac habitasse platea dictumst. Etiam faucibus cursus urna. Ut tellus. Nulla ut erat id mauris vulputate elementum. Nullam varius. Nulla facilisi. Cras non velit nec nisi vulputate nonummy. Maecenas tincidunt lacus at velit. Vivamus vel nulla eget eros elementum pellentesque.","platform":"html5","creator_id":ObjectId("565804c24d6f63475d370900"),"creation_date":"3/25/2015","tester_id":ObjectId("565804c24d6f63475d380900"),"current_status":"done","status_history":[{},{},{},{},{}]},
-{"id":ObjectId("565804c24d6f63475d390900"),"title":"MightyText","description":"Fusce lacus purus, aliquet at, feugiat non, pretium quis, lectus. Suspendisse potenti. In eleifend quam a odio. In hac habitasse platea dictumst. Maecenas ut massa quis augue luctus tincidunt. Nulla mollis molestie lorem. Quisque ut erat. Curabitur gravida nisi at nibh. In hac habitasse platea dictumst. Aliquam augue quam, sollicitudin vitae, consectetuer eget, rutrum at, lorem.","platform":"andriod","creator_id":ObjectId("565804c24d6f63475d3a0900"),"creation_date":"5/29/2015","tester_id":ObjectId("565804c24d6f63475d3b0900"),"current_status":"live","status_history":[{},{},{}]},
-{"id":ObjectId("565804c24d6f63475d3c0900"),"title":"Pulse News","description":"Aenean fermentum. Donec ut mauris eget massa tempor convallis. Nulla neque libero, convallis eget, eleifend luctus, ultricies eu, nibh. Quisque id justo sit amet sapien dignissim vestibulum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla dapibus dolor vel est. Donec odio justo, sollicitudin ut, suscipit a, feugiat et, eros. Vestibulum ac est lacinia nisi venenatis tristique. Fusce congue, diam id ornare imperdiet, sapien urna pretium nisl, ut volutpat sapien arcu sed augue. Aliquam erat volutpat.","platform":"iphone","creator_id":ObjectId("565804c24d6f63475d3d0900"),"creation_date":"6/11/2015","tester_id":ObjectId("565804c24d6f63475d3e0900"),"current_status":"live","status_history":[{}]},
-{"id":ObjectId("565804c24d6f63475d3f0900"),"title":"Stitcher Radio","description":"Fusce lacus purus, aliquet at, feugiat non, pretium quis, lectus. Suspendisse potenti.","platform":"ionic","creator_id":ObjectId("565804c24d6f63475d400900"),"creation_date":"11/10/2015","tester_id":ObjectId("565804c24d6f63475d410900"),"current_status":"live","status_history":[{},{},{},{}]},
-{"id":ObjectId("565804c24d6f63475d420900"),"title":"Fandango Movies","description":"Maecenas tincidunt lacus at velit. Vivamus vel nulla eget eros elementum pellentesque. Quisque porta volutpat erat. Quisque erat eros, viverra eget, congue eget, semper rutrum, nulla. Nunc purus. Phasellus in felis. Donec semper sapien a libero. Nam dui. Proin leo odio, porttitor id, consequat in, consequat ut, nulla.","platform":"windows","creator_id":ObjectId("565804c24d6f63475d430900"),"creation_date":"3/9/2015","tester_id":ObjectId("565804c24d6f63475d440900"),"current_status":"done","status_history":[{},{},{},{},{}]},
-{"id":ObjectId("565804c24d6f63475d450900"),"title":"Songkick Concerts","description":"Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Duis faucibus accumsan odio. Curabitur convallis. Duis consequat dui nec nisi volutpat eleifend. Donec ut dolor. Morbi vel lectus in quam fringilla rhoncus. Mauris enim leo, rhoncus sed, vestibulum sit amet, cursus id, turpis. Integer aliquet, massa id lobortis convallis, tortor risus dapibus augue, vel accumsan tellus nisi eu orci.","platform":"ionic","creator_id":ObjectId("565804c24d6f63475d460900"),"creation_date":"5/10/2015","tester_id":ObjectId("565804c24d6f63475d470900"),"current_status":"live","status_history":[{},{}]},
-{"id":ObjectId("565804c24d6f63475d480900"),"title":"ConvertPad","description":"Mauris lacinia sapien quis libero. Nullam sit amet turpis elementum ligula vehicula consequat. Morbi a ipsum. Integer a nibh. In quis justo. Maecenas rhoncus aliquam lacus. Morbi quis tortor id nulla ultrices aliquet. Maecenas leo odio, condimentum id, luctus nec, molestie sed, justo.","platform":"ionic","creator_id":ObjectId("565804c24d6f63475d490900"),"creation_date":"6/10/2015","tester_id":ObjectId("565804c24d6f63475d4a0900"),"current_status":"done","status_history":[{},{}]},
-{"id":ObjectId("565804c24d6f63475d4b0900"),"title":"TripIt","description":"Phasellus id sapien in sapien iaculis congue. Vivamus metus arcu, adipiscing molestie, hendrerit at, vulputate vitae, nisl. Aenean lectus. Pellentesque eget nunc. Donec quis orci eget orci vehicula condimentum. Curabitur in libero ut massa volutpat convallis. Morbi odio odio, elementum eu, interdum eu, tincidunt in, leo.","platform":"andriod","creator_id":ObjectId("565804c24d6f63475d4c0900"),"creation_date":"6/20/2015","tester_id":ObjectId("565804c24d6f63475d4d0900"),"current_status":"live","status_history":[{},{}]},
-{"id":ObjectId("565804c24d6f63475d4e0900"),"title":"Onavo Extend","description":"Donec ut mauris eget massa tempor convallis. Nulla neque libero, convallis eget, eleifend luctus, ultricies eu, nibh. Quisque id justo sit amet sapien dignissim vestibulum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla dapibus dolor vel est. Donec odio justo, sollicitudin ut, suscipit a, feugiat et, eros.","platform":"html5","creator_id":ObjectId("565804c24d6f63475d4f0900"),"creation_date":"9/15/2015","tester_id":ObjectId("565804c24d6f63475d500900"),"current_status":"done","status_history":[{},{},{},{}]},
-{"id":ObjectId("565804c24d6f63475d510900"),"title":"Shazam","description":"Aenean lectus. Pellentesque eget nunc. Donec quis orci eget orci vehicula condimentum.","platform":"iphone","creator_id":ObjectId("565804c24d6f63475d520900"),"creation_date":"11/7/2015","tester_id":ObjectId("565804c24d6f63475d530900"),"current_status":"done","status_history":[{},{},{}]},
-{"id":ObjectId("565804c24d6f63475d540900"),"title":"ESPN ScoreCenter","description":"Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Proin risus.","platform":"windows","creator_id":ObjectId("565804c24d6f63475d550900"),"creation_date":"7/30/2015","tester_id":ObjectId("565804c24d6f63475d560900"),"current_status":"done","status_history":[{},{},{},{},{}]},
-{"id":ObjectId("565804c24d6f63475d570900"),"title":"Yelp","description":"Donec odio justo, sollicitudin ut, suscipit a, feugiat et, eros. Vestibulum ac est lacinia nisi venenatis tristique. Fusce congue, diam id ornare imperdiet, sapien urna pretium nisl, ut volutpat sapien arcu sed augue. Aliquam erat volutpat.","platform":"ionic","creator_id":ObjectId("565804c24d6f63475d580900"),"creation_date":"6/6/2015","tester_id":ObjectId("565804c24d6f63475d590900"),"current_status":"live","status_history":[{},{},{},{},{}]},
-{"id":ObjectId("565804c24d6f63475d5a0900"),"title":"Any.do","description":"Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Duis faucibus accumsan odio. Curabitur convallis.","platform":"andriod","creator_id":ObjectId("565804c24d6f63475d5b0900"),"creation_date":"4/5/2015","tester_id":ObjectId("565804c24d6f63475d5c0900"),"current_status":"done","status_history":[{},{},{},{},{}]},
-{"id":ObjectId("565804c24d6f63475d5d0900"),"title":"Google Keep","description":"Donec ut dolor.","platform":"andriod","creator_id":ObjectId("565804c24d6f63475d5e0900"),"creation_date":"10/28/2015","tester_id":ObjectId("565804c24d6f63475d5f0900"),"current_status":"live","status_history":[{},{}]},
-{"id":ObjectId("565804c24d6f63475d600900"),"title":"Nooly","description":"Nulla nisl. Nunc nisl. Duis bibendum, felis sed interdum venenatis, turpis enim blandit mi, in porttitor pede justo eu massa. Donec dapibus. Duis at velit eu est congue elementum.","platform":"windows","creator_id":ObjectId("565804c24d6f63475d610900"),"creation_date":"7/31/2015","tester_id":ObjectId("565804c24d6f63475d620900"),"current_status":"live","status_history":[{},{},{},{}]},
-{"id":ObjectId("565804c24d6f63475d630900"),"title":"Bump","description":"Suspendisse accumsan tortor quis turpis. Sed ante. Vivamus tortor. Duis mattis egestas metus. Aenean fermentum. Donec ut mauris eget massa tempor convallis. Nulla neque libero, convallis eget, eleifend luctus, ultricies eu, nibh. Quisque id justo sit amet sapien dignissim vestibulum.","platform":"blackberry","creator_id":ObjectId("565804c24d6f63475d640900"),"creation_date":"3/24/2015","tester_id":ObjectId("565804c24d6f63475d650900"),"current_status":"done","status_history":[{},{},{},{},{}]},
-{"id":ObjectId("565804c24d6f63475d660900"),"title":"Key Ring","description":"In congue. Etiam justo. Etiam pretium iaculis justo.","platform":"iphone","creator_id":ObjectId("565804c24d6f63475d670900"),"creation_date":"4/26/2015","tester_id":ObjectId("565804c24d6f63475d680900"),"current_status":"done","status_history":[{},{},{},{}]},
-{"id":ObjectId("565804c24d6f63475d690900"),"title":"Gas Guru","description":"Morbi vel lectus in quam fringilla rhoncus. Mauris enim leo, rhoncus sed, vestibulum sit amet, cursus id, turpis. Integer aliquet, massa id lobortis convallis, tortor risus dapibus augue, vel accumsan tellus nisi eu orci. Mauris lacinia sapien quis libero. Nullam sit amet turpis elementum ligula vehicula consequat. Morbi a ipsum. Integer a nibh. In quis justo.","platform":"html5","creator_id":ObjectId("565804c24d6f63475d6a0900"),"creation_date":"5/29/2015","tester_id":ObjectId("565804c24d6f63475d6b0900"),"current_status":"done","status_history":[{},{},{}]},
-{"id":ObjectId("565804c24d6f63475d6c0900"),"title":"1Weather","description":"Suspendisse potenti. Cras in purus eu magna vulputate luctus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus vestibulum sagittis sapien. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Etiam vel augue. Vestibulum rutrum rutrum neque. Aenean auctor gravida sem. Praesent id massa id nisl venenatis lacinia. Aenean sit amet justo.","platform":"blackberry","creator_id":ObjectId("565804c24d6f63475d6d0900"),"creation_date":"1/24/2015","tester_id":ObjectId("565804c24d6f63475d6e0900"),"current_status":"live","status_history":[{},{}]},
-{"id":ObjectId("565804c24d6f63475d6f0900"),"title":"ES File Explorer","description":"Nullam molestie nibh in lectus. Pellentesque at nulla. Suspendisse potenti. Cras in purus eu magna vulputate luctus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus vestibulum sagittis sapien. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Etiam vel augue. Vestibulum rutrum rutrum neque. Aenean auctor gravida sem.","platform":"html5","creator_id":ObjectId("565804c24d6f63475d700900"),"creation_date":"11/8/2015","tester_id":ObjectId("565804c24d6f63475d710900"),"current_status":"done","status_history":[{},{},{},{}]},
-{"id":ObjectId("565804c24d6f63475d720900"),"title":"Tasker","description":"Proin at turpis a pede posuere nonummy. Integer non velit. Donec diam neque, vestibulum eget, vulputate ut, ultrices vel, augue. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec pharetra, magna vestibulum aliquet ultrices, erat tortor sollicitudin mi, sit amet lobortis sapien sapien non mi. Integer ac neque. Duis bibendum. Morbi non quam nec dui luctus rutrum.","platform":"blackberry","creator_id":ObjectId("565804c24d6f63475d730900"),"creation_date":"5/24/2015","tester_id":ObjectId("565804c24d6f63475d740900"),"current_status":"live","status_history":[{},{},{},{},{}]},
-{"id":ObjectId("565804c24d6f63475d750900"),"title":"Kicksend","description":"Morbi vel lectus in quam fringilla rhoncus. Mauris enim leo, rhoncus sed, vestibulum sit amet, cursus id, turpis. Integer aliquet, massa id lobortis convallis, tortor risus dapibus augue, vel accumsan tellus nisi eu orci. Mauris lacinia sapien quis libero. Nullam sit amet turpis elementum ligula vehicula consequat. Morbi a ipsum. Integer a nibh. In quis justo. Maecenas rhoncus aliquam lacus. Morbi quis tortor id nulla ultrices aliquet.","platform":"iphone","creator_id":ObjectId("565804c24d6f63475d760900"),"creation_date":"11/27/2014","tester_id":ObjectId("565804c24d6f63475d770900"),"current_status":"done","status_history":[{},{},{}]},
-{"id":ObjectId("565804c24d6f63475d780900"),"title":"Mint.com Personal Finance","description":"Proin interdum mauris non ligula pellentesque ultrices. Phasellus id sapien in sapien iaculis congue. Vivamus metus arcu, adipiscing molestie, hendrerit at, vulputate vitae, nisl. Aenean lectus. Pellentesque eget nunc. Donec quis orci eget orci vehicula condimentum.","platform":"blackberry","creator_id":ObjectId("565804c24d6f63475d790900"),"creation_date":"9/27/2015","tester_id":ObjectId("565804c24d6f63475d7a0900"),"current_status":"done","status_history":[{},{}]},
-{"id":ObjectId("565804c24d6f63475d7b0900"),"title":"Dumpster – Recycle Bin","description":"Suspendisse potenti.","platform":"iphone","creator_id":ObjectId("565804c24d6f63475d7c0900"),"creation_date":"10/18/2015","tester_id":ObjectId("565804c24d6f63475d7d0900"),"current_status":"live","status_history":[{},{},{},{},{}]},
-{"id":ObjectId("565804c24d6f63475d7e0900"),"title":"Vine","description":"Nullam porttitor lacus at turpis. Donec posuere metus vitae ipsum.","platform":"windows","creator_id":ObjectId("565804c24d6f63475d7f0900"),"creation_date":"5/27/2015","tester_id":ObjectId("565804c24d6f63475d800900"),"current_status":"live","status_history":[{},{},{},{},{}]},
-{"id":ObjectId("565804c24d6f63475d810900"),"title":"Zedge","description":"Mauris lacinia sapien quis libero. Nullam sit amet turpis elementum ligula vehicula consequat.","platform":"andriod","creator_id":ObjectId("565804c24d6f63475d820900"),"creation_date":"2/2/2015","tester_id":ObjectId("565804c24d6f63475d830900"),"current_status":"live","status_history":[{},{},{},{}]},
-{"id":ObjectId("565804c24d6f63475d840900"),"title":"Notification Toggle","description":"Proin eu mi. Nulla ac enim. In tempor, turpis nec euismod scelerisque, quam turpis adipiscing lorem, vitae mattis nibh ligula nec sem. Duis aliquam convallis nunc. Proin at turpis a pede posuere nonummy. Integer non velit. Donec diam neque, vestibulum eget, vulputate ut, ultrices vel, augue. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec pharetra, magna vestibulum aliquet ultrices, erat tortor sollicitudin mi, sit amet lobortis sapien sapien non mi. Integer ac neque. Duis bibendum.","platform":"iphone","creator_id":ObjectId("565804c24d6f63475d850900"),"creation_date":"12/31/2014","tester_id":ObjectId("565804c24d6f63475d860900"),"current_status":"done","status_history":[{},{},{}]},
-{"id":ObjectId("565804c24d6f63475d870900"),"title":"Umano","description":"Donec vitae nisi. Nam ultrices, libero non mattis pulvinar, nulla pede ullamcorper augue, a suscipit nulla elit ac nulla. Sed vel enim sit amet nunc viverra dapibus.","platform":"iphone","creator_id":ObjectId("565804c24d6f63475d880900"),"creation_date":"8/30/2015","tester_id":ObjectId("565804c24d6f63475d890900"),"current_status":"live","status_history":[{},{},{},{}]},
-{"id":ObjectId("565804c24d6f63475d8a0900"),"title":"ShopSavvy Barcode Scanner","description":"Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla dapibus dolor vel est.","platform":"andriod","creator_id":ObjectId("565804c24d6f63475d8b0900"),"creation_date":"1/2/2015","tester_id":ObjectId("565804c24d6f63475d8c0900"),"current_status":"live","status_history":[{},{},{},{}]},
-{"id":ObjectId("565804c24d6f63475d8d0900"),"title":"Valet","description":"Morbi odio odio, elementum eu, interdum eu, tincidunt in, leo. Maecenas pulvinar lobortis est. Phasellus sit amet erat. Nulla tempus. Vivamus in felis eu sapien cursus vestibulum. Proin eu mi. Nulla ac enim. In tempor, turpis nec euismod scelerisque, quam turpis adipiscing lorem, vitae mattis nibh ligula nec sem. Duis aliquam convallis nunc.","platform":"iphone","creator_id":ObjectId("565804c24d6f63475d8e0900"),"creation_date":"6/24/2015","tester_id":ObjectId("565804c24d6f63475d8f0900"),"current_status":"live","status_history":[{},{}]},
-{"id":ObjectId("565804c24d6f63475d900900"),"title":"Current Caller ID","description":"Sed accumsan felis. Ut at dolor quis odio consequat varius. Integer ac leo. Pellentesque ultrices mattis odio. Donec vitae nisi. Nam ultrices, libero non mattis pulvinar, nulla pede ullamcorper augue, a suscipit nulla elit ac nulla. Sed vel enim sit amet nunc viverra dapibus. Nulla suscipit ligula in lacus.","platform":"html5","creator_id":ObjectId("565804c24d6f63475d910900"),"creation_date":"9/1/2015","tester_id":ObjectId("565804c24d6f63475d920900"),"current_status":"live","status_history":[{},{},{},{}]},
-{"id":ObjectId("565804c24d6f63475d930900"),"title":"Holo Bulb","description":"Maecenas leo odio, condimentum id, luctus nec, molestie sed, justo. Pellentesque viverra pede ac diam.","platform":"blackberry","creator_id":ObjectId("565804c24d6f63475d940900"),"creation_date":"12/18/2014","tester_id":ObjectId("565804c24d6f63475d950900"),"current_status":"live","status_history":[{},{},{},{}]},
-{"id":ObjectId("565804c24d6f63475d960900"),"title":"Google Translate","description":"Fusce consequat. Nulla nisl. Nunc nisl. Duis bibendum, felis sed interdum venenatis, turpis enim blandit mi, in porttitor pede justo eu massa. Donec dapibus. Duis at velit eu est congue elementum. In hac habitasse platea dictumst. Morbi vestibulum, velit id pretium iaculis, diam erat fermentum justo, nec condimentum neque sapien placerat ante. Nulla justo.","platform":"iphone","creator_id":ObjectId("565804c24d6f63475d970900"),"creation_date":"11/8/2015","tester_id":ObjectId("565804c24d6f63475d980900"),"current_status":"live","status_history":[{}]},
-{"id":ObjectId("565804c24d6f63475d990900"),"title":"Notif","description":"Morbi odio odio, elementum eu, interdum eu, tincidunt in, leo.","platform":"ionic","creator_id":ObjectId("565804c24d6f63475d9a0900"),"creation_date":"12/21/2014","tester_id":ObjectId("565804c24d6f63475d9b0900"),"current_status":"live","status_history":[{},{},{},{},{}]},
-{"id":ObjectId("565804c24d6f63475d9c0900"),"title":"TeamViewer","description":"Mauris enim leo, rhoncus sed, vestibulum sit amet, cursus id, turpis. Integer aliquet, massa id lobortis convallis, tortor risus dapibus augue, vel accumsan tellus nisi eu orci. Mauris lacinia sapien quis libero. Nullam sit amet turpis elementum ligula vehicula consequat.","platform":"andriod","creator_id":ObjectId("565804c24d6f63475d9d0900"),"creation_date":"6/28/2015","tester_id":ObjectId("565804c24d6f63475d9e0900"),"current_status":"live","status_history":[{},{}]},
-{"id":ObjectId("565804c24d6f63475d9f0900"),"title":"Dragon Mobile Assistant","description":"Fusce consequat. Nulla nisl. Nunc nisl. Duis bibendum, felis sed interdum venenatis, turpis enim blandit mi, in porttitor pede justo eu massa. Donec dapibus. Duis at velit eu est congue elementum. In hac habitasse platea dictumst.","platform":"ionic","creator_id":ObjectId("565804c24d6f63475da00900"),"creation_date":"8/18/2015","tester_id":ObjectId("565804c24d6f63475da10900"),"current_status":"done","status_history":[{},{}]},
-{"id":ObjectId("565804c24d6f63475da20900"),"title":"Photo Editor by Aviary","description":"Proin eu mi. Nulla ac enim. In tempor, turpis nec euismod scelerisque, quam turpis adipiscing lorem, vitae mattis nibh ligula nec sem.","platform":"html5","creator_id":ObjectId("565804c24d6f63475da30900"),"creation_date":"1/23/2015","tester_id":ObjectId("565804c24d6f63475da40900"),"current_status":"done","status_history":[{}]},
-{"id":ObjectId("565804c24d6f63475da50900"),"title":"Songza","description":"Sed ante. Vivamus tortor. Duis mattis egestas metus. Aenean fermentum.","platform":"windows","creator_id":ObjectId("565804c24d6f63475da60900"),"creation_date":"7/16/2015","tester_id":ObjectId("565804c24d6f63475da70900"),"current_status":"live","status_history":[{}]},
-{"id":ObjectId("565804c24d6f63475da80900"),"title":"Instagram","description":"Sed accumsan felis.","platform":"windows","creator_id":ObjectId("565804c24d6f63475da90900"),"creation_date":"4/16/2015","tester_id":ObjectId("565804c24d6f63475daa0900"),"current_status":"live","status_history":[{}]},
-{"id":ObjectId("565804c24d6f63475dab0900"),"title":"Power Bubble – Spirit Level","description":"Donec ut dolor. Morbi vel lectus in quam fringilla rhoncus. Mauris enim leo, rhoncus sed, vestibulum sit amet, cursus id, turpis. Integer aliquet, massa id lobortis convallis, tortor risus dapibus augue, vel accumsan tellus nisi eu orci. Mauris lacinia sapien quis libero. Nullam sit amet turpis elementum ligula vehicula consequat.","platform":"ionic","creator_id":ObjectId("565804c24d6f63475dac0900"),"creation_date":"2/3/2015","tester_id":ObjectId("565804c24d6f63475dad0900"),"current_status":"done","status_history":[{},{},{},{},{}]},
-{"id":ObjectId("565804c24d6f63475dae0900"),"title":"OfficeSuite Pro","description":"Vestibulum quam sapien, varius ut, blandit non, interdum in, ante. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Duis faucibus accumsan odio.","platform":"windows","creator_id":ObjectId("565804c24d6f63475daf0900"),"creation_date":"7/27/2015","tester_id":ObjectId("565804c24d6f63475db00900"),"current_status":"live","status_history":[{},{},{},{}]},
-{"id":ObjectId("565804c24d6f63475db10900"),"title":"Ninja SMS","description":"Duis ac nibh.","platform":"ionic","creator_id":ObjectId("565804c24d6f63475db20900"),"creation_date":"3/27/2015","tester_id":ObjectId("565804c24d6f63475db30900"),"current_status":"done","status_history":[{},{},{},{},{}]},
-{"id":ObjectId("565804c24d6f63475db40900"),"title":"Mutely","description":"Morbi ut odio. Cras mi pede, malesuada in, imperdiet et, commodo vulputate, justo. In blandit ultrices enim. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Proin interdum mauris non ligula pellentesque ultrices. Phasellus id sapien in sapien iaculis congue.","platform":"andriod","creator_id":ObjectId("565804c24d6f63475db50900"),"creation_date":"11/1/2015","tester_id":ObjectId("565804c24d6f63475db60900"),"current_status":"done","status_history":[{}]},
-{"id":ObjectId("565804c24d6f63475db70900"),"title":"Evernote Food","description":"Etiam faucibus cursus urna. Ut tellus. Nulla ut erat id mauris vulputate elementum. Nullam varius. Nulla facilisi.","platform":"ionic","creator_id":ObjectId("565804c24d6f63475db80900"),"creation_date":"7/16/2015","tester_id":ObjectId("565804c24d6f63475db90900"),"current_status":"done","status_history":[{}]},
-{"id":ObjectId("565804c24d6f63475dba0900"),"title":"Sleep as Android","description":"Nullam orci pede, venenatis non, sodales sed, tincidunt eu, felis. Fusce posuere felis sed lacus. Morbi sem mauris, laoreet ut, rhoncus aliquet, pulvinar sed, nisl. Nunc rhoncus dui vel sem. Sed sagittis. Nam congue, risus semper porta volutpat, quam pede lobortis ligula, sit amet eleifend pede libero quis orci. Nullam molestie nibh in lectus. Pellentesque at nulla. Suspendisse potenti.","platform":"ionic","creator_id":ObjectId("565804c24d6f63475dbb0900"),"creation_date":"1/1/2015","tester_id":ObjectId("565804c24d6f63475dbc0900"),"current_status":"live","status_history":[{}]},
-{"id":ObjectId("565804c24d6f63475dbd0900"),"title":"Cerberus","description":"Vivamus vestibulum sagittis sapien. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Etiam vel augue. Vestibulum rutrum rutrum neque. Aenean auctor gravida sem. Praesent id massa id nisl venenatis lacinia.","platform":"iphone","creator_id":ObjectId("565804c24d6f63475dbe0900"),"creation_date":"4/7/2015","tester_id":ObjectId("565804c24d6f63475dbf0900"),"current_status":"live","status_history":[{},{},{},{},{}]},
-{"id":ObjectId("565804c24d6f63475dc00900"),"title":"Pocket Casts","description":"Duis aliquam convallis nunc. Proin at turpis a pede posuere nonummy. Integer non velit. Donec diam neque, vestibulum eget, vulputate ut, ultrices vel, augue. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec pharetra, magna vestibulum aliquet ultrices, erat tortor sollicitudin mi, sit amet lobortis sapien sapien non mi. Integer ac neque. Duis bibendum.","platform":"html5","creator_id":ObjectId("565804c24d6f63475dc10900"),"creation_date":"3/9/2015","tester_id":ObjectId("565804c24d6f63475dc20900"),"current_status":"live","status_history":[{}]},
-{"id":ObjectId("565804c24d6f63475dc30900"),"title":"iSyncr for iTunes","description":"Etiam justo. Etiam pretium iaculis justo. In hac habitasse platea dictumst. Etiam faucibus cursus urna. Ut tellus. Nulla ut erat id mauris vulputate elementum. Nullam varius.","platform":"ionic","creator_id":ObjectId("565804c24d6f63475dc40900"),"creation_date":"11/27/2014","tester_id":ObjectId("565804c24d6f63475dc50900"),"current_status":"done","status_history":[{},{},{},{},{}]},
-{"id":ObjectId("565804c24d6f63475dc60900"),"title":"Swype","description":"Maecenas pulvinar lobortis est. Phasellus sit amet erat. Nulla tempus. Vivamus in felis eu sapien cursus vestibulum. Proin eu mi.","platform":"andriod","creator_id":ObjectId("565804c24d6f63475dc70900"),"creation_date":"4/5/2015","tester_id":ObjectId("565804c24d6f63475dc80900"),"current_status":"live","status_history":[{},{}]},
-{"id":ObjectId("565804c24d6f63475dc90900"),"title":"Awesome Tracker App","description":"Nullam sit amet turpis elementum ligula vehicula consequat. Morbi a ipsum. Integer a nibh. In quis justo. Maecenas rhoncus aliquam lacus.","platform":"windows","creator_id":ObjectId("565804c24d6f63475dca0900"),"creation_date":"8/27/2015","tester_id":ObjectId("565804c24d6f63475dcb0900"),"current_status":"done","status_history":[{},{},{},{}]},
-{"id":ObjectId("565804c24d6f63475dcc0900"),"title":"Daily Meal App","description":"Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla dapibus dolor vel est. Donec odio justo, sollicitudin ut, suscipit a, feugiat et, eros. Vestibulum ac est lacinia nisi venenatis tristique. Fusce congue, diam id ornare imperdiet, sapien urna pretium nisl, ut volutpat sapien arcu sed augue. Aliquam erat volutpat. In congue. Etiam justo. Etiam pretium iaculis justo.","platform":"windows","creator_id":ObjectId("565804c24d6f63475dcd0900"),"creation_date":"1/30/2015","tester_id":ObjectId("565804c24d6f63475dce0900"),"current_status":"live","status_history":[{},{},{},{},{}]},
-{"id":ObjectId("565804c24d6f63475dcf0900"),"title":"Foundation Programming","description":"Maecenas tincidunt lacus at velit. Vivamus vel nulla eget eros elementum pellentesque.","platform":"ionic","creator_id":ObjectId("565804c24d6f63475dd00900"),"creation_date":"7/7/2015","tester_id":ObjectId("565804c24d6f63475dd10900"),"current_status":"live","status_history":[{},{},{},{}]}
+  {
+    "id": ObjectId
+    (
+    "565804c24d6f63475d330900"
+    ),
+    "title": "Pocket",
+    "description": "Nulla ut erat id mauris vulputate elementum. Nullam varius. Nulla facilisi.",
+    "platform": "windows",
+    "creator_id": ObjectId
+    (
+    "565804c24d6f63475d340900"
+    ),
+    "creation_date": "7/11/2015",
+    "tester_id": ObjectId
+    (
+    "565804c24d6f63475d350900"
+    ),
+    "current_status": "done",
+    "status_history": [{}]
+  },
+  {
+    "id": ObjectId
+    (
+    "565804c24d6f63475d360900"
+    ),
+    "title": "Flipboard",
+    "description": "In hac habitasse platea dictumst. Etiam faucibus cursus urna. Ut tellus. Nulla ut erat id mauris vulputate elementum. Nullam varius. Nulla facilisi. Cras non velit nec nisi vulputate nonummy. Maecenas tincidunt lacus at velit. Vivamus vel nulla eget eros elementum pellentesque.",
+    "platform": "html5",
+    "creator_id": ObjectId
+    (
+    "565804c24d6f63475d370900"
+    ),
+    "creation_date": "3/25/2015",
+    "tester_id": ObjectId
+    (
+    "565804c24d6f63475d380900"
+    ),
+    "current_status": "done",
+    "status_history": [
+      {},
+      {},
+      {},
+      {},
+      {}
+    ]
+  },
+  {
+    "id": ObjectId
+    (
+    "565804c24d6f63475d390900"
+    ),
+    "title": "MightyText",
+    "description": "Fusce lacus purus, aliquet at, feugiat non, pretium quis, lectus. Suspendisse potenti. In eleifend quam a odio. In hac habitasse platea dictumst. Maecenas ut massa quis augue luctus tincidunt. Nulla mollis molestie lorem. Quisque ut erat. Curabitur gravida nisi at nibh. In hac habitasse platea dictumst. Aliquam augue quam, sollicitudin vitae, consectetuer eget, rutrum at, lorem.",
+    "platform": "andriod",
+    "creator_id": ObjectId
+    (
+    "565804c24d6f63475d3a0900"
+    ),
+    "creation_date": "5/29/2015",
+    "tester_id": ObjectId
+    (
+    "565804c24d6f63475d3b0900"
+    ),
+    "current_status": "live",
+    "status_history": [
+      {},
+      {},
+      {}
+    ]
+  },
+  {
+    "id": ObjectId
+    (
+    "565804c24d6f63475d3c0900"
+    ),
+    "title": "Pulse News",
+    "description": "Aenean fermentum. Donec ut mauris eget massa tempor convallis. Nulla neque libero, convallis eget, eleifend luctus, ultricies eu, nibh. Quisque id justo sit amet sapien dignissim vestibulum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla dapibus dolor vel est. Donec odio justo, sollicitudin ut, suscipit a, feugiat et, eros. Vestibulum ac est lacinia nisi venenatis tristique. Fusce congue, diam id ornare imperdiet, sapien urna pretium nisl, ut volutpat sapien arcu sed augue. Aliquam erat volutpat.",
+    "platform": "iphone",
+    "creator_id": ObjectId
+    (
+    "565804c24d6f63475d3d0900"
+    ),
+    "creation_date": "6/11/2015",
+    "tester_id": ObjectId
+    (
+    "565804c24d6f63475d3e0900"
+    ),
+    "current_status": "live",
+    "status_history": [{}]
+  },
+  {
+    "id": ObjectId
+    (
+    "565804c24d6f63475d3f0900"
+    ),
+    "title": "Stitcher Radio",
+    "description": "Fusce lacus purus, aliquet at, feugiat non, pretium quis, lectus. Suspendisse potenti.",
+    "platform": "ionic",
+    "creator_id": ObjectId
+    (
+    "565804c24d6f63475d400900"
+    ),
+    "creation_date": "11/10/2015",
+    "tester_id": ObjectId
+    (
+    "565804c24d6f63475d410900"
+    ),
+    "current_status": "live",
+    "status_history": [
+      {},
+      {},
+      {},
+      {}
+    ]
+  },
+  {
+    "id": ObjectId
+    (
+    "565804c24d6f63475d420900"
+    ),
+    "title": "Fandango Movies",
+    "description": "Maecenas tincidunt lacus at velit. Vivamus vel nulla eget eros elementum pellentesque. Quisque porta volutpat erat. Quisque erat eros, viverra eget, congue eget, semper rutrum, nulla. Nunc purus. Phasellus in felis. Donec semper sapien a libero. Nam dui. Proin leo odio, porttitor id, consequat in, consequat ut, nulla.",
+    "platform": "windows",
+    "creator_id": ObjectId
+    (
+    "565804c24d6f63475d430900"
+    ),
+    "creation_date": "3/9/2015",
+    "tester_id": ObjectId
+    (
+    "565804c24d6f63475d440900"
+    ),
+    "current_status": "done",
+    "status_history": [
+      {},
+      {},
+      {},
+      {},
+      {}
+    ]
+  },
+  {
+    "id": ObjectId
+    (
+    "565804c24d6f63475d450900"
+    ),
+    "title": "Songkick Concerts",
+    "description": "Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Duis faucibus accumsan odio. Curabitur convallis. Duis consequat dui nec nisi volutpat eleifend. Donec ut dolor. Morbi vel lectus in quam fringilla rhoncus. Mauris enim leo, rhoncus sed, vestibulum sit amet, cursus id, turpis. Integer aliquet, massa id lobortis convallis, tortor risus dapibus augue, vel accumsan tellus nisi eu orci.",
+    "platform": "ionic",
+    "creator_id": ObjectId
+    (
+    "565804c24d6f63475d460900"
+    ),
+    "creation_date": "5/10/2015",
+    "tester_id": ObjectId
+    (
+    "565804c24d6f63475d470900"
+    ),
+    "current_status": "live",
+    "status_history": [
+      {},
+      {}
+    ]
+  },
+  {
+    "id": ObjectId
+    (
+    "565804c24d6f63475d480900"
+    ),
+    "title": "ConvertPad",
+    "description": "Mauris lacinia sapien quis libero. Nullam sit amet turpis elementum ligula vehicula consequat. Morbi a ipsum. Integer a nibh. In quis justo. Maecenas rhoncus aliquam lacus. Morbi quis tortor id nulla ultrices aliquet. Maecenas leo odio, condimentum id, luctus nec, molestie sed, justo.",
+    "platform": "ionic",
+    "creator_id": ObjectId
+    (
+    "565804c24d6f63475d490900"
+    ),
+    "creation_date": "6/10/2015",
+    "tester_id": ObjectId
+    (
+    "565804c24d6f63475d4a0900"
+    ),
+    "current_status": "done",
+    "status_history": [
+      {},
+      {}
+    ]
+  },
+  {
+    "id": ObjectId
+    (
+    "565804c24d6f63475d4b0900"
+    ),
+    "title": "TripIt",
+    "description": "Phasellus id sapien in sapien iaculis congue. Vivamus metus arcu, adipiscing molestie, hendrerit at, vulputate vitae, nisl. Aenean lectus. Pellentesque eget nunc. Donec quis orci eget orci vehicula condimentum. Curabitur in libero ut massa volutpat convallis. Morbi odio odio, elementum eu, interdum eu, tincidunt in, leo.",
+    "platform": "andriod",
+    "creator_id": ObjectId
+    (
+    "565804c24d6f63475d4c0900"
+    ),
+    "creation_date": "6/20/2015",
+    "tester_id": ObjectId
+    (
+    "565804c24d6f63475d4d0900"
+    ),
+    "current_status": "live",
+    "status_history": [
+      {},
+      {}
+    ]
+  },
+  {
+    "id": ObjectId
+    (
+    "565804c24d6f63475d4e0900"
+    ),
+    "title": "Onavo Extend",
+    "description": "Donec ut mauris eget massa tempor convallis. Nulla neque libero, convallis eget, eleifend luctus, ultricies eu, nibh. Quisque id justo sit amet sapien dignissim vestibulum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla dapibus dolor vel est. Donec odio justo, sollicitudin ut, suscipit a, feugiat et, eros.",
+    "platform": "html5",
+    "creator_id": ObjectId
+    (
+    "565804c24d6f63475d4f0900"
+    ),
+    "creation_date": "9/15/2015",
+    "tester_id": ObjectId
+    (
+    "565804c24d6f63475d500900"
+    ),
+    "current_status": "done",
+    "status_history": [
+      {},
+      {},
+      {},
+      {}
+    ]
+  },
+  {
+    "id": ObjectId
+    (
+    "565804c24d6f63475d510900"
+    ),
+    "title": "Shazam",
+    "description": "Aenean lectus. Pellentesque eget nunc. Donec quis orci eget orci vehicula condimentum.",
+    "platform": "iphone",
+    "creator_id": ObjectId
+    (
+    "565804c24d6f63475d520900"
+    ),
+    "creation_date": "11/7/2015",
+    "tester_id": ObjectId
+    (
+    "565804c24d6f63475d530900"
+    ),
+    "current_status": "done",
+    "status_history": [
+      {},
+      {},
+      {}
+    ]
+  },
+  {
+    "id": ObjectId
+    (
+    "565804c24d6f63475d540900"
+    ),
+    "title": "ESPN ScoreCenter",
+    "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Proin risus.",
+    "platform": "windows",
+    "creator_id": ObjectId
+    (
+    "565804c24d6f63475d550900"
+    ),
+    "creation_date": "7/30/2015",
+    "tester_id": ObjectId
+    (
+    "565804c24d6f63475d560900"
+    ),
+    "current_status": "done",
+    "status_history": [
+      {},
+      {},
+      {},
+      {},
+      {}
+    ]
+  },
+  {
+    "id": ObjectId
+    (
+    "565804c24d6f63475d570900"
+    ),
+    "title": "Yelp",
+    "description": "Donec odio justo, sollicitudin ut, suscipit a, feugiat et, eros. Vestibulum ac est lacinia nisi venenatis tristique. Fusce congue, diam id ornare imperdiet, sapien urna pretium nisl, ut volutpat sapien arcu sed augue. Aliquam erat volutpat.",
+    "platform": "ionic",
+    "creator_id": ObjectId
+    (
+    "565804c24d6f63475d580900"
+    ),
+    "creation_date": "6/6/2015",
+    "tester_id": ObjectId
+    (
+    "565804c24d6f63475d590900"
+    ),
+    "current_status": "live",
+    "status_history": [
+      {},
+      {},
+      {},
+      {},
+      {}
+    ]
+  },
+  {
+    "id": ObjectId
+    (
+    "565804c24d6f63475d5a0900"
+    ),
+    "title": "Any.do",
+    "description": "Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Duis faucibus accumsan odio. Curabitur convallis.",
+    "platform": "andriod",
+    "creator_id": ObjectId
+    (
+    "565804c24d6f63475d5b0900"
+    ),
+    "creation_date": "4/5/2015",
+    "tester_id": ObjectId
+    (
+    "565804c24d6f63475d5c0900"
+    ),
+    "current_status": "done",
+    "status_history": [
+      {},
+      {},
+      {},
+      {},
+      {}
+    ]
+  },
+  {
+    "id": ObjectId
+    (
+    "565804c24d6f63475d5d0900"
+    ),
+    "title": "Google Keep",
+    "description": "Donec ut dolor.",
+    "platform": "andriod",
+    "creator_id": ObjectId
+    (
+    "565804c24d6f63475d5e0900"
+    ),
+    "creation_date": "10/28/2015",
+    "tester_id": ObjectId
+    (
+    "565804c24d6f63475d5f0900"
+    ),
+    "current_status": "live",
+    "status_history": [
+      {},
+      {}
+    ]
+  },
+  {
+    "id": ObjectId
+    (
+    "565804c24d6f63475d600900"
+    ),
+    "title": "Nooly",
+    "description": "Nulla nisl. Nunc nisl. Duis bibendum, felis sed interdum venenatis, turpis enim blandit mi, in porttitor pede justo eu massa. Donec dapibus. Duis at velit eu est congue elementum.",
+    "platform": "windows",
+    "creator_id": ObjectId
+    (
+    "565804c24d6f63475d610900"
+    ),
+    "creation_date": "7/31/2015",
+    "tester_id": ObjectId
+    (
+    "565804c24d6f63475d620900"
+    ),
+    "current_status": "live",
+    "status_history": [
+      {},
+      {},
+      {},
+      {}
+    ]
+  },
+  {
+    "id": ObjectId
+    (
+    "565804c24d6f63475d630900"
+    ),
+    "title": "Bump",
+    "description": "Suspendisse accumsan tortor quis turpis. Sed ante. Vivamus tortor. Duis mattis egestas metus. Aenean fermentum. Donec ut mauris eget massa tempor convallis. Nulla neque libero, convallis eget, eleifend luctus, ultricies eu, nibh. Quisque id justo sit amet sapien dignissim vestibulum.",
+    "platform": "blackberry",
+    "creator_id": ObjectId
+    (
+    "565804c24d6f63475d640900"
+    ),
+    "creation_date": "3/24/2015",
+    "tester_id": ObjectId
+    (
+    "565804c24d6f63475d650900"
+    ),
+    "current_status": "done",
+    "status_history": [
+      {},
+      {},
+      {},
+      {},
+      {}
+    ]
+  },
+  {
+    "id": ObjectId
+    (
+    "565804c24d6f63475d660900"
+    ),
+    "title": "Key Ring",
+    "description": "In congue. Etiam justo. Etiam pretium iaculis justo.",
+    "platform": "iphone",
+    "creator_id": ObjectId
+    (
+    "565804c24d6f63475d670900"
+    ),
+    "creation_date": "4/26/2015",
+    "tester_id": ObjectId
+    (
+    "565804c24d6f63475d680900"
+    ),
+    "current_status": "done",
+    "status_history": [
+      {},
+      {},
+      {},
+      {}
+    ]
+  },
+  {
+    "id": ObjectId
+    (
+    "565804c24d6f63475d690900"
+    ),
+    "title": "Gas Guru",
+    "description": "Morbi vel lectus in quam fringilla rhoncus. Mauris enim leo, rhoncus sed, vestibulum sit amet, cursus id, turpis. Integer aliquet, massa id lobortis convallis, tortor risus dapibus augue, vel accumsan tellus nisi eu orci. Mauris lacinia sapien quis libero. Nullam sit amet turpis elementum ligula vehicula consequat. Morbi a ipsum. Integer a nibh. In quis justo.",
+    "platform": "html5",
+    "creator_id": ObjectId
+    (
+    "565804c24d6f63475d6a0900"
+    ),
+    "creation_date": "5/29/2015",
+    "tester_id": ObjectId
+    (
+    "565804c24d6f63475d6b0900"
+    ),
+    "current_status": "done",
+    "status_history": [
+      {},
+      {},
+      {}
+    ]
+  },
+  {
+    "id": ObjectId
+    (
+    "565804c24d6f63475d6c0900"
+    ),
+    "title": "1Weather",
+    "description": "Suspendisse potenti. Cras in purus eu magna vulputate luctus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus vestibulum sagittis sapien. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Etiam vel augue. Vestibulum rutrum rutrum neque. Aenean auctor gravida sem. Praesent id massa id nisl venenatis lacinia. Aenean sit amet justo.",
+    "platform": "blackberry",
+    "creator_id": ObjectId
+    (
+    "565804c24d6f63475d6d0900"
+    ),
+    "creation_date": "1/24/2015",
+    "tester_id": ObjectId
+    (
+    "565804c24d6f63475d6e0900"
+    ),
+    "current_status": "live",
+    "status_history": [
+      {},
+      {}
+    ]
+  },
+  {
+    "id": ObjectId
+    (
+    "565804c24d6f63475d6f0900"
+    ),
+    "title": "ES File Explorer",
+    "description": "Nullam molestie nibh in lectus. Pellentesque at nulla. Suspendisse potenti. Cras in purus eu magna vulputate luctus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus vestibulum sagittis sapien. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Etiam vel augue. Vestibulum rutrum rutrum neque. Aenean auctor gravida sem.",
+    "platform": "html5",
+    "creator_id": ObjectId
+    (
+    "565804c24d6f63475d700900"
+    ),
+    "creation_date": "11/8/2015",
+    "tester_id": ObjectId
+    (
+    "565804c24d6f63475d710900"
+    ),
+    "current_status": "done",
+    "status_history": [
+      {},
+      {},
+      {},
+      {}
+    ]
+  },
+  {
+    "id": ObjectId
+    (
+    "565804c24d6f63475d720900"
+    ),
+    "title": "Tasker",
+    "description": "Proin at turpis a pede posuere nonummy. Integer non velit. Donec diam neque, vestibulum eget, vulputate ut, ultrices vel, augue. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec pharetra, magna vestibulum aliquet ultrices, erat tortor sollicitudin mi, sit amet lobortis sapien sapien non mi. Integer ac neque. Duis bibendum. Morbi non quam nec dui luctus rutrum.",
+    "platform": "blackberry",
+    "creator_id": ObjectId
+    (
+    "565804c24d6f63475d730900"
+    ),
+    "creation_date": "5/24/2015",
+    "tester_id": ObjectId
+    (
+    "565804c24d6f63475d740900"
+    ),
+    "current_status": "live",
+    "status_history": [
+      {},
+      {},
+      {},
+      {},
+      {}
+    ]
+  },
+  {
+    "id": ObjectId
+    (
+    "565804c24d6f63475d750900"
+    ),
+    "title": "Kicksend",
+    "description": "Morbi vel lectus in quam fringilla rhoncus. Mauris enim leo, rhoncus sed, vestibulum sit amet, cursus id, turpis. Integer aliquet, massa id lobortis convallis, tortor risus dapibus augue, vel accumsan tellus nisi eu orci. Mauris lacinia sapien quis libero. Nullam sit amet turpis elementum ligula vehicula consequat. Morbi a ipsum. Integer a nibh. In quis justo. Maecenas rhoncus aliquam lacus. Morbi quis tortor id nulla ultrices aliquet.",
+    "platform": "iphone",
+    "creator_id": ObjectId
+    (
+    "565804c24d6f63475d760900"
+    ),
+    "creation_date": "11/27/2014",
+    "tester_id": ObjectId
+    (
+    "565804c24d6f63475d770900"
+    ),
+    "current_status": "done",
+    "status_history": [
+      {},
+      {},
+      {}
+    ]
+  },
+  {
+    "id": ObjectId
+    (
+    "565804c24d6f63475d780900"
+    ),
+    "title": "Mint.com Personal Finance",
+    "description": "Proin interdum mauris non ligula pellentesque ultrices. Phasellus id sapien in sapien iaculis congue. Vivamus metus arcu, adipiscing molestie, hendrerit at, vulputate vitae, nisl. Aenean lectus. Pellentesque eget nunc. Donec quis orci eget orci vehicula condimentum.",
+    "platform": "blackberry",
+    "creator_id": ObjectId
+    (
+    "565804c24d6f63475d790900"
+    ),
+    "creation_date": "9/27/2015",
+    "tester_id": ObjectId
+    (
+    "565804c24d6f63475d7a0900"
+    ),
+    "current_status": "done",
+    "status_history": [
+      {},
+      {}
+    ]
+  },
+  {
+    "id": ObjectId
+    (
+    "565804c24d6f63475d7b0900"
+    ),
+    "title": "Dumpster – Recycle Bin",
+    "description": "Suspendisse potenti.",
+    "platform": "iphone",
+    "creator_id": ObjectId
+    (
+    "565804c24d6f63475d7c0900"
+    ),
+    "creation_date": "10/18/2015",
+    "tester_id": ObjectId
+    (
+    "565804c24d6f63475d7d0900"
+    ),
+    "current_status": "live",
+    "status_history": [
+      {},
+      {},
+      {},
+      {},
+      {}
+    ]
+  },
+  {
+    "id": ObjectId
+    (
+    "565804c24d6f63475d7e0900"
+    ),
+    "title": "Vine",
+    "description": "Nullam porttitor lacus at turpis. Donec posuere metus vitae ipsum.",
+    "platform": "windows",
+    "creator_id": ObjectId
+    (
+    "565804c24d6f63475d7f0900"
+    ),
+    "creation_date": "5/27/2015",
+    "tester_id": ObjectId
+    (
+    "565804c24d6f63475d800900"
+    ),
+    "current_status": "live",
+    "status_history": [
+      {},
+      {},
+      {},
+      {},
+      {}
+    ]
+  },
+  {
+    "id": ObjectId
+    (
+    "565804c24d6f63475d810900"
+    ),
+    "title": "Zedge",
+    "description": "Mauris lacinia sapien quis libero. Nullam sit amet turpis elementum ligula vehicula consequat.",
+    "platform": "andriod",
+    "creator_id": ObjectId
+    (
+    "565804c24d6f63475d820900"
+    ),
+    "creation_date": "2/2/2015",
+    "tester_id": ObjectId
+    (
+    "565804c24d6f63475d830900"
+    ),
+    "current_status": "live",
+    "status_history": [
+      {},
+      {},
+      {},
+      {}
+    ]
+  },
+  {
+    "id": ObjectId
+    (
+    "565804c24d6f63475d840900"
+    ),
+    "title": "Notification Toggle",
+    "description": "Proin eu mi. Nulla ac enim. In tempor, turpis nec euismod scelerisque, quam turpis adipiscing lorem, vitae mattis nibh ligula nec sem. Duis aliquam convallis nunc. Proin at turpis a pede posuere nonummy. Integer non velit. Donec diam neque, vestibulum eget, vulputate ut, ultrices vel, augue. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec pharetra, magna vestibulum aliquet ultrices, erat tortor sollicitudin mi, sit amet lobortis sapien sapien non mi. Integer ac neque. Duis bibendum.",
+    "platform": "iphone",
+    "creator_id": ObjectId
+    (
+    "565804c24d6f63475d850900"
+    ),
+    "creation_date": "12/31/2014",
+    "tester_id": ObjectId
+    (
+    "565804c24d6f63475d860900"
+    ),
+    "current_status": "done",
+    "status_history": [
+      {},
+      {},
+      {}
+    ]
+  },
+  {
+    "id": ObjectId
+    (
+    "565804c24d6f63475d870900"
+    ),
+    "title": "Umano",
+    "description": "Donec vitae nisi. Nam ultrices, libero non mattis pulvinar, nulla pede ullamcorper augue, a suscipit nulla elit ac nulla. Sed vel enim sit amet nunc viverra dapibus.",
+    "platform": "iphone",
+    "creator_id": ObjectId
+    (
+    "565804c24d6f63475d880900"
+    ),
+    "creation_date": "8/30/2015",
+    "tester_id": ObjectId
+    (
+    "565804c24d6f63475d890900"
+    ),
+    "current_status": "live",
+    "status_history": [
+      {},
+      {},
+      {},
+      {}
+    ]
+  },
+  {
+    "id": ObjectId
+    (
+    "565804c24d6f63475d8a0900"
+    ),
+    "title": "ShopSavvy Barcode Scanner",
+    "description": "Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla dapibus dolor vel est.",
+    "platform": "andriod",
+    "creator_id": ObjectId
+    (
+    "565804c24d6f63475d8b0900"
+    ),
+    "creation_date": "1/2/2015",
+    "tester_id": ObjectId
+    (
+    "565804c24d6f63475d8c0900"
+    ),
+    "current_status": "live",
+    "status_history": [
+      {},
+      {},
+      {},
+      {}
+    ]
+  },
+  {
+    "id": ObjectId
+    (
+    "565804c24d6f63475d8d0900"
+    ),
+    "title": "Valet",
+    "description": "Morbi odio odio, elementum eu, interdum eu, tincidunt in, leo. Maecenas pulvinar lobortis est. Phasellus sit amet erat. Nulla tempus. Vivamus in felis eu sapien cursus vestibulum. Proin eu mi. Nulla ac enim. In tempor, turpis nec euismod scelerisque, quam turpis adipiscing lorem, vitae mattis nibh ligula nec sem. Duis aliquam convallis nunc.",
+    "platform": "iphone",
+    "creator_id": ObjectId
+    (
+    "565804c24d6f63475d8e0900"
+    ),
+    "creation_date": "6/24/2015",
+    "tester_id": ObjectId
+    (
+    "565804c24d6f63475d8f0900"
+    ),
+    "current_status": "live",
+    "status_history": [
+      {},
+      {}
+    ]
+  },
+  {
+    "id": ObjectId
+    (
+    "565804c24d6f63475d900900"
+    ),
+    "title": "Current Caller ID",
+    "description": "Sed accumsan felis. Ut at dolor quis odio consequat varius. Integer ac leo. Pellentesque ultrices mattis odio. Donec vitae nisi. Nam ultrices, libero non mattis pulvinar, nulla pede ullamcorper augue, a suscipit nulla elit ac nulla. Sed vel enim sit amet nunc viverra dapibus. Nulla suscipit ligula in lacus.",
+    "platform": "html5",
+    "creator_id": ObjectId
+    (
+    "565804c24d6f63475d910900"
+    ),
+    "creation_date": "9/1/2015",
+    "tester_id": ObjectId
+    (
+    "565804c24d6f63475d920900"
+    ),
+    "current_status": "live",
+    "status_history": [
+      {},
+      {},
+      {},
+      {}
+    ]
+  },
+  {
+    "id": ObjectId
+    (
+    "565804c24d6f63475d930900"
+    ),
+    "title": "Holo Bulb",
+    "description": "Maecenas leo odio, condimentum id, luctus nec, molestie sed, justo. Pellentesque viverra pede ac diam.",
+    "platform": "blackberry",
+    "creator_id": ObjectId
+    (
+    "565804c24d6f63475d940900"
+    ),
+    "creation_date": "12/18/2014",
+    "tester_id": ObjectId
+    (
+    "565804c24d6f63475d950900"
+    ),
+    "current_status": "live",
+    "status_history": [
+      {},
+      {},
+      {},
+      {}
+    ]
+  },
+  {
+    "id": ObjectId
+    (
+    "565804c24d6f63475d960900"
+    ),
+    "title": "Google Translate",
+    "description": "Fusce consequat. Nulla nisl. Nunc nisl. Duis bibendum, felis sed interdum venenatis, turpis enim blandit mi, in porttitor pede justo eu massa. Donec dapibus. Duis at velit eu est congue elementum. In hac habitasse platea dictumst. Morbi vestibulum, velit id pretium iaculis, diam erat fermentum justo, nec condimentum neque sapien placerat ante. Nulla justo.",
+    "platform": "iphone",
+    "creator_id": ObjectId
+    (
+    "565804c24d6f63475d970900"
+    ),
+    "creation_date": "11/8/2015",
+    "tester_id": ObjectId
+    (
+    "565804c24d6f63475d980900"
+    ),
+    "current_status": "live",
+    "status_history": [{}]
+  },
+  {
+    "id": ObjectId
+    (
+    "565804c24d6f63475d990900"
+    ),
+    "title": "Notif",
+    "description": "Morbi odio odio, elementum eu, interdum eu, tincidunt in, leo.",
+    "platform": "ionic",
+    "creator_id": ObjectId
+    (
+    "565804c24d6f63475d9a0900"
+    ),
+    "creation_date": "12/21/2014",
+    "tester_id": ObjectId
+    (
+    "565804c24d6f63475d9b0900"
+    ),
+    "current_status": "live",
+    "status_history": [
+      {},
+      {},
+      {},
+      {},
+      {}
+    ]
+  },
+  {
+    "id": ObjectId
+    (
+    "565804c24d6f63475d9c0900"
+    ),
+    "title": "TeamViewer",
+    "description": "Mauris enim leo, rhoncus sed, vestibulum sit amet, cursus id, turpis. Integer aliquet, massa id lobortis convallis, tortor risus dapibus augue, vel accumsan tellus nisi eu orci. Mauris lacinia sapien quis libero. Nullam sit amet turpis elementum ligula vehicula consequat.",
+    "platform": "andriod",
+    "creator_id": ObjectId
+    (
+    "565804c24d6f63475d9d0900"
+    ),
+    "creation_date": "6/28/2015",
+    "tester_id": ObjectId
+    (
+    "565804c24d6f63475d9e0900"
+    ),
+    "current_status": "live",
+    "status_history": [
+      {},
+      {}
+    ]
+  },
+  {
+    "id": ObjectId
+    (
+    "565804c24d6f63475d9f0900"
+    ),
+    "title": "Dragon Mobile Assistant",
+    "description": "Fusce consequat. Nulla nisl. Nunc nisl. Duis bibendum, felis sed interdum venenatis, turpis enim blandit mi, in porttitor pede justo eu massa. Donec dapibus. Duis at velit eu est congue elementum. In hac habitasse platea dictumst.",
+    "platform": "ionic",
+    "creator_id": ObjectId
+    (
+    "565804c24d6f63475da00900"
+    ),
+    "creation_date": "8/18/2015",
+    "tester_id": ObjectId
+    (
+    "565804c24d6f63475da10900"
+    ),
+    "current_status": "done",
+    "status_history": [
+      {},
+      {}
+    ]
+  },
+  {
+    "id": ObjectId
+    (
+    "565804c24d6f63475da20900"
+    ),
+    "title": "Photo Editor by Aviary",
+    "description": "Proin eu mi. Nulla ac enim. In tempor, turpis nec euismod scelerisque, quam turpis adipiscing lorem, vitae mattis nibh ligula nec sem.",
+    "platform": "html5",
+    "creator_id": ObjectId
+    (
+    "565804c24d6f63475da30900"
+    ),
+    "creation_date": "1/23/2015",
+    "tester_id": ObjectId
+    (
+    "565804c24d6f63475da40900"
+    ),
+    "current_status": "done",
+    "status_history": [{}]
+  },
+  {
+    "id": ObjectId
+    (
+    "565804c24d6f63475da50900"
+    ),
+    "title": "Songza",
+    "description": "Sed ante. Vivamus tortor. Duis mattis egestas metus. Aenean fermentum.",
+    "platform": "windows",
+    "creator_id": ObjectId
+    (
+    "565804c24d6f63475da60900"
+    ),
+    "creation_date": "7/16/2015",
+    "tester_id": ObjectId
+    (
+    "565804c24d6f63475da70900"
+    ),
+    "current_status": "live",
+    "status_history": [{}]
+  },
+  {
+    "id": ObjectId
+    (
+    "565804c24d6f63475da80900"
+    ),
+    "title": "Instagram",
+    "description": "Sed accumsan felis.",
+    "platform": "windows",
+    "creator_id": ObjectId
+    (
+    "565804c24d6f63475da90900"
+    ),
+    "creation_date": "4/16/2015",
+    "tester_id": ObjectId
+    (
+    "565804c24d6f63475daa0900"
+    ),
+    "current_status": "live",
+    "status_history": [{}]
+  },
+  {
+    "id": ObjectId
+    (
+    "565804c24d6f63475dab0900"
+    ),
+    "title": "Power Bubble – Spirit Level",
+    "description": "Donec ut dolor. Morbi vel lectus in quam fringilla rhoncus. Mauris enim leo, rhoncus sed, vestibulum sit amet, cursus id, turpis. Integer aliquet, massa id lobortis convallis, tortor risus dapibus augue, vel accumsan tellus nisi eu orci. Mauris lacinia sapien quis libero. Nullam sit amet turpis elementum ligula vehicula consequat.",
+    "platform": "ionic",
+    "creator_id": ObjectId
+    (
+    "565804c24d6f63475dac0900"
+    ),
+    "creation_date": "2/3/2015",
+    "tester_id": ObjectId
+    (
+    "565804c24d6f63475dad0900"
+    ),
+    "current_status": "done",
+    "status_history": [
+      {},
+      {},
+      {},
+      {},
+      {}
+    ]
+  },
+  {
+    "id": ObjectId
+    (
+    "565804c24d6f63475dae0900"
+    ),
+    "title": "OfficeSuite Pro",
+    "description": "Vestibulum quam sapien, varius ut, blandit non, interdum in, ante. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Duis faucibus accumsan odio.",
+    "platform": "windows",
+    "creator_id": ObjectId
+    (
+    "565804c24d6f63475daf0900"
+    ),
+    "creation_date": "7/27/2015",
+    "tester_id": ObjectId
+    (
+    "565804c24d6f63475db00900"
+    ),
+    "current_status": "live",
+    "status_history": [
+      {},
+      {},
+      {},
+      {}
+    ]
+  },
+  {
+    "id": ObjectId
+    (
+    "565804c24d6f63475db10900"
+    ),
+    "title": "Ninja SMS",
+    "description": "Duis ac nibh.",
+    "platform": "ionic",
+    "creator_id": ObjectId
+    (
+    "565804c24d6f63475db20900"
+    ),
+    "creation_date": "3/27/2015",
+    "tester_id": ObjectId
+    (
+    "565804c24d6f63475db30900"
+    ),
+    "current_status": "done",
+    "status_history": [
+      {},
+      {},
+      {},
+      {},
+      {}
+    ]
+  },
+  {
+    "id": ObjectId
+    (
+    "565804c24d6f63475db40900"
+    ),
+    "title": "Mutely",
+    "description": "Morbi ut odio. Cras mi pede, malesuada in, imperdiet et, commodo vulputate, justo. In blandit ultrices enim. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Proin interdum mauris non ligula pellentesque ultrices. Phasellus id sapien in sapien iaculis congue.",
+    "platform": "andriod",
+    "creator_id": ObjectId
+    (
+    "565804c24d6f63475db50900"
+    ),
+    "creation_date": "11/1/2015",
+    "tester_id": ObjectId
+    (
+    "565804c24d6f63475db60900"
+    ),
+    "current_status": "done",
+    "status_history": [{}]
+  },
+  {
+    "id": ObjectId
+    (
+    "565804c24d6f63475db70900"
+    ),
+    "title": "Evernote Food",
+    "description": "Etiam faucibus cursus urna. Ut tellus. Nulla ut erat id mauris vulputate elementum. Nullam varius. Nulla facilisi.",
+    "platform": "ionic",
+    "creator_id": ObjectId
+    (
+    "565804c24d6f63475db80900"
+    ),
+    "creation_date": "7/16/2015",
+    "tester_id": ObjectId
+    (
+    "565804c24d6f63475db90900"
+    ),
+    "current_status": "done",
+    "status_history": [{}]
+  },
+  {
+    "id": ObjectId
+    (
+    "565804c24d6f63475dba0900"
+    ),
+    "title": "Sleep as Android",
+    "description": "Nullam orci pede, venenatis non, sodales sed, tincidunt eu, felis. Fusce posuere felis sed lacus. Morbi sem mauris, laoreet ut, rhoncus aliquet, pulvinar sed, nisl. Nunc rhoncus dui vel sem. Sed sagittis. Nam congue, risus semper porta volutpat, quam pede lobortis ligula, sit amet eleifend pede libero quis orci. Nullam molestie nibh in lectus. Pellentesque at nulla. Suspendisse potenti.",
+    "platform": "ionic",
+    "creator_id": ObjectId
+    (
+    "565804c24d6f63475dbb0900"
+    ),
+    "creation_date": "1/1/2015",
+    "tester_id": ObjectId
+    (
+    "565804c24d6f63475dbc0900"
+    ),
+    "current_status": "live",
+    "status_history": [{}]
+  },
+  {
+    "id": ObjectId
+    (
+    "565804c24d6f63475dbd0900"
+    ),
+    "title": "Cerberus",
+    "description": "Vivamus vestibulum sagittis sapien. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Etiam vel augue. Vestibulum rutrum rutrum neque. Aenean auctor gravida sem. Praesent id massa id nisl venenatis lacinia.",
+    "platform": "iphone",
+    "creator_id": ObjectId
+    (
+    "565804c24d6f63475dbe0900"
+    ),
+    "creation_date": "4/7/2015",
+    "tester_id": ObjectId
+    (
+    "565804c24d6f63475dbf0900"
+    ),
+    "current_status": "live",
+    "status_history": [
+      {},
+      {},
+      {},
+      {},
+      {}
+    ]
+  },
+  {
+    "id": ObjectId
+    (
+    "565804c24d6f63475dc00900"
+    ),
+    "title": "Pocket Casts",
+    "description": "Duis aliquam convallis nunc. Proin at turpis a pede posuere nonummy. Integer non velit. Donec diam neque, vestibulum eget, vulputate ut, ultrices vel, augue. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec pharetra, magna vestibulum aliquet ultrices, erat tortor sollicitudin mi, sit amet lobortis sapien sapien non mi. Integer ac neque. Duis bibendum.",
+    "platform": "html5",
+    "creator_id": ObjectId
+    (
+    "565804c24d6f63475dc10900"
+    ),
+    "creation_date": "3/9/2015",
+    "tester_id": ObjectId
+    (
+    "565804c24d6f63475dc20900"
+    ),
+    "current_status": "live",
+    "status_history": [{}]
+  },
+  {
+    "id": ObjectId
+    (
+    "565804c24d6f63475dc30900"
+    ),
+    "title": "iSyncr for iTunes",
+    "description": "Etiam justo. Etiam pretium iaculis justo. In hac habitasse platea dictumst. Etiam faucibus cursus urna. Ut tellus. Nulla ut erat id mauris vulputate elementum. Nullam varius.",
+    "platform": "ionic",
+    "creator_id": ObjectId
+    (
+    "565804c24d6f63475dc40900"
+    ),
+    "creation_date": "11/27/2014",
+    "tester_id": ObjectId
+    (
+    "565804c24d6f63475dc50900"
+    ),
+    "current_status": "done",
+    "status_history": [
+      {},
+      {},
+      {},
+      {},
+      {}
+    ]
+  },
+  {
+    "id": ObjectId
+    (
+    "565804c24d6f63475dc60900"
+    ),
+    "title": "Swype",
+    "description": "Maecenas pulvinar lobortis est. Phasellus sit amet erat. Nulla tempus. Vivamus in felis eu sapien cursus vestibulum. Proin eu mi.",
+    "platform": "andriod",
+    "creator_id": ObjectId
+    (
+    "565804c24d6f63475dc70900"
+    ),
+    "creation_date": "4/5/2015",
+    "tester_id": ObjectId
+    (
+    "565804c24d6f63475dc80900"
+    ),
+    "current_status": "live",
+    "status_history": [
+      {},
+      {}
+    ]
+  },
+  {
+    "id": ObjectId
+    (
+    "565804c24d6f63475dc90900"
+    ),
+    "title": "Awesome Tracker App",
+    "description": "Nullam sit amet turpis elementum ligula vehicula consequat. Morbi a ipsum. Integer a nibh. In quis justo. Maecenas rhoncus aliquam lacus.",
+    "platform": "windows",
+    "creator_id": ObjectId
+    (
+    "565804c24d6f63475dca0900"
+    ),
+    "creation_date": "8/27/2015",
+    "tester_id": ObjectId
+    (
+    "565804c24d6f63475dcb0900"
+    ),
+    "current_status": "done",
+    "status_history": [
+      {},
+      {},
+      {},
+      {}
+    ]
+  },
+  {
+    "id": ObjectId
+    (
+    "565804c24d6f63475dcc0900"
+    ),
+    "title": "Daily Meal App",
+    "description": "Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla dapibus dolor vel est. Donec odio justo, sollicitudin ut, suscipit a, feugiat et, eros. Vestibulum ac est lacinia nisi venenatis tristique. Fusce congue, diam id ornare imperdiet, sapien urna pretium nisl, ut volutpat sapien arcu sed augue. Aliquam erat volutpat. In congue. Etiam justo. Etiam pretium iaculis justo.",
+    "platform": "windows",
+    "creator_id": ObjectId
+    (
+    "565804c24d6f63475dcd0900"
+    ),
+    "creation_date": "1/30/2015",
+    "tester_id": ObjectId
+    (
+    "565804c24d6f63475dce0900"
+    ),
+    "current_status": "live",
+    "status_history": [
+      {},
+      {},
+      {},
+      {},
+      {}
+    ]
+  },
+  {
+    "id": ObjectId
+    (
+    "565804c24d6f63475dcf0900"
+    ),
+    "title": "Foundation Programming",
+    "description": "Maecenas tincidunt lacus at velit. Vivamus vel nulla eget eros elementum pellentesque.",
+    "platform": "ionic",
+    "creator_id": ObjectId
+    (
+    "565804c24d6f63475dd00900"
+    ),
+    "creation_date": "7/7/2015",
+    "tester_id": ObjectId
+    (
+    "565804c24d6f63475dd10900"
+    ),
+    "current_status": "live",
+    "status_history": [
+      {},
+      {},
+      {},
+      {}
+    ]
+  }
 ]

@@ -115,7 +115,7 @@
                                                     <div class="panel-footer text-center">
                                                         <ul class="list-inline nomarginbottom">
                                                             <li><strong>Current Ranking: </strong></li>
-                                                            <li>DIAMOND</li>
+                                                            <li>{{ vmTesterProfile.profile.ranking }}</li>
                                                         </ul>
 
                                                     </div>
@@ -166,27 +166,10 @@
                                     </tr>
                                     </thead>
                                     <tbody>
-                                    <tr>
-                                        <td>Cobol</td>
-                                        <td>Primarily used for business, finance, and administrative systems for companies and governments</td>
-                                        <td>25</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Pascal</td>
-                                        <td>Development for the Apple Lisa, and in the early years of the Macintosh</td>
-                                        <td>13</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Fortran</td>
-                                        <td>Usen in numerical weather prediction, finite element analysis, computational fluid
-                                            dynamics, computational physics and computational chemistry.
-                                        </td>
-                                        <td>22</td>
-                                    </tr>
-                                    <tr>
-                                        <td><button type="button" class="btn btn-success"><i class="fa fa-plus"></i></button></td>
-                                        <td></td>
-                                        <td></td>
+                                    <tr ng-repeat='model in vmTesterProfile.profile.skill'>
+                                        <td>{{ model.name }}</td>
+                                        <td>{{ model.description}}</td>
+                                        <td>{{ model.experience }}</td>
                                     </tr>
                                     </tbody>
                                 </table>
@@ -218,25 +201,10 @@
                                         </tr>
                                         </thead>
                                         <tbody>
-                                        <tr>
-                                            <td>Microsoft MCSA</td>
-                                            <td>Windows Server 2012 certification</td>
-                                            <td>14-Jul-13</td>
-                                        </tr>
-                                        <tr>
-                                            <td>OOP</td>
-                                            <td>Object Oriented Programming certification from CodeCademy</td>
-                                            <td>11-Dec-14</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Cisco CCENT</td>
-                                            <td>Cisco Certified Entry Networking Technician (CCENT)</td>
-                                            <td>22-Jan-15</td>
-                                        </tr>
-                                        <tr>
-                                            <td><button type="button" class="btn btn-success"><i class="fa fa-plus"></i></button></td>
-                                            <td></td>
-                                            <td></td>
+                                        <tr ng-repeat='model in vmTesterProfile.profile.certification'>
+                                            <td>{{ model.name }}</td>
+                                            <td>{{ model.description}}</td>
+                                            <td>{{ model.date }}</td>
                                         </tr>
                                         </tbody>
                                     </table>
@@ -268,25 +236,10 @@
                                         </tr>
                                         </thead>
                                         <tbody>
-                                        <tr>
-                                            <td>Palm Pilot App</td>
-                                            <td>Calculator application for the new Palm Pilot</td>
-                                            <td>18-Apr-90</td>
-                                        </tr>
-                                        <tr>
-                                            <td>iOS iPhone/iPad App</td>
-                                            <td>Application for the iPhone and iPad devices; Monitoring of heart rate.</td>
-                                            <td>25-Mar-14</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Android App</td>
-                                            <td>Android application for storing information about popular movies</td>
-                                            <td>30-Sep-14</td>
-                                        </tr>
-                                        <tr>
-                                            <td><button type="button" class="btn btn-success"><i class="fa fa-plus"></i></button></td>
-                                            <td></td>
-                                            <td></td>
+                                        <tr ng-repeat='model in vmTesterProfile.profile.project'>
+                                            <td>{{ model.name }}</td>
+                                            <td>{{ model.description}}</td>
+                                            <td>{{ model.date }}</td>
                                         </tr>
                                         </tbody>
                                     </table>

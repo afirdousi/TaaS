@@ -20,7 +20,8 @@
     "host": "localhost",
     "user": "",
     "password": "",
-    "database": "taas_sjsu",
+    "database": "tsaasdb",
+    "anas_database": "taas_sjsu",
     "port": 27017,
     "useSSL": false
   }

@@ -19,7 +19,7 @@ TesterProfile.prototype = {
         return dbHelpers
             .getTesterProfileCollection()
             .then(function(collection) {
-                var criteria = {_id:ObjectId("565561254d6f633f83260100")};
+                var criteria = {_id:ObjectId("565a81ceec58c82b9c55800f")};
                 return collection.findOne(criteria)
                     //.then(dbHelpers.resultAsArray)
                     .then(function(data) {
