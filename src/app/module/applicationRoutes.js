@@ -9,7 +9,7 @@
         'USER_ROLES',
         function($stateProvider, $urlRouterProvider, USER_ROLES) {
 
-            $urlRouterProvider.otherwise('/search');
+            $urlRouterProvider.otherwise('/www');
             $stateProvider
                .state('app', {
                     abstract: true,
@@ -17,6 +17,19 @@
                         root: {
                             templateUrl: 'app/views/mainLayout/mainLayout.html'
                         }
+                    }
+                })
+                .state('app.www', {
+                    url: '/www',
+                    views: {
+                        "content@app": {
+                            templateUrl: 'app/views/www/home.html',
+                            controller: 'homeCtrl',
+                            controllerAs: 'vmHome'
+                        }
+                    },
+                    data: {
+                        title: 'TaaS SJSU'
                     }
                 })
                .state('app.search', {
@@ -63,8 +76,23 @@
                         isSearchView: true,
                         authorizedRoles: [USER_ROLES.admin, USER_ROLES.basic]
                     }
+                }) //providerProfileCtrl
+                .state('app.provider-profile', {
+                    url: '/provider-profile',
+                    views: {
+                        "content@app": {
+                            templateUrl: 'app/views/provider-profile/provider-profile.html',
+                            controller: 'providerProfileCtrl',
+                            controllerAs: 'vmProviderProfile'
+                        }
+                    },
+                    data: {
+                        title: 'Search',
+                        isSearchView: true,
+                        authorizedRoles: [USER_ROLES.admin, USER_ROLES.basic]
+                    }
                 })
-               .state('app.profile', {
+                .state('app.profile', {
                     url: '/profile',
                     views: {
                         "content@app": {

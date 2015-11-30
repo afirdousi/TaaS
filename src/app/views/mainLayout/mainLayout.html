@@ -1,7 +1,7 @@
 <div smart-click>
-    <div smart-include="app/views/pageHeader/pageHeader.html" class="header"></div>
-    <div smart-include="app/views/pageSubHeader/pageSubHeader.html"></div>
-    <div smart-include="app/views/modalDialog/portrate-modal-dialog.html"></div>
+    <div smart-include="app/views/pageHeader/pageHeader.html" class="header" ng-if="vmMain.headerShouldBeVisible"></div>
+    <div smart-include="app/views/pageSubHeader/pageSubHeader.html"  ng-if="vmMain.headerShouldBeVisible"></div>
+    <div smart-include="app/views/modalDialog/portrate-modal-dialog.html" ng-if="vmMain.headerShouldBeVisible"></div>
 </div>
 
 <style type="text/css">
