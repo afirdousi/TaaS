@@ -35,8 +35,11 @@ DbHelpers.prototype = {
     getTesterProfileCollection: function() {
         return this.getCollection("tester_profile");
     },
+    getTesterPaymentCollection: function() {
+        return this.getCollection("tester_payment");
+    },
 
-    getProjectCollection: function() {
+        getProjectCollection: function() {
         return this.getCollection("project");
     }
 };
