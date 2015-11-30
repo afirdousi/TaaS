@@ -36,9 +36,15 @@
         this.editSavedSearchTitleGlobal = '';
         this.isAppDown = false;
 
+        console.log();
+
     }
 
     MainLayoutCtrl.prototype = {
+
+        get headerShouldBeVisible(){
+            return this.$state.current.name !="app.www";
+        },
 
         get filterCount() {
             if(this.commonQuery.filterQuery.parts.length===0)
