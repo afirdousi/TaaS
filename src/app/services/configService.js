@@ -22,7 +22,7 @@
         this.$rootScope = $rootScope;
         this.schemaService = schemaService;
         this.localStorage = localStorage;
-        this._initializeConfig();
+        //this._initializeConfig();
     }
 
     ConfigService.prototype = {

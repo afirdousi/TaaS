@@ -20,16 +20,6 @@
 
     SchemaService.prototype = {
 
-        getGroups: function() {
-            return this.$http({
-                method: 'GET',
-                url: this.appConfig.contextRoot + '/app/data/groups.json',
-                cache: true
-            }).then(function(result) {
-                return result.data;
-            });
-        },
-
         getAttributes: function() {
             var self = this;
             return self.$http({
@@ -42,47 +32,6 @@
                     self._dumpAttributeInfo(result.data);
                 }
 
-                return result.data;
-            });
-        },
-
-        getMSM: function() {
-            return this.$http({
-                method: 'GET',
-                url: this.appConfig.contextRoot + '/app/data/msm.json',
-                cache: true
-            }).then(function(result) {
-                return result.data;
-            });
-        },
-
-        getInteractions: function() {
-            return this.$http({
-                method: 'GET',
-                url: this.appConfig.contextRoot + '/app/data/interactions.json',
-                cache: true
-            }).then(function(result) {
-                return result.data;
-            });
-        },
-
-        getSalesBU: function() {
-            return this.$http({
-                method: 'GET',
-                url: './app/data/salebyBU.json',
-                cache: true
-            }).then(function(result) {
-                return result.data;
-
-            });
-        },
-
-        getBreakdowns: function() {
-            return this.$http({
-                method: 'GET',
-                url: this.appConfig.contextRoot + '/app/data/breakdowns.json',
-                cache: true
-            }).then(function(result) {
                 return result.data;
             });
         },
@@ -108,16 +57,6 @@
                 })
                 .value(), null, 4));
             this.$log.info("---------------------------------------------------");
-        }, 
-        
-        getreportViewList: function() {
-            return this.$http({
-                method: 'GET',
-                url: this.appConfig.contextRoot + '/app/data/reportViewList.json',
-                cache: true
-            }).then(function(result) {
-                return result.data;
-            });
         }
     };
 
