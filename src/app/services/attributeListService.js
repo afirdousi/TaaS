@@ -31,18 +31,12 @@
             attributesLoadedDeferred = self.$q.defer();
 
             self.$q.all([
-                self.schemaService.getGroups(),
-                self.schemaService.getAttributes(),
-                self.schemaService.getInteractions(),
-                self.schemaService.getSalesBU(),
-                self.schemaService.getMSM(),
-                self.schemaService.getreportViewList()
+                self.schemaService.getAttributes()
             ]).then(function(data) {
-              //  console.log(data[4]);
-                var interactionsGroup;
+               /* var interactionsGroup;
                 var msmGroup;
                 var interactionsAttributeName = data[2].UseInteractionsAttributeName;
-                var msmAttributeName = data[4].UseMSMAttributeName;
+                var msmAttributeName = data[4].UseMSMAttributeName;*/
 
                 self.groupsList = _(data[0])
                     .map(function(group) {
@@ -61,7 +55,7 @@
                     })
                     .value();
 
-                //console.log(self.groupsList);
+          /*      //console.log(self.groupsList);
                 self.saleBUList = data[3];
 
                 interactionsGroup = _.find(self.groupsList, function(g) {
@@ -157,7 +151,7 @@
                             IsAll: false,
                         });
                     })
-                    .value();
+                    .value();*/
 
                 attributesLoadedDeferred.resolve();
 

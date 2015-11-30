@@ -92,6 +92,21 @@
                         authorizedRoles: [USER_ROLES.admin, USER_ROLES.basic]
                     }
                 })
+                .state('app.provider-newproject', {
+                    url: '/new-project',
+                    views: {
+                        "content@app": {
+                            templateUrl: 'app/views/provider-new-project/newProject.html',
+                            controller: 'newProjectCtrl',
+                            controllerAs: 'vmNewProject'
+                        }
+                    },
+                    data: {
+                        title: 'New Project',
+                        isSearchView: true,
+                        authorizedRoles: [USER_ROLES.admin, USER_ROLES.basic]
+                    }
+                })
                 .state('app.profile', {
                     url: '/profile',
                     views: {
