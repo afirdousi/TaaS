@@ -17,11 +17,10 @@
     ]
   },
   "mongodb": {
-    "host": "localhost",
+    "host": "ec2-54-153-66-162.us-west-1.compute.amazonaws.com",
     "user": "",
     "password": "",
-    "database": "tsaasdb",
-    "anas_database": "taas_sjsu",
+    "database": "taas_sjsu",
     "port": 27017,
     "useSSL": false
   }

@@ -112,4 +112,40 @@ jQuery(function($) {'use strict';
             backgroundColor: '#3e8bff'
         });
     }
+
+});
+
+/**
+ * Created by Carlos on 11/25/15.
+ */
+/* Execute When Document is Ready
+ ------------------------------------------------ */
+$(document).ready(function() {
+    // Assign jQuery Form Validation Engine to Forms (Sign Up and Login)
+    // $("#signupForm").validationEngine('attach', {promptPosition : "topRight", scroll: false, showOneMessage:true});
+    //$("#loginForm").validationEngine('attach', {promptPosition : "topRight", scroll: false, showOneMessage:true});
+
+    $("#signupBtn").click(function (event) {
+        event.preventDefault();
+        // Initialize Modal Window for Login / SignUp
+        $('#login_modal').modal({
+            backdrop: 'static',
+            show: true
+        });
+    });
+
+    $(function() {
+        $('a[href*=#]:not([href=#])').click(function() {
+            if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+                var target = $(this.hash);
+                target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+                if (target.length) {
+                    $('html,body').animate({
+                        scrollTop: target.offset().top
+                    }, 1000);
+                    return false;
+                }
+            }
+        });
+    });
 });
