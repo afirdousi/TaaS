@@ -69,4 +69,17 @@ Username : test
 Password : password
 ```
 
-where app.js is the name of your main Node application JavaScript file.
+where express-server.js is the name of your main Node application JavaScript file.
+
+### TaaS External API Demo:
+
+>Open Post Man
+>Make call to http://localhost:9001/api/authenticate
+ with body params
+ userName:abc
+ password:123
+>Copy token in response
+>make a new get request,
+ for example: http://localhost:9001/api/projects 
+ In the headers,
+ put x-access-token and pass the token value to it
