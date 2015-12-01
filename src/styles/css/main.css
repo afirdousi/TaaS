@@ -26,7 +26,7 @@
 
 
   a{
-    color:#C03035;
+
   }
 
   a:hover {
@@ -778,7 +778,7 @@ ul.sub-menu {
 }
 
 .tour-button {
-  background-image: url(../../styles/img/tour-icon2.png);
+  background-image: url(../../styles/img/dashboard2.png);
   height: 100%;
   background-repeat: no-repeat;
   position: absolute;
