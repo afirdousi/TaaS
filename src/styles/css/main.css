@@ -386,7 +386,7 @@ ul.sub-menu {
 **************************/
 
 #footer {
-  padding-bottom: 10px;
+  padding-bottom: 50px;
   background-image: url(../../styles/img/footer.png);
   background-repeat: repeat-x;
   background-position: bottom;
@@ -558,8 +558,8 @@ ul.sub-menu {
   position: absolute;
   /*right: 0;
   bottom: 0;*/
-  right: 169px;
-  bottom: 143px;
+  right: 15px;
+  bottom: 60px;
 }
 
 .animate-in .slider-hill {

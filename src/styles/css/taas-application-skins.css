@@ -1006,6 +1006,17 @@ body.smart-style-3, .smart-style-3 body {
   box-shadow: inset 0 1px 0 #d6d6d6;*/
   color: #000; }
 
+/* Forms for WWW site */
+.smart-style-3 input:not([type]), .smart-style-3 input[type="color"], .smart-style-3 input[type="email"], .smart-style-3 input[type="number"], .smart-style-3 input[type="password"], .smart-style-3 input[type="tel"], .smart-style-3 input[type="url"], .smart-style-3 input[type="text"], .smart-style-3 textarea ,.taas {
+    border-top-color: #36B3D8;
+    border-left-color: #36B3D8;
+    border-bottom-color: #36B3D8;
+    border-right-color: #36B3D8;
+    /*  -webkit-box-shadow: inset 0 1px 0 #d6d6d6;
+    -moz-box-shadow: inset 0 1px 0 #d6d6d6;
+    box-shadow: inset 0 1px 0 #d6d6d6;*/
+    color: #000; }
+
 .smart-style-3 .has-warning .form-control {
   border-color: #c09853 !important; }
 
