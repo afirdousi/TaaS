@@ -1,3 +1,4 @@
+<!--
 <div id="content" class="group-panels">
     <div class="widget-body">
         <header role="heading">
@@ -5,7 +6,7 @@
                 <h6 style="display:inline;">{{ vmNotification.pageHeader }}</h6></div>
             <div id="tabsView" class="pull-right visible-sm-inline-block visible-lg-inline-block visible-md-inline-block ">
 
-                <!--Page Heading Start-->
+                &lt;!&ndash;Page Heading Start&ndash;&gt;
 
                 <ul style="display:inline-flex;" class="nav nav-tabs pull-right in visible-lg " >
                     <li ng-class="{'active' : vmNotification.isOption1}" ng-click="vmNotification.selectOption1();" style="cursor:pointer;">
@@ -16,7 +17,7 @@
                     </li>
                 </ul>
 
-                <!--Page Heading End-->
+                &lt;!&ndash;Page Heading End&ndash;&gt;
                 <div class="clearfix"></div>
             </div>
         </header>
@@ -38,3 +39,825 @@
         </div>
     </div>
 </div>
+-->
+
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript">
+    $(document).ready(function(){
+
+        //hide message_body after the first one
+        $(".message_list .message_body:gt(0)").hide();
+
+        //hide message li after the 5th
+        $(".message_list li:gt(4)").hide();
+
+
+        //toggle message_body
+        $(".message_head").click(function(){
+            $(this).next(".message_body").slideToggle(500)
+            return false;
+        });
+
+        //collapse all messages
+        $(".collpase_all_message").click(function(){
+            $(".message_body").slideUp(500)
+            return false;
+        });
+
+        //show all messages
+        $(".show_all_message").click(function(){
+            $(this).hide()
+            $(".show_recent_only").show()
+            $(".message_list li:gt(4)").slideDown()
+            return false;
+        });
+
+        //show recent messages only
+        $(".show_recent_only").click(function(){
+            $(this).hide()
+            $(".show_all_message").show()
+            $(".message_list li:gt(4)").slideUp()
+            return false;
+        });
+
+    });
+</script>
+<style type="text/css">
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    /*body {
+        margin: 10px auto;
+        width: 570px;
+        font: 75%/120% Arial, Helvetica, sans-serif;
+    }*/
+    p {
+        padding: 0 0 1em;
+    }
+    /* message display page */
+    .message_list {
+        /* list-style: none;
+         margin: 0;
+         padding: 0;
+         width: 383px;*/
+    }
+    .message_list li {
+        padding: 0;
+        margin: 0;
+        background: url(images/message-bar.gif) no-repeat;
+    }
+    .message_head {
+        padding: 5px 10px;
+        cursor: pointer;
+        position: relative;
+    }
+    /*.message_head .timestamp {
+        color: #666666;
+        font-size: 95%;
+        position: absolute;
+        right: 10px;
+        top: 5px;
+    }
+    .message_head cite {
+        font-size: 100%;
+        font-weight: bold;
+        font-style: normal;
+    }*/
+    .message_body {
+        padding: 5px 10px 15px;
+        border: 3px lightgrey;
+    }
+    .collapse_buttons {
+        text-align: right;
+        border-top: solid 1px #e4e4e4;
+        padding: 5px 0;
+        width: 383px;
+    }
+    .collapse_buttons a {
+        margin-left: 15px;
+        float: right;
+    }
+    /* .show_all_message {
+         background: url(images/tall-down-arrow.gif) no-repeat right center;
+         padding-right: 12px;
+     }
+     .show_recent_only {
+         display: none;
+         background: url(images/tall-up-arrow.gif) no-repeat right center;
+         padding-right: 12px;
+     }
+     .collpase_all_message {
+         background: url(images/collapse-all.gif) no-repeat right center;
+         padding-right: 12px;
+         color: #666666;
+     }*/
+</style>
+
+
+<div id="content" class="group-panels">
+    <div class="widget-body">
+        <header role="heading">
+            <div class="searchViewHeader">
+                <h6 style="display:inline;">{{ vmNotification.pageHeader }}</h6></div>
+            <div id="tabsView" class="pull-right visible-sm-inline-block visible-lg-inline-block visible-md-inline-block ">
+
+                <!--Page Heading Start-->
+
+                <ul style="display:inline-flex;" class="nav nav-tabs pull-right in visible-lg " >
+                    <li ng-class="{'active' : vmNotification.isOption1}" ng-click="vmNotification.selectOption1();" style="cursor:pointer;">
+                        <a data-toggle="tab"><span class="visible-lg">Recent</span></a>
+                    </li>
+                   <!-- <li ng-class="{'active' : vmNotification.isOption2}" ng-click="vmNotification.selectOption2();" style="cursor:pointer;">
+                        <a data-toggle="tab"><span class="visible-lg">Option 2</span></a>
+                    </li>-->
+                </ul>
+
+                <!--Page Heading End-->
+                <div class="clearfix"></div>
+            </div>
+        </header>
+        <div class="clearfix"></div>
+        <br/>
+
+        <div class="tab-content" ng-show="vmNotification.isOption1">
+
+            <div class="page-wrapper">
+
+
+                <div class="row">
+                    <div class="col-lg-6 col-md-6">
+                        <div class="panel panel-primary">
+                            <div class="panel-heading">
+                                <i class="fa fa-comments fa-fw"></i> Recent Comments
+                            </div>
+                            <!-- /.panel-heading -->
+
+                            <div class="panel-body">
+                                <div class="col-lg-12">
+                                    <div class="list-group message_list">
+
+                                        <div class="list-group-item">
+                                            <div class="message_head ">
+                                                <i class="fa fa-comment fa-fw"></i> New Comment
+                                    <span class="pull-right text-muted small"><em>3 minutes ago</em>
+                                    </span>
+                                            </div>
+                                            <div class="message_body">
+                                                <div class="list-group-item">
+                                                    Comment Displayed here
+                                                    <a href="#">
+                                        <span class="pull-right text-muted small"><em><button class="btn btn-primary btn-xs">Reply</button></em>
+                                        </span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="list-group-item">
+                                            <div class="message_head ">
+                                                <i class="fa fa-comment fa-fw"></i> New Comment
+                                    <span class="pull-right text-muted small"><em>14 minutes ago</em>
+                                    </span>
+                                            </div>
+                                            <div class="message_body">
+                                                <div class="list-group-item">
+                                                    Comment Displayed here
+                                                    <a href="#">
+                                        <span class="pull-right text-muted small"><em><button class="btn btn-primary btn-xs">Reply</button></em>
+                                        </span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+
+
+                                        <div class="list-group-item">
+                                            <div class="message_head ">
+                                                <i class="fa fa-comment fa-fw"></i> New Comment
+                                    <span class="pull-right text-muted small"><em>34 minutes ago</em>
+                                    </span>
+                                            </div>
+                                            <div class="message_body">
+                                                <div class="list-group-item">
+                                                    Comment Displayed here
+                                                    <a href="#">
+                                        <span class="pull-right text-muted small"><em><button class="btn btn-primary btn-xs">Reply</button></em>
+                                        </span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+
+
+                                        <div class="list-group-item">
+                                            <div class="message_head ">
+                                                <i class="fa fa-comment fa-fw"></i> New Comment
+                                    <span class="pull-right text-muted small"><em>1:43 am</em>
+                                    </span>
+                                            </div>
+                                            <div class="message_body">
+                                                <div class="list-group-item">
+                                                    Comment Displayed here
+                                                    <a href="#">
+                                        <span class="pull-right text-muted small"><em><button class="btn btn-primary btn-xs">Reply</button></em>
+                                        </span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+
+
+                                        <div class="list-group-item">
+                                            <div class="message_head ">
+                                                <i class="fa fa-comment fa-fw"></i> New Comment
+                                    <span class="pull-right text-muted small"><em>4:12 am</em>
+                                    </span>
+                                            </div>
+                                            <div class="message_body">
+                                                <div class="list-group-item">
+                                                    Comment Displayed here
+                                                    <a href="#">
+                                        <span class="pull-right text-muted small"><em><button class="btn btn-primary btn-xs">Reply</button></em>
+                                        </span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+
+
+                                    </div>
+                                    <!-- /.list-group -->
+                                    <!--<a href="#" class="btn btn-default btn-block">View All Alerts</a>-->
+                                </div>
+                                <!-- /.panel-body -->
+
+
+                            </div>
+                        </div>
+
+
+                        <!--Bug Reports panel starts-->
+                        <div class="panel panel-primary">
+                            <div class="panel-heading">
+                                <i class="fa fa-envelope fa-fw"></i> Recent Bug Reports
+                            </div>
+                            <!-- /.panel-heading -->
+
+                            <div class="panel-body">
+                                <div class="col-lg-12">
+                                    <div class="list-group message_list">
+
+
+                                        <div class="list-group-item ">
+                                            <div class="message_head ">
+                                                <i class="fa fa-envelope fa-fw"></i> Bug Report Sent
+                                    <span class="pull-right text-muted small"><em>5 minutes ago</em>
+                                    </span>
+                                            </div>
+                                            <div class="message_body">
+                                                <div class="list-group-item">
+                                                    Deatiled Report of the bug.
+
+                                                    <a href="#">
+                                        <span class="pull-right text-muted small"><em><i class="fa fa-check"> seen</i></em>
+                                        </span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+
+
+                                        <div class="list-group-item ">
+                                            <div class="message_head ">
+                                                <i class="fa fa-envelope fa-fw"></i> Bug Report Sent
+                                    <span class="pull-right text-muted small"><em>12 minutes ago</em>
+                                    </span>
+                                            </div>
+                                            <div class="message_body">
+                                                <div class="list-group-item">
+                                                    Deatiled Report of the bug.
+
+                                                    <a href="#">
+                                        <span class="pull-right text-muted small"><em><i class="fa fa-check"> seen</i></em>
+                                        </span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+
+
+                                        <div class="list-group-item ">
+                                            <div class="message_head ">
+                                                <i class="fa fa-envelope fa-fw"></i> Bug Report Sent
+                                    <span class="pull-right text-muted small"><em>57 minutes ago</em>
+                                    </span>
+                                            </div>
+                                            <div class="message_body">
+                                                <div class="list-group-item">
+                                                    Deatiled Report of the bug.
+
+                                                    <a href="#">
+                                        <span class="pull-right text-muted small"><em><i class="fa fa-check"> seen</i></em>
+                                        </span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+
+
+                                        <div class="list-group-item ">
+                                            <div class="message_head ">
+                                                <i class="fa fa-envelope fa-fw"></i> Bug Report Sent
+                                    <span class="pull-right text-muted small"><em>12:34am</em>
+                                    </span>
+                                            </div>
+                                            <div class="message_body">
+                                                <div class="list-group-item">
+                                                    Deatiled Report of the bug.
+
+                                                    <a href="#">
+                                        <span class="pull-right text-muted small"><em><i class="fa fa-check"> seen</i></em>
+                                        </span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="list-group-item ">
+                                            <div class="message_head ">
+                                                <i class="fa fa-envelope fa-fw"></i> Bug Report Sent
+                                    <span class="pull-right text-muted small"><em>3:15 am</em>
+                                    </span>
+                                            </div>
+                                            <div class="message_body">
+                                                <div class="list-group-item">
+                                                    Deatiled Report of the bug.
+
+                                                    <a href="#">
+                                        <span class="pull-right text-muted small"><em><i class="fa fa-check"> seen</i></em>
+                                        </span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Bug Reports panel ends-->
+
+
+                        <!--New Items panel starts-->
+                        <div class="panel panel-primary">
+                            <div class="panel-heading">
+                                <i class="fa fa-tasks fa-fw"></i> Latest Tasks
+                            </div>
+                            <!-- /.panel-heading -->
+
+                            <div class="panel-body">
+                                <div class="col-lg-12">
+                                    <div class="list-group message_list">
+
+
+                                        <div class="list-group-item ">
+                                            <div class="message_head ">
+                                                <i class="fa fa-tasks fa-fw"></i> New Task
+                                    <span class="pull-right text-muted small"><em>6 minutes ago</em>
+                                    </span>
+                                            </div>
+                                            <div class="message_body">
+                                                <div class="list-group-item">
+                                                    Description of the Task
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="list-group-item ">
+                                            <div class="message_head ">
+                                                <i class="fa fa-tasks fa-fw"></i> New Task
+                                    <span class="pull-right text-muted small"><em>12 minutes ago</em>
+                                    </span>
+                                            </div>
+                                            <div class="message_body">
+                                                <div class="list-group-item">
+                                                    Description of the Task
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="list-group-item ">
+                                            <div class="message_head ">
+                                                <i class="fa fa-tasks fa-fw"></i> New Task
+                                    <span class="pull-right text-muted small"><em>41 minutes ago</em>
+                                    </span>
+                                            </div>
+                                            <div class="message_body">
+                                                <div class="list-group-item">
+                                                    Description of the Task
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="list-group-item ">
+                                            <div class="message_head ">
+                                                <i class="fa fa-tasks fa-fw"></i> New Task
+                                    <span class="pull-right text-muted small"><em>55 minutes ago</em>
+                                    </span>
+                                            </div>
+                                            <div class="message_body">
+                                                <div class="list-group-item">
+                                                    Description of the Task
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="list-group-item ">
+                                            <div class="message_head ">
+                                                <i class="fa fa-tasks fa-fw"></i> New Task
+                                    <span class="pull-right text-muted small"><em>6:15 am</em>
+                                    </span>
+                                            </div>
+                                            <div class="message_body">
+                                                <div class="list-group-item">
+                                                    Description of the Task
+                                                </div>
+                                            </div>
+                                        </div>
+
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--New Items panel ends-->
+
+                    </div>
+
+
+                    <!--Offers panel starts-->
+                    <div class="col-md-6 nested">
+                        <div class="panel panel-primary">
+                            <div class="panel-heading">
+                                <i class="fa fa-twitter fa-fw"></i> Recent Offers
+                            </div>
+                            <!-- /.panel-heading -->
+
+                            <div class="panel-body">
+                                <div class="col-lg-12">
+                                    <div class="list-group message_list">
+
+
+                                        <div class="list-group-item ">
+                                            <div class="message_head ">
+                                                <i class="fa fa-twitter fa-fw"></i> New Offer
+                                    <span class="pull-right text-muted small"><em>7 minutes ago</em>
+                                    </span>
+                                            </div>
+                                            <div class="message_body">
+                                                <div class="list-group-item">
+                                                    Offer to test an App
+
+                                                    <a href="#">
+                                        <span class="pull-right text-muted small"><em><button class="btn btn-success btn-xs">Accept</button>  <button class="btn btn-danger btn-xs">Reject</button></em>
+                                        </span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="list-group-item ">
+                                            <div class="message_head ">
+                                                <i class="fa fa-twitter fa-fw"></i> New Offer
+                                    <span class="pull-right text-muted small"><em>21 minutes ago</em>
+                                    </span>
+                                            </div>
+                                            <div class="message_body">
+                                                <div class="list-group-item">
+                                                    Offer to test an App
+
+                                                    <a href="#">
+                                        <span class="pull-right text-muted small"><em><button class="btn btn-success btn-xs">Accept</button>  <button class="btn btn-danger btn-xs">Reject</button></em>
+                                        </span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="list-group-item ">
+                                            <div class="message_head ">
+                                                <i class="fa fa-twitter fa-fw"></i> New Offer
+                                    <span class="pull-right text-muted small"><em>26 minutes ago</em>
+                                    </span>
+                                            </div>
+                                            <div class="message_body">
+                                                <div class="list-group-item">
+                                                    Offer to test an App
+
+                                                    <a href="#">
+                                        <span class="pull-right text-muted small"><em><button class="btn btn-success btn-xs">Accept</button>  <button class="btn btn-danger btn-xs">Reject</button></em>
+                                        </span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="list-group-item ">
+                                            <div class="message_head ">
+                                                <i class="fa fa-twitter fa-fw"></i> New Offer
+                                    <span class="pull-right text-muted small"><em>51 minutes ago</em>
+                                    </span>
+                                            </div>
+                                            <div class="message_body">
+                                                <div class="list-group-item">
+                                                    Offer to test an App
+
+                                                    <a href="#">
+                                        <span class="pull-right text-muted small"><em><button class="btn btn-success btn-xs">Accept</button>  <button class="btn btn-danger btn-xs">Reject</button></em>
+                                        </span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="list-group-item ">
+                                            <div class="message_head ">
+                                                <i class="fa fa-twitter fa-fw"></i> New Offer
+                                    <span class="pull-right text-muted small"><em>4:45 am</em>
+                                    </span>
+                                            </div>
+                                            <div class="message_body">
+                                                <div class="list-group-item">
+                                                    Offer to test an App
+
+                                                    <a href="#">
+                                        <span class="pull-right text-muted small"><em><button class="btn btn-success btn-xs">Accept</button>  <button class="btn btn-danger btn-xs">Reject</button></em>
+                                        </span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Offers Ends-->
+
+                    <!--Bids panel starts-->
+                    <div class="col-md-6 nested">
+                        <div class="panel panel-primary">
+                            <div class="panel-heading">
+                                <i class="fa fa-shopping-cart fa-fw"></i> Bid Results
+                            </div>
+                            <!-- /.panel-heading -->
+
+                            <div class="panel-body">
+                                <div class="col-lg-12">
+                                    <div class="list-group message_list">
+
+
+                                        <div class="list-group-item ">
+                                            <div class="message_head ">
+                                                <i class="fa fa-shopping-cart fa-fw"></i> Bid Status Updated
+                                    <span class="pull-right text-muted small"><em>2 minutes ago</em>
+                                    </span>
+                                            </div>
+                                            <div class="message_body">
+                                                <div class="list-group-item">
+                                                    Status: Accepted/Rejected
+
+                                                    <!-- <a href="#">
+                                             <span class="pull-right text-muted small"><em><button class="btn btn-success btn-xs">Accept</button>  <button class="btn btn-danger btn-xs">Reject</button></em>
+                                             </span>
+                                                     </a>-->
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="list-group-item ">
+                                            <div class="message_head ">
+                                                <i class="fa fa-shopping-cart fa-fw"></i> Bid Status Updated
+                                    <span class="pull-right text-muted small"><em>12 minutes ago</em>
+                                    </span>
+                                            </div>
+                                            <div class="message_body">
+                                                <div class="list-group-item">
+                                                    Status: Accepted/Rejected
+
+                                                    <!-- <a href="#">
+                                             <span class="pull-right text-muted small"><em><button class="btn btn-success btn-xs">Accept</button>  <button class="btn btn-danger btn-xs">Reject</button></em>
+                                             </span>
+                                                     </a>-->
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="list-group-item ">
+                                            <div class="message_head ">
+                                                <i class="fa fa-shopping-cart fa-fw"></i> Bid Status Updated
+                                    <span class="pull-right text-muted small"><em>39 minutes ago</em>
+                                    </span>
+                                            </div>
+                                            <div class="message_body">
+                                                <div class="list-group-item">
+                                                    Status: Accepted/Rejected
+
+                                                    <!-- <a href="#">
+                                             <span class="pull-right text-muted small"><em><button class="btn btn-success btn-xs">Accept</button>  <button class="btn btn-danger btn-xs">Reject</button></em>
+                                             </span>
+                                                     </a>-->
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="list-group-item ">
+                                            <div class="message_head ">
+                                                <i class="fa fa-shopping-cart fa-fw"></i> Bid Status Updated
+                                    <span class="pull-right text-muted small"><em>2:25 am</em>
+                                    </span>
+                                            </div>
+                                            <div class="message_body">
+                                                <div class="list-group-item">
+                                                    Status: Accepted/Rejected
+
+                                                    <!-- <a href="#">
+                                             <span class="pull-right text-muted small"><em><button class="btn btn-success btn-xs">Accept</button>  <button class="btn btn-danger btn-xs">Reject</button></em>
+                                             </span>
+                                                     </a>-->
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="list-group-item ">
+                                            <div class="message_head ">
+                                                <i class="fa fa-shopping-cart fa-fw"></i> Bid Status Updated
+                                    <span class="pull-right text-muted small"><em>5:15 am</em>
+                                    </span>
+                                            </div>
+                                            <div class="message_body">
+                                                <div class="list-group-item">
+                                                    Status: Accepted/Rejected
+
+                                                    <!-- <a href="#">
+                                             <span class="pull-right text-muted small"><em><button class="btn btn-success btn-xs">Accept</button>  <button class="btn btn-danger btn-xs">Reject</button></em>
+                                             </span>
+                                                     </a>-->
+                                                </div>
+                                            </div>
+                                        </div>
+
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Bids Ends-->
+
+
+                    <!--Offers panel starts-->
+                    <div class="col-md-6 nested">
+                        <div class="panel panel-primary">
+                            <div class="panel-heading">
+                                <i class="fa fa-money fa-fw"></i> Payment Notification
+                            </div>
+                            <!-- /.panel-heading -->
+
+                            <div class="panel-body">
+                                <div class="col-lg-12">
+                                    <div class="list-group message_list">
+
+
+                                        <div class="list-group-item ">
+                                            <div class="message_head ">
+                                                <i class="fa fa-usd fa-fw"></i> Payment Recieved
+                                    <span class="pull-right text-muted small"><em>7 minutes ago</em>
+                                    </span>
+                                            </div>
+                                            <div class="message_body">
+                                                <div class="list-group-item">
+                                                    Amount: $amount
+                                                    <br>
+                                                    Project: project_name
+
+                                                    <!--<a href="#">
+                                            <span class="pull-right text-muted small"><em><button class="btn btn-success btn-xs">Accept</button>  <button class="btn btn-danger btn-xs">Reject</button></em>
+                                            </span>
+                                                    </a>-->
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="list-group-item ">
+                                            <div class="message_head ">
+                                                <i class="fa fa-usd fa-fw"></i> Payment Recieved
+                                    <span class="pull-right text-muted small"><em>12 minutes ago</em>
+                                    </span>
+                                            </div>
+                                            <div class="message_body">
+                                                <div class="list-group-item">
+                                                    Amount: $amount
+                                                    <br>
+                                                    Project: project_name
+
+                                                    <!--<a href="#">
+                                            <span class="pull-right text-muted small"><em><button class="btn btn-success btn-xs">Accept</button>  <button class="btn btn-danger btn-xs">Reject</button></em>
+                                            </span>
+                                                    </a>-->
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="list-group-item ">
+                                            <div class="message_head ">
+                                                <i class="fa fa-usd fa-fw"></i> Payment Recieved
+                                    <span class="pull-right text-muted small"><em>26 minutes ago</em>
+                                    </span>
+                                            </div>
+                                            <div class="message_body">
+                                                <div class="list-group-item">
+                                                    Amount: $amount
+                                                    <br>
+                                                    Project: project_name
+
+                                                    <!--<a href="#">
+                                            <span class="pull-right text-muted small"><em><button class="btn btn-success btn-xs">Accept</button>  <button class="btn btn-danger btn-xs">Reject</button></em>
+                                            </span>
+                                                    </a>-->
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="list-group-item ">
+                                            <div class="message_head ">
+                                                <i class="fa fa-usd fa-fw"></i> Payment Recieved
+                                    <span class="pull-right text-muted small"><em>59 minutes ago</em>
+                                    </span>
+                                            </div>
+                                            <div class="message_body">
+                                                <div class="list-group-item">
+                                                    Amount: $amount
+                                                    <br>
+                                                    Project: project_name
+
+                                                    <!--<a href="#">
+                                            <span class="pull-right text-muted small"><em><button class="btn btn-success btn-xs">Accept</button>  <button class="btn btn-danger btn-xs">Reject</button></em>
+                                            </span>
+                                                    </a>-->
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="list-group-item ">
+                                            <div class="message_head ">
+                                                <i class="fa fa-usd fa-fw"></i> Payment Recieved
+                                    <span class="pull-right text-muted small"><em>8:40 am</em>
+                                    </span>
+                                            </div>
+                                            <div class="message_body">
+                                                <div class="list-group-item">
+                                                    Amount: $amount
+                                                    <br>
+                                                    Project: project_name
+
+                                                    <!--<a href="#">
+                                            <span class="pull-right text-muted small"><em><button class="btn btn-success btn-xs">Accept</button>  <button class="btn btn-danger btn-xs">Reject</button></em>
+                                            </span>
+                                                    </a>-->
+                                                </div>
+                                            </div>
+                                        </div>
+
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Offers Ends-->
+
+
+
+                </div>
+                <!--row ends-->
+            </div>
+        </div>
+
+
+
+
+
+        <div class="tab-content" ng-show="vmNotification.isOption2">
+
+            <div class="page-wrapper">
+                Option#2
+            </div>
+        </div>
+    </div>
+</div>
+

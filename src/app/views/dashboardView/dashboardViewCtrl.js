@@ -7,14 +7,16 @@
             '$rootScope',
             '$scope',
             'panelStates',
+            'projectService',
             DashboardViewCtrl
         ]);
 
-    function DashboardViewCtrl($rootScope, $scope, panelStates) {
+    function DashboardViewCtrl($rootScope, $scope, panelStates,projectService) {
 
         this.panelStates = panelStates;
         this.$scope = $scope;
         this.$rootScope = $rootScope;
+        this.projectService = projectService;
         this.selectedView = 0;
 
 
@@ -54,18 +56,25 @@
         selectReportDataView : function() {
             this.selectedView = 1;
         },
-        getLocation : function(val) {
-            return $http.get('//maps.googleapis.com/maps/api/geocode/json', {
-                params: {
-                    address: val,
-                    sensor: false
-                }
-            }).then(function(response){
-                return response.data.results.map(function(item){
-                    return item.formatted_address;
-                });
-            });
+        getProjects : function(val) {
+
+            return
+                this.projectService.getProjectSuggestions(val);
+
         }
+
+        /*$scope.getLocation = function(val) {
+        return $http.get('//maps.googleapis.com/maps/api/geocode/json', {
+            params: {
+                address: val,
+                sensor: false
+            }
+        }).then(function(response){
+            return response.data.results.map(function(item){
+                return item.formatted_address;
+            });
+        });
+    };*/
     };
 
 })();
