@@ -3,6 +3,29 @@
     &lt;!&ndash;<h1><img src="../public/images/logo.png" alt="logo"></h1>&ndash;&gt;
     <h1>TSaaS</h1>
 </a>-->
+<style>
+    .fileupload {
+        width: 100px;
+        height: 50px;
+        position: relative;
+        overflow: hidden;
+        /* and other things to make it pretty */
+    }
+
+    .fileupload input {
+        position: absolute;
+        top: 0;
+        right: 0; /* not left, because only the right part of the input seems to
+be clickable in some browser I can't remember */
+        cursor: pointer;
+        opacity: 0.0;
+        filter: alpha(opacity=0); /* and all the other old opacity stuff you
+want to support */
+        font-size: 300px; /* wtf, but apparently the most reliable way to make
+a large part of the input clickable in most browsers */
+        height: 200px;
+    }
+</style>
 
 <div id="content" class="group-panels">
     <div class="widget-body">
@@ -36,20 +59,159 @@
 
             <div class="page-wrapper">
 
+                <div class="container-fluid">
+                    <div class="row largemarginbottom smallmargintop smallpaddingbottom">
+                        <div class="col-lg-12 col-md-12 col-sm-12">
+                            <div class="panel panel-primary">
+                                <div class="panel-heading text-center">
+                                    <h2 class="panel-title"><b>Start a New Project</b></h2>
+                                </div>
+                                <div class="panel-body">
+                                    <form role="form"><!--login form-->
+                                        <div class="form-group">
+                                            <label><h2><b>1. What type of work do you require?</b></h2></label>
+                                            <form action="#">
+                                                <input class="form-control input-lg" type="text" style="border: 2px solid lightgrey" placeholder="Category of Work (optional)" />
+                                                <!--<input class="form-control" type="email" placeholder="Email Address" />-->
+                                            </form>
+                                        </div>
+
+
+                                        <br>
+                                        <div class="form-group">
+                                            <label><h2><b>2. Project Name</b></h2></label>
+                                            <form action="#">
+                                                <input class="form-control input-lg" type="text" style="border: 2px solid lightgrey" placeholder="Name" />
+                                                <!--<input class="form-control" type="email" placeholder="Email Address" />-->
+                                            </form>
+                                        </div>
+                                        <br>
+                                        <div class="form-group">
+                                            <label><h2><b>3. Type of Mobile App</b></h2></label>
+                                            <div class="checkbox">
+                                                <label data-size="large"><input type="checkbox" class="input-md"><b>Android</b></label>
+                                            </div>
+                                            <div class="checkbox">
+                                                <label data-size="large"><input type="checkbox" class="input-md"><b>iOS</b></label>
+                                            </div>
+                                            <div class="checkbox">
+                                                <label data-size="large"><input type="checkbox" class="input-md"><b>Windows</b></label>
+                                            </div>
+
+
+                                        </div>
+                                        <!--<input class="form-control" type="email" placeholder="Email Address" />-->
+
+                                        <br>
+                                        <div class="form-group">
+                                            <label><h2><b>4. What are the skills required?</b></h2></label>
+                                            <form action="#">
+                                                <!-- <input class="form-control input-lg" type="text" style="border: 2px solid lightgrey" placeholder="Name" />
+                                                 <!--<input class="form-control" type="email" placeholder="Email Address" />-->
+                                                <textarea class="form-control" id="message_id" style="border: 2px solid lightgrey" name="message" rows="5"></textarea>
+                                            </form>
+
+                                            <br>
+                                            <div class="form-group">
+                                                <label><h2><b>5. Project Description</b></h2></label>
+                                                <form action="#">
+                                                    <!-- <input class="form-control input-lg" type="text" style="border: 2px solid lightgrey" placeholder="Name" />
+                                                     <!--<input class="form-control" type="email" placeholder="Email Address" />-->
+                                                    <textarea class="form-control" id="message_id" style="border: 2px solid lightgrey" name="message" rows="5"></textarea>
+                                                </form>
+                                            </div>
+                                            <br>
+
+
+                                            <h2><b>6. Upload Project</b></h2>
+                                            <!-- <form action='#'>
+                                                 <div class="form-group">
+                                                     <button type="upload" class="btn btn-default input-md col-md-2"><i class="fa fa-upload"> Upload</i></button>
+                                                 </div>-->
+
+                                            <div class="fileupload">
+                                                <input type="file" />
+                                                <button type="upload" class="btn btn-primary btn-lg"><i class="fa fa-upload"> Upload</i></button>
+                                            </div>
+
+
+                                        </div>
+                                    </form>
+                                </div>
+
+                            </div>
+
+                            <br>
+                            <br>
+                            <br>
+                            <div class="form-group">
+                                <button type="submit" class="btn btn-success btn-block btn-lg">Post Project</button>
+
+
+
+                            </div><!--/login form-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!--
+&lt;!&ndash;
+<a class="navbar-brand" href="index.html">
+    &lt;!&ndash;<h1><img src="../public/images/logo.png" alt="logo"></h1>&ndash;&gt;
+    <h1>TSaaS</h1>
+</a>&ndash;&gt;
+
+<div id="content" class="group-panels">
+    <div class="widget-body">
+        <header role="heading">
+            <div class="searchViewHeader">
+                <h6 style="display:inline;">{{ vmNewProject.pageHeader }}</h6></div>
+            <div id="tabsView"
+                 class="pull-right visible-sm-inline-block visible-lg-inline-block visible-md-inline-block ">
+
+                &lt;!&ndash;Page Heading Start&ndash;&gt;
+
+                <ul style="display:inline-flex;" class="nav nav-tabs pull-right in visible-lg ">
+                    <li ng-class="{'active' : vmNewProject.isOption1}" ng-click="vmNewProject.selectOption1();"
+                        style="cursor:pointer;">
+                        <a data-toggle="tab"><span class="visible-lg">New Project</span></a>
+                    </li>
+                    &lt;!&ndash; <li ng-class="{'active' : vmNewProject.isOption2}" ng-click="vmNewProject.selectOption2();"
+                         style="cursor:pointer;">
+                         <a data-toggle="tab"><span class="visible-lg">Option 2</span></a>
+                     </li>&ndash;&gt;
+                </ul>
+
+                &lt;!&ndash;Page Heading End&ndash;&gt;
+                <div class="clearfix"></div>
+            </div>
+        </header>
+        <div class="clearfix"></div>
+        <br/>
+
+        <div class="tab-content" ng-show="true">
+
+            <div class="page-wrapper">
+
                 <div class="container">
                     <div class="row">
                         <div class="col-sm-6 col-sm-offset-1">
-                            <div class="login-form contact-form"><!--login form-->
+                            <div class="login-form contact-form">&lt;!&ndash;login form&ndash;&gt;
                                 <h2>1. What type of work do you require?</h2>
                                 <form action="#">
                                     <input class="form-control" type="text" placeholder="Category of Work (optional)" />
-                                    <!--<input class="form-control" type="email" placeholder="Email Address" />-->
+                                    &lt;!&ndash;<input class="form-control" type="email" placeholder="Email Address" />&ndash;&gt;
                                 </form>
                                 <br>
                                 <h2>2. Project Name</h2>
                                 <form action="#">
                                     <input class="form-control" type="text" placeholder="Name" />
-                                    <!--<input class="form-control" type="email" placeholder="Email Address" />-->
+                                    &lt;!&ndash;<input class="form-control" type="email" placeholder="Email Address" />&ndash;&gt;
                                 </form>
                                 <br>
                                 <h2>3. Type of Mobile App</h2>
@@ -63,20 +225,20 @@
                                     <input type="radio" name="type_app" value="windows">
                                     Windows
                                     <br>
-                                    <!--<input class="form-control" type="email" placeholder="Email Address" />-->
+                                    &lt;!&ndash;<input class="form-control" type="email" placeholder="Email Address" />&ndash;&gt;
                                 </form>
                                 <br>
                                 <h2>4. What skills are required?</h2>
                                 <form action='#'>
-                                    <div class="form-group"> <!-- Message input !-->
-                                        <!--<label class="control-label " for="message_id">Message</label>-->
+                                    <div class="form-group"> &lt;!&ndash; Message input !&ndash;&gt;
+                                        &lt;!&ndash;<label class="control-label " for="message_id">Message</label>&ndash;&gt;
                                         <textarea class="form-control" id="message_id" name="message" rows="5"></textarea>
                                     </div>
                                     <br>
                                     <h2>5. Project Description</h2>
                                     <form action='#'>
-                                        <div class="form-group"> <!-- Message input !-->
-                                            <!--<label class="control-label " for="message_id">Message</label>-->
+                                        <div class="form-group"> &lt;!&ndash; Message input !&ndash;&gt;
+                                            &lt;!&ndash;<label class="control-label " for="message_id">Message</label>&ndash;&gt;
                                             <textarea class="form-control" id="message_id" name="message" rows="5"></textarea>
                                         </div>
                                         <br>
@@ -97,7 +259,7 @@
 
 
 
-                            </div><!--/login form-->
+                            </div>&lt;!&ndash;/login form&ndash;&gt;
                         </div>
                     </div>
                 </div>
@@ -105,3 +267,4 @@
             </div>
         </div>
     </div>
+-->
