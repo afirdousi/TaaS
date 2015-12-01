@@ -556,8 +556,10 @@ ul.sub-menu {
 
 #home-slider .slider-hill {
   position: absolute;
-  right: 0;
-  bottom: 0;
+  /*right: 0;
+  bottom: 0;*/
+  right: 169px;
+  bottom: 143px;
 }
 
 .animate-in .slider-hill {
