@@ -107,6 +107,22 @@
                         authorizedRoles: [USER_ROLES.admin, USER_ROLES.basic]
                     }
                 })
+                //providerPaymentCtrl
+                .state('app.provider-payment', {
+                    url: '/provider-payment',
+                    views: {
+                        "content@app": {
+                            templateUrl: 'app/views/provider-payment/provider-payment.html',
+                            controller: 'providerPaymentCtrl',
+                            controllerAs: 'vmProviderPayment'
+                        }
+                    },
+                    data: {
+                        title: 'New Project',
+                        isSearchView: true,
+                        authorizedRoles: [USER_ROLES.admin, USER_ROLES.basic]
+                    }
+                })
                 .state('app.profile', {
                     url: '/profile',
                     views: {
