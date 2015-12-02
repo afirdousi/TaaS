@@ -8,19 +8,19 @@ var mongodbClient = require('./../mongodbClient');
 var ObjectId = require('mongodb').ObjectId;
 var dbHelpers = require('./../dbHelpers');
 
-function TesterProfile() {
+function TesterProjects() {
 }
 
-TesterProfile.prototype = {
+TesterProjects.prototype = {
 
     // Method for External API
 
-    getTesterFullProfile: function() {
+    getTesterFullProjects: function() {
         return dbHelpers
-            .getTesterProfileCollection()
+            .getTesterProjectsCollection()
             .then(function(collection) {
-                //var criteria = { }, { name: 1, contribs: 1, _id: 0 }
-                return collection.find({ }, { name: 1,_id: 0 })
+                var criteria = {_id:ObjectId("565a81ceec58c82b9c55800f")};
+                return collection.findAll(criteria)
                     //.then(dbHelpers.resultAsArray)
                     .then(function(data) {
                         return data;//_.map(data, convertToModelObject);
@@ -37,4 +37,4 @@ TesterProfile.prototype = {
  return item;
  }*/
 
-module.exports = new TesterProfile();
+module.exports = new TesterProjects();
