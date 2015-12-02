@@ -53,7 +53,7 @@ function initializeWebServer() {
     //Tester
     app.use(webSettings.contextRoot + '/api',app.oauth.authorise(), require('./server/api/tester/profile'));
     app.use(webSettings.contextRoot + '/api',app.oauth.authorise(), require('./server/api/tester/payment'));
-
+    app.use(webSettings.contextRoot + '/api',app.oauth.authorise(), require('./server/api/tester/projects'));
     //Provider
 
 

@@ -23,10 +23,14 @@
     ProjectService.prototype = {
 
         getProjectSuggestions:function(){
-
-
+            return this.$http({
+                method: 'GET',
+                url: 'api/tester/fullprojects',  // 'taas' should not be hardcoded and should come from 'this.appConfig.contextRoot'
+                cache: true
+            }).then(function(result) {
+                return result.data;
+            });
         }
-
     };
 
 }());

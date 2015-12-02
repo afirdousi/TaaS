@@ -58,15 +58,25 @@
         },
         getProjects : function(val) {
 
-            return
-                this.projectService.getProjectSuggestions(val);
+            //return this.projectService.getProjectSuggestions(val)
+
+            return $http.get('http://ec2-54-153-66-162.us-west-1.compute.amazonaws.com:27017/taas_sjsu/project/', {
+                params: {
+                    title: val,
+                    sensor: false
+                }
+            }).then(function(response){
+                return response.data.results.map(function(item){
+                    return item.formatted_address;
+                });
+            });
 
         }
 
         /*$scope.getLocation = function(val) {
         return $http.get('//maps.googleapis.com/maps/api/geocode/json', {
             params: {
-                address: val,
+                title: val,
                 sensor: false
             }
         }).then(function(response){
