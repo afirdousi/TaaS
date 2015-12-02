@@ -56,11 +56,11 @@
         selectReportDataView : function() {
             this.selectedView = 1;
         },
-        getProjects : function(val) {
+        getProjectSuggestions : function(val) {
 
             //return this.projectService.getProjectSuggestions(val)
 
-            return $http.get('http://ec2-54-153-66-162.us-west-1.compute.amazonaws.com:27017/taas_sjsu/project/', {
+            /*return this.$http.get('http://ec2-54-153-66-162.us-west-1.compute.amazonaws.com:27017/taas_sjsu/project/', {
                 params: {
                     title: val,
                     sensor: false
@@ -69,7 +69,11 @@
                 return response.data.results.map(function(item){
                     return item.formatted_address;
                 });
-            });
+            });*/
+
+
+            return this.projectService.getProjectSuggestions(val);
+
 
         }
 

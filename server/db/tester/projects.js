@@ -14,15 +14,17 @@ function TesterProjects() {
 TesterProjects.prototype = {
 
     // Method for External API
+    getProjectSuggestions: function() {
 
-    getTesterFullProjects: function() {
+        console.log("getProjectSuggestions()");
+
         return dbHelpers
-            .getTesterProjectsCollection()
+            .getProjectCollection()
             .then(function(collection) {
-                var criteria = {_id:ObjectId("565a81ceec58c82b9c55800f")};
-                return collection.findAll(criteria)
-                    //.then(dbHelpers.resultAsArray)
+                return collection.find({},{_id:0,title:1})
+                    .then(dbHelpers.resultAsArray)
                     .then(function(data) {
+                        console.log(data);
                         return data;//_.map(data, convertToModelObject);
                     });
             });

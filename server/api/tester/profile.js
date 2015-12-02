@@ -18,6 +18,7 @@ router.get("/tester/fullprofile", function(req, res, next) {
 
             /* console.log("getAppStatus()  result = ");
              console.log(result);*/
+            console.log(result);
 
             res.json(result);
         })

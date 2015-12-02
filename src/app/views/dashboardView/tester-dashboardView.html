@@ -511,8 +511,10 @@
                                 <input type="text" class="input-group"
                                        placeholder="Search Project"
                                        ng-model="vmTesterDashboard.textEntry"
-                                       typeahead="states for states in vmTesterDashboard.getProjects($viewValue) | filter:$viewValue"
+                                       typeahead="suggestion for  suggestion in vmTesterDashboard.getProjectSuggestions($viewValue)"
                                         >
+
+                                    <!--| filter:$viewValue-->
                                 <button type="button" class="btn btn-default">Submit</button>
                                     </div>
                                 </div>

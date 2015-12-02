@@ -17,7 +17,8 @@
     ]
   },
   "mongodb": {
-    "host": "ec2-54-153-66-162.us-west-1.compute.amazonaws.com",
+    "host": "localhost",
+    "host1":"ec2-54-153-66-162.us-west-1.compute.amazonaws.com",
     "user": "",
     "password": "",
     "database": "taas_sjsu",

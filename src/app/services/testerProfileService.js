@@ -24,6 +24,7 @@
                 url: 'api/tester/fullprofile',  // 'taas' should not be hardcoded and should come from 'this.appConfig.contextRoot'
                 cache: true
             }).then(function(result) {
+                //console.log(result);
                 return result.data;
             });
         }

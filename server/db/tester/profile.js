@@ -19,10 +19,10 @@ TesterProfile.prototype = {
         return dbHelpers
             .getTesterProfileCollection()
             .then(function(collection) {
-                //var criteria = { }, { name: 1, contribs: 1, _id: 0 }
-                return collection.find({ }, { name: 1,_id: 0 })
-                    //.then(dbHelpers.resultAsArray)
+                var criteria = {_id:ObjectId("565561254d6f633f83260100")};
+                return collection.findOne(criteria)
                     .then(function(data) {
+                        console.log(data);
                         return data;//_.map(data, convertToModelObject);
                     });
             });

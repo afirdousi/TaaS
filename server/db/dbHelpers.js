@@ -17,8 +17,6 @@ DbHelpers.prototype = {
 
     getCollection: function(name) {
 
-        console.log("Get Collection : " + name);
-
         return mongodbClient
             .connect()
             .then(function(db) {
@@ -39,8 +37,8 @@ DbHelpers.prototype = {
         return this.getCollection("tester_payment");
     },
 
-        getProjectCollection: function() {
-        return this.getCollection("project");
+    getProjectCollection: function() {
+        return this.getCollection("tester_project");
     }
 };
 
